@@ -1,0 +1,8 @@
+{
+  "checkpoint": "D:\\yzd\\tmp\\pl-preview-resume-20261027\\source-build\\postroute-explore\\optimized.dcp",
+  "checkpoint_sha256": "24bde0a1309b186d44e35e6927e34b09fca5793f2745c4c8fa83b1fd96380302",
+  "script": "D:\\yzd\\tmp\\pl-preview-resume-20261027\\optimize_current_fanout.tcl",
+  "script_sha256": "b32d458d8630103c691aa64e9e6b531d527cd06232417b6312b26e21b0cc450d",
+  "source_manifest_sha256": "28419f2c584fdc3250ba129a80176b70f5506b383d2ceff55c240b4ac776f267",
+  "scope": "Built-in replication of the exact reported 825-load ordinary FIFO driver, then another documented physical optimization pass; no constraints relaxed"
+}

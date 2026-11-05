@@ -1,0 +1,40 @@
+{
+  "rtl_tests_passed": 21,
+  "model_inference_tested_this_task": false,
+  "proxy_ooc_synthesis": {
+    "part": "xc7z030ffg676-2",
+    "LUT": 1502,
+    "FF": 1075,
+    "DSP": 10,
+    "BRAM": 0,
+    "period_ns": 10,
+    "internal_wns_ns": 4.612,
+    "internal_whs_ns": 0.197,
+    "full_io_constraints": false
+  },
+  "case_source_changed": false,
+  "top_integrated": false,
+  "bitstream_generated": false,
+  "board_deployed": false,
+  "task_files": {
+    "rtl/wcis_face_preprocess.v": "eb6556ce2e5f1c916da4e9d488187832fd3721b471d9954ec93c3c12405edfb8",
+    "rtl/wcis_affine_sampler.v": "f54a71f726f30c2625b0f1641bb4371dc9b767a7f0666557db9b08c395f32151",
+    "rtl/wcis_pixel_read_axi.v": "3c194bd8d2aea84fce75d3fbfe294d2a739ffceb6db92586baa157030afd84af",
+    "model_backend/face_geometry.py": "ae32d71e36eb10881fb3663b1ec62ef3d6d1b7d69ad0cce76548f8622be6790b",
+    "sim/tb_face_preprocess.sv": "b3f0e0de67a60002ebc1a2740dd27cb445c9fa98ff2e3f1a13a74a75ccd0da1c",
+    "scripts/verify_face_pl.py": "70399a4b7c62275435ebd2bbfd7189c454c0c6233a7d32571a6803c90825d9f2",
+    "scripts/fetch_face_pl_reference.py": "ea4837f383a043b53445905cdb1a49e61756f9ec30094a96dbf8760427ca5f13",
+    "scripts/synth_face_backend.tcl": "9e0ce31f14fb554bd916137086d660a545d13ad3577fc474fb8463286ff6bcda",
+    "model_backend/README.md": "b89de6e05fd48b408632a95e85f5cf0b973b1522f1e7a63101338ceba774fd72",
+    "docs/face-pl-modelbackend-20261015.md": "953c9fb0995eee54ab9e99d9422dfc432c096094ed20ab0fe30a6c22cd74daf6",
+    "docs/interface.md": "be4d829b5ffb1aa18d0ee600a4708f8b23efb4fd4399d997db4f5c27a6827b77",
+    "README.md": "e10a6000214e3084cc75e1b356b2af0b2fc775f9f52a34c35a1d2834157d77d2"
+  },
+  "reports": {
+    "verification/verification.json": "af00c389d9ce8d9b598f48a9a7350b47a0bc80c925ca476f508870a825b93321",
+    "verification/saved-board-crop-comparison.json": "97d9e02aefe4ec0ea9c6643e58f824c6bd017778a23b6a0480e58074231185a1",
+    "synthesis/timing.rpt": "8eb8b6e97ae49d6bfa428dc4bc0b7af44e9f8c32ac5ef5804766c866c9edf399",
+    "synthesis/utilization.rpt": "78b313ff4db0535e0a47280e36478672b94ebfbecbbb39d0cf986cb11d30a6e7",
+    "synthesis/drc.rpt": "433c45dbf5aa4bd93e52cbd0b3ac80681eb59addf35f0d33e7a602dd95f3d8d6"
+  }
+}

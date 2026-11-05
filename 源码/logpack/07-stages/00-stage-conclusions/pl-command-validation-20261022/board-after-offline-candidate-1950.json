@@ -1,0 +1,31 @@
+{
+  "boot_id": "8f360a28-0740-4d81-a13f-379a20faf47e",
+  "download_bit_present": false,
+  "health": {
+    "status": "ready",
+    "preprocessing_backend": "FAC1_customop_PL",
+    "boot_id": "8f360a28-0740-4d81-a13f-379a20faf47e",
+    "presentation_attack_detection": "not_evaluated"
+  },
+  "stream_before": {
+    "ready": true,
+    "source": "camera",
+    "state": "ready",
+    "boot_id": "8f360a28-0740-4d81-a13f-379a20faf47e",
+    "captured": 2075032,
+    "selected": null,
+    "frames": null,
+    "error": null
+  },
+  "stream_after": {
+    "ready": true,
+    "source": "camera",
+    "state": "ready",
+    "boot_id": "8f360a28-0740-4d81-a13f-379a20faf47e",
+    "captured": 2075063,
+    "selected": null,
+    "frames": null,
+    "error": null
+  },
+  "observed_at": "2026-10-22T11:50:49.456139+00:00"
+}

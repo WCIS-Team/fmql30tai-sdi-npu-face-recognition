@@ -1,0 +1,76 @@
+U_adder_top: wcis_recording_customop
+U_adder_top/face: wcis_face_customop
+U_adder_top/jpeg: wcis_jpeg_customop
+U0_ps_ai_peripheral/ps_ai_wrapper_u0: ps_ai_wrapper
+EMMC_PORTS emmc_data[3] emmc_data[2] emmc_data[1] emmc_data[0] emmc_clk emmc_cmd emmc_reset_n
+SECOND_CACHE_REGS 512
+FAIR_ARBITER 
+REFCLK_LOC IBUFDS_GTE2_X0Y1
+CLOCK rx_sdi_inst/mgtclk_inst0/inst/clk_in1 6.734
+CLOCK clkfbout_mgtclk 6.734
+CLOCK clk_out1_mgtclk 6.734
+CLOCK clk_fpga_0 20.000
+CLOCK U0_ps_ai_peripheral/frame_to_ps_inst0/cmos_clkgen_742_5_u0/inst/clk_in1 6.734
+CLOCK clkfbout_clk_wiz_0 20.000
+CLOCK clk_out1_clk_wiz_0 10.000
+CLOCK clkfbout_cmos_clkgen_742_5 6.734
+CLOCK cam_clk_use_742_5 1.347
+CLOCK sys_clk_p 5.000
+CLOCK pll_clkfbout 5.000
+CLOCK freq_refclk 1.250
+CLOCK mem_refclk 1.250
+CLOCK sync_pulse 20.000
+CLOCK pll_clk3_out 5.000
+CLOCK mmcm_clkfbout 5.000
+CLOCK clk_ref_mmcm_400 2.500
+CLOCK u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_A.ddr_byte_lane_A/iserdes_clk 1.250
+CLOCK oserdes_clk 1.250
+CLOCK u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_B.ddr_byte_lane_B/iserdes_clk 1.250
+CLOCK oserdes_clk_1 1.250
+CLOCK u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/iserdes_clk 1.250
+CLOCK oserdes_clk_2 1.250
+CLOCK u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_1.u_ddr_phy_4lanes/ddr_byte_lane_A.ddr_byte_lane_A/iserdes_clk 1.250
+CLOCK oserdes_clk_3 1.250
+CLOCK oserdes_clk_4 1.250
+CLOCK oserdes_clk_5 1.250
+CLOCK oserdes_clk_6 1.250
+CLOCK u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_2.u_ddr_phy_4lanes/ddr_byte_lane_A.ddr_byte_lane_A/iserdes_clk 1.250
+CLOCK oserdes_clk_7 1.250
+CLOCK u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_2.u_ddr_phy_4lanes/ddr_byte_lane_B.ddr_byte_lane_B/iserdes_clk 1.250
+CLOCK oserdes_clk_8 1.250
+CLOCK u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_2.u_ddr_phy_4lanes/ddr_byte_lane_C.ddr_byte_lane_C/iserdes_clk 1.250
+CLOCK oserdes_clk_9 1.250
+CLOCK u_memc_ui_top_std/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_2.u_ddr_phy_4lanes/ddr_byte_lane_D.ddr_byte_lane_D/iserdes_clk 1.250
+CLOCK oserdes_clk_10 1.250
+CLOCK clk_pll_i 5.000
+CLOCK mmcm_ps_clk_bufg_in 10.000
+CLOCK iserdes_clkdiv 2.500
+CLOCK oserdes_clkdiv 2.500
+CLOCK iserdes_clkdiv_1 2.500
+CLOCK oserdes_clkdiv_1 2.500
+CLOCK iserdes_clkdiv_2 2.500
+CLOCK oserdes_clkdiv_2 2.500
+CLOCK iserdes_clkdiv_3 2.500
+CLOCK oserdes_clkdiv_3 2.500
+CLOCK oserdes_clkdiv_4 5.000
+CLOCK oserdes_clkdiv_5 5.000
+CLOCK oserdes_clkdiv_6 5.000
+CLOCK iserdes_clkdiv_4 2.500
+CLOCK oserdes_clkdiv_7 2.500
+CLOCK iserdes_clkdiv_5 2.500
+CLOCK oserdes_clkdiv_8 2.500
+CLOCK iserdes_clkdiv_6 2.500
+CLOCK oserdes_clkdiv_9 2.500
+CLOCK iserdes_clkdiv_7 2.500
+CLOCK oserdes_clkdiv_10 2.500
+CLOCK clkfbout_AI_CORE_CLK_ST 5.000
+CLOCK clk_out1_AI_CORE_CLK_ST 1.000
+CLOCK clkfbout_sys_clk 10.000
+CLOCK clk_out1_sys_clk 37.037
+CLOCK rx_sdi_inst/SDI0/SDI/GTX_i/gtxe2_i/RXOUTCLK 6.734
+CLOCK rx_sdi_inst/SDI0/SDI/GTX_i/gtxe2_i/RXOUTCLKFABRIC 6.734
+CLOCK rx_sdi_inst/SDI0/SDI/GTX_i/gtxe2_i/TXOUTCLK 6.734
+CLOCK rx_sdi_inst/SDI0/SDI/GTX_i/gtxe2_i/TXOUTCLKFABRIC 6.734
+CLOCK FMC_HPC_GBTCLK0_M2C_C_P 6.734
+CLOCK jtag_clk 20.000
+CLOCK emmc_sdr25 40.000

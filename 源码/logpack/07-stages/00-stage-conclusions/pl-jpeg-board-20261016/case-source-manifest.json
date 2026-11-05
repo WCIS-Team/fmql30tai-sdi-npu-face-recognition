@@ -1,0 +1,88 @@
+{
+  "source": "D:\\yzd\\tmp\\face-emmc-store-20261015\\case",
+  "case": "D:\\yzd\\tmp\\pl-jpeg-board-20261016\\case",
+  "modifications": [
+    {
+      "path": "rtl/ai7030_edif_top.v",
+      "before_sha256": "67758b15b13ec28096a59fabc4fb1b730f73f539befc5448c230f562d4246b26",
+      "after_sha256": "2d3ddc52dc5ea156909fac9708906a9ddd609887660428ad6b1a0811248d3656",
+      "patch": "--- rtl/ai7030_edif_top.v\n+++ rtl/ai7030_edif_top.v\n@@ -254,7 +254,7 @@\n // Native byte strobes are supplied by the CustomOp wrapper.\n \n \n-wcis_face_customop U_adder_top(\n+wcis_recording_customop U_adder_top(\n   .itf_ra_awaddr    (User_Reg_awwaddr      ),\n   .itf_ra_awdata    (User_Reg_awwdata      ),\n   .itf_ra_awvalid   (User_Reg_awwvalid     ),\n"
+    },
+    {
+      "path": "constrs_1/ai7030.xdc",
+      "before_sha256": "f0de1c246b54fac25553f0353dcfb54a4939d5cbb456bfb0fbc9f2a81229b2f1",
+      "after_sha256": "d31a6ca443eb48030f6346597d84885edce59e26f9df5964cbd1571a2ac25871",
+      "patch": "--- constrs_1/ai7030.xdc\n+++ constrs_1/ai7030.xdc\n@@ -10,9 +10,9 @@\n set_false_path -to [get_ports {led[1]}]\n set_false_path -from [get_clocks clk_out1_clk_wiz_0] -to [get_clocks clk_out2_clk_wiz_0]\n set_false_path -from [get_clocks clk_out2_clk_wiz_0] -to [get_clocks clk_out1_clk_wiz_0]\n-set task_legacy_regs [filter [all_registers -clock [get_clocks clk_pll_i]] {NAME !~ \"U_adder_top/read_request/m_data_reg*\" && NAME !~ \"U_adder_top/write_request/m_data_reg*\"}]\n+set task_legacy_regs [filter [all_registers -clock [get_clocks clk_pll_i]] {NAME !~ \"U_adder_top/face/read_request/m_data_reg*\" && NAME !~ \"U_adder_top/face/write_request/m_data_reg*\" && NAME !~ \"U_adder_top/jpeg/read_request/m_data_reg*\" && NAME !~ \"U_adder_top/jpeg/write_request/m_data_reg*\"}]\n set_false_path -from [get_clocks clk_out1_clk_wiz_0] -to $task_legacy_regs\n-set task_legacy_regs [filter [all_registers -clock [get_clocks clk_out1_clk_wiz_0]] {NAME !~ \"U_adder_top/read_response/m_data_reg*\"}]\n+set task_legacy_regs [filter [all_registers -clock [get_clocks clk_out1_clk_wiz_0]] {NAME !~ \"U_adder_top/face/read_response/m_data_reg*\" && NAME !~ \"U_adder_top/jpeg/read_response/m_data_reg*\"}]\n set_false_path -from [get_clocks clk_pll_i] -to $task_legacy_regs\n set_false_path -from [get_clocks clk_out1_sys_clk] -to [get_clocks clk_out1_mgtclk]\n \n"
+    },
+    {
+      "path": "constrs_1/impl_constraints.xdc",
+      "before_sha256": "2900eeb7446af28c3f23105ee6811e832fe9f4c35ccc5e3f5d70001a62710741",
+      "after_sha256": "cfdd5b963f926367e72e0ec677a9e751fc1fd3d319ad4ee443f7b35ebda7d0e2",
+      "patch": "--- constrs_1/impl_constraints.xdc\n+++ constrs_1/impl_constraints.xdc\n@@ -67,25 +67,49 @@\n # response has >=2 GP cycles. Never blanket-cut their bundled data paths.\n \n # FACE read_request\n-set task_sync [get_cells -hier -regexp {.*U_adder_top/read_request/(request_sync|ack_sync)_reg\\[0\\]}]\n+set task_sync [get_cells -hier -regexp {.*U_adder_top/face/read_request/(request_sync|ack_sync)_reg\\[0\\]}]\n set_false_path -to [get_pins -of_objects $task_sync -filter {REF_PIN_NAME == D}]\n-set task_hold [get_cells -hier -regexp {.*U_adder_top/read_request/payload_hold_reg\\[[0-9]+\\]}]\n-set task_capture [get_cells -hier -regexp {.*U_adder_top/read_request/m_data_reg\\[[0-9]+\\]}]\n+set task_hold [get_cells -hier -regexp {.*U_adder_top/face/read_request/payload_hold_reg\\[[0-9]+\\]}]\n+set task_capture [get_cells -hier -regexp {.*U_adder_top/face/read_request/m_data_reg\\[[0-9]+\\]}]\n set_max_delay -datapath_only 8.0 -from $task_hold -to $task_capture\n set_bus_skew 8.0 -from $task_hold -to $task_capture\n \n # FACE write_request\n-set task_sync [get_cells -hier -regexp {.*U_adder_top/write_request/(request_sync|ack_sync)_reg\\[0\\]}]\n+set task_sync [get_cells -hier -regexp {.*U_adder_top/face/write_request/(request_sync|ack_sync)_reg\\[0\\]}]\n set_false_path -to [get_pins -of_objects $task_sync -filter {REF_PIN_NAME == D}]\n-set task_hold [get_cells -hier -regexp {.*U_adder_top/write_request/payload_hold_reg\\[[0-9]+\\]}]\n-set task_capture [get_cells -hier -regexp {.*U_adder_top/write_request/m_data_reg\\[[0-9]+\\]}]\n+set task_hold [get_cells -hier -regexp {.*U_adder_top/face/write_request/payload_hold_reg\\[[0-9]+\\]}]\n+set task_capture [get_cells -hier -regexp {.*U_adder_top/face/write_request/m_data_reg\\[[0-9]+\\]}]\n set_max_delay -datapath_only 8.0 -from $task_hold -to $task_capture\n set_bus_skew 8.0 -from $task_hold -to $task_capture\n \n # FACE read_response\n-set task_sync [get_cells -hier -regexp {.*U_adder_top/read_response/(request_sync|ack_sync)_reg\\[0\\]}]\n+set task_sync [get_cells -hier -regexp {.*U_adder_top/face/read_response/(request_sync|ack_sync)_reg\\[0\\]}]\n set_false_path -to [get_pins -of_objects $task_sync -filter {REF_PIN_NAME == D}]\n-set task_hold [get_cells -hier -regexp {.*U_adder_top/read_response/payload_hold_reg\\[[0-9]+\\]}]\n-set task_capture [get_cells -hier -regexp {.*U_adder_top/read_response/m_data_reg\\[[0-9]+\\]}]\n+set task_hold [get_cells -hier -regexp {.*U_adder_top/face/read_response/payload_hold_reg\\[[0-9]+\\]}]\n+set task_capture [get_cells -hier -regexp {.*U_adder_top/face/read_response/m_data_reg\\[[0-9]+\\]}]\n set_max_delay -datapath_only 20.0 -from $task_hold -to $task_capture\n set_bus_skew 20.0 -from $task_hold -to $task_capture\n+\n+# JPEG read_request bundled-data mailbox\n+set task_sync [get_cells -hier -regexp {.*U_adder_top/jpeg/read_request/(request_sync|ack_sync)_reg\\[0\\]}]\n+set_false_path -to [get_pins -of_objects $task_sync -filter {REF_PIN_NAME == D}]\n+set task_hold [get_cells -hier -regexp {.*U_adder_top/jpeg/read_request/payload_hold_reg\\[[0-9]+\\]}]\n+set task_capture [get_cells -hier -regexp {.*U_adder_top/jpeg/read_request/m_data_reg\\[[0-9]+\\]}]\n+set_max_delay -datapath_only 8.0 -from $task_hold -to $task_capture\n+set_bus_skew 8.0 -from $task_hold -to $task_capture\n+\n+# JPEG write_request bundled-data mailbox\n+set task_sync [get_cells -hier -regexp {.*U_adder_top/jpeg/write_request/(request_sync|ack_sync)_reg\\[0\\]}]\n+set_false_path -to [get_pins -of_objects $task_sync -filter {REF_PIN_NAME == D}]\n+set task_hold [get_cells -hier -regexp {.*U_adder_top/jpeg/write_request/payload_hold_reg\\[[0-9]+\\]}]\n+set task_capture [get_cells -hier -regexp {.*U_adder_top/jpeg/write_request/m_data_reg\\[[0-9]+\\]}]\n+set_max_delay -datapath_only 8.0 -from $task_hold -to $task_capture\n+set_bus_skew 8.0 -from $task_hold -to $task_capture\n+\n+# JPEG read_response bundled-data mailbox\n+set task_sync [get_cells -hier -regexp {.*U_adder_top/jpeg/read_response/(request_sync|ack_sync)_reg\\[0\\]}]\n+set_false_path -to [get_pins -of_objects $task_sync -filter {REF_PIN_NAME == D}]\n+set task_hold [get_cells -hier -regexp {.*U_adder_top/jpeg/read_response/payload_hold_reg\\[[0-9]+\\]}]\n+set task_capture [get_cells -hier -regexp {.*U_adder_top/jpeg/read_response/m_data_reg\\[[0-9]+\\]}]\n+set_max_delay -datapath_only 20.0 -from $task_hold -to $task_capture\n+set_bus_skew 20.0 -from $task_hold -to $task_capture\n"
+    }
+  ],
+  "added": [
+    {
+      "path": "rtl\\wcis\\wcis_recording_customop.v",
+      "sha256": "46b73d25292b6adb37f8617f9f4a07c896331e8506dddacb37ad85c869fb74a0"
+    },
+    {
+      "path": "rtl\\wcis\\wcis_jpeg_customop.v",
+      "sha256": "255764009fb3ccf029766e14b77638071299c79265e9e64c37da72f3a11b45e3"
+    },
+    {
+      "path": "rtl\\wcis\\wcis_jpeg_compressor.v",
+      "sha256": "22819f77f672018e5a7ff8c2942011ff3d114cd89d94ae2174179885a84925ec"
+    },
+    {
+      "path": "rtl\\wcis\\jpeg_vendor\\axi4_lite_regs.v",
+      "sha256": "27f4353eda238689ae9b476190fc931623aa12d00ee4545d7cf94279746ab557"
+    },
+    {
+      "path": "rtl\\wcis\\jpeg_vendor\\bitstream_packer.v",
+      "sha256": "2d286b628b392d13c3d876cf93bbf301a4b5629c62f676b5d254ffadee64644c"
+    },
+    {
+      "path": "rtl\\wcis\\jpeg_vendor\\bram_sdp.v",
+      "sha256": "7b608427a48f42f33ea13e1277a5efe28a61fb26b87d197f96765b285000a4e5"
+    },
+    {
+      "path": "rtl\\wcis\\jpeg_vendor\\dct_1d.v",
+      "sha256": "9edc43739c355b223f98ccd2725cc3ac9058292adb8eb1969da036d9d8ff5061"
+    },
+    {
+      "path": "rtl\\wcis\\jpeg_vendor\\dct_2d.v",
+      "sha256": "36f79842f7451d05e3b12bd70bdc543d982ddea01adf3a3743559798054aa0f1"
+    },
+    {
+      "path": "rtl\\wcis\\jpeg_vendor\\huffman_encoder.v",
+      "sha256": "c1244467f0656a3df703bfacbfb4271c47b6a8c37be375d2debba6061f07fee4"
+    },
+    {
+      "path": "rtl\\wcis\\jpeg_vendor\\input_buffer.v",
+      "sha256": "21af206b918c31062ec1b4128aab571b3fcbdcd87ce9dd227a88da40c74a8058"
+    },
+    {
+      "path": "rtl\\wcis\\jpeg_vendor\\jfif_writer.v",
+      "sha256": "dfed40030480dc4efe46b262f2928e49875d02d06be90061cc7b5d6d0c1faab9"
+    },
+    {
+      "path": "rtl\\wcis\\jpeg_vendor\\mjpegzero_enc_top.v",
+      "sha256": "7152b270c1bf452f1b980a8da1a544de2dd837544ca90b3d0027bb99a8dd7eca"
+    },
+    {
+      "path": "rtl\\wcis\\jpeg_vendor\\quantizer.v",
+      "sha256": "5d5a9879bd8500fdc11b57ba37d890df9cb96ca3e7786ed6eac62a55b0450807"
+    },
+    {
+      "path": "rtl\\wcis\\jpeg_vendor\\rgb_to_ycbcr.v",
+      "sha256": "cffbacbfb2749e3187f32a7f426f6e169e917ba7767ec276c137a6b9ff87744a"
+    },
+    {
+      "path": "rtl\\wcis\\jpeg_vendor\\zigzag_reorder.v",
+      "sha256": "09a248986aafdf79292d2f4dc7cdd70786953a818a1ef843d737049dc6f9a701"
+    }
+  ],
+  "pins_changed": false,
+  "ps_payloads_changed": false
+}

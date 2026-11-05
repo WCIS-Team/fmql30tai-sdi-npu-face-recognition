@@ -1,0 +1,25 @@
+{
+  "passed": true,
+  "baseline_payload_equal": true,
+  "baseline_payload_bytes": 5980460,
+  "baseline_payload_sha256": "35036a216a333d0d17308474b75f41361cfe81a178e2b8ba34e721e5770ff604",
+  "files": {
+    "D:\\yzd\\tmp\\pl-jpeg-board-20261016\\boot-candidate\\ai7030_edif_top.bit": "79b1ac4d1f00a5f35a3855fa2aa44f7d06707bf76aaac53e53818040f832f162",
+    "D:\\yzd\\tmp\\face-cache-preserve-20261018\\baseline-userid-disable-icap.bit": "84d9883c50faad19543690d2eb0cad7a576907e2fa8caf7375b7cf6a9885e51f",
+    "D:\\renlianshibie\\fpga_project\\rtl\\wcis_face_customop.v": "d9cd41923dffaab3e3f48e4a38f02449b90079f45b34e56719acb501a35f54bf",
+    "D:\\yzd\\tmp\\pl-jpeg-board-20261016\\jpeg-board-routed.dcp": "74394979d942dd131c89861b6e76097a56deb54c5035c0d6c3be57e51b3c91bc",
+    "D:\\yzd\\tmp\\face-cache-board-20261018\\jpeg-board-routed.dcp": "db3080eb4b0918cecba7e854fc6e3b33afc83f8c916ccfa5e3b9346a958edf7e",
+    "D:\\yzd\\tmp\\face-cache-preserve-20261018\\baseline-face.dcp": "a86a35489d0a4c5c53da93815a6ae637d0d3e31c2a75062b59a21b50b921fca2",
+    "D:\\yzd\\tmp\\face-cache-preserve-20261018\\candidate-face.dcp": "b756435ad5c360d7f99f0b052709c4f76f10b26ca57633b15fd0cd16815b9dc6",
+    "D:\\yzd\\tmp\\face-cache-preserve-20261018\\face-native.dcp": "8edae71cbf3fe74f3dd24b4c3087edccff4381a13a0d7b2ad49d6044dd603db6",
+    "D:\\yzd\\tmp\\face-cache-preserve-20261018\\face-interface-proof.json": "fdfbf90df41e67c3715dcc5b12956f67d542eecf616cd6f93c7bd6d168739439",
+    "D:\\yzd\\tmp\\face-cache-preserve-20261018\\clock-port-equivalence.json": "4a047c59a29e36730a3bff58522188a558a7290210ddf45f0a727b892583ae2d",
+    "D:\\yzd\\tmp\\face-cache-preserve-20261018\\face-preservation-reference.tcl": "30c059c2d5517e8eac27c1abc9e10cd0c8a70c86276df598cba79771c458bbe3",
+    "D:\\yzd\\tmp\\face-cache-preserve-20261018\\pruned-clock-routing-reference.tcl": "171888bc2e6eb7340c8dc8cbf87c1facb495116684f304166c87c22f6308d23e",
+    "D:\\yzd\\tmp\\face-cache-preserve-20261018\\clock-graph.tcl": "f3f88488d3784a78547086875c9adc79509613131fc9d11dbeefa543217e6b7a",
+    "D:\\yzd\\tmp\\face-cache-preserve-20261018\\original-exceptions-proof.json": "0f371b5bfead926fb5945afa0a5a0951ac8aae1e8b953d3745f55052e458240c",
+    "D:\\yzd\\tmp\\face-cache-preserve-20261018\\route_face_pruned_clocks.tcl": "4edd4d014983859cc19d1b9fde8fc63a0883c11bfc0a33fcb009d294ee1073f3",
+    "D:\\yzd\\tmp\\face-cache-preserve-20261018\\csr_preservation_helpers.tcl": "c130e9dc11258dedf9e2b23d0e0d0e07f7d933a67a95ae28c8f033b2da1d8ca3"
+  },
+  "tool_files_unchanged": true
+}

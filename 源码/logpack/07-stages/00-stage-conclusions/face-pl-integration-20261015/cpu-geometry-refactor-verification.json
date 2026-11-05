@@ -1,0 +1,52 @@
+{
+  "scope": "CPU geometry refactor compared with actual deployed source; no new model or hardware inference",
+  "opencv": "4.10.0",
+  "baseline_sha256": "b86e18d6455f72f9c50bfcc348346001bed02de4e8b77713983ef8f1ef8ad278",
+  "refactored_sha256": "5ca0170583af1f250a1cd84bde23c48b9f53e221b72ee170e1e6158ee0e47739",
+  "cases": [
+    {
+      "file": "img1.jpg",
+      "bit_exact": true
+    },
+    {
+      "file": "img8.jpg",
+      "bit_exact": true
+    },
+    {
+      "file": "img2.jpg",
+      "bit_exact": true
+    },
+    {
+      "file": "img6.jpg",
+      "bit_exact": true
+    },
+    {
+      "file": "img7.jpg",
+      "bit_exact": true
+    },
+    {
+      "file": "img11.jpg",
+      "bit_exact": true
+    },
+    {
+      "file": "img9.jpg",
+      "bit_exact": true
+    },
+    {
+      "file": "obama.jpg",
+      "bit_exact": true
+    },
+    {
+      "file": "obama2.jpg",
+      "bit_exact": true
+    },
+    {
+      "file": "biden.jpg",
+      "bit_exact": true
+    },
+    {
+      "file": "lin-manuel-miranda.png",
+      "bit_exact": true
+    }
+  ]
+}

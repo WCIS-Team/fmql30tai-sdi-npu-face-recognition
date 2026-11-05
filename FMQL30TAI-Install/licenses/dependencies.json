@@ -1,0 +1,66 @@
+{
+  "source": "https://pypi.org/",
+  "python": "CPython 3.8",
+  "wheels": [
+    {
+      "file": "bcrypt-4.2.1-cp37-abi3-win_amd64.whl",
+      "platform": "win_amd64",
+      "sha256": "8c458cd103e6c5d1d85cf600e546a639f234964d0228909d8f8dbeebff82d526"
+    },
+    {
+      "file": "cffi-1.17.1-cp38-cp38-win_amd64.whl",
+      "platform": "win_amd64",
+      "sha256": "78122be759c3f8a014ce010908ae03364d00a1f81ab5c7f4a7a5120607ea56e1"
+    },
+    {
+      "file": "cryptography-44.0.3-cp37-abi3-win_amd64.whl",
+      "platform": "win_amd64",
+      "sha256": "3883076d5c4cc56dbef0b898a74eb6992fdac29a7b9013870b34efe4ddb39a0d"
+    },
+    {
+      "file": "paramiko-3.5.1-py3-none-any.whl",
+      "platform": "win_amd64",
+      "sha256": "43b9a0501fc2b5e70680388d9346cf252cfb7d00b0667c39e80eb43a408b8f61"
+    },
+    {
+      "file": "pycparser-2.22-py3-none-any.whl",
+      "platform": "win_amd64",
+      "sha256": "c3702b6d3dd8c7abc1afa565d7e63d53a1d0bd86cdc24edd75470f4de499cfcc"
+    },
+    {
+      "file": "PyNaCl-1.5.0-cp36-abi3-win_amd64.whl",
+      "platform": "win_amd64",
+      "sha256": "20f42270d27e1b6a29f54032090b972d97f0a1b0948cc52392041ef7831fee93"
+    },
+    {
+      "file": "bcrypt-4.2.1-cp37-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+      "platform": "manylinux2014_x86_64",
+      "sha256": "8dbd0747208912b1e4ce730c6725cb56c07ac734b3629b60d4398f082ea718ad"
+    },
+    {
+      "file": "cffi-1.17.1-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+      "platform": "manylinux2014_x86_64",
+      "sha256": "0e2b1fac190ae3ebfe37b979cc1ce69c81f4e4fe5746bb401dca63a9062cdaf1"
+    },
+    {
+      "file": "cryptography-44.0.3-cp37-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+      "platform": "manylinux2014_x86_64",
+      "sha256": "58968d331425a6f9eedcee087f77fd3c927c88f55368f43ff7e0a19891f2642c"
+    },
+    {
+      "file": "paramiko-3.5.1-py3-none-any.whl",
+      "platform": "manylinux2014_x86_64",
+      "sha256": "43b9a0501fc2b5e70680388d9346cf252cfb7d00b0667c39e80eb43a408b8f61"
+    },
+    {
+      "file": "pycparser-2.22-py3-none-any.whl",
+      "platform": "manylinux2014_x86_64",
+      "sha256": "c3702b6d3dd8c7abc1afa565d7e63d53a1d0bd86cdc24edd75470f4de499cfcc"
+    },
+    {
+      "file": "PyNaCl-1.5.0-cp36-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+      "platform": "manylinux2014_x86_64",
+      "sha256": "06b8f6fa7f5de8d5d2f7573fe8c863c051225a27b61e6860fd047b1775807858"
+    }
+  ]
+}

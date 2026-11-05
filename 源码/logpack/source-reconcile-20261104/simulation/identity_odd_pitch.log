@@ -1,0 +1,2 @@
+PASS face_customop pixels=117 native_reads=8 writes=8 CDC, GP, immutable descriptor, DDR outputs checked
+D:\renlianshibie\fpga_project\sim\tb_face_customop.sv:205: $finish called at 20291000 (1ps)

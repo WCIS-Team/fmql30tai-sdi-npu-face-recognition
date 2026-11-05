@@ -1,0 +1,133 @@
+{
+  "reference": "D:\\yzd\\tmp\\face-cache-board-20261018\\case",
+  "hash_verified_source_files": 101,
+  "design_inputs": 113,
+  "constraints": [
+    "constrs_1/ai7030.xdc",
+    "constrs_1/impl_constraints.xdc",
+    "constrs_1/emmc_timing.xdc",
+    "constrs_1/fmql30tai_full_sdi_refclk.xdc"
+  ],
+  "changes": [
+    {
+      "path": "fpai_demo_vivado.srcs/sources_1/bd/ps_ai/ps_ai.bd",
+      "before": "78f5599b076e7f7389293606e7cf8fac5674f344a89ad86283944356a50854a4",
+      "after": "5a744418a90d6ec5c82f70ddc66a8b43aeda7985f6f8beb4e435229ed93a0968"
+    },
+    {
+      "path": "rtl/wcis/jpeg_vendor/axi4_lite_regs.v",
+      "before": null,
+      "after": "27f4353eda238689ae9b476190fc931623aa12d00ee4545d7cf94279746ab557"
+    },
+    {
+      "path": "rtl/wcis/jpeg_vendor/bitstream_packer.v",
+      "before": null,
+      "after": "2d286b628b392d13c3d876cf93bbf301a4b5629c62f676b5d254ffadee64644c"
+    },
+    {
+      "path": "rtl/wcis/jpeg_vendor/bram_sdp.v",
+      "before": null,
+      "after": "7b608427a48f42f33ea13e1277a5efe28a61fb26b87d197f96765b285000a4e5"
+    },
+    {
+      "path": "rtl/wcis/jpeg_vendor/dct_1d.v",
+      "before": null,
+      "after": "9edc43739c355b223f98ccd2725cc3ac9058292adb8eb1969da036d9d8ff5061"
+    },
+    {
+      "path": "rtl/wcis/jpeg_vendor/dct_2d.v",
+      "before": null,
+      "after": "36f79842f7451d05e3b12bd70bdc543d982ddea01adf3a3743559798054aa0f1"
+    },
+    {
+      "path": "rtl/wcis/jpeg_vendor/huffman_encoder.v",
+      "before": null,
+      "after": "c1244467f0656a3df703bfacbfb4271c47b6a8c37be375d2debba6061f07fee4"
+    },
+    {
+      "path": "rtl/wcis/jpeg_vendor/input_buffer.v",
+      "before": null,
+      "after": "21af206b918c31062ec1b4128aab571b3fcbdcd87ce9dd227a88da40c74a8058"
+    },
+    {
+      "path": "rtl/wcis/jpeg_vendor/jfif_writer.v",
+      "before": null,
+      "after": "dfed40030480dc4efe46b262f2928e49875d02d06be90061cc7b5d6d0c1faab9"
+    },
+    {
+      "path": "rtl/wcis/jpeg_vendor/mjpegzero_enc_top.v",
+      "before": null,
+      "after": "7152b270c1bf452f1b980a8da1a544de2dd837544ca90b3d0027bb99a8dd7eca"
+    },
+    {
+      "path": "rtl/wcis/jpeg_vendor/quantizer.v",
+      "before": null,
+      "after": "5d5a9879bd8500fdc11b57ba37d890df9cb96ca3e7786ed6eac62a55b0450807"
+    },
+    {
+      "path": "rtl/wcis/jpeg_vendor/rgb_to_ycbcr.v",
+      "before": null,
+      "after": "cffbacbfb2749e3187f32a7f426f6e169e917ba7767ec276c137a6b9ff87744a"
+    },
+    {
+      "path": "rtl/wcis/wcis_face_customop.v",
+      "before": "fe5799617f041805192ba661d19e6bdf2e531987d896eeb88ad964d5823e3a44",
+      "after": "d9cd41923dffaab3e3f48e4a38f02449b90079f45b34e56719acb501a35f54bf"
+    },
+    {
+      "path": "rtl/wcis/wcis_jpeg_compressor.v",
+      "before": null,
+      "after": "22819f77f672018e5a7ff8c2942011ff3d114cd89d94ae2174179885a84925ec"
+    },
+    {
+      "path": "rtl/wcis/wcis_jpeg_customop.v",
+      "before": null,
+      "after": "255764009fb3ccf029766e14b77638071299c79265e9e64c37da72f3a11b45e3"
+    },
+    {
+      "path": "rtl/wcis/wcis_recording_customop.v",
+      "before": null,
+      "after": "46b73d25292b6adb37f8617f9f4a07c896331e8506dddacb37ad85c869fb74a0"
+    },
+    {
+      "path": "rtl/wcis/jpeg_vendor/zigzag_reorder.v",
+      "before": null,
+      "after": "09a248986aafdf79292d2f4dc7cdd70786953a818a1ef843d737049dc6f9a701"
+    },
+    {
+      "path": "rtl/ps_ai_peripheral.sv",
+      "before": "7aafd97ca92818c9713cb95785f048f1f9f72f4959fcba81ac414c7f5b421d1d",
+      "after": "5ffb146990704af1bb50a52c230b130313b0b6d34b72095e0b628c41912a4577"
+    },
+    {
+      "path": "rtl/ps_ai_wrapper.sv",
+      "before": "fb4a10daf8891317ff9f34943b1723febaa383232bfd74b11f542277ad71063c",
+      "after": "f086fa7ed23983bc5f32d2e83d4d937ecf61e6666b4bb85d411c388a72c73750"
+    },
+    {
+      "path": "rtl/ai7030_edif_top.v",
+      "before": "1faf80971c9594a3619d687a7e81394f85001eb629db05d39069e13803c8546d",
+      "after": "56c0c76cddcb9dad7773f5f569e5757eaebf5620f81da1930aa4e7bc71fa3ce5"
+    },
+    {
+      "path": "constrs_1/ai7030.xdc",
+      "before": "6a9af6838b8d35cc5290cf4e51a6ff22abf62ba66facf4d84f545520796b778b",
+      "after": "c1e2f73d3c273bd9152f244149b56296595607a8785a24111a876b060143c192"
+    },
+    {
+      "path": "constrs_1/impl_constraints.xdc",
+      "before": "2900eeb7446af28c3f23105ee6811e832fe9f4c35ccc5e3f5d70001a62710741",
+      "after": "fcc09a3d2778d63beba0cdf0b3e32e4a7262b876e7e8deec982a7892d6a1d718"
+    },
+    {
+      "path": "constrs_1/emmc_timing.xdc",
+      "before": null,
+      "after": "dfb410ca4c1bb377d0a4ec6f50f7c8072733f8ed4e624bc2f01d322e1ecb1df0"
+    },
+    {
+      "path": "rtl/ip/mig_7series_0/mig_7series_0.xml",
+      "before": "eca2268d16fb91a2a000ab8480484faa29a1becec68601c85e33e65dfc29d749",
+      "after": "1b33213031f17dfee6796466825b39a99260fca98be5f297a6e98b0ba4bec65f"
+    }
+  ]
+}

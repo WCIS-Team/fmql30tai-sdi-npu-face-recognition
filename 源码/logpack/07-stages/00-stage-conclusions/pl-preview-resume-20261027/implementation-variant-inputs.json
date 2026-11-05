@@ -1,0 +1,19 @@
+{
+  "name": "Fresh fabric routing with exact private DDR preservation",
+  "layout_guide": "D:\\yzd\\tmp\\pl-preview-resume-20261027\\source-build\\implementation-default-interrupted\\ai7030_edif_top_physopt.dcp",
+  "guide_is_not_routed_or_deployed": true,
+  "extra_inputs": {
+    "D:\\yzd\\tmp\\pl-preview-resume-20261027\\implement_fresh_source.tcl": "c2237c9a690f40bdcc57c98f68dbdf69fe00c3ffd8022de86692f708d71ea764",
+    "D:\\yzd\\tmp\\pl-preview-resume-20261027\\implement_fresh_flow.tcl": "afbde72a2db2f2538955f644c8192f83c3f625ccff06b2b838c65954f60a0041",
+    "D:\\yzd\\tmp\\pl-preview-resume-20261027\\clear_fabric_routes.tcl": "23c29bc119e4b5cb9319dba96c0b0fd4cfd82d587d68ba342e96c8052737b0a3",
+    "D:\\yzd\\tmp\\pl-preview-resume-20261027\\fresh-flow-derivation.json": "a4ca50cea0276d1a36c220c63461ff5d04e01d657771f8446fa5a1ff529c44cc",
+    "D:\\yzd\\tmp\\pl-preview-resume-20261027\\source-build\\implementation-default-interrupted\\ai7030_edif_top_physopt.dcp": "df05690f4ee65dfa81bfeed716432ccc404ee443f0955f12bbde7ee7b01a0fcc",
+    "D:\\yzd\\tmp\\pl-preview-resume-20261027\\source-build\\implementation-default-interrupted\\runme.log": "e6b550aecce597f16dfad26cbcda1382c667632ce8b165c7e4452316936831e5",
+    "D:\\yzd\\tmp\\pl-preview-resume-20261027\\source-build\\implementation-default-interrupted\\interruption-observation.json": "cf99545e5acc6d7ef709c642f437b7201b1cad25be5abd90fb1c901ca7f0e3a8",
+    "D:\\yzd\\tmp\\pl-preview-resume-20261027\\ddr-fixed-inspection.txt": "4d0b642cc7620cf82ba2e770b59161ccb1581ab8a46f004ca941226d06fe6dd9",
+    "D:\\yzd\\tmp\\pl-preview-resume-20261027\\inspect_ddr_fixed-receipt.json": "8022a5d21516dcdeb723bf518eae01cd1153607363099b0e49a902a7880b569b",
+    "D:\\yzd\\tmp\\pl-preview-resume-20261027\\source-build\\implementation-fresh-intrasite-check-failed\\implement_fresh_source-receipt.json": "9a71e18f780ef5133f6ba9826aeab3f304148d18fec6ac34c26ea57804cff4bd",
+    "D:\\yzd\\tmp\\pl-preview-resume-20261027\\source-build\\implementation-fresh-intrasite-check-failed\\runme.log": "b79660fafc52077d39759033e83e8ffd612ac5a80b1f5eb09c90689fbdd86605"
+  },
+  "intrasite_guard_revision": "Exclude only DDR INTRASITE nets whose ROUTE and FIXED_ROUTE contain no route nodes; the actual fabric DDR route protection remains mandatory."
+}

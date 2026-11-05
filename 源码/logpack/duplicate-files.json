@@ -1,0 +1,1531 @@
+{
+  "date": "2026-11-04",
+  "paths_relative_to": "submission_root",
+  "files": [
+    {
+      "removed": "wcis-official/submission/reference_release/app/camera-owner-build.json",
+      "retained": "board_runtime/reference_release/app/camera-owner-build.json",
+      "sha256": "dae846be4c2523da68ca6b19f3e2e9e687eeffc33fe161052575142c9c525187"
+    },
+    {
+      "removed": "wcis-official/submission/reference_release/app/camera_interlock.py",
+      "retained": "board_runtime/reference_release/app/camera_interlock.py",
+      "sha256": "fa00528979b49b7aba0ba082f84e7cf2b23121bbbdab622fe0bd948087929b6a"
+    },
+    {
+      "removed": "wcis-official/submission/reference_release/app/camera_owner_runtime.py",
+      "retained": "board_runtime/reference_release/app/camera_owner_runtime.py",
+      "sha256": "c6ad4f990c467fa5475d918626c1e0271ad1a1ef591739e903bbb704f3e6d91a"
+    },
+    {
+      "removed": "wcis-official/submission/reference_release/app/camera_requests.py",
+      "retained": "board_runtime/reference_release/app/camera_requests.py",
+      "sha256": "82ecb6a22ef1ec2a5e3048b02d5581c63828fa892b128a66ece196bd30bec406"
+    },
+    {
+      "removed": "wcis-official/submission/reference_release/app/external_h264.py",
+      "retained": "board_runtime/reference_release/app/external_h264.py",
+      "sha256": "3989cfc80777f12ae24a48f96679fab72b19c4bd6d532b8ef4cd32881d404253"
+    },
+    {
+      "removed": "wcis-official/submission/reference_release/app/external_preview.py",
+      "retained": "board_runtime/reference_release/app/external_preview.py",
+      "sha256": "761a2ca86d5c6cba80636e2a69d13055bbb943e5a0b8e6c35422dbed8a26184e"
+    },
+    {
+      "removed": "wcis-official/submission/reference_release/app/frame_stream_protocol.py",
+      "retained": "board_runtime/reference_release/app/frame_stream_protocol.py",
+      "sha256": "cf9c2a026db39dd60059fd2204388c2f8ae3a6b58322b69ed5d8e14dc36bf142"
+    },
+    {
+      "removed": "wcis-official/submission/reference_release/app/gallery.py",
+      "retained": "board_runtime/reference_release/app/gallery.py",
+      "sha256": "7f1213ee54300a58c90841541b1f2c0c6a7b7f77760ff3ca46a5a7eeb159f66a"
+    },
+    {
+      "removed": "wcis-official/submission/reference_release/app/h264_fragments.py",
+      "retained": "board_runtime/reference_release/app/h264_fragments.py",
+      "sha256": "428d0fe4c5951ed6b95da4d210f702a423b5b5b2a68d5c3ea58a596421378e45"
+    },
+    {
+      "removed": "wcis-official/submission/reference_release/app/h264_live.py",
+      "retained": "board_runtime/reference_release/app/h264_live.py",
+      "sha256": "8539fa6e530bf4c0ec33b7b957c4b4f267328448acfe24f2924812ef573f1aff"
+    },
+    {
+      "removed": "wcis-official/submission/reference_release/app/h264_media.py",
+      "retained": "board_runtime/reference_release/app/h264_media.py",
+      "sha256": "db536ea76692a70797edea732cbf5652a04af864cc99989566f27ea1cff72693"
+    },
+    {
+      "removed": "wcis-official/submission/reference_release/app/h264_packager.py",
+      "retained": "board_runtime/reference_release/app/h264_packager.py",
+      "sha256": "46450c376fb262431708daca0689834615d16599e67427d29c860aab5d5f8687"
+    },
+    {
+      "removed": "wcis-official/submission/reference_release/app/h264_player.js",
+      "retained": "board_runtime/reference_release/app/h264_player.js",
+      "sha256": "d1b7c2c0ca9bb93b0cbeddbf1743fe29298a080f57f0259d3e1a4906fc4db310"
+    },
+    {
+      "removed": "wcis-official/submission/reference_release/app/migrate_gallery.py",
+      "retained": "board_runtime/reference_release/app/migrate_gallery.py",
+      "sha256": "a4ee9a2590937dc03bbb1a9441effeb350a3080bd0cedd91111c920086cc4a77"
+    },
+    {
+      "removed": "wcis-official/submission/reference_release/app/model_backend_runtime.py",
+      "retained": "board_runtime/reference_release/app/model_backend_runtime.py",
+      "sha256": "95454dfe890462a947cf36e00b8b09f3e66311c99199fdfe94d05fe91f610d91"
+    },
+    {
+      "removed": "wcis-official/submission/reference_release/app/native_forward.py",
+      "retained": "board_runtime/reference_release/app/native_forward.py",
+      "sha256": "1576c070595a2b8aaeff3779e2b2c7490064e026db95bf8994cd89c290216c5a"
+    },
+    {
+      "removed": "wcis-official/submission/reference_release/app/owner_pad.py",
+      "retained": "board_runtime/reference_release/app/owner_pad.py",
+      "sha256": "748fc2b6d38f8b9011705032778e7a1bc2c792bc8822a90367fbd882822405d7"
+    },
+    {
+      "removed": "wcis-official/submission/reference_release/app/persistent_gallery.py",
+      "retained": "board_runtime/reference_release/app/persistent_gallery.py",
+      "sha256": "f0532065c87292027b2568f708eb97760f30753392c3a2fa0286ea649a59eee6"
+    },
+    {
+      "removed": "wcis-official/submission/reference_release/app/pl_preprocess.py",
+      "retained": "board_runtime/reference_release/app/pl_preprocess.py",
+      "sha256": "c59102c22f716be4b74da48caa410f01e28a46ac6d7012d158d86fc09f31fb9b"
+    },
+    {
+      "removed": "wcis-official/submission/reference_release/app/receive_video_stream.py",
+      "retained": "board_runtime/reference_release/app/receive_video_stream.py",
+      "sha256": "c69da62197d1a6603654eb40790789a9e64f5c6ff8aba853fefe58a6ae56f877"
+    },
+    {
+      "removed": "wcis-official/submission/reference_release/app/recognize_frame.py",
+      "retained": "board_runtime/reference_release/app/recognize_frame.py",
+      "sha256": "8a7327dffe5c4680cec4711867bf42318c7c907e8ad3b4230690ab94faf8e0f7"
+    },
+    {
+      "removed": "wcis-official/submission/reference_release/app/recognize_photo.py",
+      "retained": "board_runtime/reference_release/app/recognize_photo.py",
+      "sha256": "a0fe870971b8dfb18adcd5b25e680e7c6c2e7f657dc222bddc8dd0d67aa93515"
+    },
+    {
+      "removed": "wcis-official/submission/reference_release/app/run_frame_replay.py",
+      "retained": "board_runtime/reference_release/app/run_frame_replay.py",
+      "sha256": "5146c12c051bdcf9d857928caeb9e42f8237a3f0ad2bc30f26d61183fe69d070"
+    },
+    {
+      "removed": "wcis-official/submission/reference_release/app/run_photos.py",
+      "retained": "board_runtime/reference_release/app/run_photos.py",
+      "sha256": "5ca0170583af1f250a1cd84bde23c48b9f53e221b72ee170e1e6158ee0e47739"
+    },
+    {
+      "removed": "wcis-official/submission/reference_release/app/serve_photos.py",
+      "retained": "board_runtime/reference_release/app/serve_photos.py",
+      "sha256": "e95dd01f68df6d28398889c6e356d7b246f521791d9e5ebfc518161486aa8fd5"
+    },
+    {
+      "removed": "wcis-official/submission/reference_release/app/vpu_live_server.py",
+      "retained": "board_runtime/reference_release/app/vpu_live_server.py",
+      "sha256": "1ce4e7d2fcb03ea5cd9e17eb1f042611769d3b725cccdee50db2592fdb47f6f7"
+    },
+    {
+      "removed": "wcis-official/submission/reference_release/identity/models.json",
+      "retained": "board_runtime/reference_release/identity/models.json",
+      "sha256": "a49114c2174ff0b132e4116fcb94978ef53566e4ef7edae583a186d09ef0a88e"
+    },
+    {
+      "removed": "wcis-official/submission/reference_release/pad/MiniFASNetV1SE_ZG.json",
+      "retained": "board_runtime/reference_release/pad/MiniFASNetV1SE_ZG.json",
+      "sha256": "70706238ccfc39b809727d58ffa3e1ad3049f6b4bd83c88be1b1a2600c9f420a"
+    },
+    {
+      "removed": "wcis-official/submission/reference_release/pad/MiniFASNetV1SE_ZG.raw",
+      "retained": "board_runtime/reference_release/pad/MiniFASNetV1SE_ZG.raw",
+      "sha256": "d8a69d551da8c04c830588672476373e0616065e05e8af88b88adb109ee6065e"
+    },
+    {
+      "removed": "wcis-official/submission/reference_release/pad/MiniFASNetV2_ZG.json",
+      "retained": "board_runtime/reference_release/pad/MiniFASNetV2_ZG.json",
+      "sha256": "735bce7ce97d7e269aba9211dcd6f9a6ef9fd09247880cf0e75f7ba60c109d85"
+    },
+    {
+      "removed": "wcis-official/submission/reference_release/pad/MiniFASNetV2_ZG.raw",
+      "retained": "board_runtime/reference_release/pad/MiniFASNetV2_ZG.raw",
+      "sha256": "9e0cd8d8a4f2fe4dfb9a01239a06453f082fbde0ccc7643d06e303b5ba0ad0c0"
+    },
+    {
+      "removed": "wcis-official/submission/reference_release/pad/pad-models.json",
+      "retained": "board_runtime/reference_release/pad/pad-models.json",
+      "sha256": "4bd437b9504e8bfbd5333f0b4b651b263058155e720f2b8a62aeef1c15d1dfd5"
+    },
+    {
+      "removed": "wcis-official/submission/reference_release/recorder/h264_fragments.py",
+      "retained": "board_runtime/reference_release/recorder/h264_fragments.py",
+      "sha256": "428d0fe4c5951ed6b95da4d210f702a423b5b5b2a68d5c3ea58a596421378e45"
+    },
+    {
+      "removed": "wcis-official/submission/reference_release/recorder/h264_media.py",
+      "retained": "board_runtime/reference_release/recorder/h264_media.py",
+      "sha256": "db536ea76692a70797edea732cbf5652a04af864cc99989566f27ea1cff72693"
+    },
+    {
+      "removed": "wcis-official/submission/reference_release/recorder/recording_compression.py",
+      "retained": "board_runtime/reference_release/recorder/recording_compression.py",
+      "sha256": "6587666ebfc0d29344d09d3bffcce57a83ca05869f15dd411f03e9a8d7d24f67"
+    },
+    {
+      "removed": "wcis-official/submission/reference_release/recorder/recording_library.py",
+      "retained": "board_runtime/reference_release/recorder/recording_library.py",
+      "sha256": "c605e5b9a5456c2ff8c114eb302975bf40ac993faa905efc3e2c0c4694de5b2a"
+    },
+    {
+      "removed": "wcis-official/submission/reference_release/recorder/recording_service.py",
+      "retained": "board_runtime/reference_release/recorder/recording_service.py",
+      "sha256": "23cf748eb0969fab82a19b58a8eb9a50f691bb46107ec73cae4f0cfdcd05f533"
+    },
+    {
+      "removed": "wcis-official/submission/reference_release/recorder/vpu_live_server.py",
+      "retained": "board_runtime/reference_release/recorder/vpu_live_server.py",
+      "sha256": "1ce4e7d2fcb03ea5cd9e17eb1f042611769d3b725cccdee50db2592fdb47f6f7"
+    },
+    {
+      "removed": "wcis-official/submission/reference_release/app/model_backend/face_pad.py",
+      "retained": "board_runtime/reference_release/app/model_backend/face_pad.py",
+      "sha256": "b35f601f19bbeb40210a0d133b5dc36a9629b9564715eb53d931eafc4a123628"
+    },
+    {
+      "removed": "wcis-official/submission/reference_release/identity/models/mobilefacenet_ZG.json",
+      "retained": "board_runtime/reference_release/identity/models/mobilefacenet_ZG.json",
+      "sha256": "2ca6526b367f59758c4cbac425f03bde1a85170736e8d085f1772c231d928e21"
+    },
+    {
+      "removed": "wcis-official/submission/reference_release/identity/models/mobilefacenet_ZG.raw",
+      "retained": "board_runtime/reference_release/identity/models/mobilefacenet_ZG.raw",
+      "sha256": "f29c647ed8b40e0b905aa92eef46ab924bea35b8120c9537e7b76cb3a6d29321"
+    },
+    {
+      "removed": "wcis-official/submission/reference_release/identity/models/yunet_ZG.json",
+      "retained": "board_runtime/reference_release/identity/models/yunet_ZG.json",
+      "sha256": "e363092cb78c44ac12c53b2f65a32a8cf967fbecda4fea670997654e4ee75c37"
+    },
+    {
+      "removed": "wcis-official/submission/reference_release/identity/models/yunet_ZG.raw",
+      "retained": "board_runtime/reference_release/identity/models/yunet_ZG.raw",
+      "sha256": "a4ff98093ca4f46acf982237bf758845c406480fffb4286a3cd35593d969f9cc"
+    },
+    {
+      "removed": "wcis-official/submission/reference_release/identity/run-01/verification.json",
+      "retained": "board_runtime/reference_release/identity/run-01/verification.json",
+      "sha256": "1d6ab3c54eb646c3e4e003e84fbf2f2f8962db091887f69847f39a3ba56d9c89"
+    },
+    {
+      "removed": "wcis-official/submission/board/board.example.json",
+      "retained": "board_runtime/board/board.example.json",
+      "sha256": "715b2214397a025bc5c9e284aef5d89b77acf5af0f419329418b871b41611fb5"
+    },
+    {
+      "removed": "wcis-official/submission/board/boot_prepare.py",
+      "retained": "board_runtime/board/boot_prepare.py",
+      "sha256": "55c940a1253187eb792bc5bacc2bc806c7d5322673f3b3af21e14797624a3f93"
+    },
+    {
+      "removed": "wcis-official/submission/board/mount_face_store.py",
+      "retained": "board_runtime/board/mount_face_store.py",
+      "sha256": "5df5f1c1e614d14fd7af803b61d7ac3af68e853f3eb2ffaf2575c9d6ab06fec3"
+    },
+    {
+      "removed": "wcis-official/submission/board/render_install.py",
+      "retained": "board_runtime/board/render_install.py",
+      "sha256": "1cadbec6a81f8b9add9a13fa3f239fc6ab7144a888aef9d8520889ad20f7c0ca"
+    },
+    {
+      "removed": "logpack/logpack/02-timing-and-drc/accepted.json",
+      "retained": "logpack/accepted-implementation/accepted.json",
+      "sha256": "441a0fecf344f5ab5f6b8b8fc9a3571bb7ddf0742e7dc388b9530e04cb5a387d"
+    },
+    {
+      "removed": "logpack/logpack/02-timing-and-drc/build-and-board-manifest.json",
+      "retained": "logpack/accepted-implementation/build-and-board-manifest.json",
+      "sha256": "536d406a583a4e796ab2f3a3925244a3ef7f32a31f3860a0d6d8fb5450610d76"
+    },
+    {
+      "removed": "logpack/logpack/06-frozen-solution-stage/build-and-board-manifest.json",
+      "retained": "logpack/accepted-implementation/build-and-board-manifest.json",
+      "sha256": "536d406a583a4e796ab2f3a3925244a3ef7f32a31f3860a0d6d8fb5450610d76"
+    },
+    {
+      "removed": "logpack/logpack/07-stages/01-frozen-solution/sdi-refclk-fix-20261020/build-and-board-manifest.json",
+      "retained": "logpack/accepted-implementation/build-and-board-manifest.json",
+      "sha256": "536d406a583a4e796ab2f3a3925244a3ef7f32a31f3860a0d6d8fb5450610d76"
+    },
+    {
+      "removed": "wcis-official/submission/evidence/stages/sdi-refclk-fix-20261020/build-and-board-manifest.json",
+      "retained": "logpack/accepted-implementation/build-and-board-manifest.json",
+      "sha256": "536d406a583a4e796ab2f3a3925244a3ef7f32a31f3860a0d6d8fb5450610d76"
+    },
+    {
+      "removed": "logpack/logpack/02-timing-and-drc/bus-skew.rpt",
+      "retained": "logpack/accepted-implementation/bus-skew.rpt",
+      "sha256": "c497320187ce0686f0be1aafc7762924d6650dd1ba87d89a982f595e77c496cf"
+    },
+    {
+      "removed": "logpack/logpack/06-frozen-solution-stage/bus-skew.rpt",
+      "retained": "logpack/accepted-implementation/bus-skew.rpt",
+      "sha256": "c497320187ce0686f0be1aafc7762924d6650dd1ba87d89a982f595e77c496cf"
+    },
+    {
+      "removed": "logpack/logpack/07-stages/01-frozen-solution/sdi-refclk-fix-20261020/bus-skew.rpt",
+      "retained": "logpack/accepted-implementation/bus-skew.rpt",
+      "sha256": "c497320187ce0686f0be1aafc7762924d6650dd1ba87d89a982f595e77c496cf"
+    },
+    {
+      "removed": "logpack/logpack/02-timing-and-drc/candidate-proof.json",
+      "retained": "logpack/accepted-implementation/candidate-proof.json",
+      "sha256": "5f7fd6c4bb8526c5af4b1d37eda4a497c3594ff9d6ca4349d887a49b4ce219f4"
+    },
+    {
+      "removed": "logpack/logpack/06-frozen-solution-stage/candidate-proof.json",
+      "retained": "logpack/accepted-implementation/candidate-proof.json",
+      "sha256": "5f7fd6c4bb8526c5af4b1d37eda4a497c3594ff9d6ca4349d887a49b4ce219f4"
+    },
+    {
+      "removed": "logpack/logpack/07-stages/01-frozen-solution/sdi-refclk-fix-20261020/candidate-proof.json",
+      "retained": "logpack/accepted-implementation/candidate-proof.json",
+      "sha256": "5f7fd6c4bb8526c5af4b1d37eda4a497c3594ff9d6ca4349d887a49b4ce219f4"
+    },
+    {
+      "removed": "wcis-official/submission/evidence/stages/sdi-refclk-fix-20261020/candidate-proof.json",
+      "retained": "logpack/accepted-implementation/candidate-proof.json",
+      "sha256": "5f7fd6c4bb8526c5af4b1d37eda4a497c3594ff9d6ca4349d887a49b4ce219f4"
+    },
+    {
+      "removed": "logpack/logpack/02-timing-and-drc/candidate.json",
+      "retained": "logpack/accepted-implementation/candidate.json",
+      "sha256": "584a35a5b277937ac04eff6046884e8c7a1d4ce58a6b0b264d286d43f6bb0507"
+    },
+    {
+      "removed": "logpack/logpack/06-frozen-solution-stage/candidate.json",
+      "retained": "logpack/accepted-implementation/candidate.json",
+      "sha256": "584a35a5b277937ac04eff6046884e8c7a1d4ce58a6b0b264d286d43f6bb0507"
+    },
+    {
+      "removed": "logpack/logpack/07-stages/01-frozen-solution/sdi-refclk-fix-20261020/candidate.json",
+      "retained": "logpack/accepted-implementation/candidate.json",
+      "sha256": "584a35a5b277937ac04eff6046884e8c7a1d4ce58a6b0b264d286d43f6bb0507"
+    },
+    {
+      "removed": "wcis-official/submission/evidence/stages/sdi-refclk-fix-20261020/candidate.json",
+      "retained": "logpack/accepted-implementation/candidate.json",
+      "sha256": "584a35a5b277937ac04eff6046884e8c7a1d4ce58a6b0b264d286d43f6bb0507"
+    },
+    {
+      "removed": "logpack/logpack/02-timing-and-drc/drc.rpt",
+      "retained": "logpack/accepted-implementation/drc.rpt",
+      "sha256": "efded5d8c0dac697d26e79fe61c044cf20006ccb2b1536c7b49be8023ea9e6a2"
+    },
+    {
+      "removed": "logpack/logpack/06-frozen-solution-stage/drc.rpt",
+      "retained": "logpack/accepted-implementation/drc.rpt",
+      "sha256": "efded5d8c0dac697d26e79fe61c044cf20006ccb2b1536c7b49be8023ea9e6a2"
+    },
+    {
+      "removed": "logpack/logpack/07-stages/01-frozen-solution/sdi-refclk-fix-20261020/drc.rpt",
+      "retained": "logpack/accepted-implementation/drc.rpt",
+      "sha256": "efded5d8c0dac697d26e79fe61c044cf20006ccb2b1536c7b49be8023ea9e6a2"
+    },
+    {
+      "removed": "logpack/logpack/02-timing-and-drc/finish_ground.log",
+      "retained": "logpack/accepted-implementation/finish_ground.log",
+      "sha256": "1193a837311553ca4b4ebb124ab7883bc6628b8a1ad7acf86cc6ddb4d47b5138"
+    },
+    {
+      "removed": "logpack/logpack/06-frozen-solution-stage/finish_ground.log",
+      "retained": "logpack/accepted-implementation/finish_ground.log",
+      "sha256": "1193a837311553ca4b4ebb124ab7883bc6628b8a1ad7acf86cc6ddb4d47b5138"
+    },
+    {
+      "removed": "logpack/logpack/07-stages/01-frozen-solution/sdi-refclk-fix-20261020/finish_ground.log",
+      "retained": "logpack/accepted-implementation/finish_ground.log",
+      "sha256": "1193a837311553ca4b4ebb124ab7883bc6628b8a1ad7acf86cc6ddb4d47b5138"
+    },
+    {
+      "removed": "logpack/logpack/02-timing-and-drc/generate.log",
+      "retained": "logpack/accepted-implementation/generate.log",
+      "sha256": "2dc6d512c3dc82cb5d53934fbf07604aa262b0decb0aee5b8dbbc949b339aa33"
+    },
+    {
+      "removed": "logpack/logpack/06-frozen-solution-stage/generate.log",
+      "retained": "logpack/accepted-implementation/generate.log",
+      "sha256": "2dc6d512c3dc82cb5d53934fbf07604aa262b0decb0aee5b8dbbc949b339aa33"
+    },
+    {
+      "removed": "logpack/logpack/07-stages/01-frozen-solution/sdi-refclk-fix-20261020/generate.log",
+      "retained": "logpack/accepted-implementation/generate.log",
+      "sha256": "2dc6d512c3dc82cb5d53934fbf07604aa262b0decb0aee5b8dbbc949b339aa33"
+    },
+    {
+      "removed": "logpack/logpack/02-timing-and-drc/input-proof.json",
+      "retained": "logpack/accepted-implementation/input-proof.json",
+      "sha256": "53f13602645aca80e5d143758fc84eb27b7b1cb9227ae96027b29b9287f4f665"
+    },
+    {
+      "removed": "logpack/logpack/06-frozen-solution-stage/input-proof.json",
+      "retained": "logpack/accepted-implementation/input-proof.json",
+      "sha256": "53f13602645aca80e5d143758fc84eb27b7b1cb9227ae96027b29b9287f4f665"
+    },
+    {
+      "removed": "logpack/logpack/07-stages/01-frozen-solution/sdi-refclk-fix-20261020/input-proof.json",
+      "retained": "logpack/accepted-implementation/input-proof.json",
+      "sha256": "53f13602645aca80e5d143758fc84eb27b7b1cb9227ae96027b29b9287f4f665"
+    },
+    {
+      "removed": "wcis-official/submission/evidence/stages/sdi-refclk-fix-20261020/input-proof.json",
+      "retained": "logpack/accepted-implementation/input-proof.json",
+      "sha256": "53f13602645aca80e5d143758fc84eb27b7b1cb9227ae96027b29b9287f4f665"
+    },
+    {
+      "removed": "logpack/logpack/02-timing-and-drc/package-gate.json",
+      "retained": "logpack/accepted-implementation/package-gate.json",
+      "sha256": "0a5ad8078eb390dfbefadd814b6c654b2621ed2c90da227974805342106d0582"
+    },
+    {
+      "removed": "logpack/logpack/06-frozen-solution-stage/package-gate.json",
+      "retained": "logpack/accepted-implementation/package-gate.json",
+      "sha256": "0a5ad8078eb390dfbefadd814b6c654b2621ed2c90da227974805342106d0582"
+    },
+    {
+      "removed": "logpack/logpack/07-stages/01-frozen-solution/sdi-refclk-fix-20261020/package-gate.json",
+      "retained": "logpack/accepted-implementation/package-gate.json",
+      "sha256": "0a5ad8078eb390dfbefadd814b6c654b2621ed2c90da227974805342106d0582"
+    },
+    {
+      "removed": "wcis-official/submission/evidence/stages/sdi-refclk-fix-20261020/package-gate.json",
+      "retained": "logpack/accepted-implementation/package-gate.json",
+      "sha256": "0a5ad8078eb390dfbefadd814b6c654b2621ed2c90da227974805342106d0582"
+    },
+    {
+      "removed": "logpack/logpack/02-timing-and-drc/repair.log",
+      "retained": "logpack/accepted-implementation/repair.log",
+      "sha256": "9e361c916f9f0717e74c3c5b734ce9b385ca9a7aa057827232410cc8586aac28"
+    },
+    {
+      "removed": "logpack/logpack/06-frozen-solution-stage/repair.log",
+      "retained": "logpack/accepted-implementation/repair.log",
+      "sha256": "9e361c916f9f0717e74c3c5b734ce9b385ca9a7aa057827232410cc8586aac28"
+    },
+    {
+      "removed": "logpack/logpack/07-stages/01-frozen-solution/sdi-refclk-fix-20261020/repair.log",
+      "retained": "logpack/accepted-implementation/repair.log",
+      "sha256": "9e361c916f9f0717e74c3c5b734ce9b385ca9a7aa057827232410cc8586aac28"
+    },
+    {
+      "removed": "logpack/source-reconcile-20261104/direct-dcp/route-status.rpt",
+      "retained": "logpack/accepted-implementation/route-status.rpt",
+      "sha256": "a4ed3f49281813d8d1b0a0432892ccac6f0f97868574b74d5be5a66a78e64a5d"
+    },
+    {
+      "removed": "logpack/logpack/02-timing-and-drc/route-status.rpt",
+      "retained": "logpack/accepted-implementation/route-status.rpt",
+      "sha256": "a4ed3f49281813d8d1b0a0432892ccac6f0f97868574b74d5be5a66a78e64a5d"
+    },
+    {
+      "removed": "logpack/logpack/06-frozen-solution-stage/route-status.rpt",
+      "retained": "logpack/accepted-implementation/route-status.rpt",
+      "sha256": "a4ed3f49281813d8d1b0a0432892ccac6f0f97868574b74d5be5a66a78e64a5d"
+    },
+    {
+      "removed": "logpack/logpack/04-project-reopen/reopened_route_status.rpt",
+      "retained": "logpack/accepted-implementation/route-status.rpt",
+      "sha256": "a4ed3f49281813d8d1b0a0432892ccac6f0f97868574b74d5be5a66a78e64a5d"
+    },
+    {
+      "removed": "logpack/logpack/07-stages/01-frozen-solution/sdi-refclk-fix-20261020/route-status.rpt",
+      "retained": "logpack/accepted-implementation/route-status.rpt",
+      "sha256": "a4ed3f49281813d8d1b0a0432892ccac6f0f97868574b74d5be5a66a78e64a5d"
+    },
+    {
+      "removed": "wcis-official/submission/evidence/restore-check/reopened_route_status.rpt",
+      "retained": "logpack/accepted-implementation/route-status.rpt",
+      "sha256": "a4ed3f49281813d8d1b0a0432892ccac6f0f97868574b74d5be5a66a78e64a5d"
+    },
+    {
+      "removed": "logpack/logpack/02-timing-and-drc/timing-gate.json",
+      "retained": "logpack/accepted-implementation/timing-gate.json",
+      "sha256": "ca03105b0292922b3860fe1a4c5c92dbac9c4268e9c493f88b0891c9bcea68b1"
+    },
+    {
+      "removed": "logpack/logpack/06-frozen-solution-stage/timing-gate.json",
+      "retained": "logpack/accepted-implementation/timing-gate.json",
+      "sha256": "ca03105b0292922b3860fe1a4c5c92dbac9c4268e9c493f88b0891c9bcea68b1"
+    },
+    {
+      "removed": "logpack/logpack/07-stages/01-frozen-solution/sdi-refclk-fix-20261020/timing-gate.json",
+      "retained": "logpack/accepted-implementation/timing-gate.json",
+      "sha256": "ca03105b0292922b3860fe1a4c5c92dbac9c4268e9c493f88b0891c9bcea68b1"
+    },
+    {
+      "removed": "wcis-official/submission/evidence/stages/sdi-refclk-fix-20261020/timing-gate.json",
+      "retained": "logpack/accepted-implementation/timing-gate.json",
+      "sha256": "ca03105b0292922b3860fe1a4c5c92dbac9c4268e9c493f88b0891c9bcea68b1"
+    },
+    {
+      "removed": "logpack/logpack/02-timing-and-drc/timing.rpt",
+      "retained": "logpack/accepted-implementation/timing.rpt",
+      "sha256": "c2d7608d126b553851170398ce2f00dd65f2f775db065ebae8c504dafb1b3eb0"
+    },
+    {
+      "removed": "logpack/logpack/07-stages/01-frozen-solution/sdi-refclk-fix-20261020/timing.rpt",
+      "retained": "logpack/accepted-implementation/timing.rpt",
+      "sha256": "c2d7608d126b553851170398ce2f00dd65f2f775db065ebae8c504dafb1b3eb0"
+    },
+    {
+      "removed": "wcis-official/submission/evidence/reproduction/bitgen.log",
+      "retained": "logpack/03-boot-reproduction/bitgen.log",
+      "sha256": "7784ccfdd2ab63bb260619c81634aab990db03d1fdbad9dc40088740e58cec83"
+    },
+    {
+      "removed": "logpack/logpack/03-boot-reproduction/portable-boot-compare.json",
+      "retained": "logpack/03-boot-reproduction/boot-compare.json",
+      "sha256": "204248b8b591aa4ce89442fc2ec4e27547e75617bdcdb437a77954d4f62b48b9"
+    },
+    {
+      "removed": "wcis-official/submission/evidence/reproduction/boot-compare.json",
+      "retained": "logpack/03-boot-reproduction/boot-compare.json",
+      "sha256": "204248b8b591aa4ce89442fc2ec4e27547e75617bdcdb437a77954d4f62b48b9"
+    },
+    {
+      "removed": "wcis-official/submission/evidence/reproduction/portable-boot-compare.json",
+      "retained": "logpack/03-boot-reproduction/boot-compare.json",
+      "sha256": "204248b8b591aa4ce89442fc2ec4e27547e75617bdcdb437a77954d4f62b48b9"
+    },
+    {
+      "removed": "wcis-official/submission/evidence/reproduction/check_reference.log",
+      "retained": "logpack/03-boot-reproduction/check_reference.log",
+      "sha256": "93ab890c9ef494a5e0682688bdd0c1481c1c2dd6b47a443df55e016d4d78ff06"
+    },
+    {
+      "removed": "wcis-official/submission/evidence/reproduction/package.log",
+      "retained": "logpack/03-boot-reproduction/package.log",
+      "sha256": "341a344d2bfb08c898c1d00fb031aec57a9bc6035ebc054739a18ca08f6f114f"
+    },
+    {
+      "removed": "wcis-official/submission/evidence/reproduction/rtl-sim-summary.json",
+      "retained": "logpack/03-boot-reproduction/rtl-sim-summary.json",
+      "sha256": "e73b3fa3c627ad39e8dbe6be351c1a7770ca032cb39c4f363f3c0194d319bbf0"
+    },
+    {
+      "removed": "wcis-official/submission/evidence/reproduction/rtl-synthesis.log",
+      "retained": "logpack/03-boot-reproduction/rtl-synthesis.log",
+      "sha256": "7e7dd0722e1b993ad4f58497948ddaeab93420c9cd38695740594aaf66d8be6d"
+    },
+    {
+      "removed": "wcis-official/submission/evidence/restore-check/open_both.tcl",
+      "retained": "logpack/04-project-reopen/open_both.tcl",
+      "sha256": "75c462dfddd4f8ac83f85d3a0edcc60c67ac16a75efbbc0fef5b416da1f9e18a"
+    },
+    {
+      "removed": "wcis-official/submission/evidence/restore-check/reopened_utilization.rpt",
+      "retained": "logpack/04-project-reopen/reopened_utilization.rpt",
+      "sha256": "2432d46966dde061f8f35b0926dd75323c9a3175531dd7c6a8168c5dccf1c21d"
+    },
+    {
+      "removed": "wcis-official/submission/evidence/restore-check/restore-open.log",
+      "retained": "logpack/04-project-reopen/restore-open.log",
+      "sha256": "7210d8cf592efa474ea98b0d0f9f876886c72382eaa8abd09652ffa40e42f42c"
+    },
+    {
+      "removed": "wcis-official/submission/evidence/restore-check/verification.json",
+      "retained": "logpack/04-project-reopen/verification.json",
+      "sha256": "2b967e6bf7689b4ced8a237e987879820b7a1203bc6ef75b48996845778e7c6c"
+    },
+    {
+      "removed": "wcis-official/submission/evidence/restore-check/vivado_source_compile_order.txt",
+      "retained": "logpack/04-project-reopen/vivado_source_compile_order.txt",
+      "sha256": "4fab861a70109e537057dbad0dc68bdfc1e76f563888bc30c7839ea2251421fd"
+    },
+    {
+      "removed": "logpack/logpack/07-stages/01-frozen-solution/sdi-refclk-fix-20261020/capture.log",
+      "retained": "logpack/06-frozen-solution-stage/capture.log",
+      "sha256": "abcd15fe04279df252e02b7c006ad854a7b502c4f46b1009ebd8bc7f734a919c"
+    },
+    {
+      "removed": "logpack/logpack/07-stages/01-frozen-solution/sdi-refclk-fix-20261020/eco_help-console.txt",
+      "retained": "logpack/06-frozen-solution-stage/eco_help-console.txt",
+      "sha256": "412df214890a499fe60aa60581b24fd88d3b978182fce0d4298c244000e93c12"
+    },
+    {
+      "removed": "logpack/logpack/06-frozen-solution-stage/inspect-exit.txt",
+      "retained": "logpack/06-frozen-solution-stage/repair-exit.txt",
+      "sha256": "13bf7b3039c63bf5a50491fa3cfd8eb4e699d1ba1436315aef9cbe5711530354"
+    },
+    {
+      "removed": "logpack/logpack/06-frozen-solution-stage/eco_help-exit.txt",
+      "retained": "logpack/06-frozen-solution-stage/repair-exit.txt",
+      "sha256": "13bf7b3039c63bf5a50491fa3cfd8eb4e699d1ba1436315aef9cbe5711530354"
+    },
+    {
+      "removed": "logpack/logpack/06-frozen-solution-stage/generate-exit.txt",
+      "retained": "logpack/06-frozen-solution-stage/repair-exit.txt",
+      "sha256": "13bf7b3039c63bf5a50491fa3cfd8eb4e699d1ba1436315aef9cbe5711530354"
+    },
+    {
+      "removed": "logpack/logpack/06-frozen-solution-stage/finish_ground-exit.txt",
+      "retained": "logpack/06-frozen-solution-stage/repair-exit.txt",
+      "sha256": "13bf7b3039c63bf5a50491fa3cfd8eb4e699d1ba1436315aef9cbe5711530354"
+    },
+    {
+      "removed": "logpack/logpack/07-stages/01-frozen-solution/sdi-refclk-fix-20261020/repair-exit.txt",
+      "retained": "logpack/06-frozen-solution-stage/repair-exit.txt",
+      "sha256": "13bf7b3039c63bf5a50491fa3cfd8eb4e699d1ba1436315aef9cbe5711530354"
+    },
+    {
+      "removed": "logpack/logpack/07-stages/01-frozen-solution/sdi-refclk-fix-20261020/inspect-exit.txt",
+      "retained": "logpack/06-frozen-solution-stage/repair-exit.txt",
+      "sha256": "13bf7b3039c63bf5a50491fa3cfd8eb4e699d1ba1436315aef9cbe5711530354"
+    },
+    {
+      "removed": "logpack/logpack/07-stages/02-npu-period-review/npu-min-period-20261022/audit-exit.txt",
+      "retained": "logpack/06-frozen-solution-stage/repair-exit.txt",
+      "sha256": "13bf7b3039c63bf5a50491fa3cfd8eb4e699d1ba1436315aef9cbe5711530354"
+    },
+    {
+      "removed": "logpack/logpack/07-stages/01-frozen-solution/sdi-refclk-fix-20261020/eco_help-exit.txt",
+      "retained": "logpack/06-frozen-solution-stage/repair-exit.txt",
+      "sha256": "13bf7b3039c63bf5a50491fa3cfd8eb4e699d1ba1436315aef9cbe5711530354"
+    },
+    {
+      "removed": "logpack/logpack/07-stages/01-frozen-solution/sdi-refclk-fix-20261020/generate-exit.txt",
+      "retained": "logpack/06-frozen-solution-stage/repair-exit.txt",
+      "sha256": "13bf7b3039c63bf5a50491fa3cfd8eb4e699d1ba1436315aef9cbe5711530354"
+    },
+    {
+      "removed": "logpack/logpack/07-stages/01-frozen-solution/sdi-refclk-fix-20261020/finish_ground-exit.txt",
+      "retained": "logpack/06-frozen-solution-stage/repair-exit.txt",
+      "sha256": "13bf7b3039c63bf5a50491fa3cfd8eb4e699d1ba1436315aef9cbe5711530354"
+    },
+    {
+      "removed": "logpack/logpack/07-stages/01-frozen-solution/sdi-refclk-fix-20261020/eco_help.log",
+      "retained": "logpack/06-frozen-solution-stage/eco_help.log",
+      "sha256": "b585731ce6efd31c553e3854fee7ceb3fdcb61961a8b02f77325e1a6d1bee79f"
+    },
+    {
+      "removed": "logpack/logpack/07-stages/01-frozen-solution/sdi-refclk-fix-20261020/eco_help.tcl",
+      "retained": "logpack/06-frozen-solution-stage/eco_help.tcl",
+      "sha256": "31b3170bb395191f742cb6f21b8062607d3f46e753a01cc6bfc6bc18babcca3d"
+    },
+    {
+      "removed": "logpack/logpack/07-stages/01-frozen-solution/sdi-refclk-fix-20261020/fac1.log",
+      "retained": "logpack/06-frozen-solution-stage/fac1.log",
+      "sha256": "d51bff033b43250fc8e04c9961ba46783082219c5c2a2aaf2ceb9c186625d7d9"
+    },
+    {
+      "removed": "logpack/logpack/07-stages/01-frozen-solution/sdi-refclk-fix-20261020/finish_ground-console.txt",
+      "retained": "logpack/06-frozen-solution-stage/finish_ground-console.txt",
+      "sha256": "54d8453d29d95358804047e8de4610b05d14acf02187c7a0c58f5cc33a44a64a"
+    },
+    {
+      "removed": "logpack/logpack/07-stages/01-frozen-solution/sdi-refclk-fix-20261020/finish_ground.tcl",
+      "retained": "logpack/06-frozen-solution-stage/finish_ground.tcl",
+      "sha256": "8d5183f24f4a71d79a60442cb3da20fce70ff7c182e3d6124786772a949d5e55"
+    },
+    {
+      "removed": "logpack/logpack/07-stages/01-frozen-solution/sdi-refclk-fix-20261020/finite-capture.log",
+      "retained": "logpack/06-frozen-solution-stage/finite-capture.log",
+      "sha256": "81b3afa6d0a1c5721badb73ebd2bad997ea9888c20ee0d81c6d13e834fe4162d"
+    },
+    {
+      "removed": "logpack/logpack/07-stages/01-frozen-solution/sdi-refclk-fix-20261020/gateway-stream.json",
+      "retained": "logpack/06-frozen-solution-stage/gateway-stream.json",
+      "sha256": "1fef9c2adcc70dd8159a72c3b5b96a394769681865b21a8675d7eb8f3cd04fbf"
+    },
+    {
+      "removed": "wcis-official/submission/evidence/stages/sdi-refclk-fix-20261020/gateway-stream.json",
+      "retained": "logpack/06-frozen-solution-stage/gateway-stream.json",
+      "sha256": "1fef9c2adcc70dd8159a72c3b5b96a394769681865b21a8675d7eb8f3cd04fbf"
+    },
+    {
+      "removed": "logpack/logpack/07-stages/01-frozen-solution/sdi-refclk-fix-20261020/generate-console.txt",
+      "retained": "logpack/06-frozen-solution-stage/generate-console.txt",
+      "sha256": "9f89822e8bf7d721b9754987d0610425354b5469a6f19cda194e84918bbdc2e0"
+    },
+    {
+      "removed": "logpack/logpack/07-stages/01-frozen-solution/sdi-refclk-fix-20261020/generate.tcl",
+      "retained": "logpack/06-frozen-solution-stage/generate.tcl",
+      "sha256": "886b831121cc8b85ec656368842997e3649bf48b57e6431f64eb64420c11bd6f"
+    },
+    {
+      "removed": "logpack/logpack/07-stages/01-frozen-solution/sdi-refclk-fix-20261020/ground-proof.txt",
+      "retained": "logpack/06-frozen-solution-stage/ground-proof.txt",
+      "sha256": "64b2afd8f72370e65092a52f0d371a1fdd44bf1077cd35b4b837fa56e86e9ae0"
+    },
+    {
+      "removed": "logpack/logpack/07-stages/01-frozen-solution/sdi-refclk-fix-20261020/inspect-console.txt",
+      "retained": "logpack/06-frozen-solution-stage/inspect-console.txt",
+      "sha256": "73fc3453b1955f9d5194ff35d1e9617ee044eb33445eaf6dea51f55b7263ab60"
+    },
+    {
+      "removed": "logpack/logpack/07-stages/01-frozen-solution/sdi-refclk-fix-20261020/inspect.log",
+      "retained": "logpack/06-frozen-solution-stage/inspect.log",
+      "sha256": "8ddae5c5c9c2f7bb0810c4d16e6921b7c256ca0c7c6435406b47f214478fd268"
+    },
+    {
+      "removed": "logpack/logpack/07-stages/01-frozen-solution/sdi-refclk-fix-20261020/inspect.tcl",
+      "retained": "logpack/06-frozen-solution-stage/inspect.tcl",
+      "sha256": "65d4a2c299d17a0a44eb82f2b1ebbd087297640f6211b2b8af7e60dc2927c15c"
+    },
+    {
+      "removed": "logpack/source-reconcile-20261104/simulation/jpeg-compile.log",
+      "retained": "logpack/source-reconcile-20261104/simulation/face-compile.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "removed": "logpack/logpack/06-frozen-solution-stage/package_candidate-exit.txt",
+      "retained": "logpack/source-reconcile-20261104/simulation/face-compile.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "removed": "logpack/logpack/06-frozen-solution-stage/package_candidate-console.txt",
+      "retained": "logpack/source-reconcile-20261104/simulation/face-compile.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "removed": "logpack/logpack/07-stages/01-frozen-solution/sdi-refclk-fix-20261020/package_candidate-exit.txt",
+      "retained": "logpack/source-reconcile-20261104/simulation/face-compile.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "removed": "logpack/logpack/07-stages/01-frozen-solution/sdi-refclk-fix-20261020/package_candidate-console.txt",
+      "retained": "logpack/source-reconcile-20261104/simulation/face-compile.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "removed": "logpack/logpack/07-stages/01-frozen-solution/sdi-refclk-fix-20261020/package_candidate.tcl",
+      "retained": "logpack/06-frozen-solution-stage/package_candidate.tcl",
+      "sha256": "520f4691eeb83f5b9e1f612b360534576d55deaa7910e209bb26f9433f4f5605"
+    },
+    {
+      "removed": "logpack/logpack/07-stages/01-frozen-solution/sdi-refclk-fix-20261020/preservation-proof.txt",
+      "retained": "logpack/06-frozen-solution-stage/preservation-proof.txt",
+      "sha256": "9bfbbdbe347ac3e396cfd66af19d7e5adb219063eaf3e1e074412544fef474f1"
+    },
+    {
+      "removed": "logpack/logpack/07-stages/01-frozen-solution/sdi-refclk-fix-20261020/refclk-plan.txt",
+      "retained": "logpack/06-frozen-solution-stage/refclk-plan.txt",
+      "sha256": "3144964c188e65dbb68d6fece1a6b365ff52eef863d353b33f4d85da90ec21ff"
+    },
+    {
+      "removed": "logpack/logpack/07-stages/01-frozen-solution/sdi-refclk-fix-20261020/repair-console.txt",
+      "retained": "logpack/06-frozen-solution-stage/repair-console.txt",
+      "sha256": "82e39a3227bbedb494c38af4459a62bf75ec1d0eaf1adfca58f5232196f4cc6b"
+    },
+    {
+      "removed": "logpack/logpack/07-stages/01-frozen-solution/sdi-refclk-fix-20261020/repair.tcl",
+      "retained": "logpack/06-frozen-solution-stage/repair.tcl",
+      "sha256": "54f8f2109b88087aaa85e86ad7420ebe2ae04f1a432571af5396f6691336f0eb"
+    },
+    {
+      "removed": "logpack/logpack/07-stages/01-frozen-solution/sdi-refclk-fix-20261020/logfiles/procise.log",
+      "retained": "logpack/06-frozen-solution-stage/logfiles/procise.log",
+      "sha256": "2f4f7a3d51679507ffd2dcd8d99c579c8682fc0dfa593fa19ee76d70b4c28c90"
+    },
+    {
+      "removed": "wcis-official/submission/evidence/stages/face-cache-board-20261018/before-verification.json",
+      "retained": "logpack/07-stages/00-stage-conclusions/face-cache-board-20261018/before-verification.json",
+      "sha256": "334e2fb8c6c479d042ad5984c2d7302f739e17a2ad41795550d92b5f6562fda8"
+    },
+    {
+      "removed": "wcis-official/submission/evidence/stages/face-cache-board-20261018/completion-summary.json",
+      "retained": "logpack/07-stages/00-stage-conclusions/face-cache-board-20261018/completion-summary.json",
+      "sha256": "8a6e93a985ada677936e9b625b3ac7c46952169015cf656afea2561000db030d"
+    },
+    {
+      "removed": "wcis-official/submission/evidence/stages/face-cache-board-20261018/face-before-summary.json",
+      "retained": "logpack/07-stages/00-stage-conclusions/face-cache-board-20261018/face-before-summary.json",
+      "sha256": "85d4a0c038de9b69706482bd9ae8a03e89629a7309c32953fdc1092ed1d24af9"
+    },
+    {
+      "removed": "wcis-official/submission/evidence/stages/face-cache-board-20261018/face-rollback-summary.json",
+      "retained": "logpack/07-stages/00-stage-conclusions/face-cache-board-20261018/face-rollback-summary.json",
+      "sha256": "1e18de73991fe8e2342863188940422063fde1801ee2fb5662f6506584ef8e58"
+    },
+    {
+      "removed": "wcis-official/submission/evidence/stages/face-cache-board-20261018/post-build-source-differences.json",
+      "retained": "logpack/07-stages/00-stage-conclusions/face-cache-board-20261018/post-build-source-differences.json",
+      "sha256": "b605052e4f1161e0a14a7a81698bf9ba212f05a93499b315898aabe8afde17ac"
+    },
+    {
+      "removed": "wcis-official/submission/evidence/stages/face-cache-board-20261018/rollback-verification.json",
+      "retained": "logpack/07-stages/00-stage-conclusions/face-cache-board-20261018/rollback-verification.json",
+      "sha256": "dfcf5d0903de87ab123dedeb086c7610e604fa14c84c65f0cabb68bc5e4b18bb"
+    },
+    {
+      "removed": "wcis-official/submission/evidence/stages/face-cache-board-20261018/source-manifest.json",
+      "retained": "logpack/07-stages/00-stage-conclusions/face-cache-board-20261018/source-manifest.json",
+      "sha256": "0138b68282427d609094dd14c1c58523c4032cec36a7afa612956b4a294b17bd"
+    },
+    {
+      "removed": "wcis-official/submission/evidence/stages/face-cache-board-20261018/task-script-manifest.json",
+      "retained": "logpack/07-stages/00-stage-conclusions/face-cache-board-20261018/task-script-manifest.json",
+      "sha256": "f46daa902a9b3c0008b7193db45ca418023dcb3e4d46939e6161649fca2dfafb"
+    },
+    {
+      "removed": "wcis-official/submission/evidence/stages/face-cache-board-20261018/timing-gate.json",
+      "retained": "logpack/07-stages/00-stage-conclusions/face-cache-board-20261018/timing-gate.json",
+      "sha256": "e7bc1dbb643b88aa8b843748dde551592df4016be1d1506bf9fa2f37571cec13"
+    },
+    {
+      "removed": "wcis-official/submission/evidence/stages/face-cache-preserve-20261018/assembled-input-proof.json",
+      "retained": "logpack/07-stages/00-stage-conclusions/face-cache-preserve-20261018/assembled-input-proof.json",
+      "sha256": "75995cfbe8dff98aebb3f9ed8a0b5dcee1025f88573d445df93dd32a34e30d60"
+    },
+    {
+      "removed": "wcis-official/submission/evidence/stages/face-cache-preserve-20261018/before-verification.json",
+      "retained": "logpack/07-stages/00-stage-conclusions/face-cache-preserve-20261018/before-verification.json",
+      "sha256": "4707341ce9e0882a372c255299422bab10d01bb294d3aba4b26fd6b3cd56a179"
+    },
+    {
+      "removed": "wcis-official/submission/evidence/stages/face-cache-preserve-20261018/build-input-proof.json",
+      "retained": "logpack/07-stages/00-stage-conclusions/face-cache-preserve-20261018/build-input-proof.json",
+      "sha256": "be9e550e20756ce17de0457a9fefde7c69a6731beb119f80013e01c2065d7d90"
+    },
+    {
+      "removed": "logpack/logpack/07-stages/00-stage-conclusions/face-cache-preserve-20261018/face-before-summary.json",
+      "retained": "logpack/07-stages/00-stage-conclusions/face-cache-resume-20261020/face-before-summary.json",
+      "sha256": "b7efad6c9c697c9f6fea705c9168821b6adbd14ef41cbca407d2322f7c9144eb"
+    },
+    {
+      "removed": "wcis-official/submission/evidence/stages/face-cache-resume-20261020/face-before-summary.json",
+      "retained": "logpack/07-stages/00-stage-conclusions/face-cache-resume-20261020/face-before-summary.json",
+      "sha256": "b7efad6c9c697c9f6fea705c9168821b6adbd14ef41cbca407d2322f7c9144eb"
+    },
+    {
+      "removed": "wcis-official/submission/evidence/stages/face-cache-preserve-20261018/face-before-summary.json",
+      "retained": "logpack/07-stages/00-stage-conclusions/face-cache-resume-20261020/face-before-summary.json",
+      "sha256": "b7efad6c9c697c9f6fea705c9168821b6adbd14ef41cbca407d2322f7c9144eb"
+    },
+    {
+      "removed": "logpack/logpack/07-stages/00-stage-conclusions/face-cache-preserve-20261018/face-interface-proof.json",
+      "retained": "logpack/07-stages/00-stage-conclusions/face-cache-resume-20261020/face-interface-proof.json",
+      "sha256": "fdfbf90df41e67c3715dcc5b12956f67d542eecf616cd6f93c7bd6d168739439"
+    },
+    {
+      "removed": "wcis-official/submission/evidence/stages/face-cache-resume-20261020/face-interface-proof.json",
+      "retained": "logpack/07-stages/00-stage-conclusions/face-cache-resume-20261020/face-interface-proof.json",
+      "sha256": "fdfbf90df41e67c3715dcc5b12956f67d542eecf616cd6f93c7bd6d168739439"
+    },
+    {
+      "removed": "wcis-official/submission/evidence/stages/face-cache-preserve-20261018/face-interface-proof.json",
+      "retained": "logpack/07-stages/00-stage-conclusions/face-cache-resume-20261020/face-interface-proof.json",
+      "sha256": "fdfbf90df41e67c3715dcc5b12956f67d542eecf616cd6f93c7bd6d168739439"
+    },
+    {
+      "removed": "wcis-official/submission/evidence/stages/face-cache-preserve-20261018/native-ports-verification.json",
+      "retained": "logpack/07-stages/00-stage-conclusions/face-cache-preserve-20261018/native-ports-verification.json",
+      "sha256": "f8d4050f6d90cf8075185323b3ffdd99cdcb46b365fc92c7ad69f0ba5d68bc7a"
+    },
+    {
+      "removed": "logpack/logpack/07-stages/00-stage-conclusions/face-cache-preserve-20261018/original-exceptions-proof.json",
+      "retained": "logpack/07-stages/00-stage-conclusions/face-cache-resume-20261020/original-exceptions-proof.json",
+      "sha256": "0f371b5bfead926fb5945afa0a5a0951ac8aae1e8b953d3745f55052e458240c"
+    },
+    {
+      "removed": "wcis-official/submission/evidence/stages/face-cache-resume-20261020/original-exceptions-proof.json",
+      "retained": "logpack/07-stages/00-stage-conclusions/face-cache-resume-20261020/original-exceptions-proof.json",
+      "sha256": "0f371b5bfead926fb5945afa0a5a0951ac8aae1e8b953d3745f55052e458240c"
+    },
+    {
+      "removed": "wcis-official/submission/evidence/stages/face-cache-preserve-20261018/original-exceptions-proof.json",
+      "retained": "logpack/07-stages/00-stage-conclusions/face-cache-resume-20261020/original-exceptions-proof.json",
+      "sha256": "0f371b5bfead926fb5945afa0a5a0951ac8aae1e8b953d3745f55052e458240c"
+    },
+    {
+      "removed": "wcis-official/submission/evidence/stages/face-cache-preserve-20261018/ports-verification.json",
+      "retained": "logpack/07-stages/00-stage-conclusions/face-cache-preserve-20261018/ports-verification.json",
+      "sha256": "7959604ca26d33daac658d06b390330e7dcbcbd5b2dfe402bfcf235640b077c5"
+    },
+    {
+      "removed": "wcis-official/submission/evidence/stages/face-cache-resume-20261020/after-verification.json",
+      "retained": "logpack/07-stages/00-stage-conclusions/face-cache-resume-20261020/after-verification.json",
+      "sha256": "bd67371eba65dc8c99189db6f881ab8d003b6d881f1e17d2f5b0f0778bd4c751"
+    },
+    {
+      "removed": "wcis-official/submission/evidence/stages/face-cache-resume-20261020/before-verification.json",
+      "retained": "logpack/07-stages/00-stage-conclusions/face-cache-resume-20261020/before-verification.json",
+      "sha256": "9a391a3b69d97e7c0dd8284d02f182d8825c61d298bdbdb9a4b7c718464d013d"
+    },
+    {
+      "removed": "wcis-official/submission/evidence/stages/face-cache-resume-20261020/build-input-proof.json",
+      "retained": "logpack/07-stages/00-stage-conclusions/face-cache-resume-20261020/build-input-proof.json",
+      "sha256": "e4746db66062e72b2198e8a6e736ec6acc8f6e6143fbf6a66c612b75516ff21b"
+    },
+    {
+      "removed": "wcis-official/submission/evidence/stages/face-cache-resume-20261020/face-after-summary.json",
+      "retained": "logpack/07-stages/00-stage-conclusions/face-cache-resume-20261020/face-after-summary.json",
+      "sha256": "32e0ac153b42c4e0062e445e524b7d484b60c5f15d6e9063a7b4ae4e1e53b1e6"
+    },
+    {
+      "removed": "wcis-official/submission/evidence/stages/face-cache-resume-20261020/face-first-summary.json",
+      "retained": "logpack/07-stages/00-stage-conclusions/face-cache-resume-20261020/face-first-summary.json",
+      "sha256": "8be0a84d4bc1efeeb80e1fd6e2af6ac097f8ba7441e3b43f74be605fe573d78f"
+    },
+    {
+      "removed": "wcis-official/submission/evidence/stages/face-cache-resume-20261020/final-verification.json",
+      "retained": "logpack/07-stages/00-stage-conclusions/face-cache-resume-20261020/final-verification.json",
+      "sha256": "9ca0a712260f420dd665b72bece82d704a83e43585afbc8782120f7611741a47"
+    },
+    {
+      "removed": "wcis-official/submission/evidence/stages/face-cache-resume-20261020/first-round-proof.json",
+      "retained": "logpack/07-stages/00-stage-conclusions/face-cache-resume-20261020/first-round-proof.json",
+      "sha256": "477008240cebd708a60623e8c95d9de0662ef278638ae3ab0c5d673af16b6ac7"
+    },
+    {
+      "removed": "wcis-official/submission/evidence/stages/face-cache-resume-20261020/first-verification.json",
+      "retained": "logpack/07-stages/00-stage-conclusions/face-cache-resume-20261020/first-verification.json",
+      "sha256": "6ac19af5e6de6ed15416c5db711d8f25c3ab017fa46f1633bc72938d1e95eb8d"
+    },
+    {
+      "removed": "wcis-official/submission/evidence/stages/face-cache-resume-20261020/input-manifest.json",
+      "retained": "logpack/07-stages/00-stage-conclusions/face-cache-resume-20261020/input-manifest.json",
+      "sha256": "bd3272ebfaea9bf5d1a4746d160e1ffba47a6a735a881f81212005d810229bec"
+    },
+    {
+      "removed": "wcis-official/submission/evidence/stages/face-cache-resume-20261020/parallel-after-verification.json",
+      "retained": "logpack/07-stages/00-stage-conclusions/face-cache-resume-20261020/parallel-after-verification.json",
+      "sha256": "f0383357421058599a10aa0d2d8a685fc141fb67ab9d98acb04255bbbc616dc7"
+    },
+    {
+      "removed": "wcis-official/submission/evidence/stages/face-cache-resume-20261020/second-round-proof.json",
+      "retained": "logpack/07-stages/00-stage-conclusions/face-cache-resume-20261020/second-round-proof.json",
+      "sha256": "b14877c3b568e9f677dca48dde20a6b3368d2ca437b3da14b01fb519c9704db9"
+    },
+    {
+      "removed": "wcis-official/submission/evidence/stages/face-cache-resume-20261020/timing-gate.json",
+      "retained": "logpack/07-stages/00-stage-conclusions/face-cache-resume-20261020/timing-gate.json",
+      "sha256": "90a697ad2a29f65d35054902143e0a327c74c915676480c437300019330b9569"
+    },
+    {
+      "removed": "wcis-official/submission/evidence/stages/face-pl-20261015/delivery-summary.json",
+      "retained": "logpack/07-stages/00-stage-conclusions/face-pl-20261015/delivery-summary.json",
+      "sha256": "6467bde9b9c0d125da970c5dec382b305ed7e0605596f17b2298cfa120d3dd57"
+    },
+    {
+      "removed": "wcis-official/submission/evidence/stages/face-pl-cache-20261018/source-manifest.json",
+      "retained": "logpack/07-stages/00-stage-conclusions/face-pl-cache-20261018/source-manifest.json",
+      "sha256": "3de30acd02bbe9009192a63bce579cdd0354f8bfac898d9ac71372306b17d64d"
+    },
+    {
+      "removed": "wcis-official/submission/evidence/stages/face-pl-cache-20261018/summary.json",
+      "retained": "logpack/07-stages/00-stage-conclusions/face-pl-cache-20261018/summary.json",
+      "sha256": "c6a2fad31d609557b9bdf1acf91d58684af20b2bccde5b26ab9f2b288049dc7a"
+    },
+    {
+      "removed": "wcis-official/submission/evidence/stages/face-pl-integration-20261015/board-pipeline-verification.json",
+      "retained": "logpack/07-stages/00-stage-conclusions/face-pl-integration-20261015/board-pipeline-verification.json",
+      "sha256": "3b7ae52234bbb537a20c1a50014e3be98a3e6a2637c8dab548a7f6756fc1caeb"
+    },
+    {
+      "removed": "wcis-official/submission/evidence/stages/face-pl-integration-20261015/board-source-and-model-audit.json",
+      "retained": "logpack/07-stages/00-stage-conclusions/face-pl-integration-20261015/board-source-and-model-audit.json",
+      "sha256": "9573a2c8b378f110c8d30cae55177620343516267c9f9a1c9d3c400bc78d1e11"
+    },
+    {
+      "removed": "wcis-official/submission/evidence/stages/face-pl-integration-20261015/completion-summary.json",
+      "retained": "logpack/07-stages/00-stage-conclusions/face-pl-integration-20261015/completion-summary.json",
+      "sha256": "24b55d13b138019fc2aa5aec7a63ace41cedbc6cebf2baa49fd8e3e86b036b45"
+    },
+    {
+      "removed": "wcis-official/submission/evidence/stages/face-pl-integration-20261015/cpu-geometry-refactor-verification.json",
+      "retained": "logpack/07-stages/00-stage-conclusions/face-pl-integration-20261015/cpu-geometry-refactor-verification.json",
+      "sha256": "ba6d17cb948d98dd16daa1b8a499dc73aa712475ea8d4317c4c46421b360e1f1"
+    },
+    {
+      "removed": "wcis-official/submission/evidence/stages/face-pl-integration-20261015/current-build-inputs.json",
+      "retained": "logpack/07-stages/00-stage-conclusions/face-pl-integration-20261015/current-build-inputs.json",
+      "sha256": "f2a0e8ff57445fb2210468aa3c1703e3b39330c58ae33f00e2b0e34e3eccd63d"
+    },
+    {
+      "removed": "wcis-official/submission/evidence/stages/face-pl-integration-20261015/final-artifact-integrity.json",
+      "retained": "logpack/07-stages/00-stage-conclusions/face-pl-integration-20261015/final-artifact-integrity.json",
+      "sha256": "c1de2d7b7aceba5e1eb1e796191e0c64f60cecc19a1c15b8c8789d42bf1fd18b"
+    },
+    {
+      "removed": "wcis-official/submission/evidence/stages/face-pl-integration-20261015/tool-database-integrity.json",
+      "retained": "logpack/07-stages/00-stage-conclusions/face-pl-integration-20261015/tool-database-integrity.json",
+      "sha256": "c7b44d03b2372155fb8f7641dc48d29cf7bff81e13eb490d53699992c239dd13"
+    },
+    {
+      "removed": "wcis-official/submission/evidence/stages/pl-command-validation-20261022/board-after-offline-candidate-1950.json",
+      "retained": "logpack/07-stages/00-stage-conclusions/pl-command-validation-20261022/board-after-offline-candidate-1950.json",
+      "sha256": "0a9e07c5cbac25838c6bad12adfbc96f223b4f7b58ef842f4da3524f4becb237"
+    },
+    {
+      "removed": "wcis-official/submission/evidence/stages/pl-command-validation-20261022/candidate-summary.json",
+      "retained": "logpack/07-stages/00-stage-conclusions/pl-command-validation-20261022/candidate-summary.json",
+      "sha256": "baf1bab4fecfa77e989ff7c142f4048b35c78689995eeef008dde742865d5ab6"
+    },
+    {
+      "removed": "wcis-official/submission/evidence/stages/pl-command-validation-20261022/input-manifest.json",
+      "retained": "logpack/07-stages/00-stage-conclusions/pl-command-validation-20261022/input-manifest.json",
+      "sha256": "150f225c04a1865535eada0bb4468532afbb0ffc9f2215a9aac654131bc50313"
+    },
+    {
+      "removed": "wcis-official/submission/evidence/stages/pl-command-validation-20261022/offline-qualification.json",
+      "retained": "logpack/07-stages/00-stage-conclusions/pl-command-validation-20261022/offline-qualification.json",
+      "sha256": "4fb0f2e28743d220dd9e13de7c3f81e5836c2ec486b177eba2abb76987d8fbe2"
+    },
+    {
+      "removed": "wcis-official/submission/evidence/stages/pl-command-validation-20261022/post-synthesis-source-audit.json",
+      "retained": "logpack/07-stages/00-stage-conclusions/pl-command-validation-20261022/post-synthesis-source-audit.json",
+      "sha256": "1a298779289a6cca7679ba9212b0b78a88ebad357ef77615f6f59bdf9a228f98"
+    },
+    {
+      "removed": "wcis-official/submission/evidence/stages/pl-command-validation-20261022/staged-sources.json",
+      "retained": "logpack/07-stages/00-stage-conclusions/pl-command-validation-20261022/staged-sources.json",
+      "sha256": "0046d12efcedf5c748ac6efc638a49aec3b1dcf3028f1369df1fb10353c4eeb4"
+    },
+    {
+      "removed": "wcis-official/submission/evidence/stages/pl-command-validation-20261022/timing-gate.json",
+      "retained": "logpack/07-stages/00-stage-conclusions/pl-command-validation-20261022/timing-gate.json",
+      "sha256": "3e2c9cffe3892457697daf33aa65a5f27e0eb73f58fb5a49a827c38dcf4a4233"
+    },
+    {
+      "removed": "wcis-official/submission/evidence/stages/pl-fastpath-board-20261022/input-manifest.json",
+      "retained": "logpack/07-stages/00-stage-conclusions/pl-fastpath-board-20261022/input-manifest.json",
+      "sha256": "ad7b14e474c3e21156c4cdcd5ff65ce05a076f0c52fc7e8eea5358840d1ff852"
+    },
+    {
+      "removed": "wcis-official/submission/evidence/stages/pl-fastpath-board-20261022/post-synthesis-source-audit.json",
+      "retained": "logpack/07-stages/00-stage-conclusions/pl-fastpath-board-20261022/post-synthesis-source-audit.json",
+      "sha256": "4d60f8c847e65438f53458904d7db92530f5f2f491323478d34d660d6d252842"
+    },
+    {
+      "removed": "wcis-official/submission/evidence/stages/pl-fastpath-board-20261022/staged-sources.json",
+      "retained": "logpack/07-stages/00-stage-conclusions/pl-fastpath-board-20261022/staged-sources.json",
+      "sha256": "386a525a0d289c95c445271bd2de2ceeb87ce9575cc9525eeb5f1a6e377528ec"
+    },
+    {
+      "removed": "wcis-official/submission/evidence/stages/pl-jpeg-board-20261016/background-source.json",
+      "retained": "logpack/07-stages/00-stage-conclusions/pl-jpeg-board-20261016/background-source.json",
+      "sha256": "a6c7e828ead1d1c0a33b5f30c7977bcbb3cb4271f2da4b34cff46e01f52b368e"
+    },
+    {
+      "removed": "wcis-official/submission/evidence/stages/pl-jpeg-board-20261016/before-attempt11-placement-proof.json",
+      "retained": "logpack/07-stages/00-stage-conclusions/pl-jpeg-board-20261016/before-attempt11-placement-proof.json",
+      "sha256": "337f89a6d526851810f68ad21b07fae90d88a76eb839775857e5a5d4920a3ae8"
+    },
+    {
+      "removed": "wcis-official/submission/evidence/stages/pl-jpeg-board-20261016/case-source-manifest.json",
+      "retained": "logpack/07-stages/00-stage-conclusions/pl-jpeg-board-20261016/case-source-manifest.json",
+      "sha256": "77b0a4051ef297ab18be11e8ba0a011765061e1df26d251788c9cfd823a1a159"
+    },
+    {
+      "removed": "wcis-official/submission/evidence/stages/pl-jpeg-board-20261016/face-after-summary.json",
+      "retained": "logpack/07-stages/00-stage-conclusions/pl-jpeg-board-20261016/face-after-summary.json",
+      "sha256": "f74784590b95d4bbee25d9ce086fd4a51aa35bb0e6109d7e36e3ae52b81b4b0f"
+    },
+    {
+      "removed": "wcis-official/submission/evidence/stages/pl-jpeg-board-20261016/face-before-summary.json",
+      "retained": "logpack/07-stages/00-stage-conclusions/pl-jpeg-board-20261016/face-before-summary.json",
+      "sha256": "1bf02457fd95e4864499ba9706caf21ba13583548829474c7b54e437fe013ae7"
+    },
+    {
+      "removed": "wcis-official/submission/evidence/stages/pl-jpeg-board-20261016/face-rollback-summary.json",
+      "retained": "logpack/07-stages/00-stage-conclusions/pl-jpeg-board-20261016/face-rollback-summary.json",
+      "sha256": "738d8142bb0734ff17cd11bc688f5a7e05707094cb338c53ad8c186865489bfe"
+    },
+    {
+      "removed": "wcis-official/submission/evidence/stages/pl-jpeg-board-20261016/measurement-summary.json",
+      "retained": "logpack/07-stages/00-stage-conclusions/pl-jpeg-board-20261016/measurement-summary.json",
+      "sha256": "b3984f3a118785261fd0c655560fc32076c1a16db71abee94a3c08de63770dc3"
+    },
+    {
+      "removed": "wcis-official/submission/evidence/stages/pl-jpeg-board-20261016/placement-proof.json",
+      "retained": "logpack/07-stages/00-stage-conclusions/pl-jpeg-board-20261016/placement-proof.json",
+      "sha256": "9a6e8dbd8b18d7c58e6690d0e0aa38d52662583ec3eaed2c7f4c8861d2f8c528"
+    },
+    {
+      "removed": "wcis-official/submission/evidence/stages/pl-jpeg-board-20261016/postroute-input.json",
+      "retained": "logpack/07-stages/00-stage-conclusions/pl-jpeg-board-20261016/postroute-input.json",
+      "sha256": "149c12b796d882b64f7f29758840e086b3ac5a55fd82503bb8368fab6b9ed095"
+    },
+    {
+      "removed": "wcis-official/submission/evidence/stages/pl-jpeg-board-20261016/source-verification-diagnostic.json",
+      "retained": "logpack/07-stages/00-stage-conclusions/pl-jpeg-board-20261016/source-verification-diagnostic.json",
+      "sha256": "71d1e2cc10cdfd6cc683b9e466ae7fb6c7f38dde9245b749746919904e1201e4"
+    },
+    {
+      "removed": "wcis-official/submission/evidence/stages/pl-jpeg-board-20261016/timing-gate.json",
+      "retained": "logpack/07-stages/00-stage-conclusions/pl-jpeg-board-20261016/timing-gate.json",
+      "sha256": "89d588d01dd641f9e5ce46c15fe22d04f5e038e53feeaa8333a7a854ba3162e8"
+    },
+    {
+      "removed": "wcis-official/submission/evidence/stages/pl-preview-resume-20261027/audit-inputs.json",
+      "retained": "logpack/07-stages/00-stage-conclusions/pl-preview-resume-20261027/audit-inputs.json",
+      "sha256": "35e4aa8aafd1d700bb25c9343e93fe7419c8c518787219ee04ba84f0c8f9ab60"
+    },
+    {
+      "removed": "wcis-official/submission/evidence/stages/pl-preview-resume-20261027/audit_deployed_candidate_mdio-process.json",
+      "retained": "logpack/07-stages/00-stage-conclusions/pl-preview-resume-20261027/audit_deployed_candidate_mdio-process.json",
+      "sha256": "09463e6b193876c7e8138e2ed007da5f3b7f9b4f73cbee85f2ab7fce02b09124"
+    },
+    {
+      "removed": "wcis-official/submission/evidence/stages/pl-preview-resume-20261027/audit_deployed_candidate_mdio-receipt.json",
+      "retained": "logpack/07-stages/00-stage-conclusions/pl-preview-resume-20261027/audit_deployed_candidate_mdio-receipt.json",
+      "sha256": "f96326fbd715bab7faf39a8ff2d030ae925c9926fd8477f5058fb8e11dce73c8"
+    },
+    {
+      "removed": "wcis-official/submission/evidence/stages/pl-preview-resume-20261027/audit_final_ddr_preservation-process.json",
+      "retained": "logpack/07-stages/00-stage-conclusions/pl-preview-resume-20261027/audit_final_ddr_preservation-process.json",
+      "sha256": "921e716e613971f30a314664cf6f7199045f718e5612550f2369c78b7dc87067"
+    },
+    {
+      "removed": "wcis-official/submission/evidence/stages/pl-preview-resume-20261027/audit_final_ddr_preservation-receipt.json",
+      "retained": "logpack/07-stages/00-stage-conclusions/pl-preview-resume-20261027/audit_final_ddr_preservation-receipt.json",
+      "sha256": "c5fe852c20b65c9135c6abd2fd14d36292e1e544db61af0f8b2cd415fb094e62"
+    },
+    {
+      "removed": "wcis-official/submission/evidence/stages/pl-preview-resume-20261027/audit_final_ddr_preservation_v2-process.json",
+      "retained": "logpack/07-stages/00-stage-conclusions/pl-preview-resume-20261027/audit_final_ddr_preservation_v2-process.json",
+      "sha256": "6f4881a1bd901aa924d1fc59396a55c70a529d3a77f8c79d436e2bc946d0d626"
+    },
+    {
+      "removed": "wcis-official/submission/evidence/stages/pl-preview-resume-20261027/audit_final_ddr_preservation_v2-receipt.json",
+      "retained": "logpack/07-stages/00-stage-conclusions/pl-preview-resume-20261027/audit_final_ddr_preservation_v2-receipt.json",
+      "sha256": "31306d9ba1486b064a4dba543fc7790305efe985c633e60ac5d133ae57044138"
+    },
+    {
+      "removed": "wcis-official/submission/evidence/stages/pl-preview-resume-20261027/audit_placed_actual_ddr_timing-process.json",
+      "retained": "logpack/07-stages/00-stage-conclusions/pl-preview-resume-20261027/audit_placed_actual_ddr_timing-process.json",
+      "sha256": "c86226a18b9523e493056eec7a4d66ac94987e465e27b9dedc62ca02a152f59b"
+    },
+    {
+      "removed": "wcis-official/submission/evidence/stages/pl-preview-resume-20261027/audit_placed_actual_ddr_timing-receipt.json",
+      "retained": "logpack/07-stages/00-stage-conclusions/pl-preview-resume-20261027/audit_placed_actual_ddr_timing-receipt.json",
+      "sha256": "d1ae6cc796e1ec54f837fdabc723e6eda87012b3d07054a9ef0ba81bc3a86501"
+    },
+    {
+      "removed": "wcis-official/submission/evidence/stages/pl-preview-resume-20261027/audit_source_status_constraints-process.json",
+      "retained": "logpack/07-stages/00-stage-conclusions/pl-preview-resume-20261027/audit_source_status_constraints-process.json",
+      "sha256": "58169f4c104f63c0f0fee242a52d728b69c3754636ad6e0caab6757d7cff8050"
+    },
+    {
+      "removed": "wcis-official/submission/evidence/stages/pl-preview-resume-20261027/audit_source_status_constraints-receipt.json",
+      "retained": "logpack/07-stages/00-stage-conclusions/pl-preview-resume-20261027/audit_source_status_constraints-receipt.json",
+      "sha256": "bd689c76f0c650564aaae10d32bf6135cd197438b27bdd80b3922e81e50cc66a"
+    },
+    {
+      "removed": "wcis-official/submission/evidence/stages/pl-preview-resume-20261027/audit_source_status_routed-process.json",
+      "retained": "logpack/07-stages/00-stage-conclusions/pl-preview-resume-20261027/audit_source_status_routed-process.json",
+      "sha256": "f4baf907856cedb67dbe6e5c72a413366d06d2d8ce4c6ffd11738af24407dc22"
+    },
+    {
+      "removed": "wcis-official/submission/evidence/stages/pl-preview-resume-20261027/audit_source_status_routed-receipt.json",
+      "retained": "logpack/07-stages/00-stage-conclusions/pl-preview-resume-20261027/audit_source_status_routed-receipt.json",
+      "sha256": "589cf52aac602e709dcf5de6b5821c0244fb0ca5d727cd17e09eebdb99ff34a8"
+    },
+    {
+      "removed": "wcis-official/submission/evidence/stages/pl-preview-resume-20261027/audit_source_status_routed_v2-process.json",
+      "retained": "logpack/07-stages/00-stage-conclusions/pl-preview-resume-20261027/audit_source_status_routed_v2-process.json",
+      "sha256": "bf1337000f6aa1de3234517db6c2b06ae96149e7d88c897a271f2088ff653451"
+    },
+    {
+      "removed": "wcis-official/submission/evidence/stages/pl-preview-resume-20261027/audit_source_status_routed_v2-receipt.json",
+      "retained": "logpack/07-stages/00-stage-conclusions/pl-preview-resume-20261027/audit_source_status_routed_v2-receipt.json",
+      "sha256": "a196d5a2e4e37f2cbb4d7272b09d3a713bf5c76bd9c654fce38d6db726d05a6a"
+    },
+    {
+      "removed": "wcis-official/submission/evidence/stages/pl-preview-resume-20261027/bit-generation-inputs.json",
+      "retained": "logpack/07-stages/00-stage-conclusions/pl-preview-resume-20261027/bit-generation-inputs.json",
+      "sha256": "78b984dda4d7eeffbaa4c104918a64344d717086f9e192102d774eceab8dc0f5"
+    },
+    {
+      "removed": "wcis-official/submission/evidence/stages/pl-preview-resume-20261027/boot-candidate-verification.json",
+      "retained": "logpack/07-stages/00-stage-conclusions/pl-preview-resume-20261027/boot-candidate-verification.json",
+      "sha256": "063bfd08baec7d0c5454338dcf254feb81a533451a1a24d512687600e22c2163"
+    },
+    {
+      "removed": "wcis-official/submission/evidence/stages/pl-preview-resume-20261027/build_current_source-process.json",
+      "retained": "logpack/07-stages/00-stage-conclusions/pl-preview-resume-20261027/build_current_source-process.json",
+      "sha256": "90a56d79a035c95880792f042aaee5e8e23ef7a3b8fff4b11fada70e6fa9f40f"
+    },
+    {
+      "removed": "wcis-official/submission/evidence/stages/pl-preview-resume-20261027/build_current_source-receipt.json",
+      "retained": "logpack/07-stages/00-stage-conclusions/pl-preview-resume-20261027/build_current_source-receipt.json",
+      "sha256": "9cde9d52d59d6f55faccf93ae8a3523c68f4cacaaf85f6abe89cdc1e6d761642"
+    },
+    {
+      "removed": "wcis-official/submission/evidence/stages/pl-preview-resume-20261027/candidate-review-bundle-receipt.json",
+      "retained": "logpack/07-stages/00-stage-conclusions/pl-preview-resume-20261027/candidate-review-bundle-receipt.json",
+      "sha256": "ae31e29587f87c8904ae98809427afb24d93ebae8b10b016a5a0095f5736f6e9"
+    },
+    {
+      "removed": "wcis-official/submission/evidence/stages/pl-preview-resume-20261027/current-input-hash-audit.json",
+      "retained": "logpack/07-stages/00-stage-conclusions/pl-preview-resume-20261027/current-input-hash-audit.json",
+      "sha256": "d14a007e040c5c5288ea3dba0d17901fee3c86fb689b758aed1c0f2a56224842"
+    },
+    {
+      "removed": "wcis-official/submission/evidence/stages/pl-preview-resume-20261027/endpoint-repair-inputs.json",
+      "retained": "logpack/07-stages/00-stage-conclusions/pl-preview-resume-20261027/endpoint-repair-inputs.json",
+      "sha256": "f26b1ccbf3ee9397af7c76ffd460d7cae3bdf8bdb096dfc05fc76fc88fa331f6"
+    },
+    {
+      "removed": "wcis-official/submission/evidence/stages/pl-preview-resume-20261027/implementation-variant-inputs.json",
+      "retained": "logpack/07-stages/00-stage-conclusions/pl-preview-resume-20261027/implementation-variant-inputs.json",
+      "sha256": "f07ae21f0e9d8d88a087e1082e0cbdc66dcc05f1d6caa8c9a5121833ea11d8ad"
+    },
+    {
+      "removed": "wcis-official/submission/evidence/stages/pl-preview-resume-20261027/implement_current_source-process.json",
+      "retained": "logpack/07-stages/00-stage-conclusions/pl-preview-resume-20261027/implement_current_source-process.json",
+      "sha256": "231e2c033f35eeca0ac908f33647438bbbadb9d3ace91e4b17cf17428ddddbbe"
+    },
+    {
+      "removed": "wcis-official/submission/evidence/stages/pl-preview-resume-20261027/implement_current_source-receipt.json",
+      "retained": "logpack/07-stages/00-stage-conclusions/pl-preview-resume-20261027/implement_current_source-receipt.json",
+      "sha256": "926bdcd40c0782c82e65cd8528fc758849136e67a3be1b1b8805824cfb582e2e"
+    },
+    {
+      "removed": "wcis-official/submission/evidence/stages/pl-preview-resume-20261027/implement_default_source-process.json",
+      "retained": "logpack/07-stages/00-stage-conclusions/pl-preview-resume-20261027/implement_default_source-process.json",
+      "sha256": "96742cd60eb7edbfd23bc738974327f9151c6361cf9fbb9267547b26aaa52ef6"
+    },
+    {
+      "removed": "wcis-official/submission/evidence/stages/pl-preview-resume-20261027/implement_fresh_source-process.json",
+      "retained": "logpack/07-stages/00-stage-conclusions/pl-preview-resume-20261027/implement_fresh_source-process.json",
+      "sha256": "b1b6a81ec9382362c4a7e203695729a8b32e354a754c23a1972f0e2f856b8698"
+    },
+    {
+      "removed": "wcis-official/submission/evidence/stages/pl-preview-resume-20261027/implement_fresh_source-receipt.json",
+      "retained": "logpack/07-stages/00-stage-conclusions/pl-preview-resume-20261027/implement_fresh_source-receipt.json",
+      "sha256": "4621c3337e75b0ca5687cddfe7c9cf2d370b96d378e2f0190ab5aa0e452000db"
+    },
+    {
+      "removed": "wcis-official/submission/evidence/stages/pl-preview-resume-20261027/inspect_final_source_difference-process.json",
+      "retained": "logpack/07-stages/00-stage-conclusions/pl-preview-resume-20261027/inspect_final_source_difference-process.json",
+      "sha256": "f8ed7805407aa3890989e3f7d458db5d5af5af04886612fa689b282ccc7e7f65"
+    },
+    {
+      "removed": "wcis-official/submission/evidence/stages/pl-preview-resume-20261027/inspect_final_source_difference-receipt.json",
+      "retained": "logpack/07-stages/00-stage-conclusions/pl-preview-resume-20261027/inspect_final_source_difference-receipt.json",
+      "sha256": "c4d1bc7d9a4c8dfce782a2be2fb6acdbed08de0ac387f3c7a9b3b70643b07e96"
+    },
+    {
+      "removed": "wcis-official/submission/evidence/stages/pl-preview-resume-20261027/inspect_source_status-process.json",
+      "retained": "logpack/07-stages/00-stage-conclusions/pl-preview-resume-20261027/inspect_source_status-process.json",
+      "sha256": "2944f7ee29c0736656f98143cd92155efbec676d9a9c6fd6240c32016a69276e"
+    },
+    {
+      "removed": "wcis-official/submission/evidence/stages/pl-preview-resume-20261027/inspect_source_status-receipt.json",
+      "retained": "logpack/07-stages/00-stage-conclusions/pl-preview-resume-20261027/inspect_source_status-receipt.json",
+      "sha256": "4988342add3da49fe4ad0c3adfaa0b27980fc5608a8e597d88b281de75d2cc1b"
+    },
+    {
+      "removed": "wcis-official/submission/evidence/stages/pl-preview-resume-20261027/postroute-fanout-inputs.json",
+      "retained": "logpack/07-stages/00-stage-conclusions/pl-preview-resume-20261027/postroute-fanout-inputs.json",
+      "sha256": "366c0197b05c6d68b4bf3771c57acd8e75faf1cd2a95292c24549113d424885d"
+    },
+    {
+      "removed": "wcis-official/submission/evidence/stages/pl-preview-resume-20261027/postroute-optimization-inputs.json",
+      "retained": "logpack/07-stages/00-stage-conclusions/pl-preview-resume-20261027/postroute-optimization-inputs.json",
+      "sha256": "fbe85d08497f2c670cb8745de47c396a91cacb44fcb7a11c594f4507be17c42f"
+    },
+    {
+      "removed": "wcis-official/submission/evidence/stages/pl-preview-resume-20261027/procise-package-inputs.json",
+      "retained": "logpack/07-stages/00-stage-conclusions/pl-preview-resume-20261027/procise-package-inputs.json",
+      "sha256": "b2816aecd8fccf94fbbad305a5cbad595a270fae79681c86859a65eba9162146"
+    },
+    {
+      "removed": "wcis-official/submission/evidence/stages/pl-preview-resume-20261027/refresh_candidate_reports-process.json",
+      "retained": "logpack/07-stages/00-stage-conclusions/pl-preview-resume-20261027/refresh_candidate_reports-process.json",
+      "sha256": "cd569155f1dbe02a1584ed272eba0c26a2cdd76c61a932c28b8a0f55e46103b8"
+    },
+    {
+      "removed": "wcis-official/submission/evidence/stages/pl-preview-resume-20261027/refresh_candidate_reports-receipt.json",
+      "retained": "logpack/07-stages/00-stage-conclusions/pl-preview-resume-20261027/refresh_candidate_reports-receipt.json",
+      "sha256": "bd6d054fc7c203bb033705d17b9883e8a743519b362cdff57bf512912f0ea4bd"
+    },
+    {
+      "removed": "wcis-official/submission/evidence/stages/pl-preview-resume-20261027/status-source-audit-revision.json",
+      "retained": "logpack/07-stages/00-stage-conclusions/pl-preview-resume-20261027/status-source-audit-revision.json",
+      "sha256": "35e3c07657bf91e51fe0cdf7b265ed46b9dec050c1b8bf5427ea73d011b1e5fa"
+    },
+    {
+      "removed": "wcis-official/submission/evidence/stages/pl-preview-resume-20261027/wired-source-probe-20261028.json",
+      "retained": "logpack/07-stages/00-stage-conclusions/pl-preview-resume-20261027/wired-source-probe-20261028.json",
+      "sha256": "40aa2b807be02f43238f02ae4aa9d28f9d184839d521dd5eff0d5d59d9a24ce3"
+    },
+    {
+      "removed": "logpack/logpack/07-stages/02-npu-period-review/npu-min-period-20261022/vendor-review-packet/pll-properties.rpt",
+      "retained": "logpack/07-stages/02-npu-period-review/npu-min-period-20261022/pll-properties.rpt",
+      "sha256": "9274f8f08e6ec2903b27627b802b8e2a61642b3c858f780293c5e930ebce7b35"
+    },
+    {
+      "removed": "logpack/source-reconcile-20261104/direct-dcp/wcis.bif",
+      "retained": "logpack/accepted-implementation/boot-candidate/wcis.bif",
+      "sha256": "db1b799d45c16687e1c54b07514b9f4123964ec0e6436656466972997aadd3cc"
+    },
+    {
+      "removed": "ps_source/release/540p-r2/app-manifest.json",
+      "retained": "logpack/05-release-receipts/540p-r2/app-manifest.json",
+      "sha256": "8107362dd43ae20b8002df1a0ead44aae1c19f9ba9b1a2434b3c1eff72fcdf84"
+    },
+    {
+      "removed": "ps_source/release/540p-r2/baseline-manifest.json",
+      "retained": "logpack/05-release-receipts/540p-r2/baseline-manifest.json",
+      "sha256": "1f330acc3313d06d749229238df1219f48297beaaff4635f41269a31a870ef44"
+    },
+    {
+      "removed": "ps_source/release/540p-r2/owner-build.json",
+      "retained": "logpack/05-release-receipts/540p-r2/owner-build.json",
+      "sha256": "dae846be4c2523da68ca6b19f3e2e9e687eeffc33fe161052575142c9c525187"
+    },
+    {
+      "removed": "ps_source/release/540p-r2/recorder-manifest.json",
+      "retained": "logpack/05-release-receipts/540p-r2/recorder-manifest.json",
+      "sha256": "3150d033de09a43f18d6712a9aefa6fda3323a90d5f4d106dd17ec4556bcd5f1"
+    },
+    {
+      "removed": "ps_source/release/540p-r2/services-manifest.json",
+      "retained": "logpack/05-release-receipts/540p-r2/services-manifest.json",
+      "sha256": "5c30b906a19c06cc0b7ec339b7e7e0916cba833321b642d69c80d581cc8bde07"
+    },
+    {
+      "removed": "ps_source/release/540p-r2/source-map.json",
+      "retained": "logpack/05-release-receipts/540p-r2/source-map.json",
+      "sha256": "884388dcf853598ba44d9ffa5f30d4e36221cfd9e0634b6aa336499cbf494bed"
+    },
+    {
+      "removed": "ps_source/release/540p-r2/startup-manifest.json",
+      "retained": "logpack/05-release-receipts/540p-r2/startup-manifest.json",
+      "sha256": "1e974aea4a951b29a6d168fa5893de59900bfa4bd1787f2ad1828f57eb14a6a9"
+    },
+    {
+      "removed": "ps_source/release/preview-h264-live-20261103/acceptance.json",
+      "retained": "logpack/05-release-receipts/preview-h264-live-20261103/acceptance.json",
+      "sha256": "2c1623ce8a98e1461436d68a42d86bb3360c6936a4393e49f0069f270867ab04"
+    },
+    {
+      "removed": "ps_source/release/preview-h264-live-20261103/app-manifest.json",
+      "retained": "logpack/05-release-receipts/preview-h264-live-20261103/app-manifest.json",
+      "sha256": "44b9cbb8275e9225c32694919fbbe8323570e00bf8cd57b1db71dba619f3d2c8"
+    },
+    {
+      "removed": "ps_source/release/preview-h264-live-20261103/native-source-status.json",
+      "retained": "logpack/05-release-receipts/preview-h264-live-20261103/native-source-status.json",
+      "sha256": "a0c20f6302ca9617820699c767bc5b829ab7c28457e7f3e9718fbab93d1e23f3"
+    },
+    {
+      "removed": "ps_source/release/preview-h264-live-20261103/package-manifest.json",
+      "retained": "logpack/05-release-receipts/preview-h264-live-20261103/package-manifest.json",
+      "sha256": "a76b0cc79ac40e3a90d99f8428b4e73cf000335096f9e688a474426e9c34ae32"
+    },
+    {
+      "removed": "ps_source/release/preview-h264-live-20261103/recorder-manifest.json",
+      "retained": "logpack/05-release-receipts/preview-h264-live-20261103/recorder-manifest.json",
+      "sha256": "d6ee12a9bed897532aa0bb7a28ff52ede856bb00b01c7d6104d16237133ec811"
+    },
+    {
+      "removed": "ps_source/release/preview-h264-live-20261103/rollback-control.py",
+      "retained": "logpack/05-release-receipts/preview-h264-live-20261103/rollback-control.py",
+      "sha256": "bbf2020436fd526da8776b1d288b34040b918734afb19def3885e801d3c1b6fb"
+    },
+    {
+      "removed": "ps_source/release/preview-h264-live-20261103/rollback-prepared.json",
+      "retained": "logpack/05-release-receipts/preview-h264-live-20261103/rollback-prepared.json",
+      "sha256": "8d5a10f9956db7a45afafb34d23f787b3f7af4a416b878911c4680c71e5b55f8"
+    },
+    {
+      "removed": "ps_source/release/preview-h264-live-20261103/source-map.json",
+      "retained": "logpack/05-release-receipts/preview-h264-live-20261103/source-map.json",
+      "sha256": "30303fe4ecf322d11cb3aae78a4dd4ef586fbd8645f83a79372bc93dfc0ccd09"
+    },
+    {
+      "removed": "ps_source/release/recording-idle-20261031/recorder-manifest.json",
+      "retained": "logpack/05-release-receipts/recording-idle-20261031/recorder-manifest.json",
+      "sha256": "6d8a648be071c001cb77a844af3296acbcfec85ed79ef06a49f5b90e4d03fc04"
+    },
+    {
+      "removed": "ps_source/release/vision-voice-handoff-20261103/verification.json",
+      "retained": "logpack/05-release-receipts/vision-voice-handoff-20261103/verification.json",
+      "sha256": "4eaba9a870d9848e038347ea3b07f77a6f30463a6cb66858203a7f89a11ac133"
+    },
+    {
+      "removed": "ps_source/release/preview-h264-live-20261103/source/external_h264.py",
+      "retained": "logpack/05-release-receipts/preview-h264-live-20261103/source/external_h264.py",
+      "sha256": "3989cfc80777f12ae24a48f96679fab72b19c4bd6d532b8ef4cd32881d404253"
+    },
+    {
+      "removed": "ps_source/release/preview-h264-live-20261103/source/h264_live.py",
+      "retained": "logpack/05-release-receipts/preview-h264-live-20261103/source/h264_live.py",
+      "sha256": "8539fa6e530bf4c0ec33b7b957c4b4f267328448acfe24f2924812ef573f1aff"
+    },
+    {
+      "removed": "ps_source/release/preview-h264-live-20261103/source/h264_player.js",
+      "retained": "logpack/05-release-receipts/preview-h264-live-20261103/source/h264_player.js",
+      "sha256": "d1b7c2c0ca9bb93b0cbeddbf1743fe29298a080f57f0259d3e1a4906fc4db310"
+    },
+    {
+      "removed": "ps_source/release/preview-h264-live-20261103/source/serve_photos.py",
+      "retained": "logpack/05-release-receipts/preview-h264-live-20261103/source/serve_photos.py",
+      "sha256": "e95dd01f68df6d28398889c6e356d7b246f521791d9e5ebfc518161486aa8fd5"
+    },
+    {
+      "removed": "ps_source/release/preview-h264-live-20261103/source/vpu_live_server.py",
+      "retained": "logpack/05-release-receipts/preview-h264-live-20261103/source/vpu_live_server.py",
+      "sha256": "1ce4e7d2fcb03ea5cd9e17eb1f042611769d3b725cccdee50db2592fdb47f6f7"
+    },
+    {
+      "removed": "ps_source/release/preview-h264-live-20261103/tests/test_h264_live.py",
+      "retained": "logpack/05-release-receipts/preview-h264-live-20261103/tests/test_h264_live.py",
+      "sha256": "608dee1e5037cafc682173da1f1bcefff93a519c5341a45a7ea105ec4e78aa8d"
+    },
+    {
+      "removed": "ps_source/release/preview-h264-live-20261103/tests/test_h264_live_player.cjs",
+      "retained": "logpack/05-release-receipts/preview-h264-live-20261103/tests/test_h264_live_player.cjs",
+      "sha256": "fd7926530cac0adab5ef8784c2c17f1b74253a098ba08522bbfd86c06ca1e972"
+    }
+  ],
+  "superseded": [
+    {
+      "removed": "wcis-official/submission/reference_release/app/site/index.html",
+      "retained": "board_runtime/reference_release/app/site/index.html",
+      "sha256": "6c04bfed7cf62923d11f26f9869097d0eb01b1f4a6ea0858a89bf85341cce178",
+      "current_sha256": "97943cf6d2129ffa18f00ad22790d100279de09bbfa339ec88ae8819da06bfee",
+      "changed_by": "website-copy-20261104",
+      "meaning": "byte-identical at cleanup; retained website updated afterward"
+    },
+    {
+      "removed": "外部补件清单.md",
+      "retained": "EXTERNAL.md",
+      "sha256": "456299b614530d9fa6a2b1517f63d5f40466de3daba300353a90d65b8f3a57a1",
+      "current_sha256": "1bf1c473138430f0a918ded39e154dd0b58f9c1e9c3673e1272303c26e88dd98",
+      "changed_by": "website-tabs-device-camera-20261104",
+      "meaning": "byte-identical at cleanup; retained website updated afterward"
+    },
+    {
+      "removed": "wcis-official/submission/reference_release/app/site/camera_panel.js",
+      "retained": "board_runtime/reference_release/app/site/camera_panel.js",
+      "sha256": "dcd68d2c9bc37f93b9e17fc567a2d2dd275d4ffb2481b2c81bbeebbbea7551f7",
+      "current_sha256": "063d1638d65227eed4ad556efe8e95974ccfebebe34d2aac445ca189243887ea",
+      "changed_by": "website-tabs-device-camera-20261104",
+      "meaning": "byte-identical at cleanup; retained file updated afterward"
+    },
+    {
+      "removed": "wcis-official/submission/reference_release/app/site/recording_embed.js",
+      "retained": "board_runtime/reference_release/app/site/recording_embed.js",
+      "sha256": "9a9afafb4b4a74787657cbf3fe4c79230b6793553ffddfbadd7c02284a5bd22e",
+      "current_sha256": "b43688980af32dd76017a5df38ca082c57096862460db51627441658af4d7735",
+      "changed_by": "website-tabs-device-camera-20261104",
+      "meaning": "byte-identical at cleanup; retained file updated afterward"
+    },
+    {
+      "removed": "wcis-official/submission/reference_release/recorder/recording_panel.html",
+      "retained": "board_runtime/reference_release/recorder/recording_panel.html",
+      "sha256": "0a2167e24181d48c1c94516103154f40968f30f34b26f6e8fd0bbe29d3c8ca5b",
+      "current_sha256": "f88f55bcfd77378a75cb1763a9e022e9cc4c4d16e61171a5eeba458bec5860b3",
+      "changed_by": "recording-trash-return-20261104",
+      "meaning": "byte-identical at cleanup; retained file updated afterward"
+    },
+    {
+      "removed": "wcis-official/submission/reference_release/recorder/recording_panel.js",
+      "retained": "board_runtime/reference_release/recorder/recording_panel.js",
+      "sha256": "96476bbf89a65b705cf44f3258512330973c2fa1f17fb9b9d23f36cf7d6411c7",
+      "current_sha256": "0251a5a04f93ee5cebd1284243c2d021ba39a21eac171dd2b10a3f0bcf5d95b4",
+      "changed_by": "recording-trash-return-20261104",
+      "meaning": "byte-identical at cleanup; retained file updated afterward"
+    },
+    {
+      "removed": "ps_source/release/540p-r2/README.md",
+      "retained": "logpack/05-release-receipts/540p-r2/README.md",
+      "sha256": "a524cd543cf0c14b1dd303a7d12ada895f1bbc2497ed190572c44162641ddcaf",
+      "current_sha256": "d8039d391716e3b7302fc8ae9a5461ab87767cbe6bae266cff4fc76f4b19464c",
+      "changed_by": "source-dedup-cleanup-20261104",
+      "meaning": "Identical before cleanup; retained navigation links updated"
+    },
+    {
+      "removed": "ps_source/release/preview-h264-live-20261103/README.md",
+      "retained": "logpack/05-release-receipts/preview-h264-live-20261103/README.md",
+      "sha256": "8a9685e3c752e1a2a557e3e52050026ce77a5aa7380525a8a543e06c9de1e190",
+      "current_sha256": "2f14755f5ee8380c176c00d5634006893f8f4d2e1c5facdcf0cb838e8f42068a",
+      "changed_by": "source-dedup-cleanup-20261104",
+      "meaning": "Identical before cleanup; retained navigation links updated"
+    }
+  ],
+  "archived": [
+    {
+      "removed": "wcis-official/submission/reference_release/app/camera_panel.html",
+      "retained": "board_runtime/reference_release/app/camera_panel.html",
+      "sha256": "ce3122967daf42666abd88c96627683dfa197038b8c24e723f686f694bd6d72a",
+      "archive_path": "D:\\yzd\\tmp\\delivery-website-final-cleanup-20261104\\removed\\board_runtime\\reference_release\\app\\camera_panel.html",
+      "archived_by": "delivery-website-final-cleanup-20261104"
+    },
+    {
+      "removed": "wcis-official/submission/reference_release/app/recording_compression.py",
+      "retained": "board_runtime/reference_release/app/recording_compression.py",
+      "sha256": "6587666ebfc0d29344d09d3bffcce57a83ca05869f15dd411f03e9a8d7d24f67",
+      "archive_path": "D:\\yzd\\tmp\\delivery-website-final-cleanup-20261104\\removed\\board_runtime\\reference_release\\app\\recording_compression.py",
+      "archived_by": "delivery-website-final-cleanup-20261104"
+    },
+    {
+      "removed": "wcis-official/submission/reference_release/app/recording_library.py",
+      "retained": "board_runtime/reference_release/app/recording_library.py",
+      "sha256": "4d2003b4225d3452cdba053fa4716bca4b17c96b5d342feb1f2272091afd7d9d",
+      "archive_path": "D:\\yzd\\tmp\\delivery-website-final-cleanup-20261104\\removed\\board_runtime\\reference_release\\app\\recording_library.py",
+      "archived_by": "delivery-website-final-cleanup-20261104"
+    },
+    {
+      "removed": "wcis-official/submission/reference_release/app/recording_panel.html",
+      "retained": "board_runtime/reference_release/app/recording_panel.html",
+      "sha256": "8996a3a45266c2fa8c5e9c850ded80a36cce5755cce609c532bc218a8111c08e",
+      "archive_path": "D:\\yzd\\tmp\\delivery-website-final-cleanup-20261104\\removed\\board_runtime\\reference_release\\app\\recording_panel.html",
+      "archived_by": "delivery-website-final-cleanup-20261104"
+    },
+    {
+      "removed": "wcis-official/submission/reference_release/app/recording_panel.js",
+      "retained": "board_runtime/reference_release/app/recording_panel.js",
+      "sha256": "adb3c71c5a62bc0f9441bc4f7d54a9fd17b1e37c22335c7b1044ad0e97df8d78",
+      "archive_path": "D:\\yzd\\tmp\\delivery-website-final-cleanup-20261104\\removed\\board_runtime\\reference_release\\app\\recording_panel.js",
+      "archived_by": "delivery-website-final-cleanup-20261104"
+    },
+    {
+      "removed": "wcis-official/submission/reference_release/app/recording_service.py",
+      "retained": "board_runtime/reference_release/app/recording_service.py",
+      "sha256": "20968642ee67957790cfe011ea95f00141178837736db1a762a0ea2e72f25195",
+      "archive_path": "D:\\yzd\\tmp\\delivery-website-final-cleanup-20261104\\removed\\board_runtime\\reference_release\\app\\recording_service.py",
+      "archived_by": "delivery-website-final-cleanup-20261104"
+    },
+    {
+      "removed": "wcis-official/submission/reference_release/app/index.html",
+      "retained": "board_runtime/reference_release/app/index.html",
+      "sha256": "8c90d8778c316c9efed3c81c712592129548a43132891fa460b862cf3a257169",
+      "current_sha256": "97943cf6d2129ffa18f00ad22790d100279de09bbfa339ec88ae8819da06bfee",
+      "changed_by": "website-copy-20261104",
+      "meaning": "byte-identical at cleanup; retained website updated afterward",
+      "archive_path": "D:\\yzd\\tmp\\delivery-website-final-cleanup-20261104\\removed\\board_runtime\\reference_release\\app\\index.html",
+      "archived_by": "delivery-website-final-cleanup-20261104"
+    },
+    {
+      "removed": "wcis-official/submission/reference_release/app/camera_panel.js",
+      "retained": "board_runtime/reference_release/app/camera_panel.js",
+      "sha256": "dcd68d2c9bc37f93b9e17fc567a2d2dd275d4ffb2481b2c81bbeebbbea7551f7",
+      "current_sha256": "063d1638d65227eed4ad556efe8e95974ccfebebe34d2aac445ca189243887ea",
+      "changed_by": "website-tabs-device-camera-20261104",
+      "meaning": "byte-identical at cleanup; retained file updated afterward",
+      "archive_path": "D:\\yzd\\tmp\\delivery-website-final-cleanup-20261104\\removed\\board_runtime\\reference_release\\app\\camera_panel.js",
+      "archived_by": "delivery-website-final-cleanup-20261104"
+    },
+    {
+      "removed": "wcis-official/submission/reference_release/app/recording_embed.js",
+      "retained": "board_runtime/reference_release/app/recording_embed.js",
+      "sha256": "9a9afafb4b4a74787657cbf3fe4c79230b6793553ffddfbadd7c02284a5bd22e",
+      "current_sha256": "b43688980af32dd76017a5df38ca082c57096862460db51627441658af4d7735",
+      "changed_by": "website-tabs-device-camera-20261104",
+      "meaning": "byte-identical at cleanup; retained file updated afterward",
+      "archive_path": "D:\\yzd\\tmp\\delivery-website-final-cleanup-20261104\\removed\\board_runtime\\reference_release\\app\\recording_embed.js",
+      "archived_by": "delivery-website-final-cleanup-20261104"
+    }
+  ]
+}

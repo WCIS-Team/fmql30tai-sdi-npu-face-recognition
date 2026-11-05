@@ -1,0 +1,96 @@
+
+****** Vivado v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source D:/yzd/tmp/sdi-refclk-fix-20261020/eco_help.tcl
+# puts [help -args unplace_cell]
+unplace_cell
+
+Description: 
+Unplace one or more instances. 
+
+Syntax: 
+unplace_cell  [-quiet] [-verbose] <cell_list>...
+
+Usage: 
+  Name         Description
+  ------------------------
+  [-quiet]     Ignore command errors
+  [-verbose]   Suspend message limits during command execution
+  <cell_list>  a list of cells to be unplaced 
+
+Categories: 
+Floorplan
+
+# puts [help -args place_cell]
+place_cell
+
+Description: 
+Move or place one or more instances to new locations. Sites and cells are required to be listed in the right order and there should be same number of sites as number of cells. 
+
+Syntax: 
+place_cell  [-quiet] [-verbose] <cell_site_list>...
+
+Usage: 
+  Name              Description
+  -----------------------------
+  [-quiet]          Ignore command errors
+  [-verbose]        Suspend message limits during command execution
+  <cell_site_list>  a list of cells and sites in the interleaved order 
+
+Categories: 
+Floorplan
+
+# puts [help -args route_design]
+route_design
+
+Description: 
+Route the current design
+
+Syntax: 
+route_design  [-unroute] [-release_memory] [-nets <args>] [-physical_nets]
+              [-pins <arg>] [-directive <arg>] [-tns_cleanup]
+              [-no_timing_driven] [-preserve] [-delay] [-auto_delay]
+              -max_delay <arg> -min_delay <arg> [-timing_summary] [-finalize]
+              [-ultrathreads] [-quiet] [-verbose]
+
+Usage: 
+  Name                 Description
+  --------------------------------
+  [-unroute]           Unroute whole design or the given nets/pins if used 
+                       with -nets or -pins.
+  [-release_memory]    Release Router memory. Not compatible with any other 
+                       options.
+  [-nets]              Operate on the given nets.
+  [-physical_nets]     Operate on all physical nets.
+  [-pins]              Operate on the given pins.
+  [-directive]         Mode of behavior (directive) for this command. Please 
+                       refer to Arguments section of this help for values for
+                       this option.
+                       Default: Default
+  [-tns_cleanup]       Do optional TNS clean up.
+  [-no_timing_driven]  Do not run in timing driven mode.
+  [-preserve]          Preserve existing routing.
+  [-delay]             Use with -nets or -pins option to route in delay 
+                       driven mode.
+  [-auto_delay]        Use with -nets or -pins option to route in constraint 
+                       driven mode.
+  -max_delay           Use with -pins option to specify the max_delay 
+                       constraint on the pins.When specified -delay is 
+                       implicit.
+  -min_delay           Use with -pins option to specify the max_delay 
+                       constraint on the pins.When specified -delay is 
+                       implicit.
+  [-timing_summary]    Enable post-router signoff timing summary.
+  [-finalize]          finalize route_design in interactive mode.
+  [-ultrathreads]      Enable Turbo mode routing.
+  [-quiet]             Ignore command errors
+  [-verbose]           Suspend message limits during command execution
+
+Categories: 
+Tools
+
+# exit
+INFO: [Common 17-206] Exiting Vivado at Tue Oct 20 15:18:51 2026...

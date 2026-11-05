@@ -1,0 +1,68 @@
+{
+  "status": "new_bitstream_board_acceptance_failed_rolled_back",
+  "simulation_passed": true,
+  "synthesis_passed": true,
+  "route_passed": true,
+  "timing_gate": {
+    "setup_wns": 0.03,
+    "hold_whs": 0.004,
+    "pulse_wns": -0.409,
+    "inherited_npu_pulse_warning": true,
+    "production_timing_signoff": false,
+    "case_directory": "D:\\yzd\\tmp\\face-cache-board-20261018\\case",
+    "implementation_log_sha256": "dd82c15ce7665f1bad4b8aca0c80f7b82d4249a792dd1088bad04b6947babc87",
+    "placement_log_sha256": "dd82c15ce7665f1bad4b8aca0c80f7b82d4249a792dd1088bad04b6947babc87"
+  },
+  "bitstream_generated": true,
+  "boot_packaged": true,
+  "trial_deployed": true,
+  "trial_boot_id": "0546e36e-09b8-4054-bd4b-ee0388d12fc4",
+  "trial_ddr_passed": false,
+  "trial_customop_started": false,
+  "trial_ddr_mismatches": [
+    8025,
+    8015,
+    8017,
+    8019
+  ],
+  "trial_changed_between_reads": [
+    16,
+    22,
+    17,
+    27
+  ],
+  "error_byte_lanes": [
+    61
+  ],
+  "error_bits": [
+    1
+  ],
+  "new_cache_performance_measured": false,
+  "cache_accepted": false,
+  "old_boot_restored": true,
+  "current_boot_id": "e9983c3a-858a-4aa9-be4d-7af946632243",
+  "restored_ddr_zero_errors": true,
+  "baseline_transforms": 88,
+  "rollback_transforms": 88,
+  "restored_npu_outputs_equal": true,
+  "shared_tool_files_unchanged": true,
+  "checkpoint_comparison": {
+    "common_ddr_clock_primitives": 24466,
+    "changed_placements": 1366,
+    "physical_changes": [],
+    "baseline_only": [],
+    "candidate_only": [],
+    "recording_boundary_equal": false,
+    "baseline_boundary_pins": 1876,
+    "candidate_boundary_pins": 1876,
+    "baseline_extra_pins": [
+      "U_adder_top/busy142_out\tIN",
+      "U_adder_top/p_0_in41_out\tIN"
+    ],
+    "candidate_extra_pins": [
+      "U_adder_top/busy151_out\tIN",
+      "U_adder_top/p_0_in50_out\tIN"
+    ]
+  },
+  "camera_input_tested": false
+}

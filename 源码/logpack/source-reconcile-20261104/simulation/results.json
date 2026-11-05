@@ -1,0 +1,30 @@
+[
+  {
+    "case": "identity_odd_pitch",
+    "passed": true
+  },
+  {
+    "case": "rotate_border_padding",
+    "passed": true
+  },
+  {
+    "case": "rgb565_odd_pitch",
+    "passed": true
+  },
+  {
+    "case": "cache_new_frame",
+    "passed": true
+  },
+  {
+    "case": "face_obama",
+    "passed": true
+  },
+  {
+    "case": "jpeg_format0",
+    "passed": true
+  },
+  {
+    "case": "jpeg_format1",
+    "passed": true
+  }
+]

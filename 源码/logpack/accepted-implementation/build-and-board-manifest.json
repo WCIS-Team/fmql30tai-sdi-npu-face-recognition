@@ -1,0 +1,40 @@
+{
+  "passed": true,
+  "boot_id": "b174ec4a-a93d-4833-81ca-962ecdf4ba9a",
+  "boot_sha256": "f6da96abbc0144ce5a48f4fa85aed6dab65067211b8932e8f4e4db87d5110297",
+  "production_timing_signoff": false,
+  "files": {
+    "input-proof.json": "53f13602645aca80e5d143758fc84eb27b7b1cb9227ae96027b29b9287f4f665",
+    "timing-gate.json": "ca03105b0292922b3860fe1a4c5c92dbac9c4268e9c493f88b0891c9bcea68b1",
+    "package-gate.json": "0a5ad8078eb390dfbefadd814b6c654b2621ed2c90da227974805342106d0582",
+    "refclk-final.dcp": "8e54e4cb42be0164d7925e9d2ef877745d663f79a87f4d8272414543441be2e8",
+    "refclk.bit": "3697688f621ac1dcf7ddbebb5304c332d40a43baaaf161c85a8941c83e996f78",
+    "refclk-disable-icap.bit": "d563596c8d54cd70c9c1b781051fe5a777c7bdeb05f6416524a8777009974d66",
+    "boot-candidate/BOOT.bin": "f6da96abbc0144ce5a48f4fa85aed6dab65067211b8932e8f4e4db87d5110297",
+    "candidate.json": "584a35a5b277937ac04eff6046884e8c7a1d4ce58a6b0b264d286d43f6bb0507",
+    "candidate-proof.json": "5f7fd6c4bb8526c5af4b1d37eda4a497c3594ff9d6ca4349d887a49b4ce219f4",
+    "finite-result.json": "87c5882931a7f15f0990312f050dd85b314900e16a6747a504ed4d481a6f113c",
+    "fac1-result.json": "cbe76b8ad51d421d35d1089747c2ab139448cebe756a3253c95793f9d68c03a4",
+    "gallery-check.json": "84b543d7b33d0bc8c1b5114b3bf14a6fb804d9f34116fb4250a33378bbe7f7d3",
+    "windows-stream.json": "66da906dda8f1d498f7e8c708ad77403d539258d5e164945dd53b5c9ff3c4c1b",
+    "gateway-stream.json": "1fef9c2adcc70dd8159a72c3b5b96a394769681865b21a8675d7eb8f3cd04fbf",
+    "accepted.json": "441a0fecf344f5ab5f6b8b8fc9a3571bb7ddf0742e7dc388b9530e04cb5a387d",
+    "final-health-output.txt": "51890793f7d07ced33a24b4720ff7cf4401306e51a4529872c595bb18f67be92",
+    "camera-live.jpg": "88c08b1a4d485f5eaeef98eeeb32f98496a134f9173da02c7d4520f433ea5e27",
+    "repair.tcl": "54f8f2109b88087aaa85e86ad7420ebe2ae04f1a432571af5396f6691336f0eb",
+    "finish_ground.tcl": "8d5183f24f4a71d79a60442cb3da20fce70ff7c182e3d6124786772a949d5e55",
+    "generate.tcl": "886b831121cc8b85ec656368842997e3649bf48b57e6431f64eb64420c11bd6f",
+    "package_candidate.tcl": "520f4691eeb83f5b9e1f612b360534576d55deaa7910e209bb26f9433f4f5605",
+    "board_task.py": "520229a3ee11f4622cd191783dea7e3d4602a548c02087c4e0e18e31b2cec46c",
+    "deploy.py": "2ff013b7f66674fbb794bde4dcad80abd99aed762c19cd45f40a3446cae37682",
+    "accept.py": "360ec39526c5746731cafb984537ae0590dd91d3b95ef1126f8fe0be408c0d5b"
+  },
+  "project_files": {
+    "D:\\renlianshibie\\fpga_project\\constraints\\fmql30tai_full_sdi_refclk.xdc": "0760e5543e34758e4e2afeb15f307671786ccc49bf032854998e4f8a0fa14951",
+    "D:\\renlianshibie\\fpga_project\\scripts\\prepare_case.tcl": "bd56b22704b8634300e81208fa44dc2172b70e5aee490322533b5f1bebc2d520",
+    "D:\\renlianshibie\\fpga_project\\scripts\\integrate_case.py": "68a75c8f0633c04eafafb7b5ccc74c8577fe1679adae77f51984581b9265d1a3",
+    "D:\\renlianshibie\\fpga_project\\scripts\\run_sdi_vpu_capture.py": "bcbbee31f4e5f88b07d0b4da3edaa719bca6e6c7bf3591c41025633de91057fe",
+    "D:\\renlianshibie\\fpga_project\\docs\\sdi-refclk-fix-20261020.md": "773736b73d58de3779cca83c37a413e7ab20d4bd3dbaefe2bf227501312fab57",
+    "D:\\renlianshibie\\fpga_project\\lan_stream\\VPU_LIVE.md": "c0a390a08f9e524e300a57b6f2596757b72b17e3b6d925d742cd6af70c52cd9a"
+  }
+}

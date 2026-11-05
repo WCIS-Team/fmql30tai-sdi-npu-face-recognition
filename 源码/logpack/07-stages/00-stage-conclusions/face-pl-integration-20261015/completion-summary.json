@@ -1,0 +1,24 @@
+{
+  "scope": "File-input ModelBackend prototype: PL affine geometry plus existing real NPU models; excludes camera, web backend switching and production timing signoff",
+  "boot_id": "10e03733-bac1-4faa-ab79-792fabaf9db7",
+  "boot_sha256": "0e44eea591fb9dcfba724ddde17b590d5ce0005904d87f6edbcae8c6e20ae0d2",
+  "standalone_cases": 21,
+  "customop_cases": 6,
+  "board_tiny_pixels": 6,
+  "board_pipeline_cases": 13,
+  "pl_jobs": 24,
+  "feature_cosine_range": [
+    0.9971137136690174,
+    0.9998087732852596
+  ],
+  "npu_bound_ops": {
+    "yunet": 112,
+    "mobilefacenet": 211
+  },
+  "models_unchanged": true,
+  "service_restored": true,
+  "website_http_status": 200,
+  "web_backend": "PS; unchanged",
+  "timing_release_accepted": false,
+  "inherited_minimum_period_violations": 2
+}

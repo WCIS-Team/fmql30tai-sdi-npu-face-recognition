@@ -1,0 +1,18 @@
+{
+  "status": "PASS",
+  "archive_sha256": "2d2f9d0057cdd962133e16ad1d7e988ff40b6aece14f74d734b58b55bc585476",
+  "services": [
+    "wcis-face-photo.service",
+    "wcis-face-recording.service",
+    "wcis-face-storage.service",
+    "wcis-sdi-vpu-view.service"
+  ],
+  "binaries": {
+    "wcis_camera_owner": "ccb33b75b3896f26a9582111a1536ec353ee0eedb146f4c40203fd602cd4c3c6",
+    "wcis_face_cached": "a9cf8341ce37ac541c58517f21be51979af25d091d216f7f8febf18b3f8cc1bb",
+    "wcis_face_pl_retained": "6945b7e80428f98f0b8ce87e944d8007f26aabff9ff19b2b1522e484cb50b4ba",
+    "wcis_face_pad": "62ae6acdb134a880c88e59f7804e4ef18b2d7930dd1e9fa7db9c0e0104445e6a",
+    "wcis_face_npu": "63e79ac6cd8a59e90daec1060a85d7ad592513d7d262e18738cd58a066622c72"
+  },
+  "scope": "offline payload archive extraction and install-tree render; no board install"
+}

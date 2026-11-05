@@ -1,0 +1,40 @@
+{
+  "snapshot_utc": "2026-10-15T04:04:32.769557+00:00",
+  "source_sha256": {
+    "rtl/ai7030_edif_top.v": "1faf80971c9594a3619d687a7e81394f85001eb629db05d39069e13803c8546d",
+    "constrs_1/ai7030.xdc": "6a9af6838b8d35cc5290cf4e51a6ff22abf62ba66facf4d84f545520796b778b",
+    "constrs_1/impl_constraints.xdc": "2900eeb7446af28c3f23105ee6811e832fe9f4c35ccc5e3f5d70001a62710741",
+    "rtl/edif/AI_Mate.edif": "38f14b4427244f49a1ff0edf9dcdfe4438d033807d76018c688aa218c491d49c",
+    "rtl/wcis/wcis_face_customop.v": "fe5799617f041805192ba661d19e6bdf2e531987d896eeb88ad964d5823e3a44",
+    "rtl/wcis/wcis_cdc_mailbox.v": "f9cd0a7dc2d89df35002c91aeb2efbd2d56c53487d5d96e91f140c373ccbe4c2",
+    "rtl/wcis/wcis_face_preprocess.v": "eb6556ce2e5f1c916da4e9d488187832fd3721b471d9954ec93c3c12405edfb8",
+    "rtl/wcis/wcis_affine_sampler.v": "f54a71f726f30c2625b0f1641bb4371dc9b767a7f0666557db9b08c395f32151",
+    "rtl/wcis/wcis_pixel_read_axi.v": "3c194bd8d2aea84fce75d3fbfe294d2a739ffceb6db92586baa157030afd84af"
+  },
+  "simulation_cases": [
+    {
+      "name": "identity_odd_pitch",
+      "passed": true
+    },
+    {
+      "name": "rotate_border_padding",
+      "passed": true
+    },
+    {
+      "name": "rgb565_odd_pitch",
+      "passed": true
+    },
+    {
+      "name": "cache_new_frame",
+      "passed": true
+    },
+    {
+      "name": "face_obama",
+      "passed": true
+    },
+    {
+      "name": "detector_1080p",
+      "passed": true
+    }
+  ]
+}

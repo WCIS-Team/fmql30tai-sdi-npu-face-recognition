@@ -1,0 +1,438 @@
+{
+  "reference_date": "2026-10-31",
+  "scope": "saved_snapshot_not_live_board",
+  "files": [
+    {
+      "file": "app/camera-owner-build.json",
+      "sha256": "dae846be4c2523da68ca6b19f3e2e9e687eeffc33fe161052575142c9c525187"
+    },
+    {
+      "file": "app/camera_interlock.py",
+      "sha256": "fa00528979b49b7aba0ba082f84e7cf2b23121bbbdab622fe0bd948087929b6a"
+    },
+    {
+      "file": "app/camera_owner_runtime.py",
+      "sha256": "c6ad4f990c467fa5475d918626c1e0271ad1a1ef591739e903bbb704f3e6d91a"
+    },
+    {
+      "file": "app/camera_panel.html",
+      "sha256": "ce3122967daf42666abd88c96627683dfa197038b8c24e723f686f694bd6d72a"
+    },
+    {
+      "file": "app/camera_panel.js",
+      "sha256": "dcd68d2c9bc37f93b9e17fc567a2d2dd275d4ffb2481b2c81bbeebbbea7551f7"
+    },
+    {
+      "file": "app/camera_requests.py",
+      "sha256": "82ecb6a22ef1ec2a5e3048b02d5581c63828fa892b128a66ece196bd30bec406"
+    },
+    {
+      "file": "app/external_h264.py",
+      "sha256": "55d6e1b77cecba920085ffa0d35f6844921a835f0990a66a470c8bdcdb4ddaa1"
+    },
+    {
+      "file": "app/frame_stream_protocol.py",
+      "sha256": "cf9c2a026db39dd60059fd2204388c2f8ae3a6b58322b69ed5d8e14dc36bf142"
+    },
+    {
+      "file": "app/gallery.py",
+      "sha256": "7f1213ee54300a58c90841541b1f2c0c6a7b7f77760ff3ca46a5a7eeb159f66a"
+    },
+    {
+      "file": "app/h264_fragments.py",
+      "sha256": "428d0fe4c5951ed6b95da4d210f702a423b5b5b2a68d5c3ea58a596421378e45"
+    },
+    {
+      "file": "app/h264_media.py",
+      "sha256": "db536ea76692a70797edea732cbf5652a04af864cc99989566f27ea1cff72693"
+    },
+    {
+      "file": "app/h264_packager.py",
+      "sha256": "46450c376fb262431708daca0689834615d16599e67427d29c860aab5d5f8687"
+    },
+    {
+      "file": "app/h264_player.js",
+      "sha256": "65924f9fbd6b716953dc12462632e8c77e79c2a6052cdf029539db55c63150c7"
+    },
+    {
+      "file": "app/index.html",
+      "sha256": "8c90d8778c316c9efed3c81c712592129548a43132891fa460b862cf3a257169"
+    },
+    {
+      "file": "app/migrate_gallery.py",
+      "sha256": "a4ee9a2590937dc03bbb1a9441effeb350a3080bd0cedd91111c920086cc4a77"
+    },
+    {
+      "file": "app/model_backend/face_pad.py",
+      "sha256": "b35f601f19bbeb40210a0d133b5dc36a9629b9564715eb53d931eafc4a123628"
+    },
+    {
+      "file": "app/model_backend_runtime.py",
+      "sha256": "95454dfe890462a947cf36e00b8b09f3e66311c99199fdfe94d05fe91f610d91"
+    },
+    {
+      "file": "app/native_forward.py",
+      "sha256": "1576c070595a2b8aaeff3779e2b2c7490064e026db95bf8994cd89c290216c5a"
+    },
+    {
+      "file": "app/owner_pad.py",
+      "sha256": "748fc2b6d38f8b9011705032778e7a1bc2c792bc8822a90367fbd882822405d7"
+    },
+    {
+      "file": "app/persistent_gallery.py",
+      "sha256": "f0532065c87292027b2568f708eb97760f30753392c3a2fa0286ea649a59eee6"
+    },
+    {
+      "file": "app/pl_preprocess.py",
+      "sha256": "c59102c22f716be4b74da48caa410f01e28a46ac6d7012d158d86fc09f31fb9b"
+    },
+    {
+      "file": "app/receive_video_stream.py",
+      "sha256": "c69da62197d1a6603654eb40790789a9e64f5c6ff8aba853fefe58a6ae56f877"
+    },
+    {
+      "file": "app/recognize_frame.py",
+      "sha256": "8a7327dffe5c4680cec4711867bf42318c7c907e8ad3b4230690ab94faf8e0f7"
+    },
+    {
+      "file": "app/recognize_photo.py",
+      "sha256": "a0fe870971b8dfb18adcd5b25e680e7c6c2e7f657dc222bddc8dd0d67aa93515"
+    },
+    {
+      "file": "app/recording_embed.js",
+      "sha256": "9a9afafb4b4a74787657cbf3fe4c79230b6793553ffddfbadd7c02284a5bd22e"
+    },
+    {
+      "file": "app/recording_library.py",
+      "sha256": "4d2003b4225d3452cdba053fa4716bca4b17c96b5d342feb1f2272091afd7d9d"
+    },
+    {
+      "file": "app/recording_panel.html",
+      "sha256": "8996a3a45266c2fa8c5e9c850ded80a36cce5755cce609c532bc218a8111c08e"
+    },
+    {
+      "file": "app/recording_panel.js",
+      "sha256": "adb3c71c5a62bc0f9441bc4f7d54a9fd17b1e37c22335c7b1044ad0e97df8d78"
+    },
+    {
+      "file": "app/recording_service.py",
+      "sha256": "20968642ee67957790cfe011ea95f00141178837736db1a762a0ea2e72f25195"
+    },
+    {
+      "file": "app/run_frame_replay.py",
+      "sha256": "5146c12c051bdcf9d857928caeb9e42f8237a3f0ad2bc30f26d61183fe69d070"
+    },
+    {
+      "file": "app/run_photos.py",
+      "sha256": "5ca0170583af1f250a1cd84bde23c48b9f53e221b72ee170e1e6158ee0e47739"
+    },
+    {
+      "file": "app/serve_photos.py",
+      "sha256": "7e0b4d7e5fca909275c452901cbff056f7bbe52e23c38f36d12e39da5b60efed"
+    },
+    {
+      "file": "app/site/camera_panel.js",
+      "sha256": "dcd68d2c9bc37f93b9e17fc567a2d2dd275d4ffb2481b2c81bbeebbbea7551f7"
+    },
+    {
+      "file": "app/site/index.html",
+      "sha256": "6c04bfed7cf62923d11f26f9869097d0eb01b1f4a6ea0858a89bf85341cce178"
+    },
+    {
+      "file": "app/site/recording_embed.js",
+      "sha256": "9a9afafb4b4a74787657cbf3fe4c79230b6793553ffddfbadd7c02284a5bd22e"
+    },
+    {
+      "file": "app/vpu_live_server.py",
+      "sha256": "32b30ef636d561bb1514ceb04b85d7cfc7b676267d1ff373f90e2e73aae22196"
+    },
+    {
+      "file": "app/wcis_camera_owner",
+      "sha256": "933c128d5bfccd22782aa775fa0c23c41a6f33d8df29c0713f9e6d27e4ae9eb1"
+    },
+    {
+      "file": "app/wcis_face_cached",
+      "sha256": "9ca65fdcb4a92092f9a30d1cbcc5a55d5cc6839027e4a4e0b744f6aa8907c004"
+    },
+    {
+      "file": "app/wcis_face_pl_retained",
+      "sha256": "3e763183025390308f6f95236aa1c50c8c4ab6116ee8c6f08abfaab99710ebbe"
+    },
+    {
+      "file": "collection.json",
+      "sha256": "10c5824d12bd67f51f30dad1afa86a80f09d835c9b5309659e97323dbdef07a6"
+    },
+    {
+      "file": "config.json",
+      "sha256": "1ccdcaf7df53bb8fdde5121820fcaeb5b61d4c6a879f858c4266dd008dbc100e"
+    },
+    {
+      "file": "evidence/acceptance.json",
+      "sha256": "ccb91aaea6728368ef81888b81641fd682e7a83741fc99e7820403a26b31017a"
+    },
+    {
+      "file": "evidence/prepared.json",
+      "sha256": "f8b7b6d0805af1c3d23625d14b6c1b302ee7fd56f244d4b0bb709504fbcaddcf"
+    },
+    {
+      "file": "recorder/camera_panel.js",
+      "sha256": "dcd68d2c9bc37f93b9e17fc567a2d2dd275d4ffb2481b2c81bbeebbbea7551f7"
+    },
+    {
+      "file": "recorder/deploy_storage.py",
+      "sha256": "08f895fe8c457f16a8c486260d93b81fd0e433248097c8ef7e8711a76c3f7cdd"
+    },
+    {
+      "file": "recorder/external_h264.py",
+      "sha256": "8ca409eafb9f2a672d91684b6331f7d3fe246895d50c6935eec1023c6bd8a19c"
+    },
+    {
+      "file": "recorder/h264_fragments.py",
+      "sha256": "428d0fe4c5951ed6b95da4d210f702a423b5b5b2a68d5c3ea58a596421378e45"
+    },
+    {
+      "file": "recorder/h264_media.py",
+      "sha256": "db536ea76692a70797edea732cbf5652a04af864cc99989566f27ea1cff72693"
+    },
+    {
+      "file": "recorder/h264_packager.py",
+      "sha256": "46450c376fb262431708daca0689834615d16599e67427d29c860aab5d5f8687"
+    },
+    {
+      "file": "recorder/h264_player.js",
+      "sha256": "65924f9fbd6b716953dc12462632e8c77e79c2a6052cdf029539db55c63150c7"
+    },
+    {
+      "file": "recorder/recording_embed.js",
+      "sha256": "9a9afafb4b4a74787657cbf3fe4c79230b6793553ffddfbadd7c02284a5bd22e"
+    },
+    {
+      "file": "recorder/recording_library.py",
+      "sha256": "4d2003b4225d3452cdba053fa4716bca4b17c96b5d342feb1f2272091afd7d9d"
+    },
+    {
+      "file": "recorder/recording_panel.html",
+      "sha256": "8996a3a45266c2fa8c5e9c850ded80a36cce5755cce609c532bc218a8111c08e"
+    },
+    {
+      "file": "recorder/recording_panel.js",
+      "sha256": "adb3c71c5a62bc0f9441bc4f7d54a9fd17b1e37c22335c7b1044ad0e97df8d78"
+    },
+    {
+      "file": "recorder/recording_service.py",
+      "sha256": "20968642ee67957790cfe011ea95f00141178837736db1a762a0ea2e72f25195"
+    },
+    {
+      "file": "recorder/serve_photos.py",
+      "sha256": "7e0b4d7e5fca909275c452901cbff056f7bbe52e23c38f36d12e39da5b60efed"
+    },
+    {
+      "file": "recorder/vpu_live_server.py",
+      "sha256": "32b30ef636d561bb1514ceb04b85d7cfc7b676267d1ff373f90e2e73aae22196"
+    },
+    {
+      "file": "rollback/app/camera-owner-build.json",
+      "sha256": "d9fbede4fdb82c67143177292af8a429bbae9f52e99355a9984096bc4d0d98e7"
+    },
+    {
+      "file": "rollback/app/camera_interlock.py",
+      "sha256": "fa00528979b49b7aba0ba082f84e7cf2b23121bbbdab622fe0bd948087929b6a"
+    },
+    {
+      "file": "rollback/app/camera_owner_runtime.py",
+      "sha256": "c6ad4f990c467fa5475d918626c1e0271ad1a1ef591739e903bbb704f3e6d91a"
+    },
+    {
+      "file": "rollback/app/camera_panel.html",
+      "sha256": "ce3122967daf42666abd88c96627683dfa197038b8c24e723f686f694bd6d72a"
+    },
+    {
+      "file": "rollback/app/camera_panel.js",
+      "sha256": "dcd68d2c9bc37f93b9e17fc567a2d2dd275d4ffb2481b2c81bbeebbbea7551f7"
+    },
+    {
+      "file": "rollback/app/camera_requests.py",
+      "sha256": "82ecb6a22ef1ec2a5e3048b02d5581c63828fa892b128a66ece196bd30bec406"
+    },
+    {
+      "file": "rollback/app/external_h264.py",
+      "sha256": "a6b9714f2ce25ffb644e389dfb5b75771a118863b7be90e4d7b3004f82ab3346"
+    },
+    {
+      "file": "rollback/app/frame_stream_protocol.py",
+      "sha256": "cf9c2a026db39dd60059fd2204388c2f8ae3a6b58322b69ed5d8e14dc36bf142"
+    },
+    {
+      "file": "rollback/app/gallery.py",
+      "sha256": "7f1213ee54300a58c90841541b1f2c0c6a7b7f77760ff3ca46a5a7eeb159f66a"
+    },
+    {
+      "file": "rollback/app/h264_fragments.py",
+      "sha256": "428d0fe4c5951ed6b95da4d210f702a423b5b5b2a68d5c3ea58a596421378e45"
+    },
+    {
+      "file": "rollback/app/h264_media.py",
+      "sha256": "db536ea76692a70797edea732cbf5652a04af864cc99989566f27ea1cff72693"
+    },
+    {
+      "file": "rollback/app/h264_packager.py",
+      "sha256": "46450c376fb262431708daca0689834615d16599e67427d29c860aab5d5f8687"
+    },
+    {
+      "file": "rollback/app/h264_player.js",
+      "sha256": "65924f9fbd6b716953dc12462632e8c77e79c2a6052cdf029539db55c63150c7"
+    },
+    {
+      "file": "rollback/app/index.html",
+      "sha256": "8c90d8778c316c9efed3c81c712592129548a43132891fa460b862cf3a257169"
+    },
+    {
+      "file": "rollback/app/migrate_gallery.py",
+      "sha256": "a4ee9a2590937dc03bbb1a9441effeb350a3080bd0cedd91111c920086cc4a77"
+    },
+    {
+      "file": "rollback/app/model_backend/face_pad.py",
+      "sha256": "b35f601f19bbeb40210a0d133b5dc36a9629b9564715eb53d931eafc4a123628"
+    },
+    {
+      "file": "rollback/app/model_backend_runtime.py",
+      "sha256": "95454dfe890462a947cf36e00b8b09f3e66311c99199fdfe94d05fe91f610d91"
+    },
+    {
+      "file": "rollback/app/native_forward.py",
+      "sha256": "1576c070595a2b8aaeff3779e2b2c7490064e026db95bf8994cd89c290216c5a"
+    },
+    {
+      "file": "rollback/app/owner_pad.py",
+      "sha256": "748fc2b6d38f8b9011705032778e7a1bc2c792bc8822a90367fbd882822405d7"
+    },
+    {
+      "file": "rollback/app/persistent_gallery.py",
+      "sha256": "f0532065c87292027b2568f708eb97760f30753392c3a2fa0286ea649a59eee6"
+    },
+    {
+      "file": "rollback/app/pl_preprocess.py",
+      "sha256": "c59102c22f716be4b74da48caa410f01e28a46ac6d7012d158d86fc09f31fb9b"
+    },
+    {
+      "file": "rollback/app/receive_video_stream.py",
+      "sha256": "c69da62197d1a6603654eb40790789a9e64f5c6ff8aba853fefe58a6ae56f877"
+    },
+    {
+      "file": "rollback/app/recognize_frame.py",
+      "sha256": "8a7327dffe5c4680cec4711867bf42318c7c907e8ad3b4230690ab94faf8e0f7"
+    },
+    {
+      "file": "rollback/app/recognize_photo.py",
+      "sha256": "a0fe870971b8dfb18adcd5b25e680e7c6c2e7f657dc222bddc8dd0d67aa93515"
+    },
+    {
+      "file": "rollback/app/recording_embed.js",
+      "sha256": "9a9afafb4b4a74787657cbf3fe4c79230b6793553ffddfbadd7c02284a5bd22e"
+    },
+    {
+      "file": "rollback/app/recording_library.py",
+      "sha256": "4d2003b4225d3452cdba053fa4716bca4b17c96b5d342feb1f2272091afd7d9d"
+    },
+    {
+      "file": "rollback/app/recording_panel.html",
+      "sha256": "8996a3a45266c2fa8c5e9c850ded80a36cce5755cce609c532bc218a8111c08e"
+    },
+    {
+      "file": "rollback/app/recording_panel.js",
+      "sha256": "adb3c71c5a62bc0f9441bc4f7d54a9fd17b1e37c22335c7b1044ad0e97df8d78"
+    },
+    {
+      "file": "rollback/app/recording_service.py",
+      "sha256": "20968642ee67957790cfe011ea95f00141178837736db1a762a0ea2e72f25195"
+    },
+    {
+      "file": "rollback/app/run_frame_replay.py",
+      "sha256": "5146c12c051bdcf9d857928caeb9e42f8237a3f0ad2bc30f26d61183fe69d070"
+    },
+    {
+      "file": "rollback/app/run_photos.py",
+      "sha256": "5ca0170583af1f250a1cd84bde23c48b9f53e221b72ee170e1e6158ee0e47739"
+    },
+    {
+      "file": "rollback/app/serve_photos.py",
+      "sha256": "7e0b4d7e5fca909275c452901cbff056f7bbe52e23c38f36d12e39da5b60efed"
+    },
+    {
+      "file": "rollback/app/site/camera_panel.js",
+      "sha256": "dcd68d2c9bc37f93b9e17fc567a2d2dd275d4ffb2481b2c81bbeebbbea7551f7"
+    },
+    {
+      "file": "rollback/app/site/index.html",
+      "sha256": "6c04bfed7cf62923d11f26f9869097d0eb01b1f4a6ea0858a89bf85341cce178"
+    },
+    {
+      "file": "rollback/app/site/recording_embed.js",
+      "sha256": "9a9afafb4b4a74787657cbf3fe4c79230b6793553ffddfbadd7c02284a5bd22e"
+    },
+    {
+      "file": "rollback/app/vpu_live_server.py",
+      "sha256": "32b30ef636d561bb1514ceb04b85d7cfc7b676267d1ff373f90e2e73aae22196"
+    },
+    {
+      "file": "rollback/app/wcis_camera_owner",
+      "sha256": "b56cf75f2276c2661fe0096c34bd0552295b10b4449ab9d51fb739dc4264acc0"
+    },
+    {
+      "file": "rollback/app/wcis_face_cached",
+      "sha256": "9ca65fdcb4a92092f9a30d1cbcc5a55d5cc6839027e4a4e0b744f6aa8907c004"
+    },
+    {
+      "file": "rollback/app/wcis_face_pl_retained",
+      "sha256": "3e763183025390308f6f95236aa1c50c8c4ab6116ee8c6f08abfaab99710ebbe"
+    },
+    {
+      "file": "rollback/config/config.json",
+      "sha256": "0c2aadf59c71d655abda462a15fb4bae225b33ddfb829245647c28d165b14dd0"
+    },
+    {
+      "file": "rollback/config/deployment.json",
+      "sha256": "c373b8b20ca562e410fdb654132e614c61a2f8dba1e395658a698bfaba773ef9"
+    },
+    {
+      "file": "rollback/config/wcis-face-photo.service",
+      "sha256": "859eef91372000ce9d55328dd2831ad640db391a3b1d30f8bd12ddc9b1eb5e0d"
+    },
+    {
+      "file": "rollback/config/wcis-face-recording.service",
+      "sha256": "cf0bdada72689b8507085aaa6a8e5321f439cf729a7adf9c36d76e272df007d4"
+    },
+    {
+      "file": "rollback/config/wcis-sdi-vpu-view.service",
+      "sha256": "1a9c2283bd7cb0864ed44d36d72bdc6b4acd2d3aee6514cd5ea6b61ace8435dc"
+    },
+    {
+      "file": "services/wcis-face-photo.service",
+      "sha256": "1d7ec0461e322fc86c88f9efd8721697a9aee96da96b92d50db41fbe66315fa4"
+    },
+    {
+      "file": "services/wcis-face-recording.service",
+      "sha256": "cf0bdada72689b8507085aaa6a8e5321f439cf729a7adf9c36d76e272df007d4"
+    },
+    {
+      "file": "services/wcis-face-storage.service",
+      "sha256": "c46c52369ad13fa22f58b612b31d7022df0517e106761a0e5984cf2fe88627b8"
+    },
+    {
+      "file": "services/wcis-sdi-vpu-view.service",
+      "sha256": "dcf782d89fcbf336a43aeb4c2132125e126d2af8ff103fa95a4716b74754b6c7"
+    },
+    {
+      "file": "startup/boot_prepare.py",
+      "sha256": "70b997f34d893d89b2710642e099f2a3b8ef2fc3a64ce4c95a16a9227ef02ea2"
+    },
+    {
+      "file": "startup/deployment.json",
+      "sha256": "61b4083c0efd5e6207ba5f3ed4aac68dfb60b5d291a32721d5d5ad277b97f94b"
+    },
+    {
+      "file": "startup/mount_face_store.py",
+      "sha256": "5df5f1c1e614d14fd7af803b61d7ac3af68e853f3eb2ffaf2575c9d6ab06fec3"
+    }
+  ]
+}

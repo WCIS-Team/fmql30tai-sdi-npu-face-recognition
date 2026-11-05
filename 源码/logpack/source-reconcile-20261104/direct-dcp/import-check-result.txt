@@ -1,0 +1,7 @@
+INTERMEDIATE incremental-import check before selecting direct DCP recovery; not the final source-import settings.
+TOP ai7030_edif_top
+CONSTRAINTS D:/yzd/tmp/release-source-reconcile-20261104/source-test/constrs_1/ai7030.xdc D:/yzd/tmp/release-source-reconcile-20261104/source-test/constrs_1/impl_constraints.xdc D:/yzd/tmp/release-source-reconcile-20261104/source-test/constrs_1/emmc_timing.xdc D:/yzd/tmp/release-source-reconcile-20261104/source-test/constrs_1/fmql30tai_full_sdi_refclk.xdc
+REFERENCE D:/yzd/tmp/release-source-reconcile-20261104/wcis-official/submission/implemented_baseline/refclk-final.dcp
+UTILS D:/yzd/tmp/release-source-reconcile-20261104/wcis-official/submission/implemented_baseline/refclk-final.dcp
+THREADS 2
+STRATEGY Performance_NetDelay_high

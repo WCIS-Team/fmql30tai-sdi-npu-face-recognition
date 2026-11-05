@@ -1,0 +1,33 @@
+Procise 2025.1.1 temp
+SVN Version : 32494
+Build  time : 2026/03/20 13:26:17
+Start  time : 2026-11-03 23:40:41
+>>set_device JFMQL30TAI676H
+  set_device elapsed_time 3.23 seconds, cpu_time 2.75 seconds
+  set_device used memory 659MB, procise used peak memory 697MB, current used memory 681MB
+>>increment_bit_cfg_v3 D:/yzd/tmp/contest-reproduce-20261103/baseline/refclk.bit D:/yzd/tmp/contest-reproduce-20261103/baseline/boot-candidate/ai7030_edif_top.bit -disable_icap
+  /*****************************************/
+  Stage 1: Checking the source bitstream!
+  /*****************************************/
+  FPGA Part : 7z030aiffg676-2
+  IP Patch version: 53201021
+  Missing Bit Patch Info
+  Missing Patch Version Info
+  VCCM Absent, Bitstream Patch Inactive
+  /*****************************************/
+  Stage 2: Targeted Bitstream Patch Integration!
+  /*****************************************/
+  increment_bit_cfg_v3 elapsed_time 0.65 seconds, cpu_time 0.56 seconds
+  increment_bit_cfg_v3 used memory 357MB, procise used peak memory 864MB, current used memory 542MB
+>>create_boot_image wcis.bif BOOT.bin -fmql
+  create_boot_image elapsed_time 0.47 seconds, cpu_time 0.38 seconds
+  create_boot_image used memory 51MB, procise used peak memory 864MB, current used memory 569MB
+>>dump_boot_image BOOT.bin boot-image-dump.txt -fmql
+  img_hdr_tab_.part_hdr_off 0x280, bin_index 0x940
+  img_hdr_tab_.part_hdr_off 0x280, bin_index 0x980
+  img_hdr_tab_.part_hdr_off 0x280, bin_index 0x9c0
+  img_hdr_tab_.part_hdr_off 0x280, bin_index 0xa00
+  dump_boot_image elapsed_time 0.31 seconds, cpu_time 0.27 seconds
+  dump_boot_image used memory 5MB, procise used peak memory 864MB, current used memory 548MB
+
+Thank you for using procise!

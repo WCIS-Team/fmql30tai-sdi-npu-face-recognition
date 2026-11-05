@@ -1,0 +1,22 @@
+{
+  "comparison_passed": true,
+  "comparison_cases": 7,
+  "shared_wrapper_cases": 3,
+  "resources": {
+    "before": {
+      "LUT": 3270,
+      "registers": 5156,
+      "BRAM": 0,
+      "DSP": 13
+    },
+    "after": {
+      "LUT": 3417,
+      "registers": 5701,
+      "BRAM": 0,
+      "DSP": 13
+    }
+  },
+  "PAD_implemented": false,
+  "bitstream_generated": false,
+  "board_deployed": false
+}

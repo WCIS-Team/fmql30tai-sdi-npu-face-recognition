@@ -1,0 +1,38 @@
+{
+  "app": "/root/wcis-face/candidates/recording-low-latency-20261103-v2-live",
+  "files": [
+    {
+      "file": "recording_service.py",
+      "sha256": "23cf748eb0969fab82a19b58a8eb9a50f691bb46107ec73cae4f0cfdcd05f533"
+    },
+    {
+      "file": "recording_library.py",
+      "sha256": "c605e5b9a5456c2ff8c114eb302975bf40ac993faa905efc3e2c0c4694de5b2a"
+    },
+    {
+      "file": "recording_compression.py",
+      "sha256": "6587666ebfc0d29344d09d3bffcce57a83ca05869f15dd411f03e9a8d7d24f67"
+    },
+    {
+      "file": "recording_panel.html",
+      "sha256": "0a2167e24181d48c1c94516103154f40968f30f34b26f6e8fd0bbe29d3c8ca5b"
+    },
+    {
+      "file": "recording_panel.js",
+      "sha256": "96476bbf89a65b705cf44f3258512330973c2fa1f17fb9b9d23f36cf7d6411c7"
+    },
+    {
+      "file": "vpu_live_server.py",
+      "sha256": "32b30ef636d561bb1514ceb04b85d7cfc7b676267d1ff373f90e2e73aae22196"
+    },
+    {
+      "file": "h264_fragments.py",
+      "sha256": "428d0fe4c5951ed6b95da4d210f702a423b5b5b2a68d5c3ea58a596421378e45"
+    },
+    {
+      "file": "h264_media.py",
+      "sha256": "db536ea76692a70797edea732cbf5652a04af864cc99989566f27ea1cff72693"
+    }
+  ],
+  "code_unchanged_from": "/root/wcis-face/candidates/recording-idle-compression-20261031-r1"
+}

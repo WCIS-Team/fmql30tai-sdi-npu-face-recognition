@@ -1,0 +1,24 @@
+{
+  "date": "2026-11-04",
+  "vivado": "2018.3 build 2405991",
+  "part": "xc7z030ffg676-2",
+  "entry": "fpga_source/import_sources.tcl",
+  "new_project": true,
+  "original_xpr_used": false,
+  "original_dcp_used": false,
+  "design_inputs": 98,
+  "constraint_inputs": 3,
+  "standalone_xci": 13,
+  "compile_order_files": 99,
+  "all_compile_order_files_in_source_copy": true,
+  "bd_generated": true,
+  "ip_output_products_generated": true,
+  "ip_synthesis_run": false,
+  "full_implementation_run": false,
+  "board_accessed": false,
+  "runtime_install_render_passed": true,
+  "source_generation_warnings": [
+    "BD associated gp0_monitor/gp1_monitor interfaces",
+    "BD AXI ID width mismatches"
+  ]
+}

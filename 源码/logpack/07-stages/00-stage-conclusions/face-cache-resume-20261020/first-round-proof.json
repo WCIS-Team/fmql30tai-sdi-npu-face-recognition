@@ -1,0 +1,9 @@
+{
+  "passed": true,
+  "boot_id": "4e9dfe39-e7b3-4d03-9ea3-b776d19c0827",
+  "ddr_zero_errors": true,
+  "pixel_transforms": 88,
+  "npu_outputs_equal": true,
+  "jpeg_frames": 4,
+  "jpeg_bytes_equal_baseline": true
+}

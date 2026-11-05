@@ -1,0 +1,41 @@
+{
+  "status": "offline_qualified_prototype",
+  "recorded_at": "2026-10-22T12:50:12.136629+00:00",
+  "offline_checks_complete": true,
+  "deployed": false,
+  "board_verified": false,
+  "production_timing_signoff": false,
+  "accessed_board_this_phase": false,
+  "regenerated_bit_or_boot_this_phase": false,
+  "timing_compatibility_tests": 12,
+  "bundle_verifier_tests": 8,
+  "concurrent_cases": 4,
+  "concurrent_frames": 8,
+  "physical_recovery_confirmed": false,
+  "presentation_attack_detection": "not_evaluated",
+  "remaining": [
+    "Confirm physical recovery and actual boot medium before deployment",
+    "Manufacturer basis for inherited NPU minimum-period failures",
+    "Board startup, bounded DDR/pixels/models, sustained camera/encoder regression",
+    "Spoof evaluation including print, screen still/video and unseen subjects/lighting"
+  ],
+  "file_sha256": {
+    "D:\\yzd\\tmp\\pl-command-validation-20261022\\timing-gate.json": "3e2c9cffe3892457697daf33aa65a5f27e0eb73f58fb5a49a827c38dcf4a4233",
+    "D:\\yzd\\tmp\\pl-command-validation-20261022\\legacy-clock-audit.json": "6ccc6bddf719cbbcb72b15a9882d3653d7b7e4e3e4b76b9891d031665f5f72b2",
+    "D:\\yzd\\tmp\\pl-command-validation-20261022\\concurrent-simulation\\verification.json": "e9e710f7961d1f8c866ac1f0255e686d4419a189b84884d5dbccb333bbbe154e",
+    "D:\\yzd\\tmp\\pl-command-validation-20261022\\bundle-negative-tests.json": "463da110787c747ef18763a548de625daae46eb4c89531c3bbe3d1f80664eb4f",
+    "D:\\yzd\\tmp\\pl-command-validation-20261022\\timing-compatibility-tests.log": "5f5755ecd195c3a314926b4b25cee036dfc114e711793b2ff723c162ac714d7d",
+    "D:\\yzd\\tmp\\pl-command-validation-20261022\\release-offline\\release-manifest.json": "c824afe5ee5486d82e4744154778b1848daef7ca4e044cc6ec29fc95c0aa3bbc",
+    "D:\\renlianshibie\\fpga_project\\scripts\\audit_timing_compatibility.py": "68510175ed12c616561934a245570c33e4af97c63ffe2af043a80628b8a765d4",
+    "D:\\renlianshibie\\fpga_project\\scripts\\verify_frozen_recording_parallel.py": "275948523d6d87d05cc4fb4c6b70a4f61222d5411d24489cb7da3636d9095b69",
+    "D:\\renlianshibie\\fpga_project\\scripts\\verify_offline_release.py": "9da0bffd23d9636fd9c1dd24c571e014194bd7009bfc5869a8568e4eada8f42b",
+    "D:\\renlianshibie\\fpga_project\\sim\\test_audit_timing_compatibility.py": "d1df3115ef6b3493b75bfe19ef4aad4ec6a1fca48be4a4cb26f303e4ce97492c",
+    "D:\\renlianshibie\\fpga_project\\docs\\pl-command-validation-20261022.md": "de5f5765c75d3c79f3364f4d31bb2771e82377d039fbac70284f03468183893e"
+  },
+  "archive": {
+    "path": "D:\\bigfuture\\\u7ade\u8d5b\\\u8bb0\u5f55\\2026-10-22.md",
+    "synchronized": true,
+    "preserved_unrelated_sections": true,
+    "sha256": "21fa14292ced61759a42cb2637757762d0d1585f175e3c39b1dd9d9b32553579"
+  }
+}

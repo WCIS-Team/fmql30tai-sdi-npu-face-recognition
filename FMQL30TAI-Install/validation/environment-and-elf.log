@@ -1,0 +1,23 @@
+NAME="Ubuntu"
+VERSION="20.04.5 LTS (Focal Fossa)"
+ID=ubuntu
+ID_LIKE=debian
+PRETTY_NAME="Ubuntu 20.04.5 LTS"
+VERSION_ID="20.04"
+HOME_URL="https://www.ubuntu.com/"
+SUPPORT_URL="https://help.ubuntu.com/"
+BUG_REPORT_URL="https://bugs.launchpad.net/ubuntu/"
+PRIVACY_POLICY_URL="https://www.ubuntu.com/legal/terms-and-policies/privacy-policy"
+VERSION_CODENAME=focal
+UBUNTU_CODENAME=focal
+Python 3.8.10
+cmake version 3.16.3
+
+CMake suite maintained and supported by Kitware (kitware.com/cmake).
+9.4.0
+zlib1g-dev:arm64	1:1.2.11.dfsg-2ubuntu1.5
+/outputs/wcis_camera_owner:     ELF 64-bit LSB shared object, ARM aarch64, version 1 (GNU/Linux), dynamically linked, interpreter /lib/ld-linux-aarch64.so.1, BuildID[sha1]=e34b63d0cc391694fa4224c3029f3602917c9c27, for GNU/Linux 3.7.0, not stripped
+/outputs/wcis_face_cached:      ELF 64-bit LSB shared object, ARM aarch64, version 1 (GNU/Linux), dynamically linked, interpreter /lib/ld-linux-aarch64.so.1, BuildID[sha1]=be3df1a80238780e705c2a7fd22752f61e671f42, for GNU/Linux 3.7.0, not stripped
+/outputs/wcis_face_npu:         ELF 64-bit LSB shared object, ARM aarch64, version 1 (GNU/Linux), dynamically linked, interpreter /lib/ld-linux-aarch64.so.1, BuildID[sha1]=13bee71aaac2bd16a3ce2ca6e75509ecabe75878, for GNU/Linux 3.7.0, not stripped
+/outputs/wcis_face_pad:         ELF 64-bit LSB shared object, ARM aarch64, version 1 (GNU/Linux), dynamically linked, interpreter /lib/ld-linux-aarch64.so.1, BuildID[sha1]=e7b3e321ab42795d2f42f52d2299abe9cd243724, for GNU/Linux 3.7.0, not stripped
+/outputs/wcis_face_pl_retained: ELF 64-bit LSB shared object, ARM aarch64, version 1 (GNU/Linux), dynamically linked, interpreter /lib/ld-linux-aarch64.so.1, BuildID[sha1]=a2162d9f486b69667bcc479cdd6aa0f4e4d99138, for GNU/Linux 3.7.0, not stripped

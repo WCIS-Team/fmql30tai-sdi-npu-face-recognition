@@ -1,0 +1,59 @@
+{
+  "board_boot_id": "e9983c3a-858a-4aa9-be4d-7af946632243",
+  "input_sha256": "3c17508bb91554c637a2eabddfae790e5bb1caba93130814fc2ac50be9760c4c",
+  "status": "unknown",
+  "face_count": 1,
+  "faces": [
+    {
+      "box": [
+        427.552888130378,
+        179.26974086761473,
+        715.3146608020062,
+        576.2836282730102
+      ],
+      "score": 0.9243234395980835,
+      "landmarks": [
+        [
+          524.3199510676156,
+          329.95429687499995
+        ],
+        [
+          668.8706628113879,
+          335.415869140625
+        ],
+        [
+          605.8859263790035,
+          412.33525390625
+        ],
+        [
+          514.1798265124555,
+          464.3681640625
+        ],
+        [
+          637.6951734875445,
+          471.79375
+        ]
+      ]
+    }
+  ],
+  "backend": "zg330_npu_pl_and_host",
+  "outputs": {
+    "detector": [
+      "0547ce9fa54cc98ec540f91a90378c075ee81b70cd95d0c0b8cd33d9d34f660e",
+      "70e6a72a4d5382576709d852449d17045758c759ae91c99d48c58276c89e62e5",
+      "40b07863d9f680e451eaf95efc95c0bf929988507f4d1b5fb12e4411af2ccfb7",
+      "0ecdfb83a89ab8bbfe671e848063c7bf4cebaa993283b1a76dd66ced00903a26",
+      "4efa3f3dfe1a489a98a55df45fa882c66b7733285ed1c07c3417b99d4abf07db",
+      "b06880e3ce2c50c2c314b6017d29e6265f19c03681bd7561874d09f1411e7302",
+      "fa3a3e85b0cb2c7b2fe6cebd31ad140352491d592dd8ee70d5a32dd2931b4557",
+      "1f0a5159efcbc26586e0d3b14ac5ed8ed6cf26aec40d73930a2d021f1cbf4fba",
+      "6fb0d0ddb342af0b45d95adfd611ee65189712f20e371b51562d79f97a0137da",
+      "0cf2310b1830229d78aa50173f151078dbdd930a1710e4ebf3968bc8bc412373",
+      "087031c8b1ea35134f00aecbeae76f6e519f6249702e1bdc392204bbaa505481",
+      "0b51aa571acf6b6c6db5998dd96a56a47264f59e9a7ab8b7745a3dd85e845783"
+    ],
+    "recognizer": [
+      "f3e9d7d64181152790c7426ed9fcc18eb30bb059cdb0c353a99ea362b34005c2"
+    ]
+  }
+}

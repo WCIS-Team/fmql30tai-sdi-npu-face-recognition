@@ -1,0 +1,10 @@
+{
+  "setup_wns": 0.03,
+  "hold_whs": 0.004,
+  "pulse_wns": -0.409,
+  "inherited_npu_pulse_warning": true,
+  "production_timing_signoff": false,
+  "case_directory": "D:\\yzd\\tmp\\face-cache-board-20261018\\case",
+  "implementation_log_sha256": "dd82c15ce7665f1bad4b8aca0c80f7b82d4249a792dd1088bad04b6947babc87",
+  "placement_log_sha256": "dd82c15ce7665f1bad4b8aca0c80f7b82d4249a792dd1088bad04b6947babc87"
+}

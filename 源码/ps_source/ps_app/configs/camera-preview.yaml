@@ -1,0 +1,16 @@
+schema_version: 1
+# Must match the actual SDI input timing and currently loaded reference bitstream.
+input:
+  type: sdi
+  device: axi://zg330aiu?npu=0x40000000&dma=0x80000000
+  register_base: 0x40080000
+  width: 1920
+  height: 1080
+  vtc: false
+  timeout_ms: 1500
+transport:
+  port: 8088
+  fps: 2
+  timeout_ms: 1000
+# A finite first trial. This app does not record to SD, change BOOT or load models.
+run_seconds: 30

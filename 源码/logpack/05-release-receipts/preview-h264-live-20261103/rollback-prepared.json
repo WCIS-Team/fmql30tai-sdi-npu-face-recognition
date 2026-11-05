@@ -1,0 +1,542 @@
+{
+  "boot_id": "ca08d773-cea8-44fa-84c1-9841d7cf4ed3",
+  "label": "20261103-v2-live",
+  "old_app": "/root/wcis-face/apps/camera-h264-20261030-r2",
+  "new_app": "/root/wcis-face/apps/camera-low-latency-20261103-v2-live",
+  "old_recorder": "/root/wcis-face/candidates/recording-idle-compression-20261031-r1",
+  "new_recorder": "/root/wcis-face/candidates/recording-low-latency-20261103-v2-live",
+  "units": {
+    "wcis-face-photo.service": "[Unit]\nDescription=WCIS photo face recognition\nAfter=network-online.target wcis-face-storage.service\nWants=network-online.target\nRequires=wcis-face-storage.service\n\n[Service]\nEnvironment=WCIS_PREVIEW_CODEC=h264 WCIS_PREVIEW_SIZE=540\nType=simple\nExecStartPre=/usr/bin/python3 /root/wcis-face/candidates/face-camera-ready-20261020/boot_prepare.py\nWorkingDirectory=/root/wcis-face/apps/camera-h264-20261030-r2\nExecStart=/usr/bin/python3 -u /root/wcis-face/apps/camera-h264-20261030-r2/serve_photos.py --root /root/wcis-face/releases/20261014-b5a454c11d22 --site /root/wcis-face/apps/camera-h264-20261030-r2/site --host 0.0.0.0 --port 8091 --pl-executable /root/wcis-face/apps/camera-h264-20261030-r2/wcis_face_pl_retained --npu-cache-executable /root/wcis-face/apps/camera-h264-20261030-r2/wcis_face_cached --gallery-store /mnt/wcis-emmc/wcis-face/galleries --gallery-mount /mnt/wcis-emmc --gallery-uuid 67104a06-74a6-4268-a124-269d1b232a28 --camera-owner-executable /root/wcis-face/apps/camera-h264-20261030-r2/wcis_camera_owner --camera-owner-sha256 933c128d5bfccd22782aa775fa0c23c41a6f33d8df29c0713f9e6d27e4ae9eb1 --camera-owner-control /root/wcis-face/candidates/pad-owner-20261026/owner-current.json --camera-owner-fps 30 --camera-native-inputs --camera-pad-bundle /root/wcis-face/candidates/pad-20261018-7d22c90e30\nRestart=no\nRestartSec=5\nKillMode=mixed\nTimeoutStopSec=75\nSendSIGKILL=no\nEnvironment=OPENCV_IO_MAX_IMAGE_PIXELS=16000000\n\n[Install]\nWantedBy=multi-user.target\n",
+    "wcis-sdi-vpu-view.service": "[Unit]\nDescription=SDI VPU LAN viewer\nAfter=network.target\n[Service]\nExecStart=/usr/bin/python3 /root/wcis-face/apps/camera-h264-20261030-r2/vpu_live_server.py --control /root/wcis-face/candidates/pad-owner-20261026/owner-current.json --host 0.0.0.0 --port 8092\nRestart=on-failure\nRestartSec=3\n[Install]\nWantedBy=multi-user.target\n",
+    "wcis-face-recording.service": "[Unit]\nDescription=WCIS PS H264/legacy JPEG event recorder (VPU source)\nAfter=network.target wcis-face-photo.service\n\n[Service]\nType=simple\nWorkingDirectory=/root/wcis-face/candidates/recording-idle-compression-20261031-r1\nEnvironment=PYTHONDONTWRITEBYTECODE=1\nExecStart=/usr/bin/python3 /root/wcis-face/candidates/recording-idle-compression-20261031-r1/recording_service.py --control /root/wcis-face/candidates/pad-owner-20261026/owner-current.json --storage /mnt/wcis-emmc/wcis-face/recordings --mount /mnt/wcis-emmc --uuid 67104a06-74a6-4268-a124-269d1b232a28 --mode off --segment-seconds 60 --quota-mib 4096 --host 0.0.0.0 --backend http://127.0.0.1:8091\nRestart=no\nTimeoutStopSec=45\nMemoryMax=192M\nTasksMax=24\n\n[Install]\nWantedBy=multi-user.target\n"
+  },
+  "cfg": {
+    "release": "/root/wcis-face/releases/20261014-b5a454c11d22",
+    "filesystem": {
+      "formatted": true,
+      "device": "/dev/mmcblk1",
+      "boot_partitions_untouched": true,
+      "sd_untouched": true,
+      "partition_log": "Checking that no-one is using this disk right now ... OK\n\nDisk /dev/mmcblk1: 29.12 GiB, 31268536320 bytes, 61071360 sectors\nUnits: sectors of 1 * 512 = 512 bytes\nSector size (logical/physical): 512 bytes / 512 bytes\nI/O size (minimum/optimal): 512 bytes / 512 bytes\n\n>>> Script header accepted.\n>>> Script header accepted.\n>>> Created a new GPT disklabel (GUID: 06499034-B40C-CE41-951C-95D32F361C54).\n/dev/mmcblk1p1: Created a new partition 1 of type 'Linux filesystem' and of size 29.1 GiB.\n/dev/mmcblk1p2: Done.\n\nNew situation:\nDisklabel type: gpt\nDisk identifier: 06499034-B40C-CE41-951C-95D32F361C54\n\nDevice         Start      End  Sectors  Size Type\n/dev/mmcblk1p1  2048 61071326 61069279 29.1G Linux filesystem\n\nThe partition table has been altered.\nCalling ioctl() to re-read partition table.\nSyncing disks.\n",
+      "mkfs_log": "Creating filesystem with 7633659 4k blocks and 119296 inodes\nFilesystem UUID: 67104a06-74a6-4268-a124-269d1b232a28\nSuperblock backups stored on blocks: \n\t32768, 98304, 163840, 229376, 294912, 819200, 884736, 1605632, 2654208, \n\t4096000\n\nAllocating group tables:   0/233\b\b\b\b\b\b\b       \b\b\b\b\b\b\bdone                            \nWriting inode tables:   0/233\b\b\b\b\b\b\b 56/233\b\b\b\b\b\b\b145/233\b\b\b\b\b\b\b       \b\b\b\b\b\b\bdone                            \nCreating journal (16384 blocks): done\nWriting superblocks and filesystem accounting information:   0/233\b\b\b\b\b\b\b       \b\b\b\b\b\b\bdone\n\n",
+      "write_sync_ms": 389.0981600000032,
+      "uuid": "67104a06-74a6-4268-a124-269d1b232a28",
+      "mount": "/mnt/wcis-emmc",
+      "persistence_sha256": "d9f4f1e5069d018135b329443036cacfa169d5e2889ddd9dc1afe42301cca1a7",
+      "readback_and_remount_verified": true,
+      "fstab_added": true
+    },
+    "verified_boot_id": "ca08d773-cea8-44fa-84c1-9841d7cf4ed3",
+    "photo_service_sha256": "1d7ec0461e322fc86c88f9efd8721697a9aee96da96b92d50db41fbe66315fa4",
+    "photo_health_url": "http://192.168.1.113:8091/api/health",
+    "app": "/root/wcis-face/apps/camera-h264-20261030-r2",
+    "task": "/root/wcis-face/candidates/preview-maintenance-deploy-20261030",
+    "files": [
+      {
+        "file": "camera-owner-build.json",
+        "sha256": "dae846be4c2523da68ca6b19f3e2e9e687eeffc33fe161052575142c9c525187"
+      },
+      {
+        "file": "camera_interlock.py",
+        "sha256": "fa00528979b49b7aba0ba082f84e7cf2b23121bbbdab622fe0bd948087929b6a"
+      },
+      {
+        "file": "camera_owner_runtime.py",
+        "sha256": "c6ad4f990c467fa5475d918626c1e0271ad1a1ef591739e903bbb704f3e6d91a"
+      },
+      {
+        "file": "camera_panel.html",
+        "sha256": "ce3122967daf42666abd88c96627683dfa197038b8c24e723f686f694bd6d72a"
+      },
+      {
+        "file": "camera_panel.js",
+        "sha256": "dcd68d2c9bc37f93b9e17fc567a2d2dd275d4ffb2481b2c81bbeebbbea7551f7"
+      },
+      {
+        "file": "camera_requests.py",
+        "sha256": "82ecb6a22ef1ec2a5e3048b02d5581c63828fa892b128a66ece196bd30bec406"
+      },
+      {
+        "file": "external_h264.py",
+        "sha256": "55d6e1b77cecba920085ffa0d35f6844921a835f0990a66a470c8bdcdb4ddaa1"
+      },
+      {
+        "file": "frame_stream_protocol.py",
+        "sha256": "cf9c2a026db39dd60059fd2204388c2f8ae3a6b58322b69ed5d8e14dc36bf142"
+      },
+      {
+        "file": "gallery.py",
+        "sha256": "7f1213ee54300a58c90841541b1f2c0c6a7b7f77760ff3ca46a5a7eeb159f66a"
+      },
+      {
+        "file": "h264_fragments.py",
+        "sha256": "428d0fe4c5951ed6b95da4d210f702a423b5b5b2a68d5c3ea58a596421378e45"
+      },
+      {
+        "file": "h264_media.py",
+        "sha256": "db536ea76692a70797edea732cbf5652a04af864cc99989566f27ea1cff72693"
+      },
+      {
+        "file": "h264_packager.py",
+        "sha256": "46450c376fb262431708daca0689834615d16599e67427d29c860aab5d5f8687"
+      },
+      {
+        "file": "h264_player.js",
+        "sha256": "65924f9fbd6b716953dc12462632e8c77e79c2a6052cdf029539db55c63150c7"
+      },
+      {
+        "file": "index.html",
+        "sha256": "8c90d8778c316c9efed3c81c712592129548a43132891fa460b862cf3a257169"
+      },
+      {
+        "file": "migrate_gallery.py",
+        "sha256": "a4ee9a2590937dc03bbb1a9441effeb350a3080bd0cedd91111c920086cc4a77"
+      },
+      {
+        "file": "model_backend/face_pad.py",
+        "sha256": "b35f601f19bbeb40210a0d133b5dc36a9629b9564715eb53d931eafc4a123628"
+      },
+      {
+        "file": "model_backend_runtime.py",
+        "sha256": "95454dfe890462a947cf36e00b8b09f3e66311c99199fdfe94d05fe91f610d91"
+      },
+      {
+        "file": "native_forward.py",
+        "sha256": "1576c070595a2b8aaeff3779e2b2c7490064e026db95bf8994cd89c290216c5a"
+      },
+      {
+        "file": "owner_pad.py",
+        "sha256": "748fc2b6d38f8b9011705032778e7a1bc2c792bc8822a90367fbd882822405d7"
+      },
+      {
+        "file": "persistent_gallery.py",
+        "sha256": "f0532065c87292027b2568f708eb97760f30753392c3a2fa0286ea649a59eee6"
+      },
+      {
+        "file": "pl_preprocess.py",
+        "sha256": "c59102c22f716be4b74da48caa410f01e28a46ac6d7012d158d86fc09f31fb9b"
+      },
+      {
+        "file": "receive_video_stream.py",
+        "sha256": "c69da62197d1a6603654eb40790789a9e64f5c6ff8aba853fefe58a6ae56f877"
+      },
+      {
+        "file": "recognize_frame.py",
+        "sha256": "8a7327dffe5c4680cec4711867bf42318c7c907e8ad3b4230690ab94faf8e0f7"
+      },
+      {
+        "file": "recognize_photo.py",
+        "sha256": "a0fe870971b8dfb18adcd5b25e680e7c6c2e7f657dc222bddc8dd0d67aa93515"
+      },
+      {
+        "file": "recording_embed.js",
+        "sha256": "9a9afafb4b4a74787657cbf3fe4c79230b6793553ffddfbadd7c02284a5bd22e"
+      },
+      {
+        "file": "recording_library.py",
+        "sha256": "4d2003b4225d3452cdba053fa4716bca4b17c96b5d342feb1f2272091afd7d9d"
+      },
+      {
+        "file": "recording_panel.html",
+        "sha256": "8996a3a45266c2fa8c5e9c850ded80a36cce5755cce609c532bc218a8111c08e"
+      },
+      {
+        "file": "recording_panel.js",
+        "sha256": "adb3c71c5a62bc0f9441bc4f7d54a9fd17b1e37c22335c7b1044ad0e97df8d78"
+      },
+      {
+        "file": "recording_service.py",
+        "sha256": "20968642ee67957790cfe011ea95f00141178837736db1a762a0ea2e72f25195"
+      },
+      {
+        "file": "run_frame_replay.py",
+        "sha256": "5146c12c051bdcf9d857928caeb9e42f8237a3f0ad2bc30f26d61183fe69d070"
+      },
+      {
+        "file": "run_photos.py",
+        "sha256": "5ca0170583af1f250a1cd84bde23c48b9f53e221b72ee170e1e6158ee0e47739"
+      },
+      {
+        "file": "serve_photos.py",
+        "sha256": "7e0b4d7e5fca909275c452901cbff056f7bbe52e23c38f36d12e39da5b60efed"
+      },
+      {
+        "file": "site/camera_panel.js",
+        "sha256": "dcd68d2c9bc37f93b9e17fc567a2d2dd275d4ffb2481b2c81bbeebbbea7551f7"
+      },
+      {
+        "file": "site/index.html",
+        "sha256": "6c04bfed7cf62923d11f26f9869097d0eb01b1f4a6ea0858a89bf85341cce178"
+      },
+      {
+        "file": "site/recording_embed.js",
+        "sha256": "9a9afafb4b4a74787657cbf3fe4c79230b6793553ffddfbadd7c02284a5bd22e"
+      },
+      {
+        "file": "vpu_live_server.py",
+        "sha256": "32b30ef636d561bb1514ceb04b85d7cfc7b676267d1ff373f90e2e73aae22196"
+      },
+      {
+        "file": "wcis_camera_owner",
+        "sha256": "933c128d5bfccd22782aa775fa0c23c41a6f33d8df29c0713f9e6d27e4ae9eb1"
+      },
+      {
+        "file": "wcis_face_cached",
+        "sha256": "9ca65fdcb4a92092f9a30d1cbcc5a55d5cc6839027e4a4e0b744f6aa8907c004"
+      },
+      {
+        "file": "wcis_face_pl_retained",
+        "sha256": "3e763183025390308f6f95236aa1c50c8c4ab6116ee8c6f08abfaab99710ebbe"
+      }
+    ],
+    "previous_photo_app": "/root/wcis-face/apps/camera-h264-20261030-r1",
+    "verification": "/root/wcis-face/candidates/preview-maintenance-deploy-20261030/acceptance.json"
+  },
+  "dep": {
+    "app": "/root/wcis-face/apps/camera-h264-20261030-r2",
+    "boot_files": {
+      "BOOT.bin": "f6da96abbc0144ce5a48f4fa85aed6dab65067211b8932e8f4e4db87d5110297",
+      "uEnv.txt": "a13c985eb5031d75ec7069333897cae38944ba5fbadd509828b63e6a48408560",
+      "fmqlmp-verify.dtb": "e7edf0bc5eb31485962c9bfbefff60c250c9ec14363ccdd41a695173a127d3af"
+    }
+  },
+  "mode": "off",
+  "other_processes": [
+    [
+      240,
+      "1371"
+    ]
+  ],
+  "segment_seconds": 1.0,
+  "prior_seconds": 1.0,
+  "files": [
+    {
+      "file": "camera-owner-build.json",
+      "sha256": "dae846be4c2523da68ca6b19f3e2e9e687eeffc33fe161052575142c9c525187"
+    },
+    {
+      "file": "camera_interlock.py",
+      "sha256": "fa00528979b49b7aba0ba082f84e7cf2b23121bbbdab622fe0bd948087929b6a"
+    },
+    {
+      "file": "camera_owner_runtime.py",
+      "sha256": "c6ad4f990c467fa5475d918626c1e0271ad1a1ef591739e903bbb704f3e6d91a"
+    },
+    {
+      "file": "camera_panel.html",
+      "sha256": "ce3122967daf42666abd88c96627683dfa197038b8c24e723f686f694bd6d72a"
+    },
+    {
+      "file": "camera_panel.js",
+      "sha256": "dcd68d2c9bc37f93b9e17fc567a2d2dd275d4ffb2481b2c81bbeebbbea7551f7"
+    },
+    {
+      "file": "camera_requests.py",
+      "sha256": "82ecb6a22ef1ec2a5e3048b02d5581c63828fa892b128a66ece196bd30bec406"
+    },
+    {
+      "file": "external_h264.py",
+      "sha256": "3989cfc80777f12ae24a48f96679fab72b19c4bd6d532b8ef4cd32881d404253"
+    },
+    {
+      "file": "frame_stream_protocol.py",
+      "sha256": "cf9c2a026db39dd60059fd2204388c2f8ae3a6b58322b69ed5d8e14dc36bf142"
+    },
+    {
+      "file": "gallery.py",
+      "sha256": "7f1213ee54300a58c90841541b1f2c0c6a7b7f77760ff3ca46a5a7eeb159f66a"
+    },
+    {
+      "file": "h264_fragments.py",
+      "sha256": "428d0fe4c5951ed6b95da4d210f702a423b5b5b2a68d5c3ea58a596421378e45"
+    },
+    {
+      "file": "h264_media.py",
+      "sha256": "db536ea76692a70797edea732cbf5652a04af864cc99989566f27ea1cff72693"
+    },
+    {
+      "file": "h264_packager.py",
+      "sha256": "46450c376fb262431708daca0689834615d16599e67427d29c860aab5d5f8687"
+    },
+    {
+      "file": "h264_player.js",
+      "sha256": "7c3ce75c21249d5dc6395572c65e6015a1945e68cd5906150876c505e5c78596"
+    },
+    {
+      "file": "index.html",
+      "sha256": "8c90d8778c316c9efed3c81c712592129548a43132891fa460b862cf3a257169"
+    },
+    {
+      "file": "migrate_gallery.py",
+      "sha256": "a4ee9a2590937dc03bbb1a9441effeb350a3080bd0cedd91111c920086cc4a77"
+    },
+    {
+      "file": "model_backend/face_pad.py",
+      "sha256": "b35f601f19bbeb40210a0d133b5dc36a9629b9564715eb53d931eafc4a123628"
+    },
+    {
+      "file": "model_backend_runtime.py",
+      "sha256": "95454dfe890462a947cf36e00b8b09f3e66311c99199fdfe94d05fe91f610d91"
+    },
+    {
+      "file": "native_forward.py",
+      "sha256": "1576c070595a2b8aaeff3779e2b2c7490064e026db95bf8994cd89c290216c5a"
+    },
+    {
+      "file": "owner_pad.py",
+      "sha256": "748fc2b6d38f8b9011705032778e7a1bc2c792bc8822a90367fbd882822405d7"
+    },
+    {
+      "file": "persistent_gallery.py",
+      "sha256": "f0532065c87292027b2568f708eb97760f30753392c3a2fa0286ea649a59eee6"
+    },
+    {
+      "file": "pl_preprocess.py",
+      "sha256": "c59102c22f716be4b74da48caa410f01e28a46ac6d7012d158d86fc09f31fb9b"
+    },
+    {
+      "file": "receive_video_stream.py",
+      "sha256": "c69da62197d1a6603654eb40790789a9e64f5c6ff8aba853fefe58a6ae56f877"
+    },
+    {
+      "file": "recognize_frame.py",
+      "sha256": "8a7327dffe5c4680cec4711867bf42318c7c907e8ad3b4230690ab94faf8e0f7"
+    },
+    {
+      "file": "recognize_photo.py",
+      "sha256": "a0fe870971b8dfb18adcd5b25e680e7c6c2e7f657dc222bddc8dd0d67aa93515"
+    },
+    {
+      "file": "recording_embed.js",
+      "sha256": "9a9afafb4b4a74787657cbf3fe4c79230b6793553ffddfbadd7c02284a5bd22e"
+    },
+    {
+      "file": "recording_library.py",
+      "sha256": "4d2003b4225d3452cdba053fa4716bca4b17c96b5d342feb1f2272091afd7d9d"
+    },
+    {
+      "file": "recording_panel.html",
+      "sha256": "8996a3a45266c2fa8c5e9c850ded80a36cce5755cce609c532bc218a8111c08e"
+    },
+    {
+      "file": "recording_panel.js",
+      "sha256": "adb3c71c5a62bc0f9441bc4f7d54a9fd17b1e37c22335c7b1044ad0e97df8d78"
+    },
+    {
+      "file": "recording_service.py",
+      "sha256": "20968642ee67957790cfe011ea95f00141178837736db1a762a0ea2e72f25195"
+    },
+    {
+      "file": "run_frame_replay.py",
+      "sha256": "5146c12c051bdcf9d857928caeb9e42f8237a3f0ad2bc30f26d61183fe69d070"
+    },
+    {
+      "file": "run_photos.py",
+      "sha256": "5ca0170583af1f250a1cd84bde23c48b9f53e221b72ee170e1e6158ee0e47739"
+    },
+    {
+      "file": "serve_photos.py",
+      "sha256": "e95dd01f68df6d28398889c6e356d7b246f521791d9e5ebfc518161486aa8fd5"
+    },
+    {
+      "file": "site/camera_panel.js",
+      "sha256": "dcd68d2c9bc37f93b9e17fc567a2d2dd275d4ffb2481b2c81bbeebbbea7551f7"
+    },
+    {
+      "file": "site/index.html",
+      "sha256": "6c04bfed7cf62923d11f26f9869097d0eb01b1f4a6ea0858a89bf85341cce178"
+    },
+    {
+      "file": "site/recording_embed.js",
+      "sha256": "9a9afafb4b4a74787657cbf3fe4c79230b6793553ffddfbadd7c02284a5bd22e"
+    },
+    {
+      "file": "vpu_live_server.py",
+      "sha256": "1ce4e7d2fcb03ea5cd9e17eb1f042611769d3b725cccdee50db2592fdb47f6f7"
+    },
+    {
+      "file": "wcis_camera_owner",
+      "sha256": "933c128d5bfccd22782aa775fa0c23c41a6f33d8df29c0713f9e6d27e4ae9eb1"
+    },
+    {
+      "file": "wcis_face_cached",
+      "sha256": "9ca65fdcb4a92092f9a30d1cbcc5a55d5cc6839027e4a4e0b744f6aa8907c004"
+    },
+    {
+      "file": "wcis_face_pl_retained",
+      "sha256": "3e763183025390308f6f95236aa1c50c8c4ab6116ee8c6f08abfaab99710ebbe"
+    },
+    {
+      "file": "h264_live.py",
+      "sha256": "8539fa6e530bf4c0ec33b7b957c4b4f267328448acfe24f2924812ef573f1aff"
+    }
+  ],
+  "recorder_files": [
+    {
+      "file": "recording_service.py",
+      "sha256": "23cf748eb0969fab82a19b58a8eb9a50f691bb46107ec73cae4f0cfdcd05f533"
+    },
+    {
+      "file": "recording_library.py",
+      "sha256": "c605e5b9a5456c2ff8c114eb302975bf40ac993faa905efc3e2c0c4694de5b2a"
+    },
+    {
+      "file": "recording_compression.py",
+      "sha256": "6587666ebfc0d29344d09d3bffcce57a83ca05869f15dd411f03e9a8d7d24f67"
+    },
+    {
+      "file": "recording_panel.html",
+      "sha256": "0a2167e24181d48c1c94516103154f40968f30f34b26f6e8fd0bbe29d3c8ca5b"
+    },
+    {
+      "file": "recording_panel.js",
+      "sha256": "96476bbf89a65b705cf44f3258512330973c2fa1f17fb9b9d23f36cf7d6411c7"
+    },
+    {
+      "file": "vpu_live_server.py",
+      "sha256": "32b30ef636d561bb1514ceb04b85d7cfc7b676267d1ff373f90e2e73aae22196"
+    },
+    {
+      "file": "h264_fragments.py",
+      "sha256": "428d0fe4c5951ed6b95da4d210f702a423b5b5b2a68d5c3ea58a596421378e45"
+    },
+    {
+      "file": "h264_media.py",
+      "sha256": "db536ea76692a70797edea732cbf5652a04af864cc99989566f27ea1cff72693"
+    }
+  ],
+  "gallery_hashes": {
+    "/mnt/wcis-emmc/wcis-face/galleries/a49114c2174ff0b1/gallery.json": "c7cd0d62586760a89470847122cc00d98d1f793b5cf41685be089a1d16f3046d",
+    "/mnt/wcis-emmc/wcis-face/galleries/a49114c2174ff0b1/gallery.lock": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "/mnt/wcis-emmc/wcis-face/galleries/a49114c2174ff0b1/originals/51b80e113e834012b1498d7bd8a84813.original": "6a35abc56fe4a20832a482db7b5422024dadc21d7c6f3aaa44401492633962b1",
+    "/mnt/wcis-emmc/wcis-face/galleries/a49114c2174ff0b1/originals/800ef2eff8b240b1b04ea0445cf945ec.original": "8e8d42312ad3fcb8c829d3bb727d477d55d8dbac18a7bb077c47ef035b2d03ad"
+  },
+  "recording_hashes": {
+    "/mnt/wcis-emmc/wcis-face/recordings/rec-20261026T113123Z-b581623a3f0a.mjpeg": "c862f844697163b26c98755b30f83573d5fbc3581f2666de0815b8f2bb44ed78",
+    "/mnt/wcis-emmc/wcis-face/recordings/rec-20261027T091500Z-4272eda3d724.frames.jsonl": "1245c1213c99f1f11ffee3b02436c2835b56a8c6125f9ea931306d40739f9b92",
+    "/mnt/wcis-emmc/wcis-face/recordings/rec-20261101T171601Z-8b8640e38d5c.mp4": "f269f4203d3dcd009a8e7af1d28c40a15a681de601b4473e460013198437ff3c",
+    "/mnt/wcis-emmc/wcis-face/recordings/rec-20261027T090519Z-e1f57130c1d2.frames.jsonl": "b34888b685d9eea15a397e7e772400e3ad8b4879695bde5ee06c9c1ac5efafce",
+    "/mnt/wcis-emmc/wcis-face/recordings/rec-20261027T091500Z-4272eda3d724.json": "64a6bb119cf4756163441a5f618206f193895c2b8fa68946340028a1bfed62e9",
+    "/mnt/wcis-emmc/wcis-face/recordings/rec-20261102T093545Z-886ae4010113.json": "c6d23444296fffa2ac87e7784f65c045b15c75309a4e497b7608dbf40ab5e526",
+    "/mnt/wcis-emmc/wcis-face/recordings/rec-20261026T113123Z-b581623a3f0a.frames.jsonl": "4f8fb97f0992bdd27fa55e8f348754d1707e61051bef32e962a57c1e584bc533",
+    "/mnt/wcis-emmc/wcis-face/recordings/rec-20261101T172259Z-d82c32df925c.mp4": "c4bcd2bf6b4b37fa72e0ec4453b9a4d8142bc4f286c5e55dc0e7b5f74a0d70da",
+    "/mnt/wcis-emmc/wcis-face/recordings/rec-20261030T151154Z-914de53c3a6e.mp4": "2069ecd4bb657e95060a9f88e8c8cc0a1988e902598f525896df2b8fac0b5f26",
+    "/mnt/wcis-emmc/wcis-face/recordings/rec-20261027T091511Z-5397ad1477ca.frames.jsonl": "d2be2530486cce33d144c85d3027e9f8ee0e8af8466b6a66f7ab6bc7b1699c5c",
+    "/mnt/wcis-emmc/wcis-face/recordings/rec-20261101T171601Z-8b8640e38d5c.frames.jsonl": "8c64894f08615f7787f1d401ad7efb222825bc823e8b11fdd09ecf4aafb9bac8",
+    "/mnt/wcis-emmc/wcis-face/recordings/rec-20261031T103441Z-97e33459564c.json": "49e3ce091317d959c86deb39f64b7abf1b9612690b1474b1e241398bec74b9a7",
+    "/mnt/wcis-emmc/wcis-face/recordings/rec-20261101T171742Z-81264d12a7fb.frames.jsonl": "e185746cdee915808c7fc439f004474c05672315b5d36492984b944d6a78f6d9",
+    "/mnt/wcis-emmc/wcis-face/recordings/rec-20261101T171509Z-31918b57a070.json": "5c441d5e61fcfdfcc58d3949dbfe459f310b90a8c9512f131162256368789cd6",
+    "/mnt/wcis-emmc/wcis-face/recordings/rec-20261027T091318Z-69cb8f32b5c5.frames.jsonl": "5d20be1c4108694c33f1890e54905c65d01811c4d154a7627667cbac7afa5579",
+    "/mnt/wcis-emmc/wcis-face/recordings/rec-20261026T113454Z-6e7dccb46776.frames.jsonl": "fd574d47ad22b181ddf55d4952c396f8330560738363b55a42627e8527fe4863",
+    "/mnt/wcis-emmc/wcis-face/recordings/rec-20261026T113047Z-453aa0a1ee9d.json": "54aae8ee9ff64d422e6096ad0047524c2f69189e053091a464c796d6ff02a023",
+    "/mnt/wcis-emmc/wcis-face/recordings/rec-20261026T113309Z-053442f6131e.mjpeg": "a6cf311802d82e2c1047310633bf2e9d6c0c7a6808496c1fbe5f72806423716c",
+    "/mnt/wcis-emmc/wcis-face/recordings/rec-20261102T093545Z-886ae4010113.mp4": "6d45733ea9e3bfbfc7bce4cfb644e1e6acb8e6116f466f8fd23821df7a6fdbbb",
+    "/mnt/wcis-emmc/wcis-face/recordings/rec-20261102T093343Z-33b59e0961c7.json": "7575db19c23ba18dc8d83b64c44c34cbdff9bca796d89176d6d05c02a7c6ccfb",
+    "/mnt/wcis-emmc/wcis-face/recordings/rec-20261030T055459Z-bb64167a6ab1.mp4": "590419995f86b5d84e31f4aaac3e256073e047b2991a0e8648f425263ead8604",
+    "/mnt/wcis-emmc/wcis-face/recordings/rec-20261101T171509Z-31918b57a070.mp4": "9e29fd6a3096cf370254cac4672cba03b0358ae45182c13fd27bbaa87265c7c6",
+    "/mnt/wcis-emmc/wcis-face/recordings/rec-20261027T091724Z-9eef2ec8f166.mjpeg": "045ee0577353e74ed11733427037b80d1539ac6e47e7863dcf21cd2a814115f9",
+    "/mnt/wcis-emmc/wcis-face/recordings/rec-20261031T103441Z-97e33459564c.mp4": "ff067ba2db0bb73980b878980d9b645e9dc6c309d84cf3b8566cd3891a7ec673",
+    "/mnt/wcis-emmc/wcis-face/recordings/rec-20261102T093343Z-33b59e0961c7.frames.jsonl": "b068e8146d42fd47e4c105c52f1c9a74cfdb14a409a1ac6336ea55065ead5d49",
+    "/mnt/wcis-emmc/wcis-face/recordings/rec-20261102T093444Z-f33bf561989f.mp4": "e44c71827ec7cc1f33bb014c6bd12e720485dcdd95ac41745d0b0fbdd22846da",
+    "/mnt/wcis-emmc/wcis-face/recordings/rec-20261031T103259Z-afce85fab67b.json": "f82a21837686bebcc5336c1002eeaceaf5724c985ede163d63708de0a55d2d3b",
+    "/mnt/wcis-emmc/wcis-face/recordings/rec-20261026T110939Z-d8e1cc6a8be9.frames.jsonl": "ebce155c543a9208b82b194aad7017c47f6b23b6aa28fff4e42bc58700ed140e",
+    "/mnt/wcis-emmc/wcis-face/recordings/rec-20261026T110939Z-d8e1cc6a8be9.json": "11e7915e94d9dbe8653ba51345421337e1041ca5bb5f2f9c7fc4aa3ecfee295a",
+    "/mnt/wcis-emmc/wcis-face/recordings/rec-20261027T091734Z-2fba262687e6.json": "993f9771f691e015996742a40a4f614e6298c334fa6c854c8fd2011cbd610ee7",
+    "/mnt/wcis-emmc/wcis-face/recordings/rec-20261027T091318Z-69cb8f32b5c5.json": "31c3f3830aa6e276c8614e83e476640e09d196549b633f86c7c99b5a6909efbd",
+    "/mnt/wcis-emmc/wcis-face/recordings/rec-20261101T171439Z-5db109a43677.mp4": "243731edfc7520653a0a655332b0bc211e9224ff87727ca47f73ab34a990db48",
+    "/mnt/wcis-emmc/wcis-face/recordings/rec-20261030T055459Z-bb64167a6ab1.json": "b863d78d5875502264e3fd58589aa22b20b2a7d894840505c763f7238e15862e",
+    "/mnt/wcis-emmc/wcis-face/recordings/rec-20261026T111243Z-d1b22fc36e26.json": "31f6d5ae061f5a889ebaf7808a61b44debec279e26ea581ce6a437f7fbd300fd",
+    "/mnt/wcis-emmc/wcis-face/recordings/rec-20261101T171742Z-81264d12a7fb.json": "43b6536491ffbbc94a8af7de27db4fb086932254187f7f8d8e91ea34878d6b36",
+    "/mnt/wcis-emmc/wcis-face/recordings/rec-20261026T113047Z-453aa0a1ee9d.frames.jsonl": "572404bb81f144a236c71b28e96b9c6f987a7a8b6ed75e7d524208a2ee5ca222",
+    "/mnt/wcis-emmc/wcis-face/recordings/rec-20261027T091229Z-8679852414ca.mjpeg": "4f2c71c0406311c80882857874d0ad9cdc8e549e31939d17baa3c4b097b3b816",
+    "/mnt/wcis-emmc/wcis-face/recordings/rec-20261031T103259Z-afce85fab67b.mp4": "dfee848d96b7780e441a170b9ddbb6340cf068a6d1477d34ae9e2a52982d98dc",
+    "/mnt/wcis-emmc/wcis-face/recordings/rec-20261027T091453Z-3904a8a0644b.mjpeg": "44221e716c209e28ddf59d5567497a2c85ee10825912407f43c7f51411276dee",
+    "/mnt/wcis-emmc/wcis-face/recordings/rec-20261026T113113Z-09debacae2e7.frames.jsonl": "c019d05f80ae5062e533fc0c2eb4c64c2ba01f9bf0e8b4c804143d2f97315559",
+    "/mnt/wcis-emmc/wcis-face/recordings/rec-20261026T112420Z-8d8b1070fc6c.mjpeg": "c7d986617162ef263cea881773a8c662d0f536d887f65552b38039b87ceb2b96",
+    "/mnt/wcis-emmc/wcis-face/recordings/rec-20261102T093444Z-f33bf561989f.json": "32474f343d26b1a4d7b6fc16107fc32adb8b2bbbf618e89dc9fa7b4afcf379a5",
+    "/mnt/wcis-emmc/wcis-face/recordings/rec-20261026T113309Z-053442f6131e.frames.jsonl": "9f92ea51f6311b33e81f65daba6a5e6b773d1a7213a6ab45510df86337c7bae8",
+    "/mnt/wcis-emmc/wcis-face/recordings/rec-20261030T055459Z-bb64167a6ab1.frames.jsonl": "f8a35744b0fc61197a8aa21efcae9a85da4d4c92c19cc68ca98fa68e2d1a8369",
+    "/mnt/wcis-emmc/wcis-face/recordings/rec-20261031T103401Z-6700777f37c9.json": "fc25f65c1bfff9a72a7128f82f21b907848b72cf98faba3fb9382cf4a5c4a300",
+    "/mnt/wcis-emmc/wcis-face/recordings/rec-20261027T090317Z-c35e55569eec.frames.jsonl": "91a6de38ac61d9073e27128f1abb685f19da9523954d193c14614176e535bdbb",
+    "/mnt/wcis-emmc/wcis-face/recordings/rec-20261101T171742Z-81264d12a7fb.mp4": "fba16bf68434730d2fb0d01853c738074a9bc61639a18b7d3fe8e965d69cf91f",
+    "/mnt/wcis-emmc/wcis-face/recordings/rec-20261102T093343Z-33b59e0961c7.mp4": "effc2d7e0b40a1d71927e4c8b831485c73c25b8778c2464634e3acdb4c42309d",
+    "/mnt/wcis-emmc/wcis-face/recordings/rec-20261027T091724Z-9eef2ec8f166.json": "77d127499e60c0d99fb071553942d0b37ceb8272e019e89dbae81296cfc79e18",
+    "/mnt/wcis-emmc/wcis-face/recordings/rec-20261030T151154Z-914de53c3a6e.json": "db7ea9392cc2f127d64483f83979a959a04cee4c85bb546f5fb8bb4dcb7ab50b",
+    "/mnt/wcis-emmc/wcis-face/recordings/rec-20261027T091734Z-2fba262687e6.frames.jsonl": "d9d0b35fdbcee15218d7e6579742436af8c855bdbb8af62db952b3d714f863b2",
+    "/mnt/wcis-emmc/wcis-face/recordings/rec-20261027T091734Z-2fba262687e6.mjpeg": "6990bd556e066871c5e4caf81e46b3d9258c343f55d5d5c53cdb284e3aeb3df5",
+    "/mnt/wcis-emmc/wcis-face/recordings/rec-20261101T171509Z-31918b57a070.frames.jsonl": "8a0a6c35818d1273516ace5a457341fec5df0e03e8215ff826394785e5b37bb7",
+    "/mnt/wcis-emmc/wcis-face/recordings/rec-20261027T091222Z-b30302c6a8a3.json": "7b9314089108579c6765f62e0d69e4cd09bf422029ee8ff7a34399011fdb4925",
+    "/mnt/wcis-emmc/wcis-face/recordings/rec-20261030T161235Z-6e4a409980c7.frames.jsonl": "782ba45c837a8f183123b68a837b472957ce8a5fb3338a54a36340ba0c95c357",
+    "/mnt/wcis-emmc/wcis-face/recordings/rec-20261026T113241Z-ea5a4e7c6129.frames.jsonl": "7cac95e9cb132c944f188dcd648c1a5ac4e58a9aac6e00732cb1de1ae447586a",
+    "/mnt/wcis-emmc/wcis-face/recordings/rec-20261026T113454Z-6e7dccb46776.mjpeg": "473a22fba1a9091c4226a1584405cd36f43f9241bee53549cfe4008577a65e08",
+    "/mnt/wcis-emmc/wcis-face/recordings/rec-20261027T091453Z-3904a8a0644b.frames.jsonl": "052f596a803e4af4390ca47ef3663ffc9fe1245dcdeb18bec0d8b00f17a76542",
+    "/mnt/wcis-emmc/wcis-face/recordings/rec-20261027T090416Z-697aaf58cc47.mjpeg": "e29ee43e7edea7c7353edcc8ba009c443dcba2ddd4e1f718a2be32a19e085f6a",
+    "/mnt/wcis-emmc/wcis-face/recordings/rec-20261030T151154Z-914de53c3a6e.frames.jsonl": "637330ee6b51573a2c1d5402ef29cc10af1e204dff441b3c80963cbd2fe06461",
+    "/mnt/wcis-emmc/wcis-face/recordings/rec-20261026T113102Z-a54396005f27.mjpeg": "e603b8cdec6a19e4ee522380f706c08fafd4b645d087075273353354ed223553",
+    "/mnt/wcis-emmc/wcis-face/recordings/rec-20261026T113131Z-f2045451d161.json": "d1e84d0ab6ef6015276e34327318d429b89757ed20b10ae7ab37ffe896c5865d",
+    "/mnt/wcis-emmc/wcis-face/recordings/rec-20261026T113113Z-09debacae2e7.mjpeg": "9d2f65df4c61390d7675e51d9655d917ff213a920767151096c7b60a3d4c61ed",
+    "/mnt/wcis-emmc/wcis-face/recordings/rec-20261101T172252Z-d73cacb720a6.frames.jsonl": "fd3b974fb50b3b3d0e8cc15deb30003dda5221a9eb83772ec65a3d9db9c81f23",
+    "/mnt/wcis-emmc/wcis-face/recordings/rec-20261101T172259Z-d82c32df925c.frames.jsonl": "6b1f6448d77ee464db62e1e1df75f34d7fc271ddcb1d254dbe0e578cc5744421",
+    "/mnt/wcis-emmc/wcis-face/recordings/rec-20261027T091724Z-9eef2ec8f166.frames.jsonl": "a06025a531e370116166bf836caf068c92780508f11fdcf21f519487415c0282",
+    "/mnt/wcis-emmc/wcis-face/recordings/rec-20261101T172252Z-d73cacb720a6.json": "51ff770e80e7f595d0a262b551ff458b71cfa30bd353e86d4d1eb18f02c66b33",
+    "/mnt/wcis-emmc/wcis-face/recordings/rec-20261101T171439Z-5db109a43677.frames.jsonl": "468b37f8a5868d0f6739666913b4f0def8f388169420703ed9b8ae8c95fcb81c",
+    "/mnt/wcis-emmc/wcis-face/recordings/rec-20261102T093545Z-886ae4010113.frames.jsonl": "d2d5f6472f963d255aeb2c6024d28fb53c60a0247fa21f84aaf9a15f57572d8b",
+    "/mnt/wcis-emmc/wcis-face/recordings/rec-20261027T091500Z-4272eda3d724.mjpeg": "dc9eb451532c2918f90e5a30800d8e2d02fa089011d2736ee58bc542ffbbbe46",
+    "/mnt/wcis-emmc/wcis-face/recordings/rec-20261027T091229Z-8679852414ca.frames.jsonl": "30af2999cc521323fc1f4570d73b1cf9cf87fb550b8c43262a4d9db376749699",
+    "/mnt/wcis-emmc/wcis-face/recordings/rec-20261026T113113Z-09debacae2e7.json": "40a7877bfd5c59a1124593ac39da00b7214542700171720d06b6669e6dffe415",
+    "/mnt/wcis-emmc/wcis-face/recordings/rec-20261026T113241Z-ea5a4e7c6129.mjpeg": "e1d324f8d62953fa5b3e668f46962fdc3852098cf379cedff8ad964d1e1fc2eb",
+    "/mnt/wcis-emmc/wcis-face/recordings/rec-20261027T090416Z-697aaf58cc47.frames.jsonl": "47a0beac475fbb79c051ce7caa076b7d262db0546e1e6ed3324a39b8871be382",
+    "/mnt/wcis-emmc/wcis-face/recordings/rec-20261027T091222Z-b30302c6a8a3.mjpeg": "7d4fc63bb1206acb7f83bf1e2645f14fb0498391a140b45f9800d0891dae17b5",
+    "/mnt/wcis-emmc/wcis-face/recordings/rec-20261026T113353Z-d5c9f0afada2.json": "4892aaf9af59b90dc8db6de22915a3e3a4d646a9200ff8899d66c885ec626420",
+    "/mnt/wcis-emmc/wcis-face/recordings/rec-20261102T093444Z-f33bf561989f.frames.jsonl": "efeb58282b3b754344dababae80c0de65665d3cce631f9e32ba122cae8b7b20e",
+    "/mnt/wcis-emmc/wcis-face/recordings/rec-20261030T161235Z-6e4a409980c7.json": "a6daff7db1b03694c5eb93363927b215a95920b6a564dd2420ded44a99a53f94",
+    "/mnt/wcis-emmc/wcis-face/recordings/rec-20261031T103401Z-6700777f37c9.frames.jsonl": "e73b7975db254001c7972b791c5b99cfcb9b414cb514fb780f766eeea391e3e7",
+    "/mnt/wcis-emmc/wcis-face/recordings/rec-20261026T112420Z-8d8b1070fc6c.frames.jsonl": "48b00ff022ae713b4aa27d4a51338c4367c76eb06841a6eda3a22eb7aff17aeb",
+    "/mnt/wcis-emmc/wcis-face/recordings/rec-20261031T103441Z-97e33459564c.frames.jsonl": "d396e45750d24927f2f7fb1107471586989724b632a9287c3ec5203f455448a6",
+    "/mnt/wcis-emmc/wcis-face/recordings/rec-20261027T091229Z-8679852414ca.json": "aa0377f7bd2f6453cf84b5b3e2411cf6dc5c6737459910fd639a84425249fb92",
+    "/mnt/wcis-emmc/wcis-face/recordings/rec-20261026T111243Z-d1b22fc36e26.frames.jsonl": "872be6c816012a93c7e9a7a7db36d9ebe7f8a6edb08cda6577083adb7ef9fc0a",
+    "/mnt/wcis-emmc/wcis-face/recordings/rec-20261026T113102Z-a54396005f27.frames.jsonl": "504b20c459d2cbc48c248fe84ca9e946397fcabb6f7efb61ce03c8fb2d5e2976",
+    "/mnt/wcis-emmc/wcis-face/recordings/rec-20261027T091222Z-b30302c6a8a3.frames.jsonl": "6805ba1fae0534bf7304070c402989eafb0a2f8a93dcbbe56a8a2ea6f721efd8",
+    "/mnt/wcis-emmc/wcis-face/recordings/rec-20261026T111243Z-d1b22fc36e26.mjpeg": "9584f733ef6181c05780ad04a226fdeda2f84ce2f27b970654fc30d892085f4f",
+    "/mnt/wcis-emmc/wcis-face/recordings/rec-20261101T172252Z-d73cacb720a6.mp4": "fca48113f364c37acb466860228cacdbb4c9bdab5fbb44636e54b23eb72f5b03",
+    "/mnt/wcis-emmc/wcis-face/recordings/rec-20261026T113102Z-a54396005f27.json": "11056eface4ce2d9a9041a9fb8742b4ea1bb8fb761228fa4ca8ddb80d2b9ceb5",
+    "/mnt/wcis-emmc/wcis-face/recordings/rec-20261026T113131Z-f2045451d161.mjpeg": "5d2ce54f3e53ddea2a19fc44292b61350e6765833e7695f1231392e5623a2805",
+    "/mnt/wcis-emmc/wcis-face/recordings/rec-20261027T091511Z-5397ad1477ca.json": "86373b9cfb3c94ea634af1f884d5a9cb4efd0695c284482ab596e7d022a59df7",
+    "/mnt/wcis-emmc/wcis-face/recordings/rec-20261026T111144Z-cb8d9ef1d23e.mjpeg": "1f986f0acc845827be75021c9bcca1063fac70f1ea992f75e4da653e0339f7b6",
+    "/mnt/wcis-emmc/wcis-face/recordings/rec-20261027T091511Z-5397ad1477ca.mjpeg": "5fc280ebdb37ddf2469ab7e544baceb3873aae193266d9634f70996c3586eab7",
+    "/mnt/wcis-emmc/wcis-face/recordings/rec-20261027T091318Z-69cb8f32b5c5.mjpeg": "63ad690ff9f6b172496952fd83a3a3fea7a47e421698d7cc057769c92dcf023e",
+    "/mnt/wcis-emmc/wcis-face/recordings/rec-20261027T090317Z-c35e55569eec.mjpeg": "e1e428b5ca046bf3063e18d8a65944f3b58dfc0544977f5902ad725fd9cf1300",
+    "/mnt/wcis-emmc/wcis-face/recordings/rec-20261027T090519Z-e1f57130c1d2.mjpeg": "383a25fc4cdf01b8a20bc8bed46166176a32fe56afe8e3792767d98f5bfef9ed",
+    "/mnt/wcis-emmc/wcis-face/recordings/rec-20261026T113353Z-d5c9f0afada2.frames.jsonl": "7a51ad5fa711411a6102b934459c6ec32fa9dd9a20f2b95974859aa7e1ad37ef",
+    "/mnt/wcis-emmc/wcis-face/recordings/rec-20261101T172259Z-d82c32df925c.json": "cfe224e2b8fabd1c32086e569be7fe01744bf26bab68037763fab444f825c822",
+    "/mnt/wcis-emmc/wcis-face/recordings/rec-20261031T103401Z-6700777f37c9.mp4": "0bf6cb21fdb6c148b4d418353a9435ca33c80126cd26167f178603c4af5a110d",
+    "/mnt/wcis-emmc/wcis-face/recordings/rec-20261026T111929Z-46e19962ee75.frames.jsonl": "419dcac3efb139650d22f8abcd746b1d53af92edac04dd6dc77e3bfacc36dab5",
+    "/mnt/wcis-emmc/wcis-face/recordings/rec-20261027T090317Z-c35e55569eec.json": "493221d240e5228f307337293bf7872b9a8446c8cbe5492ed6ec39bf3f6cf360",
+    "/mnt/wcis-emmc/wcis-face/recordings/rec-20261026T113131Z-f2045451d161.frames.jsonl": "bb78335f337b2d0a2c23e11c85851fdb21e5b804432310a1bbe1f4d09feca7a2",
+    "/mnt/wcis-emmc/wcis-face/recordings/rec-20261026T111929Z-46e19962ee75.json": "7dc6e9e634c9c53b9525af6e59098ec07e96d7fa82e9f3f91d26dcaeab743aff",
+    "/mnt/wcis-emmc/wcis-face/recordings/rec-20261031T103259Z-afce85fab67b.frames.jsonl": "97fdf26e9ed75ab15c6eeb7bf63396cfc3f3a60649759e7c1bf8c9f2c64049e8",
+    "/mnt/wcis-emmc/wcis-face/recordings/rec-20261027T090416Z-697aaf58cc47.json": "56e0843fa8b8ea3d36261910f36823bfbdde028fcf0093da93a3006b8267d293",
+    "/mnt/wcis-emmc/wcis-face/recordings/rec-20261026T111929Z-46e19962ee75.mjpeg": "b3ef553220d2b05289621f90c96c0002ebf3da1913e07657363c796c1c1e4913",
+    "/mnt/wcis-emmc/wcis-face/recordings/rec-20261026T111144Z-cb8d9ef1d23e.json": "8cbeaba2b8c788de93e7529f5760a814807fa9426e2dc9ff222817c372696478",
+    "/mnt/wcis-emmc/wcis-face/recordings/rec-20261030T161235Z-6e4a409980c7.mp4": "83e954a87721e395c5cbb74b234a7fb8190838aea7df12247ae12d69c03559c0",
+    "/mnt/wcis-emmc/wcis-face/recordings/rec-20261101T171601Z-8b8640e38d5c.json": "90600431c16c685d9faf7d7792f9c1589b538154e074a385d8b38f3bddf55386",
+    "/mnt/wcis-emmc/wcis-face/recordings/rec-20261026T113309Z-053442f6131e.json": "7c4cf9c8ff085fa8a9c21e7f5396de427af995c1961d9275485948acf24eed70",
+    "/mnt/wcis-emmc/wcis-face/recordings/rec-20261026T113353Z-d5c9f0afada2.mjpeg": "4045aec33fc1d4c1dff0d9f180926bafab808246e5262fe0006573396c407959",
+    "/mnt/wcis-emmc/wcis-face/recordings/rec-20261026T113454Z-6e7dccb46776.json": "9f3237971f14586df2341942f9363ca7188ed75b5c34414807ef59d50ccda94e",
+    "/mnt/wcis-emmc/wcis-face/recordings/rec-20261027T090519Z-e1f57130c1d2.json": "d516cd68f86711f13f388214f42a27e9a12680b73728b864ab27c559468b893a",
+    "/mnt/wcis-emmc/wcis-face/recordings/rec-20261026T113123Z-b581623a3f0a.json": "d2f96b8f5e4060b4fca28e5c918d7af5243219da4edcbe6f4b7fcd92a469c1ca",
+    "/mnt/wcis-emmc/wcis-face/recordings/rec-20261026T111144Z-cb8d9ef1d23e.frames.jsonl": "719f037f322c82ac2b210a3bb88006c1057c4e52891f2e3ca097c0b20303ba71",
+    "/mnt/wcis-emmc/wcis-face/recordings/rec-20261101T171439Z-5db109a43677.json": "46b56409a89df1d20acc659ea8b5c3ed8e83441dcd6f1323a97021fbf9c458dd",
+    "/mnt/wcis-emmc/wcis-face/recordings/rec-20261026T110939Z-d8e1cc6a8be9.mjpeg": "24c9e4f717e5d7d757b2e750ef81b848bf6757c1ae124ab05fe6672d2a5d7964",
+    "/mnt/wcis-emmc/wcis-face/recordings/rec-20261026T113047Z-453aa0a1ee9d.mjpeg": "a51562f3b8dd631e7b3d3a98667c632f64ca71f670ff305b450db1c4ad8341ec",
+    "/mnt/wcis-emmc/wcis-face/recordings/rec-20261027T091453Z-3904a8a0644b.json": "e9c04216ec77f18276d54f8d054ae8c5c26bfa2a362348805c7216fdfcd07b3e",
+    "/mnt/wcis-emmc/wcis-face/recordings/rec-20261026T113241Z-ea5a4e7c6129.json": "1d2358cf84be376422dcf1ba87484fcb3e6dee96dcd77a4f2ea47750cfcde0e5",
+    "/mnt/wcis-emmc/wcis-face/recordings/rec-20261026T112420Z-8d8b1070fc6c.json": "baf28ef3d3a6758ce855ad4fb918e193f56d2bca8ac770fe9a9a2b0c39456a88",
+    "/mnt/wcis-emmc/wcis-face/recordings/.trash/rec-20261026T113131Z-f2045451d161.json": "b9c80178241072a23bd9ac0884e8e251f36fef23371bb3840dcbb66b732e2b04",
+    "/mnt/wcis-emmc/wcis-face/recordings/.trash/rec-20261026T113353Z-d5c9f0afada2.json": "c0f04e250bef1e4dae60d00f61aaeb5097724a3753e5d95c7efc3fc4ccfe43e0",
+    "/mnt/wcis-emmc/wcis-face/recordings/.trash/rec-20261026T113309Z-053442f6131e.json": "7a0325ebeed140e1010377ff284c95cb5db8443882bd269bbf65939fad917d2d",
+    "/mnt/wcis-emmc/wcis-face/recordings/.trash/rec-20261027T091453Z-3904a8a0644b.json": "a2575d662097e45820072acf5beed5562a68e82c13e71c0ed30c47bcb2da197f",
+    "/mnt/wcis-emmc/wcis-face/recordings/.trash/rec-20261026T113241Z-ea5a4e7c6129.json": "c46432770848b99c603bf375ec7b62a4a76ac0605a4a64b9d3c6c9c58be8e779"
+  },
+  "kernel": "[    0.000000] Booting Linux on physical CPU 0x0000000000 [0x410fd034]\n[    0.000000] Linux version 5.4.52-fmsh-sdk-v2025.04 (fmsh@fmsh-virtual-machine) (gcc version 7.5.0 (Linaro GCC 7.5-2019.12)) #3 SMP Fri Mar 13 13:44:29 CST 2026\n[    0.000000] Machine model: FMQLMP FMQL100TAI\n[    0.000000] earlycon: uart8250 at MMIO32 0x00000000e0004000 (options '')\n[    0.000000] printk: bootconsole [uart8250] enabled\n[    0.000000] Memory limited to 1024MB\n[    0.000000] cma: Reserved 256 MiB at 0x0000000030000000\n[    0.000000] On node 0 totalpages: 262144\n[    0.000000]   DMA32 zone: 3584 pages used for memmap\n[    0.000000]   DMA32 zone: 0 pages reserved\n[    0.000000]   DMA32 zone: 262144 pages, LIFO batch:63\n[    0.000000] psci: probing for conduit method from DT.\n[    0.000000] psci: PSCIv1.1 detected in firmware.\n[    0.000000] psci: Using standard PSCI v0.2 function IDs\n[    0.000000] psci: MIGRATE_INFO_TYPE not supported.\n[    0.000000] psci: SMC Calling Convention v1.0\n[    0.000000] percpu: Embedded 21 pages/cpu s48088 r8192 d29736 u86016\n[    0.000000] pcpu-alloc: s48088 r8192 d29736 u86016 alloc=21*4096\n[    0.000000] pcpu-alloc: [0] 0 [0] 1 [0] 2 [0] 3 \n[    0.000000] Detected VIPT I-cache on CPU0\n[    0.000000] CPU features: detected: ARM erratum 845719\n[    0.000000] Built 1 zonelists, mobility grouping on.  Total pages: 258560\n[    0.000000] Kernel command line: console=ttyPS0,115200n8 earlycon=uart8250,mmio32,0xe0004000 loglevel=8 root=/dev/mmcblk0p2 rootwait rw clk_ignore_unused mem=1024M\n[    0.000000] Dentry cache hash table entries: 131072 (order: 8, 1048576 bytes, linear)\n[    0.000000] Inode-cache hash table entries: 65536 (order: 7, 524288 bytes, linear)\n[    0.000000] mem auto-init: stack:off, heap alloc:off, heap free:off\n[    0.000000] Memory: 754920K/1048576K available (9022K kernel code, 498K rwdata, 2596K rodata, 640K init, 285K bss, 31512K reserved, 262144K cma-reserved)\n[    0.000000] rcu: Hierarchical RCU implementation.\n[    0.000000] rcu: \tRCU event tracing is enabled.\n[    0.000000] rcu: RCU calculated value of scheduler-enlistment delay is 25 jiffies.\n[    0.000000] NR_IRQS: 64, nr_irqs: 64, preallocated irqs: 0\n[    0.000000] GIC: Adjusting CPU interface base to 0x00000000f892f000\n[    0.000000] GIC: Using split EOI/Deactivate mode\n[    0.000000] random: get_random_bytes called from start_kernel+0x2ac/0x454 with crng_init=0\n[    0.000000] FMQLMP clock init\n[    0.000000] fmqlmp_clk_setup: clkc starts at ffffffc010005100\n[    0.000000] arch_timer: cp15 timer(s) running at 100.00MHz (phys).\n[    0.000000] clocksource: arch_sys_counter: mask: 0xffffffffffffff max_cycles: 0x171024e7e0, max_idle_ns: 440795205315 ns\n[    0.000004] sched_clock: 56 bits at 100MHz, resolution 10ns, wraps every 4398046511100ns\n[    0.008489] Console: colour dummy device 80x25\n[    0.012975] Calibrating delay loop (skipped), value calculated using timer frequency.. 200.00 BogoMIPS (lpj=400000)\n[    0.023462] pid_max: default: 32768 minimum: 301\n[    0.028231] Mount-cache hash table entries: 2048 (order: 2, 16384 bytes, linear)\n[    0.035668] Mountpoint-cache hash table entries: 2048 (order: 2, 16384 bytes, linear)\n[    0.044452] ASID allocator initialised with 32768 entries\n[    0.049936] rcu: Hierarchical SRCU implementation.\n[    0.055043] smp: Bringing up secondary CPUs ...\n[    0.059943] Detected VIPT I-cache on CPU1\n[    0.059978] CPU1: Booted secondary processor 0x0000000001 [0x410fd034]\n[    0.060339] Detected VIPT I-cache on CPU2\n[    0.060362] CPU2: Booted secondary processor 0x0000000002 [0x410fd034]\n[    0.060694] Detected VIPT I-cache on CPU3\n[    0.060716] CPU3: Booted secondary processor 0x0000000003 [0x410fd034]\n[    0.060765] smp: Brought up 1 node, 4 CPUs\n[    0.096634] SMP: Total of 4 processors activated.\n[    0.101362] CPU features: detected: 32-bit EL0 Support\n[    0.106526] CPU features: detected: CRC32 instructions\n[    0.111727] CPU: All CPU(s) started at EL2\n[    0.115859] alternatives: patching kernel code\n[    0.121212] devtmpfs: initialized\n[    0.127110] clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 7645041785100000 ns\n[    0.136908] futex hash table entries: 1024 (order: 4, 65536 bytes, linear)\n[    0.151089] NET: Registered protocol family 16\n[    0.156999] DMA: preallocated 256 KiB pool for atomic allocations\n[    0.163151] audit: initializing netlink subsys (disabled)\n[    0.168658] audit: type=2000 audit(0.112:1): state=initialized audit_enabled=0 res=1\n[    0.176459] cpuidle: using governor menu\n[    0.180627] hw-breakpoint: found 6 breakpoint and 4 watchpoint registers.\n[    0.196385] HugeTLB registered 1.00 GiB page size, pre-allocated 0 pages\n[    0.203127] HugeTLB registered 32.0 MiB page size, pre-allocated 0 pages\n[    0.209865] HugeTLB registered 2.00 MiB page size, pre-allocated 0 pages\n[    0.216600] HugeTLB registered 64.0 KiB page size, pre-allocated 0 pages\n[    1.515658] dw_dmac e004b000.dma: DesignWare DMA Controller, 8 channels\n[    1.522477] iommu: Default domain type: Translated \n[    1.527600] SCSI subsystem initialized\n[    1.531505] usbcore: registered new interface driver usbfs\n[    1.537046] usbcore: registered new interface driver hub\n[    1.542413] usbcore: registered new device driver usb\n[    1.547589] usb_phy_generic amba-apu@0:usbphy0: amba-apu@0:usbphy0 supply vcc not found, using dummy regulator\n[    1.557791] mc: Linux media interface: v0.10\n[    1.562106] videodev: Linux video capture interface: v2.00\n[    1.567636] pps_core: LinuxPPS API ver. 1 registered\n[    1.572626] pps_core: Software ver. 5.3.6 - Copyright 2005-2007 Rodolfo Giometti <giometti@linux.it>\n[    1.581809] PTP clock support registered\n[    1.585762] EDAC MC: Ver: 3.0.0\n[    1.589165] FPGA manager framework\n[    1.592664] Advanced Linux Sound Architecture Driver Initialized.\n[    1.599359] clocksource: Switched to clocksource arch_sys_counter\n[    1.605574] VFS: Disk quotas dquot_6.6.0\n[    1.609561] VFS: Dquot-cache hash table entries: 512 (order 0, 4096 bytes)\n[    1.620899] NET: Registered protocol family 2\n[    1.625650] tcp_listen_portaddr_hash hash table entries: 512 (order: 1, 8192 bytes, linear)\n[    1.634063] TCP established hash table entries: 8192 (order: 4, 65536 bytes, linear)\n[    1.641912] TCP bind hash table entries: 8192 (order: 5, 131072 bytes, linear)\n[    1.649283] TCP: Hash tables configured (established 8192 bind 8192)\n[    1.655742] UDP hash table entries: 512 (order: 2, 16384 bytes, linear)\n[    1.662420] UDP-Lite hash table entries: 512 (order: 2, 16384 bytes, linear)\n[    1.669610] NET: Registered protocol family 1\n[    1.674250] RPC: Registered named UNIX socket transport module.\n[    1.680205] RPC: Registered udp transport module.\n[    1.684935] RPC: Registered tcp transport module.\n[    1.689664] RPC: Registered tcp NFSv4.1 backchannel transport module.\n[    1.697137] Initialise system trusted keyrings\n[    1.701691] workingset: timestamp_bits=62 max_order=18 bucket_order=0\n[    1.708921] NFS: Registering the id_resolver key type\n[    1.714011] Key type id_resolver registered\n[    1.718217] Key type id_legacy registered\n[    1.722254] nfs4filelayout_init: NFSv4 File Layout Driver Registering...\n[    1.729005] jffs2: version 2.2. (NAND) \u00a9 2001-2006 Red Hat, Inc.\n[    1.735388] Key type asymmetric registered\n[    1.739512] Asymmetric key parser 'x509' registered\n[    1.744433] Block layer SCSI generic (bsg) driver version 0.4 loaded (major 247)\n[    1.751866] io scheduler mq-deadline registered\n[    1.756421] io scheduler kyber registered\n[    1.764587] dw_axi_dmac_platform f0010000.dma: Every channel has independent irq number\n[    1.773164] dw_axi_dmac_platform f0010000.dma: DesignWare AXI DMA Controller, 8 channels\n[    1.809863] Serial: 8250/16550 driver, 10 ports, IRQ sharing disabled\n[    1.818467] printk: console [ttyPS0] disabled\n[    1.822887] e0004000.serial: ttyPS0 at MMIO 0xe0004000 (irq = 27, base_baud = 12500000) is a 16550A\n[    1.832009] printk: console [ttyPS0] enabled\n[    1.840548] printk: bootconsole [uart8250] disabled\n[    1.851510] misc dma_buf_te: dma_buf_te ready\n[    1.856212] physical-memory-group-manager amba-apu@0:mali_mgm: Memory group manager probed successfully\n[    1.870141] brd: module loaded\n[    1.878181] loop: module loaded\n[    1.881605] mtdoops: mtd device (mtddev=name/number) must be supplied\n[    1.888529] cadence-qspi e0000000.spi: n25q256a (32768 Kbytes)\n[    1.894400] 3 fixed-partitions partitions found on MTD device e0000000.spi.0\n[    1.901454] Creating 3 MTD partitions on \"e0000000.spi.0\":\n[    1.906946] 0x000000000000-0x000000400000 : \"bootloader\"\n[    1.913023] 0x000001000000-0x000002000000 : \"kernel\"\n[    1.918711] 0x000002000000-0x000004000000 : \"rootfs\"\n[    1.923683] mtd: partition \"rootfs\" is out of reach -- disabled\n[    1.930520] dw_spi_fmsh e0021000.spi: SPI is master mode.\n[    1.936710] libphy: Fixed MDIO Bus: probed\n[    1.941504] tun: Universal TUN/TAP device driver, 1.6\n[    1.946645] CAN device driver interface\n[    1.950490] sja1000 CAN netdevice driver\n[    1.954794] sja1000_platform e0005000.can: sja1000_platform device registered (reg_base=(____ptrval____), irq=6)\n[    1.965100] fmql-dwmac e0047000.ethernet: IRQ eth_wake_irq not found\n[    1.971462] fmql-dwmac e0047000.ethernet: IRQ eth_lpi not found\n[    1.977463] fmql-dwmac e0047000.ethernet: no reset control found\n[    1.983580] fmql-dwmac e0047000.ethernet: User ID: 0x10, Synopsys ID: 0x37\n[    1.990470] fmql-dwmac e0047000.ethernet: \tDWMAC1000\n[    1.995442] fmql-dwmac e0047000.ethernet: DMA HW capability register supported\n[    2.002671] fmql-dwmac e0047000.ethernet: RX Checksum Offload Engine supported\n[    2.009898] fmql-dwmac e0047000.ethernet: COE Type 2\n[    2.014868] fmql-dwmac e0047000.ethernet: Enhanced/Alternate descriptors\n[    2.021573] fmql-dwmac e0047000.ethernet: Enabled extended descriptors\n[    2.028105] fmql-dwmac e0047000.ethernet: Ring mode enabled\n[    2.033683] fmql-dwmac e0047000.ethernet: Enable RX Mitigation via HW Watchdog Timer\n[    2.174680] libphy: stmmac: probed\n[    2.178095] mdio_bus stmmac-0:00: attached PHY driver [unbound] (mii_bus:phy_addr=stmmac-0:00, irq=POLL)\n[    2.187580] mdio_bus stmmac-0:01: attached PHY driver [unbound] (mii_bus:phy_addr=stmmac-0:01, irq=POLL)\n[    2.197642] dwc2 e0045000.usb: e0045000.usb supply vusb_d not found, using dummy regulator\n[    2.205954] dwc2 e0045000.usb: e0045000.usb supply vusb_a not found, using dummy regulator\n[    2.214319] dwc2 e0045000.usb: Configuration mismatch. dr_mode forced to host\n[    2.331852] dwc2 e0045000.usb: dwc2_wait_for_mode: Couldn't set host mode\n[    2.388858] dwc2 e0045000.usb: host_dma is enable.\n[    2.393658] dwc2 e0045000.usb: g_dma is enable.\n[    2.398195] dwc2 e0045000.usb: g_dma_desc is enable.\n[    2.403236] dwc2 e0045000.usb: DWC OTG Controller\n[    2.407962] dwc2 e0045000.usb: new USB bus registered, assigned bus number 1\n[    2.415033] dwc2 e0045000.usb: irq 28, io mem 0xe0045000\n[    2.420484] usb usb1: New USB device found, idVendor=1d6b, idProduct=0002, bcdDevice= 5.04\n[    2.428760] usb usb1: New USB device strings: Mfr=3, Product=2, SerialNumber=1\n[    2.435989] usb usb1: Product: DWC OTG Controller\n[    2.440700] usb usb1: Manufacturer: Linux 5.4.52 dwc2_hsotg\n[    2.446278] usb usb1: SerialNumber: e0045000.usb\n[    2.451213] hub 1-0:1.0: USB hub found\n[    2.454993] hub 1-0:1.0: 1 port detected\n[    2.459440] usbcore: registered new interface driver cdc_acm\n[    2.465107] cdc_acm: USB Abstract Control Model driver for USB modems and ISDN adapters\n[    2.473159] usbcore: registered new interface driver usb-storage\n[    2.479277] i2c /dev entries driver\n[    2.483172] usbcore: registered new interface driver uvcvideo\n[    2.488923] USB Video Class driver (1.1.1)\n[    2.493343] cpu cpu0: failed to get clock: -2\n[    2.497716] cpufreq-dt: probe of cpufreq-dt failed with error -2\n[    2.503861] Synopsys Designware Multimedia Card Interface Driver\n[    2.510033] dw_mmc e0043000.dwmmc: Using external DMA controller.\n[    2.516148] dw_mmc e0043000.dwmmc: Version ID is 220a\n[    2.521226] dw_mmc e0043000.dwmmc: DW MMC controller at irq 23,32 bit host data width,32 deep fifo\n[    2.530274] mmc_host mmc0: card is polling.\n[    2.547047] mmc_host mmc0: Bus speed (slot 0) = 100000000Hz (slot req 400000Hz, actual 400000HZ div = 125)\n[    2.559368] dwc2 e0045000.usb: Overcurrent change detected\n[    2.564884] dwc2 e0045000.usb: Overcurrent change detected\n[    2.570566] dw_mmc e0044000.dwmmc: Using PIO mode.\n[    2.575370] dw_mmc e0044000.dwmmc: Version ID is 220a\n[    2.580449] dw_mmc e0044000.dwmmc: DW MMC controller at irq 24,32 bit host data width,32 deep fifo\n[    2.589473] mmc_host mmc1: card is non-removable.\n[    2.606159] mmc_host mmc0: Bus speed (slot 0) = 100000000Hz (slot req 50000000Hz, actual 50000000HZ div = 1)\n[    2.606757] mmc_host mmc1: Bus speed (slot 0) = 100000000Hz (slot req 400000Hz, actual 400000HZ div = 125)\n[    2.616030] mmc0: new high speed SDXC card at address 0001\n[    2.631465] mmcblk0: mmc0:0001 SD 58.4 GiB \n[    2.636829]  mmcblk0: p1 p2 p3\n[    2.640006] ledtrig-cpu: registered to indicate activity on CPUs\n[    2.646117] usbcore: registered new interface driver usbhid\n[    2.651695] usbhid: USB HID core driver\n[    2.655894] ARM CCI_500 PMU driver probed\n[    2.656256] fpga_manager fpga0: FMSH FMQL FPGA Manager registered\n[    2.666567] usbcore: registered new interface driver snd-usb-audio\n[    2.672791] usbcore: registered new interface driver snd-ua101\n[    2.678660] usbcore: registered new interface driver snd-usb-caiaq\n[    2.684879] usbcore: registered new interface driver snd-usb-6fire\n[    2.691097] usbcore: registered new interface driver snd-usb-hiface\n[    2.697389] usbcore: registered new interface driver snd-bcd2000\n[    2.703422] usbcore: registered new interface driver snd_usb_pod\n[    2.709454] usbcore: registered new interface driver snd_usb_podhd\n[    2.715663] usbcore: registered new interface driver snd_usb_toneport\n[    2.722129] usbcore: registered new interface driver snd_usb_variax\n[    2.728436] pktgen: Packet Generator for packet performance testing. Version: 2.75\n[    2.736374] Initializing XFRM netlink socket\n[    2.740738] NET: Registered protocol family 10\n[    2.745674] Segment Routing with IPv6\n[    2.749391] sit: IPv6, IPv4 and MPLS over IPv4 tunneling driver\n[    2.755693] NET: Registered protocol family 17\n[    2.760154] NET: Registered protocol family 15\n[    2.764616] bridge: filtering via arp/ip/ip6tables is no longer available by default. Update your scripts to load br_netfilter if you need this.\n[    2.777572] can: controller area network core (rev 20170425 abi 9)\n[    2.783784] NET: Registered protocol family 29\n[    2.788233] can: raw protocol (rev 20170425)\n[    2.792509] can: broadcast manager protocol (rev 20170425 t)\n[    2.798174] can: netlink gateway (rev 20190810) max_hops=1\n[    2.803726] Key type dns_resolver registered\n[    2.808307] registered taskstats version 1\n[    2.812413] Loading compiled-in X.509 certificates\n[    2.824536] hctosys: unable to open rtc device (rtc0)\n[    2.829606] of_cfs_init\n[    2.832125] of_cfs_init: OK\n[    2.834996] clk: Not disabling unused clocks\n[    2.839274] ALSA device list:\n[    2.840375] mmc_host mmc1: Bus speed (slot 0) = 100000000Hz (slot req 25000000Hz, actual 25000000HZ div = 2)\n[    2.842249]   No soundcards found.\n[    2.853099] mmc1: new high speed MMC card at address 0001\n[    2.861339] ttyPS0 - failed to request DMA\n[    2.861376] mmcblk1: mmc1:0001 Y2P032 29.1 GiB \n[    2.870155] mmcblk1boot0: mmc1:0001 Y2P032 partition 1 4.00 MiB\n[    2.876231] mmcblk1boot1: mmc1:0001 Y2P032 partition 2 4.00 MiB\n[    2.885629] random: fast init done\n[    2.891050]  mmcblk1: p1\n[    2.931124] EXT4-fs (mmcblk0p2): mounted filesystem with ordered data mode. Opts: (null)\n[    2.939254] VFS: Mounted root (ext4 filesystem) on device 179:2.\n[    2.960824] devtmpfs: mounted\n[    2.963973] Freeing unused kernel memory: 640K\n[    2.968486] Run /sbin/init as init process\n[    4.003029] systemd[1]: System time before build time, advancing clock.\n[    4.184199] systemd[1]: systemd 245.4-4ubuntu3.20 running in system mode. (+PAM +AUDIT +SELINUX +IMA +APPARMOR +SMACK +SYSVINIT +UTMP +LIBCRYPTSETUP +GCRYPT +GNUTLS +ACL +XZ +LZ4 +SECCOMP +BLKID +ELFUTILS +KMOD +IDN2 -IDN +PCRE2 default-hierarchy=hybrid)\n[    4.207076] systemd[1]: Detected architecture arm64.\n[    4.287072] systemd[1]: Set hostname to <U.FMSH>.\n[    5.428412] random: systemd: uninitialized urandom read (16 bytes read)\n[    5.435218] systemd[1]: system-getty.slice: unit configures an IP firewall, but the local system does not support BPF/cgroup firewalling.\n[    5.447599] systemd[1]: (This warning is only shown for the first unit using IP firewalling.)\n[    5.456680] systemd[1]: Created slice system-getty.slice.\n[    5.475453] random: systemd: uninitialized urandom read (16 bytes read)\n[    5.482339] systemd[1]: Created slice system-modprobe.slice.\n[    5.499416] random: systemd: uninitialized urandom read (16 bytes read)\n[    5.506291] systemd[1]: Created slice system-serial\\x2dgetty.slice.\n[    5.523654] systemd[1]: Created slice system-systemd\\x2dfsck.slice.\n[    5.543625] systemd[1]: Created slice User and Session Slice.\n[    5.559573] systemd[1]: Started Dispatch Password Requests to Console Directory Watch.\n[    5.583540] systemd[1]: Started Forward Password Requests to Wall Directory Watch.\n[    5.607504] systemd[1]: Condition check resulted in Arbitrary Executable File Formats File System Automount Point being skipped.\n[    5.619188] systemd[1]: Reached target Local Encrypted Volumes.\n[    5.635507] systemd[1]: Reached target Paths.\n[    5.651447] systemd[1]: Reached target Remote File Systems.\n[    5.667436] systemd[1]: Reached target Slices.\n[    5.683458] systemd[1]: Reached target Swap.\n[    5.699795] systemd[1]: Listening on Syslog Socket.\n[    5.715678] systemd[1]: Listening on fsck to fsckd communication Socket.\n[    5.739559] systemd[1]: Listening on initctl Compatibility Named Pipe.\n[    5.759943] systemd[1]: Listening on Journal Audit Socket.\n[    5.775665] systemd[1]: Listening on Journal Socket (/dev/log).\n[    5.791740] systemd[1]: Listening on Journal Socket.\n[    5.809127] systemd[1]: Mounting Huge Pages File System...\n[    5.829339] systemd[1]: Mounting POSIX Message Queue File System...\n[    5.849341] systemd[1]: Mounting Kernel Debug File System...\n[    5.867796] systemd[1]: Condition check resulted in Kernel Trace File System being skipped.\n[    5.878077] systemd[1]: Starting Journal Service...\n[    5.913129] systemd[1]: Starting Helper to synchronize boot up for ifupdown...\n[    5.935680] systemd[1]: Condition check resulted in Create list of static device nodes for the current kernel being skipped.\n[    5.949176] systemd[1]: Starting Load Kernel Module chromeos_pstore...\n[    5.967541] systemd[1]: Condition check resulted in Load Kernel Module drm being skipped.\n[    5.977878] systemd[1]: Starting Load Kernel Module efi_pstore...\n[    5.997531] systemd[1]: Starting Load Kernel Module pstore_blk...\n[    6.017702] systemd[1]: Starting Load Kernel Module pstore_zone...\n[    6.037408] systemd[1]: Starting Load Kernel Module ramoops...\n[    6.083872] systemd[1]: Condition check resulted in Set Up Additional Binary Formats being skipped.\n[    6.111008] systemd[1]: Starting Load Kernel Modules...\n[    6.129326] systemd[1]: Starting Remount Root and Kernel File Systems...\n[    6.149168] systemd[1]: Started Journal Service.\n[    6.291396] u_dma_buf: loading out-of-tree module taints kernel.\n[    6.315823] systemd-journald[103]: Received client request to flush runtime journal.\n[    6.352531] u-dma-buf udmabuf0: driver version = 3.2.5\n[    6.357681] u-dma-buf udmabuf0: major number   = 242\n[    6.362653] u-dma-buf udmabuf0: minor number   = 0\n[    6.367451] u-dma-buf udmabuf0: phys address   = 0x0000000030100000\n[    6.373722] u-dma-buf udmabuf0: buffer size    = 134217728\n[    6.379218] u-dma-buf udmabuf@0: driver installed.\n[    6.801499] systemd-journald[103]: File /var/log/journal/c18338d14c3049b3ab6cdaed8c0ee749/system.journal corrupted or uncleanly shut down, renaming and replacing.\n[    7.647326] mali f0000000.mali_gpu: Kernel DDK version r31p0-01eac0\n[    7.653824] mali f0000000.mali_gpu: GPU identified as 0x2 arch 7.4.0 r1p0 status 0\n[    7.661510] mali f0000000.mali_gpu: No priority control manager is configured\n[    7.668666] mali f0000000.mali_gpu: Memory group manager successfully loaded\n[    7.675737] mali f0000000.mali_gpu: Using coherency mode 31 set from dtb\n[    7.683071] mali f0000000.mali_gpu: Probed as mali0\n[    8.268881] MVX dev: Linlon v5276 identified. cores=2, nlsid=4, id=0. (mvx_dev.c:427)\n[    8.465874] random: crng init done\n[    8.469284] random: 7 urandom warning(s) missed due to ratelimiting\n[   10.127700] fmql-dwmac e0047000.ethernet eth0: PHY [stmmac-0:00] driver [Generic PHY]\n[   10.135418] fmql-dwmac e0047000.ethernet eth0: No Safety Features support found\n[   10.135429] fmql-dwmac e0047000.ethernet eth0: No MAC Management Counters available\n[   10.135441] fmql-dwmac e0047000.ethernet eth0: IEEE 1588-2008 Advanced Timestamp supported\n[   10.135593] fmql-dwmac e0047000.ethernet eth0: registered PTP clock\n[   10.135603] fmql-dwmac e0047000.ethernet eth0: configuring for phy/rgmii link mode\n[   10.461270] EXT4-fs (mmcblk0p3): mounted filesystem with ordered data mode. Opts: (null)\n[   11.305487] EXT4-fs (mmcblk1p1): mounted filesystem with ordered data mode. Opts: errors=remount-ro\n[   12.172931] fmql-dwmac e0047000.ethernet eth0: Link is Up - 100Mbps/Full - flow control rx/tx\n[   12.172957] IPv6: ADDRCONF(NETDEV_CHANGE): eth0: link becomes ready\n[   14.435416] Adding 1048572k swap on /swapfile.  Priority:-2 extents:22 across:5808124k SS\n"
+}

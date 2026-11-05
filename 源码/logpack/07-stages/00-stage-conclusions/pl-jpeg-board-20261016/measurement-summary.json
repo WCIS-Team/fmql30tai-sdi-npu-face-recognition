@@ -1,0 +1,42 @@
+{
+  "measurement_evidence_date": "2026-10-16",
+  "verification_date": "2026-10-17",
+  "native_bgrx_first_jpeg_sha256": "16f2219579d32ee1d6a444233ff665a9af2549b8c6adef23dbe2ec4f8d7e81c7",
+  "native_rtl_jpeg_exact_match": true,
+  "formats": {
+    "video-rgb565": {
+      "pixel_format": "RGB565LE",
+      "fresh_frames": 165,
+      "jpegs_decoded": 465,
+      "source_to_emmc_fps": 1.7360015150558294,
+      "encoder_batch_fps": 23.894546722629048,
+      "record_batch_fps": 17.45603643517396,
+      "record_batch_ms": 17186.031956,
+      "final_fsync_ms": 4409.201102,
+      "record_batch_without_final_fsync_fps": 23.48000090382976,
+      "source_jpeg_bytes": 28528985,
+      "source_input_bytes": 684288000,
+      "input_bytes_to_jpeg_ratio": 23.985711373888694,
+      "source_board_receive_median_ms": 466.54431499999305,
+      "hardware_median_ms": 41.63755,
+      "output_path": "D:\\yzd\\tmp\\pl-jpeg-board-20261016\\video-rgb565\\source-only.mjpeg"
+    },
+    "video-bgrx8": {
+      "pixel_format": "BGRX8",
+      "fresh_frames": 165,
+      "jpegs_decoded": 465,
+      "source_to_emmc_fps": 0.8951385837280182,
+      "encoder_batch_fps": 23.872558588088193,
+      "record_batch_fps": 19.354250771242135,
+      "record_batch_ms": 15500.470855,
+      "final_fsync_ms": 2735.003067,
+      "record_batch_without_final_fsync_fps": 23.50090141483188,
+      "source_jpeg_bytes": 26600774,
+      "source_input_bytes": 1368576000,
+      "input_bytes_to_jpeg_ratio": 51.44872852195955,
+      "source_board_receive_median_ms": 976.4395860000263,
+      "hardware_median_ms": 41.69715,
+      "output_path": "D:\\yzd\\tmp\\pl-jpeg-board-20261016\\video-bgrx8\\source-only.mjpeg"
+    }
+  }
+}

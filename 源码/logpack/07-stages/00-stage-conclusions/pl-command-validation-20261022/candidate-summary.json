@@ -1,0 +1,46 @@
+{
+  "status": "offline_candidate_ready",
+  "deployed": false,
+  "board_verified": false,
+  "production_timing_signoff": false,
+  "boot_sha256": "56889c4376b7ae5104e51a910278ff96e0d4d730ce4b5dc8d838e0bfb5980ecb",
+  "bit_sha256": "d20e760fba4a8b067789aedd463ca7de675299f95417751a5ce941455830b513",
+  "raw_vivado_bit_sha256": "45141758a9b489456a81e1da6bcc87b92b36ac52e5da5a3ab5f2230ac10d4837",
+  "bitstream_userid": "53180206",
+  "ps_partitions_identical": true,
+  "setup_wns_ns": 0.005,
+  "hold_whs_ns": 0.004,
+  "inherited_npu_pulse_wns_ns": -0.409,
+  "routable_nets": 105185,
+  "fully_routed_nets": 105185,
+  "routing_errors": 0,
+  "preprocess_unit_cases": 23,
+  "command_reset_cases": 2,
+  "integration_cases": 8,
+  "manually_relocated_face_registers": 9,
+  "source_sha256": {
+    "wcis_affine_sampler.v": "6789ece1977a15efed82c0f64f0b58a2c6dd10384427b271a9b6ef8767dd0ce2",
+    "wcis_face_preprocess.v": "999a16521636f482badd549a24e70579f1504843bab11c8ef9d52ab163feaf9b",
+    "wcis_pixel_read_axi.v": "3b682e636a922956dcda288683c45a65dbe9d57126477e143b0422011269de14"
+  },
+  "known_reload_metadata_warnings": {
+    "code": "Netlist 29-72",
+    "property": "REUSE_STATUS",
+    "unsupported_value": "ReusedXDC",
+    "occurrences": 9,
+    "tool_message": "Unsupported reuse-status enum dropped/defaulted on checkpoint reload; no new placement/routing run during bit generation"
+  },
+  "baseline_drc_warning_overrides": [
+    "REQP-44",
+    "REQP-46",
+    "REQP-52",
+    "REQP-56"
+  ],
+  "board_after_offline_build": {
+    "observed_at": "2026-10-22T11:50:49.456139+00:00",
+    "boot_id": "8f360a28-0740-4d81-a13f-379a20faf47e",
+    "health": "ready",
+    "stream": "ready",
+    "presentation_attack_detection": "not_evaluated"
+  }
+}

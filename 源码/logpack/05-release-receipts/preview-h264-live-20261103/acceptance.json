@@ -1,0 +1,843 @@
+{
+  "passed": true,
+  "scope": "Bounded live H264 preview latency fix with unchanged native encoder and MP4 recording; not complete product acceptance",
+  "boot_id": "ca08d773-cea8-44fa-84c1-9841d7cf4ed3",
+  "owner_pid": 5786,
+  "session": "oxpr7ys8",
+  "app": "/root/wcis-face/apps/camera-low-latency-20261103-v2-live",
+  "files": [
+    {
+      "file": "camera-owner-build.json",
+      "sha256": "dae846be4c2523da68ca6b19f3e2e9e687eeffc33fe161052575142c9c525187"
+    },
+    {
+      "file": "camera_interlock.py",
+      "sha256": "fa00528979b49b7aba0ba082f84e7cf2b23121bbbdab622fe0bd948087929b6a"
+    },
+    {
+      "file": "camera_owner_runtime.py",
+      "sha256": "c6ad4f990c467fa5475d918626c1e0271ad1a1ef591739e903bbb704f3e6d91a"
+    },
+    {
+      "file": "camera_panel.html",
+      "sha256": "ce3122967daf42666abd88c96627683dfa197038b8c24e723f686f694bd6d72a"
+    },
+    {
+      "file": "camera_panel.js",
+      "sha256": "dcd68d2c9bc37f93b9e17fc567a2d2dd275d4ffb2481b2c81bbeebbbea7551f7"
+    },
+    {
+      "file": "camera_requests.py",
+      "sha256": "82ecb6a22ef1ec2a5e3048b02d5581c63828fa892b128a66ece196bd30bec406"
+    },
+    {
+      "file": "external_h264.py",
+      "sha256": "3989cfc80777f12ae24a48f96679fab72b19c4bd6d532b8ef4cd32881d404253"
+    },
+    {
+      "file": "frame_stream_protocol.py",
+      "sha256": "cf9c2a026db39dd60059fd2204388c2f8ae3a6b58322b69ed5d8e14dc36bf142"
+    },
+    {
+      "file": "gallery.py",
+      "sha256": "7f1213ee54300a58c90841541b1f2c0c6a7b7f77760ff3ca46a5a7eeb159f66a"
+    },
+    {
+      "file": "h264_fragments.py",
+      "sha256": "428d0fe4c5951ed6b95da4d210f702a423b5b5b2a68d5c3ea58a596421378e45"
+    },
+    {
+      "file": "h264_media.py",
+      "sha256": "db536ea76692a70797edea732cbf5652a04af864cc99989566f27ea1cff72693"
+    },
+    {
+      "file": "h264_packager.py",
+      "sha256": "46450c376fb262431708daca0689834615d16599e67427d29c860aab5d5f8687"
+    },
+    {
+      "file": "h264_player.js",
+      "sha256": "d1b7c2c0ca9bb93b0cbeddbf1743fe29298a080f57f0259d3e1a4906fc4db310"
+    },
+    {
+      "file": "index.html",
+      "sha256": "8c90d8778c316c9efed3c81c712592129548a43132891fa460b862cf3a257169"
+    },
+    {
+      "file": "migrate_gallery.py",
+      "sha256": "a4ee9a2590937dc03bbb1a9441effeb350a3080bd0cedd91111c920086cc4a77"
+    },
+    {
+      "file": "model_backend/face_pad.py",
+      "sha256": "b35f601f19bbeb40210a0d133b5dc36a9629b9564715eb53d931eafc4a123628"
+    },
+    {
+      "file": "model_backend_runtime.py",
+      "sha256": "95454dfe890462a947cf36e00b8b09f3e66311c99199fdfe94d05fe91f610d91"
+    },
+    {
+      "file": "native_forward.py",
+      "sha256": "1576c070595a2b8aaeff3779e2b2c7490064e026db95bf8994cd89c290216c5a"
+    },
+    {
+      "file": "owner_pad.py",
+      "sha256": "748fc2b6d38f8b9011705032778e7a1bc2c792bc8822a90367fbd882822405d7"
+    },
+    {
+      "file": "persistent_gallery.py",
+      "sha256": "f0532065c87292027b2568f708eb97760f30753392c3a2fa0286ea649a59eee6"
+    },
+    {
+      "file": "pl_preprocess.py",
+      "sha256": "c59102c22f716be4b74da48caa410f01e28a46ac6d7012d158d86fc09f31fb9b"
+    },
+    {
+      "file": "receive_video_stream.py",
+      "sha256": "c69da62197d1a6603654eb40790789a9e64f5c6ff8aba853fefe58a6ae56f877"
+    },
+    {
+      "file": "recognize_frame.py",
+      "sha256": "8a7327dffe5c4680cec4711867bf42318c7c907e8ad3b4230690ab94faf8e0f7"
+    },
+    {
+      "file": "recognize_photo.py",
+      "sha256": "a0fe870971b8dfb18adcd5b25e680e7c6c2e7f657dc222bddc8dd0d67aa93515"
+    },
+    {
+      "file": "recording_embed.js",
+      "sha256": "9a9afafb4b4a74787657cbf3fe4c79230b6793553ffddfbadd7c02284a5bd22e"
+    },
+    {
+      "file": "recording_library.py",
+      "sha256": "4d2003b4225d3452cdba053fa4716bca4b17c96b5d342feb1f2272091afd7d9d"
+    },
+    {
+      "file": "recording_panel.html",
+      "sha256": "8996a3a45266c2fa8c5e9c850ded80a36cce5755cce609c532bc218a8111c08e"
+    },
+    {
+      "file": "recording_panel.js",
+      "sha256": "adb3c71c5a62bc0f9441bc4f7d54a9fd17b1e37c22335c7b1044ad0e97df8d78"
+    },
+    {
+      "file": "recording_service.py",
+      "sha256": "20968642ee67957790cfe011ea95f00141178837736db1a762a0ea2e72f25195"
+    },
+    {
+      "file": "run_frame_replay.py",
+      "sha256": "5146c12c051bdcf9d857928caeb9e42f8237a3f0ad2bc30f26d61183fe69d070"
+    },
+    {
+      "file": "run_photos.py",
+      "sha256": "5ca0170583af1f250a1cd84bde23c48b9f53e221b72ee170e1e6158ee0e47739"
+    },
+    {
+      "file": "serve_photos.py",
+      "sha256": "e95dd01f68df6d28398889c6e356d7b246f521791d9e5ebfc518161486aa8fd5"
+    },
+    {
+      "file": "site/camera_panel.js",
+      "sha256": "dcd68d2c9bc37f93b9e17fc567a2d2dd275d4ffb2481b2c81bbeebbbea7551f7"
+    },
+    {
+      "file": "site/index.html",
+      "sha256": "6c04bfed7cf62923d11f26f9869097d0eb01b1f4a6ea0858a89bf85341cce178"
+    },
+    {
+      "file": "site/recording_embed.js",
+      "sha256": "9a9afafb4b4a74787657cbf3fe4c79230b6793553ffddfbadd7c02284a5bd22e"
+    },
+    {
+      "file": "vpu_live_server.py",
+      "sha256": "1ce4e7d2fcb03ea5cd9e17eb1f042611769d3b725cccdee50db2592fdb47f6f7"
+    },
+    {
+      "file": "wcis_camera_owner",
+      "sha256": "933c128d5bfccd22782aa775fa0c23c41a6f33d8df29c0713f9e6d27e4ae9eb1"
+    },
+    {
+      "file": "wcis_face_cached",
+      "sha256": "9ca65fdcb4a92092f9a30d1cbcc5a55d5cc6839027e4a4e0b744f6aa8907c004"
+    },
+    {
+      "file": "wcis_face_pl_retained",
+      "sha256": "3e763183025390308f6f95236aa1c50c8c4ab6116ee8c6f08abfaab99710ebbe"
+    },
+    {
+      "file": "h264_live.py",
+      "sha256": "8539fa6e530bf4c0ec33b7b957c4b4f267328448acfe24f2924812ef573f1aff"
+    }
+  ],
+  "recorder_app": "/root/wcis-face/candidates/recording-low-latency-20261103-v2-live",
+  "recorder_files": [
+    {
+      "file": "recording_service.py",
+      "sha256": "23cf748eb0969fab82a19b58a8eb9a50f691bb46107ec73cae4f0cfdcd05f533"
+    },
+    {
+      "file": "recording_library.py",
+      "sha256": "c605e5b9a5456c2ff8c114eb302975bf40ac993faa905efc3e2c0c4694de5b2a"
+    },
+    {
+      "file": "recording_compression.py",
+      "sha256": "6587666ebfc0d29344d09d3bffcce57a83ca05869f15dd411f03e9a8d7d24f67"
+    },
+    {
+      "file": "recording_panel.html",
+      "sha256": "0a2167e24181d48c1c94516103154f40968f30f34b26f6e8fd0bbe29d3c8ca5b"
+    },
+    {
+      "file": "recording_panel.js",
+      "sha256": "96476bbf89a65b705cf44f3258512330973c2fa1f17fb9b9d23f36cf7d6411c7"
+    },
+    {
+      "file": "vpu_live_server.py",
+      "sha256": "32b30ef636d561bb1514ceb04b85d7cfc7b676267d1ff373f90e2e73aae22196"
+    },
+    {
+      "file": "h264_fragments.py",
+      "sha256": "428d0fe4c5951ed6b95da4d210f702a423b5b5b2a68d5c3ea58a596421378e45"
+    },
+    {
+      "file": "h264_media.py",
+      "sha256": "db536ea76692a70797edea732cbf5652a04af864cc99989566f27ea1cff72693"
+    }
+  ],
+  "health": {
+    "status": "ready",
+    "backend": "zg330_npu_pl_and_host",
+    "preprocessing_backend": "FAC1_customop_PL",
+    "release": "/root/wcis-face/releases/20261014-b5a454c11d22",
+    "frame_transport": "single_upload_retained_PL_DDR",
+    "model_lifecycle": "single_owner_cached_sessions",
+    "model_cache_ready": true,
+    "npu_session_cache_enabled": true,
+    "hardware_admission_ready": true,
+    "validation_passed": true,
+    "photo_input": true,
+    "camera_input": true,
+    "camera_input_mode": "single_owner_raw_sdi",
+    "camera_capture_scheduler": "continuous",
+    "camera_preview_transport": "PS_VPU_H264",
+    "presentation_attack_detection": "same_frame_model_evidence",
+    "pad_security_calibrated": false,
+    "pad_face_limit": 4,
+    "pad_result_scope": "per_face",
+    "camera_request_policy": "share_inflight_only",
+    "gallery_management": true,
+    "gallery_storage": "emmc",
+    "gallery_storage_ready": true,
+    "gallery_storage_policy": "one_original_per_person",
+    "boot_id": "ca08d773-cea8-44fa-84c1-9841d7cf4ed3"
+  },
+  "camera_before": {
+    "ready": true,
+    "source": "camera",
+    "state": "ready",
+    "session": "oxpr7ys8",
+    "boot_id": "ca08d773-cea8-44fa-84c1-9841d7cf4ed3",
+    "camera_buffers": 2,
+    "camera_drained": 0,
+    "camera_mapping_verified": true,
+    "camera_pending": true,
+    "camera_requests": 54359,
+    "capture_completion_observed_at": 2571.105894701,
+    "capture_mode": "preallocated_ping_pong",
+    "capture_scheduler": "independent_worker",
+    "captured": 54358,
+    "captured_at": 2571.072028167,
+    "codec": "h264",
+    "commands": 177,
+    "encoded": 54360,
+    "fps_limit": 30,
+    "frame_id": 54361,
+    "h264_bytes": 0,
+    "h264_encoded_at": 2571.2059156343335,
+    "h264_origin": 757.2052350580002,
+    "height": 540,
+    "native_h264_encoding": false,
+    "owner_protocol": 1,
+    "pid": 5786,
+    "preview_mode": "continuous_vpu",
+    "raw_frames_submitted": 54356,
+    "sdk_calls_on_capture_thread": false,
+    "source_view": "full_view_960x540",
+    "timestamp_basis": "capture_request_lower_bound",
+    "updated_at": 2571.428508213,
+    "vpu_enabled": true,
+    "width": 960,
+    "external_h264": true,
+    "encoder_pid": 5779,
+    "muxer_pid": 5780,
+    "frame_age_s": 0.2787772126666823
+  },
+  "camera_after": {
+    "ready": true,
+    "source": "camera",
+    "state": "ready",
+    "session": "oxpr7ys8",
+    "boot_id": "ca08d773-cea8-44fa-84c1-9841d7cf4ed3",
+    "camera_buffers": 2,
+    "camera_drained": 0,
+    "camera_mapping_verified": true,
+    "camera_pending": true,
+    "camera_requests": 54389,
+    "capture_completion_observed_at": 2572.13917551,
+    "capture_mode": "preallocated_ping_pong",
+    "capture_scheduler": "independent_worker",
+    "captured": 54388,
+    "captured_at": 2572.105394795,
+    "codec": "h264",
+    "commands": 177,
+    "encoded": 54390,
+    "fps_limit": 30,
+    "frame_id": 54391,
+    "h264_bytes": 0,
+    "h264_encoded_at": 2572.2387641733335,
+    "h264_origin": 757.2063127850001,
+    "height": 540,
+    "native_h264_encoding": false,
+    "owner_protocol": 1,
+    "pid": 5786,
+    "preview_mode": "continuous_vpu",
+    "raw_frames_submitted": 54386,
+    "sdk_calls_on_capture_thread": false,
+    "source_view": "full_view_960x540",
+    "timestamp_basis": "capture_request_lower_bound",
+    "updated_at": 2572.477320437,
+    "vpu_enabled": true,
+    "width": 960,
+    "external_h264": true,
+    "encoder_pid": 5779,
+    "muxer_pid": 5780,
+    "frame_age_s": 0.26541130166651783
+  },
+  "live_before": {
+    "boot_id": "ca08d773-cea8-44fa-84c1-9841d7cf4ed3",
+    "pid": 5786,
+    "session": "oxpr7ys8",
+    "ready": true,
+    "pts_end": 1814.1151925,
+    "capture_end": 2571.371870137333,
+    "published_at": 2571.485595367,
+    "now": 2571.496573412,
+    "sequence": 54423,
+    "cache_bytes": 36032
+  },
+  "live_after": {
+    "boot_id": "ca08d773-cea8-44fa-84c1-9841d7cf4ed3",
+    "pid": 5786,
+    "session": "oxpr7ys8",
+    "ready": true,
+    "pts_end": 1815.1485149999999,
+    "capture_end": 2572.4060221873333,
+    "published_at": 2572.487116823,
+    "now": 2572.51402128,
+    "sequence": 54454,
+    "cache_bytes": 36210
+  },
+  "recorder": {
+    "mode": "off",
+    "state": "idle",
+    "source": "PS_VPU_H264",
+    "width": 960,
+    "height": 540,
+    "format": "H.264 / MP4",
+    "source_ready": true,
+    "current": null,
+    "error": null,
+    "detection_error": null,
+    "detection_age_s": null,
+    "trigger_healthy": true,
+    "last_detection": null,
+    "queue_bytes": 0,
+    "queue_limit_bytes": 16777216,
+    "queue_high_water": 74025,
+    "prebuffer_bytes": 18015,
+    "pre_seconds": 2.0,
+    "tail_seconds": 5.0,
+    "segment_seconds": 60.0,
+    "dropped_frames": 0,
+    "source_frame_id_gaps": 0,
+    "received_frames": 54360,
+    "written_frames": 5880,
+    "used_bytes": 504690969,
+    "quota_bytes": 4294967296,
+    "disk_free_bytes": 29935562752,
+    "disk_reserve_bytes": 536870912
+  },
+  "units": {
+    "wcis-face-photo.service": "# /etc/systemd/system/wcis-face-photo.service\n[Unit]\nDescription=WCIS photo face recognition\nAfter=network-online.target wcis-face-storage.service\nWants=network-online.target\nRequires=wcis-face-storage.service\n\n[Service]\nEnvironment=WCIS_H264_SEGMENT_SECONDS=1.0\nEnvironment=WCIS_PREVIEW_CODEC=h264 WCIS_PREVIEW_SIZE=540\nType=simple\nExecStartPre=/usr/bin/python3 /root/wcis-face/candidates/face-camera-ready-20261020/boot_prepare.py\nWorkingDirectory=/root/wcis-face/apps/camera-low-latency-20261103-v2-live\nExecStart=/usr/bin/python3 -u /root/wcis-face/apps/camera-low-latency-20261103-v2-live/serve_photos.py --root /root/wcis-face/releases/20261014-b5a454c11d22 --site /root/wcis-face/apps/camera-low-latency-20261103-v2-live/site --host 0.0.0.0 --port 8091 --pl-executable /root/wcis-face/apps/camera-low-latency-20261103-v2-live/wcis_face_pl_retained --npu-cache-executable /root/wcis-face/apps/camera-low-latency-20261103-v2-live/wcis_face_cached --gallery-store /mnt/wcis-emmc/wcis-face/galleries --gallery-mount /mnt/wcis-emmc --gallery-uuid 67104a06-74a6-4268-a124-269d1b232a28 --camera-owner-executable /root/wcis-face/apps/camera-low-latency-20261103-v2-live/wcis_camera_owner --camera-owner-sha256 933c128d5bfccd22782aa775fa0c23c41a6f33d8df29c0713f9e6d27e4ae9eb1 --camera-owner-control /root/wcis-face/candidates/pad-owner-20261026/owner-current.json --camera-owner-fps 30 --camera-native-inputs --camera-pad-bundle /root/wcis-face/candidates/pad-20261018-7d22c90e30\nRestart=no\nRestartSec=5\nKillMode=mixed\nTimeoutStopSec=75\nSendSIGKILL=no\nEnvironment=OPENCV_IO_MAX_IMAGE_PIXELS=16000000\n\n[Install]\nWantedBy=multi-user.target\n",
+    "wcis-sdi-vpu-view.service": "# /etc/systemd/system/wcis-sdi-vpu-view.service\n[Unit]\nDescription=SDI VPU LAN viewer\nAfter=network.target\n[Service]\nExecStart=/usr/bin/python3 /root/wcis-face/apps/camera-low-latency-20261103-v2-live/vpu_live_server.py --control /root/wcis-face/candidates/pad-owner-20261026/owner-current.json --host 0.0.0.0 --port 8092\nRestart=on-failure\nRestartSec=3\n[Install]\nWantedBy=multi-user.target\n",
+    "wcis-face-recording.service": "# /etc/systemd/system/wcis-face-recording.service\n[Unit]\nDescription=WCIS PS H264/legacy JPEG event recorder (VPU source)\nAfter=network.target wcis-face-photo.service\n\n[Service]\nType=simple\nWorkingDirectory=/root/wcis-face/candidates/recording-low-latency-20261103-v2-live\nEnvironment=PYTHONDONTWRITEBYTECODE=1\nExecStart=/usr/bin/python3 /root/wcis-face/candidates/recording-low-latency-20261103-v2-live/recording_service.py --control /root/wcis-face/candidates/pad-owner-20261026/owner-current.json --storage /mnt/wcis-emmc/wcis-face/recordings --mount /mnt/wcis-emmc --uuid 67104a06-74a6-4268-a124-269d1b232a28 --mode off --segment-seconds 60 --quota-mib 4096 --host 0.0.0.0 --backend http://127.0.0.1:8091\nRestart=no\nTimeoutStopSec=45\nMemoryMax=192M\nTasksMax=24\n\n[Install]\nWantedBy=multi-user.target\n"
+  },
+  "quality": {
+    "run": "candidate-quality-concurrent-20261103-90",
+    "session": "oxpr7ys8",
+    "seconds": 90.00819999999925,
+    "callbacks": 2651,
+    "presented": 2651,
+    "presented_fps": 29.45287207165594,
+    "callback_max_gap_ms": 54.30000000000291,
+    "quality_last": {
+      "total": 2652,
+      "dropped": 18
+    },
+    "warm_frames": 2504,
+    "dropped_after_warmup": 8,
+    "warm_dropped_fraction": 0.003194888178913738,
+    "warm_decode_fps": 29.45632840512359,
+    "software_position_age_ms": {
+      "p50": 562.0162129998243,
+      "p95": 600.5400640014795,
+      "max": 1074.7035819997272,
+      "samples": 84
+    },
+    "buffer_lag_p50_s": 0.35304500000006556,
+    "waiting_events": 19,
+    "max_waiting_ms": 90.0,
+    "errors": [],
+    "basis": "Source capture identity to browser media position estimate; excludes optical source and physical screen timing"
+  },
+  "data_identity": {
+    "passed": true,
+    "boot_id": "ca08d773-cea8-44fa-84c1-9841d7cf4ed3",
+    "pid": 5786,
+    "session": "oxpr7ys8",
+    "existing_gallery_files": 4,
+    "existing_recording_files": 125,
+    "live_requests": 16,
+    "face_counts": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "concurrent_seconds": 63.21825054300007,
+    "indices": [
+      {
+        "path": "/mnt/wcis-emmc/wcis-face/recordings/rec-20261102T183515Z-77512cdaffe6.mp4",
+        "index_rows": 60,
+        "frames": 1800,
+        "first": {
+          "boot_id": "ca08d773-cea8-44fa-84c1-9841d7cf4ed3",
+          "session": "oxpr7ys8",
+          "frame_id": 816,
+          "captured_at": 1559.269543756,
+          "width": 960,
+          "height": 540,
+          "offset": 786,
+          "length": 26565,
+          "timestamp_basis": "capture_request_lower_bound",
+          "received_unix": 1793644515.7600465,
+          "source": "PS_VPU_H264",
+          "captured_end": 1560.2701045733334,
+          "samples": 30,
+          "duration": 1.0,
+          "frame_id_basis": "hls_segment_sequence",
+          "source_first_frame": 24452,
+          "source_last_frame": 24481,
+          "capture_time_basis": "native_raw_input_journal"
+        },
+        "last": {
+          "boot_id": "ca08d773-cea8-44fa-84c1-9841d7cf4ed3",
+          "session": "oxpr7ys8",
+          "frame_id": 875,
+          "captured_at": 1619.103843247,
+          "width": 960,
+          "height": 540,
+          "offset": 1524012,
+          "length": 29540,
+          "timestamp_basis": "capture_request_lower_bound",
+          "received_unix": 1793644575.6196039,
+          "source": "PS_VPU_H264",
+          "captured_end": 1620.1374575713332,
+          "samples": 30,
+          "duration": 1.0,
+          "frame_id_basis": "hls_segment_sequence",
+          "source_first_frame": 26222,
+          "source_last_frame": 26251,
+          "capture_time_basis": "native_raw_input_journal"
+        }
+      },
+      {
+        "path": "/mnt/wcis-emmc/wcis-face/recordings/rec-20261102T183617Z-8fb33f734c55.mp4",
+        "index_rows": 60,
+        "frames": 1800,
+        "first": {
+          "boot_id": "ca08d773-cea8-44fa-84c1-9841d7cf4ed3",
+          "session": "oxpr7ys8",
+          "frame_id": 876,
+          "captured_at": 1620.137207314,
+          "width": 960,
+          "height": 540,
+          "offset": 786,
+          "length": 22784,
+          "timestamp_basis": "capture_request_lower_bound",
+          "received_unix": 1793644576.624991,
+          "source": "PS_VPU_H264",
+          "captured_end": 1621.1368945743334,
+          "samples": 30,
+          "duration": 1.0,
+          "frame_id_basis": "hls_segment_sequence",
+          "source_first_frame": 26252,
+          "source_last_frame": 26281,
+          "capture_time_basis": "native_raw_input_journal"
+        },
+        "last": {
+          "boot_id": "ca08d773-cea8-44fa-84c1-9841d7cf4ed3",
+          "session": "oxpr7ys8",
+          "frame_id": 935,
+          "captured_at": 1679.937491595,
+          "width": 960,
+          "height": 540,
+          "offset": 1608376,
+          "length": 26201,
+          "timestamp_basis": "capture_request_lower_bound",
+          "received_unix": 1793644636.4925523,
+          "source": "PS_VPU_H264",
+          "captured_end": 1680.9705896273333,
+          "samples": 30,
+          "duration": 1.0,
+          "frame_id_basis": "hls_segment_sequence",
+          "source_first_frame": 28022,
+          "source_last_frame": 28051,
+          "capture_time_basis": "native_raw_input_journal"
+        }
+      },
+      {
+        "path": "/mnt/wcis-emmc/wcis-face/recordings/rec-20261102T183718Z-eefeb56efae1.mp4",
+        "index_rows": 11,
+        "frames": 330,
+        "first": {
+          "boot_id": "ca08d773-cea8-44fa-84c1-9841d7cf4ed3",
+          "session": "oxpr7ys8",
+          "frame_id": 936,
+          "captured_at": 1680.97078384,
+          "width": 960,
+          "height": 540,
+          "offset": 786,
+          "length": 28980,
+          "timestamp_basis": "capture_request_lower_bound",
+          "received_unix": 1793644637.523976,
+          "source": "PS_VPU_H264",
+          "captured_end": 1682.0036548663334,
+          "samples": 30,
+          "duration": 1.0,
+          "frame_id_basis": "hls_segment_sequence",
+          "source_first_frame": 28052,
+          "source_last_frame": 28081,
+          "capture_time_basis": "native_raw_input_journal"
+        },
+        "last": {
+          "boot_id": "ca08d773-cea8-44fa-84c1-9841d7cf4ed3",
+          "session": "oxpr7ys8",
+          "frame_id": 946,
+          "captured_at": 1691.103840154,
+          "width": 960,
+          "height": 540,
+          "offset": 247573,
+          "length": 26777,
+          "timestamp_basis": "capture_request_lower_bound",
+          "received_unix": 1793644647.7684438,
+          "source": "PS_VPU_H264",
+          "captured_end": 1692.1375998983333,
+          "samples": 30,
+          "duration": 1.0,
+          "frame_id_basis": "hls_segment_sequence",
+          "source_first_frame": 28352,
+          "source_last_frame": 28381,
+          "capture_time_basis": "native_raw_input_journal"
+        }
+      }
+    ],
+    "optical_latency_measured": false,
+    "thirty_minute_soak": false
+  },
+  "recording_validation": {
+    "passed": true,
+    "scope": "two fixed uploads, ten live requests, 132 second recording with recognition; not optical latency or 30 minute acceptance",
+    "videos": [
+      {
+        "path": "/mnt/wcis-emmc/wcis-face/recordings/rec-20261102T183515Z-77512cdaffe6.mp4",
+        "bytes": 1541512,
+        "sha256": "09fcb9ed4b75bcfd7f79fb123005cee821113629582e8de3f57428c90c9418dc",
+        "probe": {
+          "programs": [],
+          "streams": [
+            {
+              "duration": "59.999349",
+              "nb_read_frames": "1800"
+            }
+          ]
+        },
+        "range": "bytes 0-1023/1541512"
+      },
+      {
+        "path": "/mnt/wcis-emmc/wcis-face/recordings/rec-20261102T183617Z-8fb33f734c55.mp4",
+        "bytes": 1622641,
+        "sha256": "38738b4d29b26273fdca051f79067ee4e3340df3f1429a7d4f921d5c9df03751",
+        "probe": {
+          "programs": [],
+          "streams": [
+            {
+              "duration": "59.999414",
+              "nb_read_frames": "1800"
+            }
+          ]
+        },
+        "range": "bytes 0-1023/1622641"
+      },
+      {
+        "path": "/mnt/wcis-emmc/wcis-face/recordings/rec-20261102T183718Z-eefeb56efae1.mp4",
+        "bytes": 272142,
+        "sha256": "40579894453cd5cb5617401a7f6723119f6cb4549652d0e3a1aaf56846573d95",
+        "probe": {
+          "programs": [],
+          "streams": [
+            {
+              "duration": "10.999870",
+              "nb_read_frames": "330"
+            }
+          ]
+        },
+        "range": "bytes 0-1023/272142"
+      }
+    ]
+  },
+  "current_boot_quarantined": false,
+  "native_binary_unchanged": true,
+  "cpu_jpeg_worker_enabled": false,
+  "optical_latency_measured": false,
+  "thirty_minute_soak": false,
+  "candidate_full_reboot_tested": false,
+  "first_startup_timeout_root_cause_resolved": false,
+  "rollback": {
+    "app": "/root/wcis-face/apps/camera-h264-20261030-r2",
+    "recorder_app": "/root/wcis-face/candidates/recording-idle-compression-20261031-r1",
+    "prepared": "/root/wcis-face/candidates/preview-h264-live-20261103/20261103-v2-live/prepared.json",
+    "command": "python3 /root/wcis-face/candidates/preview-h264-live-20261103/remote_control.py rollback 20261103-v2-live",
+    "requires": "Same boot, no current quarantine, recording drained and normal SDK close receipt before reopening; otherwise stop and request offline recovery"
+  },
+  "local_source_sha256": {
+    "external_h264.py": "3989cfc80777f12ae24a48f96679fab72b19c4bd6d532b8ef4cd32881d404253",
+    "h264_live.py": "8539fa6e530bf4c0ec33b7b957c4b4f267328448acfe24f2924812ef573f1aff",
+    "h264_player.js": "d1b7c2c0ca9bb93b0cbeddbf1743fe29298a080f57f0259d3e1a4906fc4db310",
+    "vpu_live_server.py": "1ce4e7d2fcb03ea5cd9e17eb1f042611769d3b725cccdee50db2592fdb47f6f7",
+    "serve_photos.py": "e95dd01f68df6d28398889c6e356d7b246f521791d9e5ebfc518161486aa8fd5"
+  },
+  "passive_cpu": {
+    "before": {
+      "at": 2503.818722565,
+      "processes": {
+        "5786": {
+          "ticks": 59799,
+          "rss": 67178496
+        },
+        "5779": {
+          "ticks": 13357,
+          "rss": 49770496
+        },
+        "5780": {
+          "ticks": 1347,
+          "rss": 41897984
+        },
+        "5773": {
+          "ticks": 16937,
+          "rss": 87478272
+        },
+        "5816": {
+          "ticks": 404,
+          "rss": 17817600
+        },
+        "5818": {
+          "ticks": 12112,
+          "rss": 20824064
+        }
+      }
+    },
+    "after": {
+      "at": 2533.851039781,
+      "processes": {
+        "5786": {
+          "ticks": 60777,
+          "rss": 67178496
+        },
+        "5779": {
+          "ticks": 13582,
+          "rss": 49770496
+        },
+        "5780": {
+          "ticks": 1369,
+          "rss": 41897984
+        },
+        "5773": {
+          "ticks": 17239,
+          "rss": 87478272
+        },
+        "5816": {
+          "ticks": 445,
+          "rss": 18087936
+        },
+        "5818": {
+          "ticks": 12308,
+          "rss": 20824064
+        }
+      }
+    },
+    "camera_before": {
+      "ready": true,
+      "source": "camera",
+      "state": "ready",
+      "session": "oxpr7ys8",
+      "boot_id": "ca08d773-cea8-44fa-84c1-9841d7cf4ed3",
+      "camera_buffers": 2,
+      "camera_drained": 0,
+      "camera_mapping_verified": true,
+      "camera_pending": true,
+      "camera_requests": 52340,
+      "capture_completion_observed_at": 2502.805590438,
+      "capture_mode": "preallocated_ping_pong",
+      "capture_scheduler": "independent_worker",
+      "captured": 52339,
+      "captured_at": 2502.77193119,
+      "codec": "h264",
+      "commands": 177,
+      "encoded": 52350,
+      "fps_limit": 30,
+      "frame_id": 52351,
+      "h264_bytes": 0,
+      "h264_encoded_at": 2503.2392578243334,
+      "h264_origin": 756.2056732669998,
+      "height": 540,
+      "native_h264_encoding": false,
+      "owner_protocol": 1,
+      "pid": 5786,
+      "preview_mode": "continuous_vpu",
+      "raw_frames_submitted": 52337,
+      "sdk_calls_on_capture_thread": false,
+      "source_view": "full_view_960x540",
+      "timestamp_basis": "capture_request_lower_bound",
+      "updated_at": 2503.370538746,
+      "vpu_enabled": true,
+      "width": 960,
+      "external_h264": true,
+      "encoder_pid": 5779,
+      "muxer_pid": 5780,
+      "frame_age_s": 0.4847296996667865
+    },
+    "camera_after": {
+      "ready": true,
+      "source": "camera",
+      "state": "ready",
+      "session": "oxpr7ys8",
+      "boot_id": "ca08d773-cea8-44fa-84c1-9841d7cf4ed3",
+      "camera_buffers": 2,
+      "camera_drained": 0,
+      "camera_mapping_verified": true,
+      "camera_pending": true,
+      "camera_requests": 53242,
+      "capture_completion_observed_at": 2533.372362075,
+      "capture_mode": "preallocated_ping_pong",
+      "capture_scheduler": "independent_worker",
+      "captured": 53241,
+      "captured_at": 2533.33878974,
+      "codec": "h264",
+      "commands": 177,
+      "encoded": 53220,
+      "fps_limit": 30,
+      "frame_id": 53221,
+      "h264_bytes": 0,
+      "h264_encoded_at": 2532.7055842233335,
+      "h264_origin": 756.7054949640001,
+      "height": 540,
+      "native_h264_encoding": false,
+      "owner_protocol": 1,
+      "pid": 5786,
+      "preview_mode": "continuous_vpu",
+      "raw_frames_submitted": 53239,
+      "sdk_calls_on_capture_thread": false,
+      "source_view": "full_view_960x540",
+      "timestamp_basis": "capture_request_lower_bound",
+      "updated_at": 2532.984038005,
+      "vpu_enabled": true,
+      "width": 960,
+      "external_h264": true,
+      "encoder_pid": 5779,
+      "muxer_pid": 5780,
+      "frame_age_s": 1.1512861536666605
+    },
+    "cpu_cores": 0.5873672641750748,
+    "scope": "One standalone H264 browser, recording off, no diagnostic polling or inference requests during CPU window; no matched original passive baseline"
+  },
+  "regression": {
+    "windows_stream": {
+      "total": 43,
+      "passed": 41,
+      "skipped": 2
+    },
+    "linux_stream": {
+      "total": 43,
+      "passed": 43
+    },
+    "windows_recording": {
+      "total": 32,
+      "passed": 32
+    },
+    "node": {
+      "total": 15,
+      "passed": 15,
+      "includes": "seven existing camera suites and eight live player tests"
+    }
+  },
+  "extra_recording_validation": {
+    "passed": true,
+    "videos": [
+      {
+        "path": "/mnt/wcis-emmc/wcis-face/recordings/rec-20261102T184658Z-1b905bc00c5c.mp4",
+        "probe": {
+          "programs": [],
+          "streams": [
+            {
+              "duration": "59.999414",
+              "nb_read_frames": "1800"
+            }
+          ]
+        },
+        "sha256": "e08e5a6f577b3beb594b0927f163855180b3c1bbbb4ad08eb88af538aaa42ddc",
+        "frames": 1800,
+        "index_rows": 60,
+        "range_passed": true,
+        "seek_passed": true
+      },
+      {
+        "path": "/mnt/wcis-emmc/wcis-face/recordings/rec-20261102T184800Z-269580f8ffa5.mp4",
+        "probe": {
+          "programs": [],
+          "streams": [
+            {
+              "duration": "4.999935",
+              "nb_read_frames": "150"
+            }
+          ]
+        },
+        "sha256": "6fb42987cebcd2087997f8ffc41102ca46d55b7673da57a2f222c99a4a992380",
+        "frames": 150,
+        "index_rows": 5,
+        "range_passed": true,
+        "seek_passed": true
+      }
+    ]
+  }
+}

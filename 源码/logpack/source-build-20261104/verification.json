@@ -1,0 +1,34 @@
+{
+  "date": "2026-11-04",
+  "vivado": "2018.3 build 2405991",
+  "part": "xc7z030ffg676-2",
+  "source_entry": "fpga_source/import_sources.tcl",
+  "new_project": true,
+  "existing_xpr_or_dcp_used": false,
+  "ip_synthesis_passed": 24,
+  "top_synthesis_passed": true,
+  "implementation_passed": true,
+  "bitstream_generation_passed": true,
+  "run_status": "write_bitstream Complete!",
+  "fully_routed_nets": 92928,
+  "routing_errors": 0,
+  "setup_wns_ns": -0.497,
+  "hold_whs_ns": 0.029,
+  "pulse_wns_ns": -0.409,
+  "timing_closed": false,
+  "new_bitstream_board_tested": false,
+  "bits": [
+    {
+      "name": "ai7030_edif_top.bit",
+      "bytes": 5980025,
+      "sha256": "9bff9167b09c87150e7c2afc25bffebace6096203870a4c6bcd62c57e38d2e55",
+      "local_validation_output": "D:\\yzd\\tmp\\submission-repair-20261104\\new-project-3\\source_check.runs\\impl_1\\ai7030_edif_top.bit"
+    },
+    {
+      "name": "ai7030_edif_top_disable_icap.bit",
+      "bytes": 5980609,
+      "sha256": "a42996f89f0c5aba719404bb6f0c6aee6760f7445643c7834dba22b6c3e0fef1",
+      "local_validation_output": "D:\\yzd\\tmp\\submission-repair-20261104\\new-project-3\\source_check.runs\\impl_1\\ai7030_edif_top_disable_icap.bit"
+    }
+  ]
+}

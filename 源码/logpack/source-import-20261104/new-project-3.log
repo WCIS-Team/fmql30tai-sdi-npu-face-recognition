@@ -1,0 +1,216 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Wed Nov  4 12:39:15 2026
+# Process ID: 31100
+# Current directory: D:/yzd/tmp/submission-repair-20261104
+# Command line: vivado.exe -mode batch -log new-project-3.log -journal new-project-3.jou -source check-new-project.tcl
+# Log file: D:/yzd/tmp/submission-repair-20261104/new-project-3.log
+# Journal file: D:/yzd/tmp/submission-repair-20261104\new-project-3.jou
+#-----------------------------------------------------------
+source check-new-project.tcl
+# create_project source_check ./new-project-3 -part xc7z030ffg676-2
+# source ./source-test/import_sources.tcl
+## set source_root [file normalize [file dirname [info script]]]
+## if {[llength [get_projects -quiet]] != 1} {error "Create an empty Vivado project first"}
+## if {[get_property PART [current_project]] ne "xc7z030ffg676-2"} {error "Select xc7z030ffg676-2"}
+## set f [open [file join $source_root design-files.txt] r]
+## set source_names [split [string trim [read $f]] "\n"]
+## close $f
+## foreach name $source_names {
+##     if {![file isfile [file join $source_root $name]]} {error "Missing design input: $name"}
+## }
+## set_property ip_repo_paths [list [file join $source_root {PS_AI IP}]] [current_project]
+## update_ip_catalog
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/yzd/tmp/submission-repair-20261104/source-test/PS_AI IP'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:ip:processing_system7:5.5'. The one found in IP location 'd:/yzd/tmp/submission-repair-20261104/source-test/PS_AI IP/processing_system7_v5_5' will take precedence over the same IP in the Xilinx installed IP.
+WARNING: [IP_Flow 19-4830] Duplicate Interface found for 'xilinx.com:display_processing_system7:fixedio:1.0'. The one found in location 'd:/yzd/tmp/submission-repair-20261104/source-test/PS_AI IP/processing_system7_v5_5/fixedio.xml' will take precedence over the same Interface in location 'c:/Xilinx/Vivado/2018.3/data/ip/xilinx/processing_system7_v5_5/fixedio.xml'
+WARNING: [IP_Flow 19-4830] Duplicate Interface found for 'xilinx.com:display_processing_system7:hpstatusctrl:1.0'. The one found in location 'd:/yzd/tmp/submission-repair-20261104/source-test/PS_AI IP/processing_system7_v5_5/hpstatusctrl.xml' will take precedence over the same Interface in location 'c:/Xilinx/Vivado/2018.3/data/ip/xilinx/processing_system7_v5_5/hpstatusctrl.xml'
+WARNING: [IP_Flow 19-4830] Duplicate Interface found for 'xilinx.com:display_processing_system7:usbctrl:1.0'. The one found in location 'd:/yzd/tmp/submission-repair-20261104/source-test/PS_AI IP/processing_system7_v5_5/usbctrl.xml' will take precedence over the same Interface in location 'c:/Xilinx/Vivado/2018.3/data/ip/xilinx/processing_system7_v5_5/usbctrl.xml'
+## config_ip_cache -disable_cache
+## set design_paths {}
+## foreach name $source_names {lappend design_paths [file join $source_root $name]}
+## add_files -norecurse $design_paths
+WARNING: [IP_Flow 19-3664] IP 'smpte_sdi' generated file not found 'd:/yzd/tmp/submission-repair-20261104/source-test/rtl/sdi/ip/smpte_sdi/hdl/v_smpte_sdi_v3_0_vl_rfs.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'smpte_sdi' generated file not found 'd:/yzd/tmp/submission-repair-20261104/source-test/rtl/sdi/ip/smpte_sdi/synth/smpte_sdi.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'smpte_sdi' generated file not found 'd:/yzd/tmp/submission-repair-20261104/source-test/rtl/sdi/ip/smpte_sdi/smpte_sdi.dcp'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'smpte_sdi' generated file not found 'd:/yzd/tmp/submission-repair-20261104/source-test/rtl/sdi/ip/smpte_sdi/smpte_sdi_stub.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'smpte_sdi' generated file not found 'd:/yzd/tmp/submission-repair-20261104/source-test/rtl/sdi/ip/smpte_sdi/smpte_sdi_stub.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'smpte_sdi' generated file not found 'd:/yzd/tmp/submission-repair-20261104/source-test/rtl/sdi/ip/smpte_sdi/smpte_sdi_sim_netlist.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'smpte_sdi' generated file not found 'd:/yzd/tmp/submission-repair-20261104/source-test/rtl/sdi/ip/smpte_sdi/smpte_sdi_sim_netlist.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'mgtclk' generated file not found 'd:/yzd/tmp/submission-repair-20261104/source-test/rtl/sdi/ip/mgtclk/mgtclk_clk_wiz.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'mgtclk' generated file not found 'd:/yzd/tmp/submission-repair-20261104/source-test/rtl/sdi/ip/mgtclk/mgtclk.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'mgtclk' generated file not found 'd:/yzd/tmp/submission-repair-20261104/source-test/rtl/sdi/ip/mgtclk/mgtclk.dcp'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'mgtclk' generated file not found 'd:/yzd/tmp/submission-repair-20261104/source-test/rtl/sdi/ip/mgtclk/mgtclk_stub.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'mgtclk' generated file not found 'd:/yzd/tmp/submission-repair-20261104/source-test/rtl/sdi/ip/mgtclk/mgtclk_stub.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'mgtclk' generated file not found 'd:/yzd/tmp/submission-repair-20261104/source-test/rtl/sdi/ip/mgtclk/mgtclk_sim_netlist.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'mgtclk' generated file not found 'd:/yzd/tmp/submission-repair-20261104/source-test/rtl/sdi/ip/mgtclk/mgtclk_sim_netlist.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'sys_clk' generated file not found 'd:/yzd/tmp/submission-repair-20261104/source-test/rtl/sdi/ip/sys_clk/sys_clk_clk_wiz.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'sys_clk' generated file not found 'd:/yzd/tmp/submission-repair-20261104/source-test/rtl/sdi/ip/sys_clk/sys_clk.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'sys_clk' generated file not found 'd:/yzd/tmp/submission-repair-20261104/source-test/rtl/sdi/ip/sys_clk/sys_clk.dcp'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'sys_clk' generated file not found 'd:/yzd/tmp/submission-repair-20261104/source-test/rtl/sdi/ip/sys_clk/sys_clk_stub.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'sys_clk' generated file not found 'd:/yzd/tmp/submission-repair-20261104/source-test/rtl/sdi/ip/sys_clk/sys_clk_stub.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'sys_clk' generated file not found 'd:/yzd/tmp/submission-repair-20261104/source-test/rtl/sdi/ip/sys_clk/sys_clk_sim_netlist.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'sys_clk' generated file not found 'd:/yzd/tmp/submission-repair-20261104/source-test/rtl/sdi/ip/sys_clk/sys_clk_sim_netlist.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'clk_wiz_0' generated file not found 'd:/yzd/tmp/submission-repair-20261104/source-test/rtl/ip/clk_wiz_0/clk_wiz_0_clk_wiz.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'clk_wiz_0' generated file not found 'd:/yzd/tmp/submission-repair-20261104/source-test/rtl/ip/clk_wiz_0/clk_wiz_0.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'clk_wiz_0' generated file not found 'd:/yzd/tmp/submission-repair-20261104/source-test/rtl/ip/clk_wiz_0/clk_wiz_0.dcp'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'clk_wiz_0' generated file not found 'd:/yzd/tmp/submission-repair-20261104/source-test/rtl/ip/clk_wiz_0/clk_wiz_0_stub.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'clk_wiz_0' generated file not found 'd:/yzd/tmp/submission-repair-20261104/source-test/rtl/ip/clk_wiz_0/clk_wiz_0_stub.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'clk_wiz_0' generated file not found 'd:/yzd/tmp/submission-repair-20261104/source-test/rtl/ip/clk_wiz_0/clk_wiz_0_sim_netlist.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'clk_wiz_0' generated file not found 'd:/yzd/tmp/submission-repair-20261104/source-test/rtl/ip/clk_wiz_0/clk_wiz_0_sim_netlist.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'afifo_24w_4096d' generated file not found 'd:/yzd/tmp/submission-repair-20261104/source-test/rtl/ip/afifo_24w_4096d/hdl/blk_mem_gen_v8_4_vhsyn_rfs.vhd'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'afifo_24w_4096d' generated file not found 'd:/yzd/tmp/submission-repair-20261104/source-test/rtl/ip/afifo_24w_4096d/hdl/fifo_generator_v13_2_vhsyn_rfs.vhd'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'afifo_24w_4096d' generated file not found 'd:/yzd/tmp/submission-repair-20261104/source-test/rtl/ip/afifo_24w_4096d/synth/afifo_24w_4096d.vhd'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'afifo_24w_4096d' generated file not found 'd:/yzd/tmp/submission-repair-20261104/source-test/rtl/ip/afifo_24w_4096d/afifo_24w_4096d.dcp'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'afifo_24w_4096d' generated file not found 'd:/yzd/tmp/submission-repair-20261104/source-test/rtl/ip/afifo_24w_4096d/afifo_24w_4096d_stub.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'afifo_24w_4096d' generated file not found 'd:/yzd/tmp/submission-repair-20261104/source-test/rtl/ip/afifo_24w_4096d/afifo_24w_4096d_stub.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'afifo_24w_4096d' generated file not found 'd:/yzd/tmp/submission-repair-20261104/source-test/rtl/ip/afifo_24w_4096d/afifo_24w_4096d_sim_netlist.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'afifo_24w_4096d' generated file not found 'd:/yzd/tmp/submission-repair-20261104/source-test/rtl/ip/afifo_24w_4096d/afifo_24w_4096d_sim_netlist.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'rindex_buf_2b_16w' generated file not found 'd:/yzd/tmp/submission-repair-20261104/source-test/rtl/ip/rindex_buf_2b_16w/hdl/blk_mem_gen_v8_4_vhsyn_rfs.vhd'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'rindex_buf_2b_16w' generated file not found 'd:/yzd/tmp/submission-repair-20261104/source-test/rtl/ip/rindex_buf_2b_16w/hdl/fifo_generator_v13_2_vhsyn_rfs.vhd'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'rindex_buf_2b_16w' generated file not found 'd:/yzd/tmp/submission-repair-20261104/source-test/rtl/ip/rindex_buf_2b_16w/synth/rindex_buf_2b_16w.vhd'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'rindex_buf_2b_16w' generated file not found 'd:/yzd/tmp/submission-repair-20261104/source-test/rtl/ip/rindex_buf_2b_16w/rindex_buf_2b_16w.dcp'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'rindex_buf_2b_16w' generated file not found 'd:/yzd/tmp/submission-repair-20261104/source-test/rtl/ip/rindex_buf_2b_16w/rindex_buf_2b_16w_stub.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'rindex_buf_2b_16w' generated file not found 'd:/yzd/tmp/submission-repair-20261104/source-test/rtl/ip/rindex_buf_2b_16w/rindex_buf_2b_16w_stub.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'rindex_buf_2b_16w' generated file not found 'd:/yzd/tmp/submission-repair-20261104/source-test/rtl/ip/rindex_buf_2b_16w/rindex_buf_2b_16w_sim_netlist.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'rindex_buf_2b_16w' generated file not found 'd:/yzd/tmp/submission-repair-20261104/source-test/rtl/ip/rindex_buf_2b_16w/rindex_buf_2b_16w_sim_netlist.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'windex_buf_2b_16w' generated file not found 'd:/yzd/tmp/submission-repair-20261104/source-test/rtl/ip/windex_buf_2b_16w/hdl/blk_mem_gen_v8_4_vhsyn_rfs.vhd'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'windex_buf_2b_16w' generated file not found 'd:/yzd/tmp/submission-repair-20261104/source-test/rtl/ip/windex_buf_2b_16w/hdl/fifo_generator_v13_2_vhsyn_rfs.vhd'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'windex_buf_2b_16w' generated file not found 'd:/yzd/tmp/submission-repair-20261104/source-test/rtl/ip/windex_buf_2b_16w/synth/windex_buf_2b_16w.vhd'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'windex_buf_2b_16w' generated file not found 'd:/yzd/tmp/submission-repair-20261104/source-test/rtl/ip/windex_buf_2b_16w/windex_buf_2b_16w.dcp'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'windex_buf_2b_16w' generated file not found 'd:/yzd/tmp/submission-repair-20261104/source-test/rtl/ip/windex_buf_2b_16w/windex_buf_2b_16w_stub.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'windex_buf_2b_16w' generated file not found 'd:/yzd/tmp/submission-repair-20261104/source-test/rtl/ip/windex_buf_2b_16w/windex_buf_2b_16w_stub.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'windex_buf_2b_16w' generated file not found 'd:/yzd/tmp/submission-repair-20261104/source-test/rtl/ip/windex_buf_2b_16w/windex_buf_2b_16w_sim_netlist.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'windex_buf_2b_16w' generated file not found 'd:/yzd/tmp/submission-repair-20261104/source-test/rtl/ip/windex_buf_2b_16w/windex_buf_2b_16w_sim_netlist.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'afifo_64i_16o_128' generated file not found 'd:/yzd/tmp/submission-repair-20261104/source-test/rtl/ip/afifo_64i_16o_128/hdl/blk_mem_gen_v8_4_vhsyn_rfs.vhd'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'afifo_64i_16o_128' generated file not found 'd:/yzd/tmp/submission-repair-20261104/source-test/rtl/ip/afifo_64i_16o_128/hdl/fifo_generator_v13_2_vhsyn_rfs.vhd'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'afifo_64i_16o_128' generated file not found 'd:/yzd/tmp/submission-repair-20261104/source-test/rtl/ip/afifo_64i_16o_128/synth/afifo_64i_16o_128.vhd'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'afifo_64i_16o_128' generated file not found 'd:/yzd/tmp/submission-repair-20261104/source-test/rtl/ip/afifo_64i_16o_128/afifo_64i_16o_128.dcp'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'afifo_64i_16o_128' generated file not found 'd:/yzd/tmp/submission-repair-20261104/source-test/rtl/ip/afifo_64i_16o_128/afifo_64i_16o_128_stub.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'afifo_64i_16o_128' generated file not found 'd:/yzd/tmp/submission-repair-20261104/source-test/rtl/ip/afifo_64i_16o_128/afifo_64i_16o_128_stub.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'afifo_64i_16o_128' generated file not found 'd:/yzd/tmp/submission-repair-20261104/source-test/rtl/ip/afifo_64i_16o_128/afifo_64i_16o_128_sim_netlist.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'afifo_64i_16o_128' generated file not found 'd:/yzd/tmp/submission-repair-20261104/source-test/rtl/ip/afifo_64i_16o_128/afifo_64i_16o_128_sim_netlist.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'fifo_1' generated file not found 'd:/yzd/tmp/submission-repair-20261104/source-test/rtl/ip/fifo_1/hdl/blk_mem_gen_v8_4_vhsyn_rfs.vhd'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'fifo_1' generated file not found 'd:/yzd/tmp/submission-repair-20261104/source-test/rtl/ip/fifo_1/hdl/fifo_generator_v13_2_vhsyn_rfs.vhd'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'fifo_1' generated file not found 'd:/yzd/tmp/submission-repair-20261104/source-test/rtl/ip/fifo_1/synth/fifo_1.vhd'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'fifo_1' generated file not found 'd:/yzd/tmp/submission-repair-20261104/source-test/rtl/ip/fifo_1/fifo_1.dcp'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'fifo_1' generated file not found 'd:/yzd/tmp/submission-repair-20261104/source-test/rtl/ip/fifo_1/fifo_1_stub.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'fifo_1' generated file not found 'd:/yzd/tmp/submission-repair-20261104/source-test/rtl/ip/fifo_1/fifo_1_stub.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'fifo_1' generated file not found 'd:/yzd/tmp/submission-repair-20261104/source-test/rtl/ip/fifo_1/fifo_1_sim_netlist.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'fifo_1' generated file not found 'd:/yzd/tmp/submission-repair-20261104/source-test/rtl/ip/fifo_1/fifo_1_sim_netlist.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'afifo_16i_64o_largebuf' generated file not found 'd:/yzd/tmp/submission-repair-20261104/source-test/rtl/ip/afifo_16i_64o_largebuf/hdl/blk_mem_gen_v8_4_vhsyn_rfs.vhd'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'afifo_16i_64o_largebuf' generated file not found 'd:/yzd/tmp/submission-repair-20261104/source-test/rtl/ip/afifo_16i_64o_largebuf/hdl/fifo_generator_v13_2_vhsyn_rfs.vhd'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'afifo_16i_64o_largebuf' generated file not found 'd:/yzd/tmp/submission-repair-20261104/source-test/rtl/ip/afifo_16i_64o_largebuf/synth/afifo_16i_64o_largebuf.vhd'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'afifo_16i_64o_largebuf' generated file not found 'd:/yzd/tmp/submission-repair-20261104/source-test/rtl/ip/afifo_16i_64o_largebuf/afifo_16i_64o_largebuf.dcp'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'afifo_16i_64o_largebuf' generated file not found 'd:/yzd/tmp/submission-repair-20261104/source-test/rtl/ip/afifo_16i_64o_largebuf/afifo_16i_64o_largebuf_stub.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'afifo_16i_64o_largebuf' generated file not found 'd:/yzd/tmp/submission-repair-20261104/source-test/rtl/ip/afifo_16i_64o_largebuf/afifo_16i_64o_largebuf_stub.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'afifo_16i_64o_largebuf' generated file not found 'd:/yzd/tmp/submission-repair-20261104/source-test/rtl/ip/afifo_16i_64o_largebuf/afifo_16i_64o_largebuf_sim_netlist.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'afifo_16i_64o_largebuf' generated file not found 'd:/yzd/tmp/submission-repair-20261104/source-test/rtl/ip/afifo_16i_64o_largebuf/afifo_16i_64o_largebuf_sim_netlist.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'cmos_clkgen_742_5' generated file not found 'd:/yzd/tmp/submission-repair-20261104/source-test/rtl/ip/cmos_clkgen_742_5/cmos_clkgen_742_5_clk_wiz.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'cmos_clkgen_742_5' generated file not found 'd:/yzd/tmp/submission-repair-20261104/source-test/rtl/ip/cmos_clkgen_742_5/cmos_clkgen_742_5.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'cmos_clkgen_742_5' generated file not found 'd:/yzd/tmp/submission-repair-20261104/source-test/rtl/ip/cmos_clkgen_742_5/cmos_clkgen_742_5.dcp'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'cmos_clkgen_742_5' generated file not found 'd:/yzd/tmp/submission-repair-20261104/source-test/rtl/ip/cmos_clkgen_742_5/cmos_clkgen_742_5_stub.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'cmos_clkgen_742_5' generated file not found 'd:/yzd/tmp/submission-repair-20261104/source-test/rtl/ip/cmos_clkgen_742_5/cmos_clkgen_742_5_stub.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'cmos_clkgen_742_5' generated file not found 'd:/yzd/tmp/submission-repair-20261104/source-test/rtl/ip/cmos_clkgen_742_5/cmos_clkgen_742_5_sim_netlist.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'cmos_clkgen_742_5' generated file not found 'd:/yzd/tmp/submission-repair-20261104/source-test/rtl/ip/cmos_clkgen_742_5/cmos_clkgen_742_5_sim_netlist.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'mna_idfifo_w12' generated file not found 'd:/yzd/tmp/submission-repair-20261104/source-test/rtl/ip/mna_idfifo_w12/hdl/blk_mem_gen_v8_4_vhsyn_rfs.vhd'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'mna_idfifo_w12' generated file not found 'd:/yzd/tmp/submission-repair-20261104/source-test/rtl/ip/mna_idfifo_w12/hdl/fifo_generator_v13_2_vhsyn_rfs.vhd'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'mna_idfifo_w12' generated file not found 'd:/yzd/tmp/submission-repair-20261104/source-test/rtl/ip/mna_idfifo_w12/synth/mna_idfifo_w12.vhd'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'mna_idfifo_w12' generated file not found 'd:/yzd/tmp/submission-repair-20261104/source-test/rtl/ip/mna_idfifo_w12/mna_idfifo_w12.dcp'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'mna_idfifo_w12' generated file not found 'd:/yzd/tmp/submission-repair-20261104/source-test/rtl/ip/mna_idfifo_w12/mna_idfifo_w12_stub.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'mna_idfifo_w12' generated file not found 'd:/yzd/tmp/submission-repair-20261104/source-test/rtl/ip/mna_idfifo_w12/mna_idfifo_w12_stub.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'mna_idfifo_w12' generated file not found 'd:/yzd/tmp/submission-repair-20261104/source-test/rtl/ip/mna_idfifo_w12/mna_idfifo_w12_sim_netlist.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'mna_idfifo_w12' generated file not found 'd:/yzd/tmp/submission-repair-20261104/source-test/rtl/ip/mna_idfifo_w12/mna_idfifo_w12_sim_netlist.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'mig_7series_0' generated file not found 'd:/yzd/tmp/submission-repair-20261104/source-test/rtl/ip/mig_7series_0/mig_7series_0.veo'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'mig_7series_0' generated file not found 'd:/yzd/tmp/submission-repair-20261104/source-test/rtl/ip/mig_7series_0/mig_7series_0/user_design/rtl/clocking/mig_7series_v4_2_clk_ibuf.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'mig_7series_0' generated file not found 'd:/yzd/tmp/submission-repair-20261104/source-test/rtl/ip/mig_7series_0/mig_7series_0/user_design/rtl/clocking/mig_7series_v4_2_infrastructure.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'mig_7series_0' generated file not found 'd:/yzd/tmp/submission-repair-20261104/source-test/rtl/ip/mig_7series_0/mig_7series_0/user_design/rtl/clocking/mig_7series_v4_2_iodelay_ctrl.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'mig_7series_0' generated file not found 'd:/yzd/tmp/submission-repair-20261104/source-test/rtl/ip/mig_7series_0/mig_7series_0/user_design/rtl/clocking/mig_7series_v4_2_tempmon.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'mig_7series_0' generated file not found 'd:/yzd/tmp/submission-repair-20261104/source-test/rtl/ip/mig_7series_0/mig_7series_0/user_design/rtl/controller/mig_7series_v4_2_arb_mux.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'mig_7series_0' generated file not found 'd:/yzd/tmp/submission-repair-20261104/source-test/rtl/ip/mig_7series_0/mig_7series_0/user_design/rtl/controller/mig_7series_v4_2_arb_row_col.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'mig_7series_0' generated file not found 'd:/yzd/tmp/submission-repair-20261104/source-test/rtl/ip/mig_7series_0/mig_7series_0/user_design/rtl/controller/mig_7series_v4_2_arb_select.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'mig_7series_0' generated file not found 'd:/yzd/tmp/submission-repair-20261104/source-test/rtl/ip/mig_7series_0/mig_7series_0/user_design/rtl/controller/mig_7series_v4_2_bank_cntrl.v'. Please regenerate to continue.
+INFO: [Common 17-14] Message 'IP_Flow 19-3664' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+## set f [open [file join $source_root constraints-files.txt] r]
+## set constraint_names [split [string trim [read $f]] "\n"]
+## close $f
+## foreach name $constraint_names {add_files -fileset constrs_1 -norecurse [file join $source_root $name]}
+## set_property PROCESSING_ORDER LATE [get_files */fmql30tai_full_sdi_refclk.xdc]
+## set_property include_dirs [list [file join $source_root rtl display]] [get_filesets sources_1]
+## set_property top ai7030_edif_top [get_filesets sources_1]
+## update_compile_order -fileset sources_1
+## puts "Sources imported. Complete per-IP synthesis and vendor patch setup following the README."
+Sources imported. Complete per-IP synthesis and vendor patch setup following the README.
+# report_ip_status -file ip-status.rpt
+# generate_target all [get_files *.bd]
+INFO: [BD 41-1637] Generated targets are already up-to-date for bd-design 'ps_ai' - hence not re-generating.
+# foreach name $source_names {
+#     if {[file extension $name] eq ".xci"} {generate_target all [get_files [file join $source_root $name]]}
+# }
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'smpte_sdi'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'smpte_sdi'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'smpte_sdi'...
+INFO: [IP_Flow 19-1686] Generating 'Test Bench' target for IP 'smpte_sdi'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'smpte_sdi'...
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'mgtclk'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'mgtclk'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'mgtclk'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'mgtclk'...
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'sys_clk'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'sys_clk'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'sys_clk'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'sys_clk'...
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'clk_wiz_0'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'clk_wiz_0'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'clk_wiz_0'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'clk_wiz_0'...
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'afifo_24w_4096d'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'afifo_24w_4096d'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'afifo_24w_4096d'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'afifo_24w_4096d'...
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'rindex_buf_2b_16w'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'rindex_buf_2b_16w'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'rindex_buf_2b_16w'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'rindex_buf_2b_16w'...
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'windex_buf_2b_16w'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'windex_buf_2b_16w'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'windex_buf_2b_16w'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'windex_buf_2b_16w'...
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'afifo_64i_16o_128'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'afifo_64i_16o_128'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'afifo_64i_16o_128'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'afifo_64i_16o_128'...
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'fifo_1'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'fifo_1'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'fifo_1'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'fifo_1'...
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'afifo_16i_64o_largebuf'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'afifo_16i_64o_largebuf'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'afifo_16i_64o_largebuf'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'afifo_16i_64o_largebuf'...
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'cmos_clkgen_742_5'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'cmos_clkgen_742_5'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'cmos_clkgen_742_5'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'cmos_clkgen_742_5'...
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'mna_idfifo_w12'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'mna_idfifo_w12'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'mna_idfifo_w12'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'mna_idfifo_w12'...
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'mig_7series_0'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'mig_7series_0'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'mig_7series_0'...
+INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'mig_7series_0'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'mig_7series_0'...
+generate_target: Time (s): cpu = 00:00:07 ; elapsed = 00:00:10 . Memory (MB): peak = 685.188 ; gain = 340.594
+# update_compile_order -fileset sources_1
+# set f [open imported-files.txt w]
+# foreach item [get_files -compile_order sources -used_in synthesis] {puts $f $item}
+# close $f
+# puts NEW_PROJECT_IMPORT_AND_GENERATION_PASSED
+NEW_PROJECT_IMPORT_AND_GENERATION_PASSED
+# close_project
+INFO: [Common 17-206] Exiting Vivado at Wed Nov  4 12:39:37 2026...

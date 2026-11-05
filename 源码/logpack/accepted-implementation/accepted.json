@@ -1,0 +1,82 @@
+{
+  "passed": true,
+  "boot_id": "b174ec4a-a93d-4833-81ca-962ecdf4ba9a",
+  "boot_sha256": "f6da96abbc0144ce5a48f4fa85aed6dab65067211b8932e8f4e4db87d5110297",
+  "windows": {
+    "client": "Windows direct",
+    "server": "192.168.1.113:8092",
+    "frames": [
+      {
+        "id": 44,
+        "bytes": 66751
+      },
+      {
+        "id": 45,
+        "bytes": 66847
+      },
+      {
+        "id": 46,
+        "bytes": 66750
+      },
+      {
+        "id": 47,
+        "bytes": 66648
+      },
+      {
+        "id": 48,
+        "bytes": 66771
+      }
+    ],
+    "source": "camera",
+    "session": "b2784c6d3f2f4acaa667f71fb9d1f61c",
+    "boot_id": "b174ec4a-a93d-4833-81ca-962ecdf4ba9a",
+    "content_type": "multipart/x-mixed-replace; boundary=frame"
+  },
+  "gateway": {
+    "client": "192.168.1.102",
+    "server": "192.168.1.113:8092",
+    "frames": [
+      {
+        "id": 45,
+        "bytes": 66847
+      },
+      {
+        "id": 46,
+        "bytes": 66750
+      },
+      {
+        "id": 47,
+        "bytes": 66648
+      },
+      {
+        "id": 48,
+        "bytes": 66771
+      },
+      {
+        "id": 49,
+        "bytes": 66759
+      }
+    ],
+    "source": "camera",
+    "session": "b2784c6d3f2f4acaa667f71fb9d1f61c",
+    "boot_id": "b174ec4a-a93d-4833-81ca-962ecdf4ba9a",
+    "content_type": "multipart/x-mixed-replace; boundary=frame"
+  },
+  "status": {
+    "ready": true,
+    "source": "camera",
+    "state": "ready",
+    "session": "b2784c6d3f2f4acaa667f71fb9d1f61c",
+    "boot_id": "b174ec4a-a93d-4833-81ca-962ecdf4ba9a",
+    "pid": 258,
+    "frame_id": 79,
+    "captured": 79,
+    "encoded": 79,
+    "width": 960,
+    "height": 540,
+    "fps_limit": 5,
+    "captured_at": 44.415582,
+    "updated_at": 44.429326,
+    "frame_age_s": 0.06760923999999591
+  }
+}

@@ -1,0 +1,354 @@
+{
+  "passed": true,
+  "boot_id": "809c6b12-c379-4216-88eb-dba4e113da57",
+  "parallel_hardware": true,
+  "camera_input": false,
+  "checks": [
+    {
+      "both_ready_ms": 73.21836,
+      "convolution_witness": {
+        "jpeg_status_after_npu_ready": 2,
+        "jpeg_status_before_npu": 2,
+        "op_id": 406,
+        "op_name": "icraft::xir::Conv2dNode",
+        "output_count": 1,
+        "output_tensors_ready": true,
+        "post_ready_ms": 18.651277,
+        "pre_ms": 17.313438
+      },
+      "device_closed": true,
+      "frame_id": 1,
+      "frame_preserved": true,
+      "frame_token": "e53b2d2e59084cde92c2d2b0ac577f2d",
+      "jpeg": {
+        "allocation_base": 9937024,
+        "allocation_bytes": 8388736,
+        "bytes": 99488,
+        "completion_observed_ms": 72.376123,
+        "cycles": 4169702,
+        "file": "/mnt/wcis-emmc/wcis-face/recording-tests/cache-preserve-parallel-809c6b12-c9999c/frame-1/yunet-0-serial/output.jpg",
+        "read_blocks": 129600,
+        "started_ms": 30.57966,
+        "write_blocks": 1555
+      },
+      "mode": "serial",
+      "npu_bound_ops": 112,
+      "npu_ready_ms": 30.56541,
+      "outputs": [
+        {
+          "elements": 6400,
+          "file": "/mnt/wcis-emmc/wcis-face/recording-tests/cache-preserve-parallel-809c6b12-c9999c/frame-1/yunet-0-serial/0.f32",
+          "index": 0
+        },
+        {
+          "elements": 1600,
+          "file": "/mnt/wcis-emmc/wcis-face/recording-tests/cache-preserve-parallel-809c6b12-c9999c/frame-1/yunet-0-serial/1.f32",
+          "index": 1
+        },
+        {
+          "elements": 400,
+          "file": "/mnt/wcis-emmc/wcis-face/recording-tests/cache-preserve-parallel-809c6b12-c9999c/frame-1/yunet-0-serial/2.f32",
+          "index": 2
+        },
+        {
+          "elements": 6400,
+          "file": "/mnt/wcis-emmc/wcis-face/recording-tests/cache-preserve-parallel-809c6b12-c9999c/frame-1/yunet-0-serial/3.f32",
+          "index": 3
+        },
+        {
+          "elements": 1600,
+          "file": "/mnt/wcis-emmc/wcis-face/recording-tests/cache-preserve-parallel-809c6b12-c9999c/frame-1/yunet-0-serial/4.f32",
+          "index": 4
+        },
+        {
+          "elements": 400,
+          "file": "/mnt/wcis-emmc/wcis-face/recording-tests/cache-preserve-parallel-809c6b12-c9999c/frame-1/yunet-0-serial/5.f32",
+          "index": 5
+        },
+        {
+          "elements": 25600,
+          "file": "/mnt/wcis-emmc/wcis-face/recording-tests/cache-preserve-parallel-809c6b12-c9999c/frame-1/yunet-0-serial/6.f32",
+          "index": 6
+        },
+        {
+          "elements": 6400,
+          "file": "/mnt/wcis-emmc/wcis-face/recording-tests/cache-preserve-parallel-809c6b12-c9999c/frame-1/yunet-0-serial/7.f32",
+          "index": 7
+        },
+        {
+          "elements": 1600,
+          "file": "/mnt/wcis-emmc/wcis-face/recording-tests/cache-preserve-parallel-809c6b12-c9999c/frame-1/yunet-0-serial/8.f32",
+          "index": 8
+        },
+        {
+          "elements": 64000,
+          "file": "/mnt/wcis-emmc/wcis-face/recording-tests/cache-preserve-parallel-809c6b12-c9999c/frame-1/yunet-0-serial/9.f32",
+          "index": 9
+        },
+        {
+          "elements": 16000,
+          "file": "/mnt/wcis-emmc/wcis-face/recording-tests/cache-preserve-parallel-809c6b12-c9999c/frame-1/yunet-0-serial/10.f32",
+          "index": 10
+        },
+        {
+          "elements": 4000,
+          "file": "/mnt/wcis-emmc/wcis-face/recording-tests/cache-preserve-parallel-809c6b12-c9999c/frame-1/yunet-0-serial/11.f32",
+          "index": 11
+        }
+      ],
+      "overlap_proven": false,
+      "source_uploaded": false,
+      "status": "completed",
+      "role": "yunet",
+      "sequence": 1,
+      "pair": 0,
+      "pixel_format": "BGRX8",
+      "source_sha256": "a84e8c8cbfb667e9969c309390585308a72995e46a7cafa8e11b4603eff1b530",
+      "output_sha256": [
+        "4b286445c2270c780642f7ecb752c47d56f888666b46dfc0868545f86336bb92",
+        "9cc1d9ff13b00a0b80be608086b9b1e228b926a8c919e1108f920a78efb0be51",
+        "fce41929e0e44390e7cfa3361e2d17223224abea438c51af234588cdf531d0b0",
+        "71382393e8f1e847af749e28cec25f5576dd60c3b43450da40de11fdcba1f6e9",
+        "4ff1ab33833afc0d182c2f336701bb7c64f604b3e6f43ad4c1c290a366abd617",
+        "af95d70fc5dd1f1fa7f1ad65143e0ac17cc9c66fdf99986b4675606f125bf119",
+        "83c44c6b80b85e939c9d4eb33b6339dffd42894c99690dd1e87c32a1a0bec397",
+        "d6dbdf9bbe0c41651afb8f8a2d374532f73c2496792227ce7dcbb4efe3134031",
+        "7ded78f5202b7248df570ead7af4fca63f1c5ccf9b4cc3644c20fa6fde9c5105",
+        "25b47a115b7de60026138529848bc1831930d3707c71e462d9a49f8d73cc1259",
+        "7d0ca1fbf43e87998ce18a8cc3aed3e0f4fe1cc572662b141eb79b0156ece705",
+        "8b7a67af6d70d7c9255ff176bf168232f8a9e268c10f039ae6859cebd9bfa035"
+      ],
+      "jpeg_sha256": "810b84199eac16c5304ce02c41d1d612a996d876a327e8e496cd84d2e1352b69"
+    },
+    {
+      "both_ready_ms": 65.632769,
+      "convolution_witness": {
+        "jpeg_status_after_npu_ready": 1,
+        "jpeg_status_before_npu": 1,
+        "op_id": 406,
+        "op_name": "icraft::xir::Conv2dNode",
+        "output_count": 1,
+        "output_tensors_ready": true,
+        "post_ready_ms": 17.295218,
+        "pre_ms": 15.970009
+      },
+      "device_closed": true,
+      "frame_id": 1,
+      "frame_preserved": true,
+      "frame_token": "e53b2d2e59084cde92c2d2b0ac577f2d",
+      "jpeg": {
+        "allocation_base": 9937024,
+        "allocation_bytes": 8388736,
+        "bytes": 99488,
+        "completion_observed_ms": 64.868951,
+        "cycles": 4888085,
+        "file": "/mnt/wcis-emmc/wcis-face/recording-tests/cache-preserve-parallel-809c6b12-c9999c/frame-1/yunet-0-overlap/output.jpg",
+        "read_blocks": 129600,
+        "started_ms": 15.962729,
+        "write_blocks": 1555
+      },
+      "mode": "overlap",
+      "npu_bound_ops": 112,
+      "npu_ready_ms": 29.164602,
+      "outputs": [
+        {
+          "elements": 6400,
+          "file": "/mnt/wcis-emmc/wcis-face/recording-tests/cache-preserve-parallel-809c6b12-c9999c/frame-1/yunet-0-overlap/0.f32",
+          "index": 0
+        },
+        {
+          "elements": 1600,
+          "file": "/mnt/wcis-emmc/wcis-face/recording-tests/cache-preserve-parallel-809c6b12-c9999c/frame-1/yunet-0-overlap/1.f32",
+          "index": 1
+        },
+        {
+          "elements": 400,
+          "file": "/mnt/wcis-emmc/wcis-face/recording-tests/cache-preserve-parallel-809c6b12-c9999c/frame-1/yunet-0-overlap/2.f32",
+          "index": 2
+        },
+        {
+          "elements": 6400,
+          "file": "/mnt/wcis-emmc/wcis-face/recording-tests/cache-preserve-parallel-809c6b12-c9999c/frame-1/yunet-0-overlap/3.f32",
+          "index": 3
+        },
+        {
+          "elements": 1600,
+          "file": "/mnt/wcis-emmc/wcis-face/recording-tests/cache-preserve-parallel-809c6b12-c9999c/frame-1/yunet-0-overlap/4.f32",
+          "index": 4
+        },
+        {
+          "elements": 400,
+          "file": "/mnt/wcis-emmc/wcis-face/recording-tests/cache-preserve-parallel-809c6b12-c9999c/frame-1/yunet-0-overlap/5.f32",
+          "index": 5
+        },
+        {
+          "elements": 25600,
+          "file": "/mnt/wcis-emmc/wcis-face/recording-tests/cache-preserve-parallel-809c6b12-c9999c/frame-1/yunet-0-overlap/6.f32",
+          "index": 6
+        },
+        {
+          "elements": 6400,
+          "file": "/mnt/wcis-emmc/wcis-face/recording-tests/cache-preserve-parallel-809c6b12-c9999c/frame-1/yunet-0-overlap/7.f32",
+          "index": 7
+        },
+        {
+          "elements": 1600,
+          "file": "/mnt/wcis-emmc/wcis-face/recording-tests/cache-preserve-parallel-809c6b12-c9999c/frame-1/yunet-0-overlap/8.f32",
+          "index": 8
+        },
+        {
+          "elements": 64000,
+          "file": "/mnt/wcis-emmc/wcis-face/recording-tests/cache-preserve-parallel-809c6b12-c9999c/frame-1/yunet-0-overlap/9.f32",
+          "index": 9
+        },
+        {
+          "elements": 16000,
+          "file": "/mnt/wcis-emmc/wcis-face/recording-tests/cache-preserve-parallel-809c6b12-c9999c/frame-1/yunet-0-overlap/10.f32",
+          "index": 10
+        },
+        {
+          "elements": 4000,
+          "file": "/mnt/wcis-emmc/wcis-face/recording-tests/cache-preserve-parallel-809c6b12-c9999c/frame-1/yunet-0-overlap/11.f32",
+          "index": 11
+        }
+      ],
+      "overlap_proven": true,
+      "source_uploaded": false,
+      "status": "completed",
+      "role": "yunet",
+      "sequence": 1,
+      "pair": 0,
+      "pixel_format": "BGRX8",
+      "source_sha256": "a84e8c8cbfb667e9969c309390585308a72995e46a7cafa8e11b4603eff1b530",
+      "output_sha256": [
+        "4b286445c2270c780642f7ecb752c47d56f888666b46dfc0868545f86336bb92",
+        "9cc1d9ff13b00a0b80be608086b9b1e228b926a8c919e1108f920a78efb0be51",
+        "fce41929e0e44390e7cfa3361e2d17223224abea438c51af234588cdf531d0b0",
+        "71382393e8f1e847af749e28cec25f5576dd60c3b43450da40de11fdcba1f6e9",
+        "4ff1ab33833afc0d182c2f336701bb7c64f604b3e6f43ad4c1c290a366abd617",
+        "af95d70fc5dd1f1fa7f1ad65143e0ac17cc9c66fdf99986b4675606f125bf119",
+        "83c44c6b80b85e939c9d4eb33b6339dffd42894c99690dd1e87c32a1a0bec397",
+        "d6dbdf9bbe0c41651afb8f8a2d374532f73c2496792227ce7dcbb4efe3134031",
+        "7ded78f5202b7248df570ead7af4fca63f1c5ccf9b4cc3644c20fa6fde9c5105",
+        "25b47a115b7de60026138529848bc1831930d3707c71e462d9a49f8d73cc1259",
+        "7d0ca1fbf43e87998ce18a8cc3aed3e0f4fe1cc572662b141eb79b0156ece705",
+        "8b7a67af6d70d7c9255ff176bf168232f8a9e268c10f039ae6859cebd9bfa035"
+      ],
+      "jpeg_sha256": "810b84199eac16c5304ce02c41d1d612a996d876a327e8e496cd84d2e1352b69"
+    },
+    {
+      "both_ready_ms": 63.193878,
+      "convolution_witness": {
+        "jpeg_status_after_npu_ready": 2,
+        "jpeg_status_before_npu": 2,
+        "op_id": 783,
+        "op_name": "icraft::xir::Conv2dNode",
+        "output_count": 1,
+        "output_tensors_ready": true,
+        "post_ready_ms": 1.029444,
+        "pre_ms": 0.857447
+      },
+      "device_closed": true,
+      "frame_id": 1,
+      "frame_preserved": true,
+      "frame_token": "e53b2d2e59084cde92c2d2b0ac577f2d",
+      "jpeg": {
+        "allocation_base": 9937024,
+        "allocation_bytes": 8388736,
+        "bytes": 99488,
+        "completion_observed_ms": 62.40542,
+        "cycles": 4169696,
+        "file": "/mnt/wcis-emmc/wcis-face/recording-tests/cache-preserve-parallel-809c6b12-c9999c/frame-1/mobilefacenet-0-serial/output.jpg",
+        "read_blocks": 129600,
+        "started_ms": 20.635566,
+        "write_blocks": 1555
+      },
+      "mode": "serial",
+      "npu_bound_ops": 211,
+      "npu_ready_ms": 20.624867,
+      "outputs": [
+        {
+          "elements": 512,
+          "file": "/mnt/wcis-emmc/wcis-face/recording-tests/cache-preserve-parallel-809c6b12-c9999c/frame-1/mobilefacenet-0-serial/0.f32",
+          "index": 0
+        }
+      ],
+      "overlap_proven": false,
+      "source_uploaded": false,
+      "status": "completed",
+      "role": "mobilefacenet",
+      "sequence": 1,
+      "pair": 0,
+      "pixel_format": "BGRX8",
+      "source_sha256": "a84e8c8cbfb667e9969c309390585308a72995e46a7cafa8e11b4603eff1b530",
+      "output_sha256": [
+        "7748434811d0496a5a9b1fc0e6c0bce443d6c7010b2014d7a4b3e98a96f4b006"
+      ],
+      "jpeg_sha256": "810b84199eac16c5304ce02c41d1d612a996d876a327e8e496cd84d2e1352b69"
+    },
+    {
+      "both_ready_ms": 56.230418,
+      "convolution_witness": {
+        "jpeg_status_after_npu_ready": 1,
+        "jpeg_status_before_npu": 1,
+        "op_id": 783,
+        "op_name": "icraft::xir::Conv2dNode",
+        "output_count": 1,
+        "output_tensors_ready": true,
+        "post_ready_ms": 1.034684,
+        "pre_ms": 0.865826
+      },
+      "device_closed": true,
+      "frame_id": 1,
+      "frame_preserved": true,
+      "frame_token": "e53b2d2e59084cde92c2d2b0ac577f2d",
+      "jpeg": {
+        "allocation_base": 9937024,
+        "allocation_bytes": 8388736,
+        "bytes": 99488,
+        "completion_observed_ms": 55.45894,
+        "cycles": 5457180,
+        "file": "/mnt/wcis-emmc/wcis-face/recording-tests/cache-preserve-parallel-809c6b12-c9999c/frame-1/mobilefacenet-0-overlap/output.jpg",
+        "read_blocks": 129600,
+        "started_ms": 0.857867,
+        "write_blocks": 1555
+      },
+      "mode": "overlap",
+      "npu_bound_ops": 211,
+      "npu_ready_ms": 20.618344,
+      "outputs": [
+        {
+          "elements": 512,
+          "file": "/mnt/wcis-emmc/wcis-face/recording-tests/cache-preserve-parallel-809c6b12-c9999c/frame-1/mobilefacenet-0-overlap/0.f32",
+          "index": 0
+        }
+      ],
+      "overlap_proven": true,
+      "source_uploaded": false,
+      "status": "completed",
+      "role": "mobilefacenet",
+      "sequence": 1,
+      "pair": 0,
+      "pixel_format": "BGRX8",
+      "source_sha256": "a84e8c8cbfb667e9969c309390585308a72995e46a7cafa8e11b4603eff1b530",
+      "output_sha256": [
+        "7748434811d0496a5a9b1fc0e6c0bce443d6c7010b2014d7a4b3e98a96f4b006"
+      ],
+      "jpeg_sha256": "810b84199eac16c5304ce02c41d1d612a996d876a327e8e496cd84d2e1352b69"
+    }
+  ],
+  "frames": [
+    {
+      "frame_id": 1,
+      "frame_token": "e53b2d2e59084cde92c2d2b0ac577f2d",
+      "source_sha256": "a84e8c8cbfb667e9969c309390585308a72995e46a7cafa8e11b4603eff1b530",
+      "full_source_equal": true,
+      "source_uploads": 1
+    }
+  ],
+  "stopped": false,
+  "worker_exit_codes": [
+    0,
+    0
+  ]
+}

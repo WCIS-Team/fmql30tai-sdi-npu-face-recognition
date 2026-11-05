@@ -1,0 +1,175 @@
+{
+  "date": "2026-11-04",
+  "scope": "delivery_cleanup_only",
+  "website_unchanged": true,
+  "live_checks": [
+    {
+      "path": "board_runtime/reference_release/app/site/index.html",
+      "sha256": "97943cf6d2129ffa18f00ad22790d100279de09bbfa339ec88ae8819da06bfee",
+      "matches_live": true
+    },
+    {
+      "path": "board_runtime/reference_release/app/site/site_app.js",
+      "sha256": "805e239d24cc9d7c83ab47e2236a0c7ed6f133b50726d48d200a8e902621b092",
+      "matches_live": true
+    },
+    {
+      "path": "board_runtime/reference_release/app/site/camera_panel.js",
+      "sha256": "063d1638d65227eed4ad556efe8e95974ccfebebe34d2aac445ca189243887ea",
+      "matches_live": true
+    },
+    {
+      "path": "board_runtime/reference_release/app/site/recording_embed.js",
+      "sha256": "b43688980af32dd76017a5df38ca082c57096862460db51627441658af4d7735",
+      "matches_live": true
+    },
+    {
+      "path": "board_runtime/reference_release/recorder/recording_panel.html",
+      "sha256": "f88f55bcfd77378a75cb1763a9e022e9cc4c4d16e61171a5eeba458bec5860b3",
+      "matches_live": true
+    },
+    {
+      "path": "board_runtime/reference_release/recorder/recording_panel.js",
+      "sha256": "0251a5a04f93ee5cebd1284243c2d021ba39a21eac171dd2b10a3f0bcf5d95b4",
+      "matches_live": true
+    }
+  ],
+  "archived_files": [
+    {
+      "path": "board_runtime/reference_release/app/index.html",
+      "reason": "Unused root copy; active website is app/site/",
+      "bytes": 19660,
+      "sha256": "97943cf6d2129ffa18f00ad22790d100279de09bbfa339ec88ae8819da06bfee"
+    },
+    {
+      "path": "board_runtime/reference_release/app/camera_panel.js",
+      "reason": "Unused root copy; active website is app/site/",
+      "bytes": 17137,
+      "sha256": "063d1638d65227eed4ad556efe8e95974ccfebebe34d2aac445ca189243887ea"
+    },
+    {
+      "path": "board_runtime/reference_release/app/recording_embed.js",
+      "reason": "Unused root copy; active website is app/site/",
+      "bytes": 1199,
+      "sha256": "b43688980af32dd76017a5df38ca082c57096862460db51627441658af4d7735"
+    },
+    {
+      "path": "board_runtime/reference_release/app/site_app.js",
+      "reason": "Unused root copy; active website is app/site/",
+      "bytes": 19498,
+      "sha256": "805e239d24cc9d7c83ab47e2236a0c7ed6f133b50726d48d200a8e902621b092"
+    },
+    {
+      "path": "board_runtime/reference_release/app/camera_panel.html",
+      "reason": "Unused outdated HTML fragment; editable current source is ps_source/npu_photo/",
+      "bytes": 3983,
+      "sha256": "ce3122967daf42666abd88c96627683dfa197038b8c24e723f686f694bd6d72a"
+    },
+    {
+      "path": "board_runtime/reference_release/app/recording_panel.html",
+      "reason": "Unused recorder copy; installation uses reference_release/recorder/",
+      "bytes": 6704,
+      "sha256": "8996a3a45266c2fa8c5e9c850ded80a36cce5755cce609c532bc218a8111c08e"
+    },
+    {
+      "path": "board_runtime/reference_release/app/recording_panel.js",
+      "reason": "Unused recorder copy; installation uses reference_release/recorder/",
+      "bytes": 11333,
+      "sha256": "adb3c71c5a62bc0f9441bc4f7d54a9fd17b1e37c22335c7b1044ad0e97df8d78"
+    },
+    {
+      "path": "board_runtime/reference_release/app/recording_service.py",
+      "reason": "Unused recorder copy; installation uses reference_release/recorder/",
+      "bytes": 29507,
+      "sha256": "20968642ee67957790cfe011ea95f00141178837736db1a762a0ea2e72f25195"
+    },
+    {
+      "path": "board_runtime/reference_release/app/recording_library.py",
+      "reason": "Unused recorder copy; installation uses reference_release/recorder/",
+      "bytes": 13042,
+      "sha256": "4d2003b4225d3452cdba053fa4716bca4b17c96b5d342feb1f2272091afd7d9d"
+    },
+    {
+      "path": "board_runtime/reference_release/app/recording_compression.py",
+      "reason": "Unused recorder copy; installation uses reference_release/recorder/",
+      "bytes": 16040,
+      "sha256": "6587666ebfc0d29344d09d3bffcce57a83ca05869f15dd411f03e9a8d7d24f67"
+    },
+    {
+      "path": "ps_source/release/540p-r2/site-template.html",
+      "reason": "Outdated website template; current template is ps_source/npu_photo/site-template.html",
+      "bytes": 20586,
+      "sha256": "283ca3928f41dc73b445551f709463d5c5aa73830fc5f69139769b700f262c11"
+    },
+    {
+      "path": "logpack/05-release-receipts/540p-r2/site-template.html",
+      "reason": "Outdated website template; current template is ps_source/npu_photo/site-template.html",
+      "bytes": 20586,
+      "sha256": "283ca3928f41dc73b445551f709463d5c5aa73830fc5f69139769b700f262c11"
+    },
+    {
+      "path": "ps_source/docs/website-enrollment-20261104.md",
+      "reason": "Superseded by one current website guide",
+      "bytes": 3488,
+      "sha256": "6d044daac264be84941297a5b60b03d9e05675fea02a9968f847f5dde0867450"
+    },
+    {
+      "path": "logpack/website-enrollment-20261104/deployment.json",
+      "reason": "Iteration evidence archived outside final delivery",
+      "bytes": 567,
+      "sha256": "502116f8ca6f5d254926388898e2adddfcc306cfadc44c1b9f96ce412a23ea07"
+    },
+    {
+      "path": "ps_source/docs/website-tabs-device-camera-20261104.md",
+      "reason": "Superseded by one current website guide",
+      "bytes": 4226,
+      "sha256": "eb2098c244386e04ec0bbcee88df9c3750c4588ee6ebc7ba8d65cb98f4da20bd"
+    },
+    {
+      "path": "logpack/website-tabs-device-camera-20261104/deployment.json",
+      "reason": "Iteration evidence archived outside final delivery",
+      "bytes": 2108,
+      "sha256": "6131e43d144c719e4e0d308ee86d3a3f4f4e2cb72119d1c3461d6e230a5662a0"
+    },
+    {
+      "path": "logpack/website-tabs-device-camera-20261104/mock-enroll-proof.json",
+      "reason": "Iteration evidence archived outside final delivery",
+      "bytes": 91,
+      "sha256": "8fb9eabcf568e41295751487236432f763590fd89299e8e3ba5bdad4ed5439f3"
+    },
+    {
+      "path": "logpack/website-tabs-device-camera-20261104/README.md",
+      "reason": "Iteration evidence archived outside final delivery",
+      "bytes": 4226,
+      "sha256": "eb2098c244386e04ec0bbcee88df9c3750c4588ee6ebc7ba8d65cb98f4da20bd"
+    },
+    {
+      "path": "ps_source/docs/website-copy-20261104.md",
+      "reason": "Superseded by one current website guide",
+      "bytes": 2025,
+      "sha256": "da1aef23c6fa40915903671246c700bfc0c3133632984cbd0ff32797fa87ab77"
+    },
+    {
+      "path": "logpack/website-copy-20261104/deployment.json",
+      "reason": "Iteration evidence archived outside final delivery",
+      "bytes": 1161,
+      "sha256": "54a88035307ed742367a04ee10bf09c245e19c98e9ad0de19b683476ecc36184"
+    },
+    {
+      "path": "logpack/website-copy-20261104/README.md",
+      "reason": "Iteration evidence archived outside final delivery",
+      "bytes": 2025,
+      "sha256": "da1aef23c6fa40915903671246c700bfc0c3133632984cbd0ff32797fa87ab77"
+    }
+  ],
+  "archive_root": "D:\\yzd\\tmp\\delivery-website-final-cleanup-20261104\\removed",
+  "source_cache_scan": "No standard cache/build/temp files found",
+  "real_device_camera_acceptance": false,
+  "latest_ui_fix": {
+    "date": "2026-11-04",
+    "change": "Visible return from trash and immediate range filtering",
+    "browser_verified": true,
+    "data_mutated": false,
+    "service_restarted": false
+  }
+}

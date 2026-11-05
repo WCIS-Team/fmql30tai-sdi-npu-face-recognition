@@ -1,0 +1,14 @@
+{
+  "inputs": {
+    "D:\\yzd\\tmp\\pl-preview-resume-20261027\\source-build\\preview-timing-gate.json": "343c9e539b6368da1dd3a48efd841da33170ed819c547ae9f9b55f8543d9efdd",
+    "D:\\yzd\\tmp\\pl-preview-resume-20261027\\source-build\\preview-implementation-inputs.json": "c2d520152096b0bb335f0e894e2c28c710cb4b0a720ad5897cdbb164cc860ec7",
+    "D:\\yzd\\tmp\\pl-preview-resume-20261027\\source-build\\preview-routed.dcp": "3ca92cedc1170def96fefd25baeb1ab69eaf4d3620726d0c3dfa88ca00dbb34b",
+    "D:\\yzd\\tmp\\pl-preview-resume-20261027\\source-build\\case\\fpai_demo_vivado.runs\\impl_1\\ai7030_edif_top_routed.dcp": "3ca92cedc1170def96fefd25baeb1ab69eaf4d3620726d0c3dfa88ca00dbb34b",
+    "D:\\yzd\\tmp\\pl-preview-resume-20261027\\source-build\\generate-preview-bit.tcl": "b45a891f897c9c5126fa2d6424b931c8aabc1be6c22047e4a1cba2cf96f64fdb",
+    "D:\\yzd\\tmp\\pl-preview-resume-20261027\\generate_reviewed_preview_bit.tcl": "4c8a44c109ab5c042a682dea78351f66756a81b1c019692d06ea1e9a93523412"
+  },
+  "setup_wns": 0.03,
+  "hold_whs": 0.029,
+  "production_timing_signoff": false,
+  "boot_partition_writes": false
+}

@@ -1,0 +1,340 @@
+{
+  "scope": "standalone_board_runtime",
+  "files": [
+    {
+      "path": "board/board.example.json",
+      "bytes": 151,
+      "sha256": "715b2214397a025bc5c9e284aef5d89b77acf5af0f419329418b871b41611fb5"
+    },
+    {
+      "path": "board/boot_prepare.py",
+      "bytes": 2173,
+      "sha256": "55c940a1253187eb792bc5bacc2bc806c7d5322673f3b3af21e14797624a3f93"
+    },
+    {
+      "path": "board/mount_face_store.py",
+      "bytes": 3229,
+      "sha256": "5df5f1c1e614d14fd7af803b61d7ac3af68e853f3eb2ffaf2575c9d6ab06fec3"
+    },
+    {
+      "path": "board/render_install.py",
+      "bytes": 8816,
+      "sha256": "1cadbec6a81f8b9add9a13fa3f239fc6ab7144a888aef9d8520889ad20f7c0ca"
+    },
+    {
+      "path": "board/sdk/CustomOp_3.39.0_onchip.deb",
+      "bytes": 314660,
+      "sha256": "9361e31a4371ea5d8e3278bdb66e01849f4c639b43e3a1167a65f65795651036"
+    },
+    {
+      "path": "board/sdk/Icraft_3.39.0_onchip.deb",
+      "bytes": 9192096,
+      "sha256": "aa24f938566d8892d262bc87bac8048bb8b41c4e4199870debf96b5cc4615ab3"
+    },
+    {
+      "path": "board/sdk/IcraftMdzThirdParty.deb",
+      "bytes": 34415828,
+      "sha256": "e26dbb6c53cf15cfb6f082e7c04c493366f5604fb4a623272939fb20eeeaec46"
+    },
+    {
+      "path": "README.md",
+      "bytes": 152,
+      "sha256": "94732fbf8572bfd4842666c25e5afb80a32008a3bcb6bf210878a3cd49fd783e"
+    },
+    {
+      "path": "reference_release/app/camera-owner-build.json",
+      "bytes": 273,
+      "sha256": "dae846be4c2523da68ca6b19f3e2e9e687eeffc33fe161052575142c9c525187"
+    },
+    {
+      "path": "reference_release/app/camera_interlock.py",
+      "bytes": 10445,
+      "sha256": "fa00528979b49b7aba0ba082f84e7cf2b23121bbbdab622fe0bd948087929b6a"
+    },
+    {
+      "path": "reference_release/app/camera_owner_runtime.py",
+      "bytes": 18564,
+      "sha256": "c6ad4f990c467fa5475d918626c1e0271ad1a1ef591739e903bbb704f3e6d91a"
+    },
+    {
+      "path": "reference_release/app/camera_requests.py",
+      "bytes": 2387,
+      "sha256": "82ecb6a22ef1ec2a5e3048b02d5581c63828fa892b128a66ece196bd30bec406"
+    },
+    {
+      "path": "reference_release/app/external_h264.py",
+      "bytes": 17646,
+      "sha256": "3989cfc80777f12ae24a48f96679fab72b19c4bd6d532b8ef4cd32881d404253"
+    },
+    {
+      "path": "reference_release/app/external_preview.py",
+      "bytes": 2220,
+      "sha256": "761a2ca86d5c6cba80636e2a69d13055bbb943e5a0b8e6c35422dbed8a26184e"
+    },
+    {
+      "path": "reference_release/app/frame_stream_protocol.py",
+      "bytes": 3437,
+      "sha256": "cf9c2a026db39dd60059fd2204388c2f8ae3a6b58322b69ed5d8e14dc36bf142"
+    },
+    {
+      "path": "reference_release/app/gallery.py",
+      "bytes": 6464,
+      "sha256": "7f1213ee54300a58c90841541b1f2c0c6a7b7f77760ff3ca46a5a7eeb159f66a"
+    },
+    {
+      "path": "reference_release/app/h264_fragments.py",
+      "bytes": 3973,
+      "sha256": "428d0fe4c5951ed6b95da4d210f702a423b5b5b2a68d5c3ea58a596421378e45"
+    },
+    {
+      "path": "reference_release/app/h264_live.py",
+      "bytes": 5107,
+      "sha256": "8539fa6e530bf4c0ec33b7b957c4b4f267328448acfe24f2924812ef573f1aff"
+    },
+    {
+      "path": "reference_release/app/h264_media.py",
+      "bytes": 3456,
+      "sha256": "db536ea76692a70797edea732cbf5652a04af864cc99989566f27ea1cff72693"
+    },
+    {
+      "path": "reference_release/app/h264_packager.py",
+      "bytes": 5311,
+      "sha256": "46450c376fb262431708daca0689834615d16599e67427d29c860aab5d5f8687"
+    },
+    {
+      "path": "reference_release/app/h264_player.js",
+      "bytes": 4220,
+      "sha256": "d1b7c2c0ca9bb93b0cbeddbf1743fe29298a080f57f0259d3e1a4906fc4db310"
+    },
+    {
+      "path": "reference_release/app/migrate_gallery.py",
+      "bytes": 5106,
+      "sha256": "a4ee9a2590937dc03bbb1a9441effeb350a3080bd0cedd91111c920086cc4a77"
+    },
+    {
+      "path": "reference_release/app/model_backend/face_pad.py",
+      "bytes": 4725,
+      "sha256": "b35f601f19bbeb40210a0d133b5dc36a9629b9564715eb53d931eafc4a123628"
+    },
+    {
+      "path": "reference_release/app/model_backend_runtime.py",
+      "bytes": 9261,
+      "sha256": "95454dfe890462a947cf36e00b8b09f3e66311c99199fdfe94d05fe91f610d91"
+    },
+    {
+      "path": "reference_release/app/native_forward.py",
+      "bytes": 810,
+      "sha256": "1576c070595a2b8aaeff3779e2b2c7490064e026db95bf8994cd89c290216c5a"
+    },
+    {
+      "path": "reference_release/app/owner_pad.py",
+      "bytes": 10440,
+      "sha256": "748fc2b6d38f8b9011705032778e7a1bc2c792bc8822a90367fbd882822405d7"
+    },
+    {
+      "path": "reference_release/app/persistent_gallery.py",
+      "bytes": 9550,
+      "sha256": "f0532065c87292027b2568f708eb97760f30753392c3a2fa0286ea649a59eee6"
+    },
+    {
+      "path": "reference_release/app/pl_preprocess.py",
+      "bytes": 15113,
+      "sha256": "c59102c22f716be4b74da48caa410f01e28a46ac6d7012d158d86fc09f31fb9b"
+    },
+    {
+      "path": "reference_release/app/receive_video_stream.py",
+      "bytes": 8980,
+      "sha256": "c69da62197d1a6603654eb40790789a9e64f5c6ff8aba853fefe58a6ae56f877"
+    },
+    {
+      "path": "reference_release/app/recognize_frame.py",
+      "bytes": 6494,
+      "sha256": "8a7327dffe5c4680cec4711867bf42318c7c907e8ad3b4230690ab94faf8e0f7"
+    },
+    {
+      "path": "reference_release/app/recognize_photo.py",
+      "bytes": 4869,
+      "sha256": "a0fe870971b8dfb18adcd5b25e680e7c6c2e7f657dc222bddc8dd0d67aa93515"
+    },
+    {
+      "path": "reference_release/app/run_frame_replay.py",
+      "bytes": 9138,
+      "sha256": "5146c12c051bdcf9d857928caeb9e42f8237a3f0ad2bc30f26d61183fe69d070"
+    },
+    {
+      "path": "reference_release/app/run_photos.py",
+      "bytes": 17384,
+      "sha256": "5ca0170583af1f250a1cd84bde23c48b9f53e221b72ee170e1e6158ee0e47739"
+    },
+    {
+      "path": "reference_release/app/serve_photos.py",
+      "bytes": 26414,
+      "sha256": "e95dd01f68df6d28398889c6e356d7b246f521791d9e5ebfc518161486aa8fd5"
+    },
+    {
+      "path": "reference_release/app/site/camera_panel.js",
+      "bytes": 17137,
+      "sha256": "063d1638d65227eed4ad556efe8e95974ccfebebe34d2aac445ca189243887ea"
+    },
+    {
+      "path": "reference_release/app/site/index.html",
+      "bytes": 19660,
+      "sha256": "97943cf6d2129ffa18f00ad22790d100279de09bbfa339ec88ae8819da06bfee"
+    },
+    {
+      "path": "reference_release/app/site/recording_embed.js",
+      "bytes": 1199,
+      "sha256": "b43688980af32dd76017a5df38ca082c57096862460db51627441658af4d7735"
+    },
+    {
+      "path": "reference_release/app/site/site_app.js",
+      "bytes": 19498,
+      "sha256": "805e239d24cc9d7c83ab47e2236a0c7ed6f133b50726d48d200a8e902621b092"
+    },
+    {
+      "path": "reference_release/app/vpu_live_server.py",
+      "bytes": 16745,
+      "sha256": "1ce4e7d2fcb03ea5cd9e17eb1f042611769d3b725cccdee50db2592fdb47f6f7"
+    },
+    {
+      "path": "reference_release/app/wcis_camera_owner",
+      "bytes": 5765248,
+      "sha256": "933c128d5bfccd22782aa775fa0c23c41a6f33d8df29c0713f9e6d27e4ae9eb1"
+    },
+    {
+      "path": "reference_release/app/wcis_face_cached",
+      "bytes": 384600,
+      "sha256": "9ca65fdcb4a92092f9a30d1cbcc5a55d5cc6839027e4a4e0b744f6aa8907c004"
+    },
+    {
+      "path": "reference_release/app/wcis_face_pl_retained",
+      "bytes": 261056,
+      "sha256": "3e763183025390308f6f95236aa1c50c8c4ab6116ee8c6f08abfaab99710ebbe"
+    },
+    {
+      "path": "reference_release/boot/BOOT.bin",
+      "bytes": 7023552,
+      "sha256": "f6da96abbc0144ce5a48f4fa85aed6dab65067211b8932e8f4e4db87d5110297"
+    },
+    {
+      "path": "reference_release/boot/fmqlmp-verify.dtb",
+      "bytes": 16079,
+      "sha256": "e7edf0bc5eb31485962c9bfbefff60c250c9ec14363ccdd41a695173a127d3af"
+    },
+    {
+      "path": "reference_release/boot/Image",
+      "bytes": 13158408,
+      "sha256": "ee88eae627df17fdf615b44cb9fc5a7a7a37d2baaa3f21e90d613f48bedf0929"
+    },
+    {
+      "path": "reference_release/boot/uEnv.txt",
+      "bytes": 1499,
+      "sha256": "a13c985eb5031d75ec7069333897cae38944ba5fbadd509828b63e6a48408560"
+    },
+    {
+      "path": "reference_release/identity/models/mobilefacenet_ZG.json",
+      "bytes": 389938,
+      "sha256": "2ca6526b367f59758c4cbac425f03bde1a85170736e8d085f1772c231d928e21"
+    },
+    {
+      "path": "reference_release/identity/models/mobilefacenet_ZG.raw",
+      "bytes": 9443692,
+      "sha256": "f29c647ed8b40e0b905aa92eef46ab924bea35b8120c9537e7b76cb3a6d29321"
+    },
+    {
+      "path": "reference_release/identity/models/yunet_ZG.json",
+      "bytes": 190451,
+      "sha256": "e363092cb78c44ac12c53b2f65a32a8cf967fbecda4fea670997654e4ee75c37"
+    },
+    {
+      "path": "reference_release/identity/models/yunet_ZG.raw",
+      "bytes": 905776,
+      "sha256": "a4ff98093ca4f46acf982237bf758845c406480fffb4286a3cd35593d969f9cc"
+    },
+    {
+      "path": "reference_release/identity/models.json",
+      "bytes": 13060,
+      "sha256": "a49114c2174ff0b132e4116fcb94978ef53566e4ef7edae583a186d09ef0a88e"
+    },
+    {
+      "path": "reference_release/identity/run-01/verification.json",
+      "bytes": 4742,
+      "sha256": "1d6ab3c54eb646c3e4e003e84fbf2f2f8962db091887f69847f39a3ba56d9c89"
+    },
+    {
+      "path": "reference_release/identity/wcis_face_npu",
+      "bytes": 370728,
+      "sha256": "59d3d9695cd301d2baac07685ed54dbcc42194bd6e463568562951ec35a2d210"
+    },
+    {
+      "path": "reference_release/pad/MiniFASNetV1SE_ZG.json",
+      "bytes": 390163,
+      "sha256": "70706238ccfc39b809727d58ffa3e1ad3049f6b4bd83c88be1b1a2600c9f420a"
+    },
+    {
+      "path": "reference_release/pad/MiniFASNetV1SE_ZG.raw",
+      "bytes": 1476852,
+      "sha256": "d8a69d551da8c04c830588672476373e0616065e05e8af88b88adb109ee6065e"
+    },
+    {
+      "path": "reference_release/pad/MiniFASNetV2_ZG.json",
+      "bytes": 367850,
+      "sha256": "735bce7ce97d7e269aba9211dcd6f9a6ef9fd09247880cf0e75f7ba60c109d85"
+    },
+    {
+      "path": "reference_release/pad/MiniFASNetV2_ZG.raw",
+      "bytes": 1466240,
+      "sha256": "9e0cd8d8a4f2fe4dfb9a01239a06453f082fbde0ccc7643d06e303b5ba0ad0c0"
+    },
+    {
+      "path": "reference_release/pad/pad-models.json",
+      "bytes": 887,
+      "sha256": "4bd437b9504e8bfbd5333f0b4b651b263058155e720f2b8a62aeef1c15d1dfd5"
+    },
+    {
+      "path": "reference_release/pad/wcis_face_pad",
+      "bytes": 367920,
+      "sha256": "3b496f08a66bf7b310e5718ce12fd2ee81da01cc7493cf445496f03e421bd1bd"
+    },
+    {
+      "path": "reference_release/recorder/h264_fragments.py",
+      "bytes": 3973,
+      "sha256": "428d0fe4c5951ed6b95da4d210f702a423b5b5b2a68d5c3ea58a596421378e45"
+    },
+    {
+      "path": "reference_release/recorder/h264_media.py",
+      "bytes": 3456,
+      "sha256": "db536ea76692a70797edea732cbf5652a04af864cc99989566f27ea1cff72693"
+    },
+    {
+      "path": "reference_release/recorder/recording_compression.py",
+      "bytes": 16040,
+      "sha256": "6587666ebfc0d29344d09d3bffcce57a83ca05869f15dd411f03e9a8d7d24f67"
+    },
+    {
+      "path": "reference_release/recorder/recording_library.py",
+      "bytes": 14922,
+      "sha256": "c605e5b9a5456c2ff8c114eb302975bf40ac993faa905efc3e2c0c4694de5b2a"
+    },
+    {
+      "path": "reference_release/recorder/recording_panel.html",
+      "bytes": 8225,
+      "sha256": "f88f55bcfd77378a75cb1763a9e022e9cc4c4d16e61171a5eeba458bec5860b3"
+    },
+    {
+      "path": "reference_release/recorder/recording_panel.js",
+      "bytes": 13322,
+      "sha256": "0251a5a04f93ee5cebd1284243c2d021ba39a21eac171dd2b10a3f0bcf5d95b4"
+    },
+    {
+      "path": "reference_release/recorder/recording_service.py",
+      "bytes": 30041,
+      "sha256": "23cf748eb0969fab82a19b58a8eb9a50f691bb46107ec73cae4f0cfdcd05f533"
+    },
+    {
+      "path": "reference_release/recorder/vpu_live_server.py",
+      "bytes": 16745,
+      "sha256": "1ce4e7d2fcb03ea5cd9e17eb1f042611769d3b725cccdee50db2592fdb47f6f7"
+    }
+  ]
+}

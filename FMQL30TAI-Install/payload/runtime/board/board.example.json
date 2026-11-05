@@ -1,0 +1,6 @@
+{
+  "data_device": "/dev/mmcblk1p1",
+  "data_mount": "/mnt/wcis-data",
+  "data_uuid": "REPLACE_WITH_YOUR_EXT4_UUID",
+  "sd_device": "/dev/mmcblk0p1"
+}

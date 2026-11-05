@@ -1,0 +1,8 @@
+{"case": "cache_new_frame", "median_ms": 0.35835, "runs": 11, "full_source_equal": true}
+{"case": "detector_1080p", "median_ms": 56.18269, "runs": 11, "full_source_equal": true}
+{"case": "face_obama", "median_ms": 6.252525, "runs": 11, "full_source_equal": true}
+{"case": "identity_odd_pitch", "median_ms": 0.369035, "runs": 11, "full_source_equal": true}
+{"case": "rgb565_odd_pitch", "median_ms": 0.36909000000000003, "runs": 11, "full_source_equal": true}
+{"case": "rotate_border_padding", "median_ms": 0.37293, "runs": 11, "full_source_equal": true}
+{"case": "two_row_bilinear", "median_ms": 0.68191, "runs": 11, "full_source_equal": true}
+{"case": "two_row_changed_source", "median_ms": 0.6811, "runs": 11, "full_source_equal": true}

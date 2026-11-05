@@ -1,0 +1,1872 @@
+
+*** Running vivado
+    with args -log smpte_sdi.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source smpte_sdi.tcl
+
+
+****** Vivado v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source smpte_sdi.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/yzd/tmp/submission-repair-20261104/source-test/PS_AI IP'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:ip:processing_system7:5.5'. The one found in IP location 'd:/yzd/tmp/submission-repair-20261104/source-test/PS_AI IP/processing_system7_v5_5' will take precedence over the same IP in the Xilinx installed IP.
+WARNING: [IP_Flow 19-4830] Duplicate Interface found for 'xilinx.com:display_processing_system7:fixedio:1.0'. The one found in location 'd:/yzd/tmp/submission-repair-20261104/source-test/PS_AI IP/processing_system7_v5_5/fixedio.xml' will take precedence over the same Interface in location 'c:/Xilinx/Vivado/2018.3/data/ip/xilinx/processing_system7_v5_5/fixedio.xml'
+WARNING: [IP_Flow 19-4830] Duplicate Interface found for 'xilinx.com:display_processing_system7:hpstatusctrl:1.0'. The one found in location 'd:/yzd/tmp/submission-repair-20261104/source-test/PS_AI IP/processing_system7_v5_5/hpstatusctrl.xml' will take precedence over the same Interface in location 'c:/Xilinx/Vivado/2018.3/data/ip/xilinx/processing_system7_v5_5/hpstatusctrl.xml'
+WARNING: [IP_Flow 19-4830] Duplicate Interface found for 'xilinx.com:display_processing_system7:usbctrl:1.0'. The one found in location 'd:/yzd/tmp/submission-repair-20261104/source-test/PS_AI IP/processing_system7_v5_5/usbctrl.xml' will take precedence over the same Interface in location 'c:/Xilinx/Vivado/2018.3/data/ip/xilinx/processing_system7_v5_5/usbctrl.xml'
+Command: synth_design -top smpte_sdi -part xc7z030ffg676-2 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z030'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z030'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 33880 
+WARNING: [Synth 8-2507] parameter declaration becomes local in v_smpte_sdi_v3_0_8_edh_errcnt with formal parameter declaration list [d:/yzd/tmp/submission-repair-20261104/source-test/rtl/sdi/ip/smpte_sdi/hdl/v_smpte_sdi_v3_0_vl_rfs.v:1533]
+WARNING: [Synth 8-2507] parameter declaration becomes local in v_smpte_sdi_v3_0_8_edh_errcnt with formal parameter declaration list [d:/yzd/tmp/submission-repair-20261104/source-test/rtl/sdi/ip/smpte_sdi/hdl/v_smpte_sdi_v3_0_vl_rfs.v:1534]
+WARNING: [Synth 8-2507] parameter declaration becomes local in v_smpte_sdi_v3_0_8_flywheel with formal parameter declaration list [d:/yzd/tmp/submission-repair-20261104/source-test/rtl/sdi/ip/smpte_sdi/hdl/v_smpte_sdi_v3_0_vl_rfs.v:5032]
+WARNING: [Synth 8-2507] parameter declaration becomes local in v_smpte_sdi_v3_0_8_flywheel with formal parameter declaration list [d:/yzd/tmp/submission-repair-20261104/source-test/rtl/sdi/ip/smpte_sdi/hdl/v_smpte_sdi_v3_0_vl_rfs.v:5033]
+WARNING: [Synth 8-2507] parameter declaration becomes local in v_smpte_sdi_v3_0_8_flywheel with formal parameter declaration list [d:/yzd/tmp/submission-repair-20261104/source-test/rtl/sdi/ip/smpte_sdi/hdl/v_smpte_sdi_v3_0_vl_rfs.v:5048]
+WARNING: [Synth 8-2507] parameter declaration becomes local in v_smpte_sdi_v3_0_8_flywheel with formal parameter declaration list [d:/yzd/tmp/submission-repair-20261104/source-test/rtl/sdi/ip/smpte_sdi/hdl/v_smpte_sdi_v3_0_vl_rfs.v:5055]
+WARNING: [Synth 8-2507] parameter declaration becomes local in v_smpte_sdi_v3_0_8_flywheel with formal parameter declaration list [d:/yzd/tmp/submission-repair-20261104/source-test/rtl/sdi/ip/smpte_sdi/hdl/v_smpte_sdi_v3_0_vl_rfs.v:5056]
+WARNING: [Synth 8-2507] parameter declaration becomes local in v_smpte_sdi_v3_0_8_flywheel with formal parameter declaration list [d:/yzd/tmp/submission-repair-20261104/source-test/rtl/sdi/ip/smpte_sdi/hdl/v_smpte_sdi_v3_0_vl_rfs.v:5057]
+WARNING: [Synth 8-2507] parameter declaration becomes local in v_smpte_sdi_v3_0_8_flywheel with formal parameter declaration list [d:/yzd/tmp/submission-repair-20261104/source-test/rtl/sdi/ip/smpte_sdi/hdl/v_smpte_sdi_v3_0_vl_rfs.v:5058]
+WARNING: [Synth 8-2507] parameter declaration becomes local in v_smpte_sdi_v3_0_8_flywheel with formal parameter declaration list [d:/yzd/tmp/submission-repair-20261104/source-test/rtl/sdi/ip/smpte_sdi/hdl/v_smpte_sdi_v3_0_vl_rfs.v:5060]
+WARNING: [Synth 8-2507] parameter declaration becomes local in v_smpte_sdi_v3_0_8_flywheel with formal parameter declaration list [d:/yzd/tmp/submission-repair-20261104/source-test/rtl/sdi/ip/smpte_sdi/hdl/v_smpte_sdi_v3_0_vl_rfs.v:5061]
+WARNING: [Synth 8-2507] parameter declaration becomes local in v_smpte_sdi_v3_0_8_flywheel with formal parameter declaration list [d:/yzd/tmp/submission-repair-20261104/source-test/rtl/sdi/ip/smpte_sdi/hdl/v_smpte_sdi_v3_0_vl_rfs.v:5062]
+WARNING: [Synth 8-2507] parameter declaration becomes local in v_smpte_sdi_v3_0_8_flywheel with formal parameter declaration list [d:/yzd/tmp/submission-repair-20261104/source-test/rtl/sdi/ip/smpte_sdi/hdl/v_smpte_sdi_v3_0_vl_rfs.v:5063]
+WARNING: [Synth 8-2507] parameter declaration becomes local in v_smpte_sdi_v3_0_8_flywheel with formal parameter declaration list [d:/yzd/tmp/submission-repair-20261104/source-test/rtl/sdi/ip/smpte_sdi/hdl/v_smpte_sdi_v3_0_vl_rfs.v:5065]
+WARNING: [Synth 8-2507] parameter declaration becomes local in v_smpte_sdi_v3_0_8_flywheel with formal parameter declaration list [d:/yzd/tmp/submission-repair-20261104/source-test/rtl/sdi/ip/smpte_sdi/hdl/v_smpte_sdi_v3_0_vl_rfs.v:5066]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 399.078 ; gain = 114.160
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'smpte_sdi' [d:/yzd/tmp/submission-repair-20261104/source-test/rtl/sdi/ip/smpte_sdi/synth/smpte_sdi.v:57]
+INFO: [Synth 8-6157] synthesizing module 'v_smpte_sdi_v3_0_8' [d:/yzd/tmp/submission-repair-20261104/source-test/rtl/sdi/ip/smpte_sdi/hdl/v_smpte_sdi_v3_0_vl_rfs.v:11749]
+	Parameter INCLUDE_RX_EDH_PROCESSOR bound to: TRUE - type: string 
+	Parameter C_FAMILY bound to: zynq - type: string 
+	Parameter ERRCNT_WIDTH bound to: 4 - type: integer 
+	Parameter MAX_ERRS_LOCKED bound to: 15 - type: integer 
+	Parameter MAX_ERRS_UNLOCKED bound to: 2 - type: integer 
+	Parameter NUM_CE_SD bound to: 1 - type: integer 
+	Parameter EDH_ERR_WIDTH bound to: 16 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'v_smpte_sdi_v3_0_8_edh_processor' [d:/yzd/tmp/submission-repair-20261104/source-test/rtl/sdi/ip/smpte_sdi/hdl/v_smpte_sdi_v3_0_vl_rfs.v:2118]
+	Parameter ERROR_COUNT_WIDTH bound to: 16 - type: integer 
+	Parameter HCNT_WIDTH bound to: 12 - type: integer 
+	Parameter VCNT_WIDTH bound to: 10 - type: integer 
+	Parameter FLAGS_WIDTH bound to: 16 - type: integer 
+	Parameter HCNT_MSB bound to: 11 - type: integer 
+	Parameter VCNT_MSB bound to: 9 - type: integer 
+	Parameter ERRFLD_MSB bound to: 15 - type: integer 
+	Parameter FLAGS_MSB bound to: 15 - type: integer 
+	Parameter NTSC_422 bound to: 3'b000 
+	Parameter NTSC_INVALID bound to: 3'b001 
+	Parameter NTSC_422_WIDE bound to: 3'b010 
+	Parameter NTSC_4444 bound to: 3'b011 
+	Parameter PAL_422 bound to: 3'b100 
+	Parameter PAL_INVALID bound to: 3'b101 
+	Parameter PAL_422_WIDE bound to: 3'b110 
+	Parameter PAL_4444 bound to: 3'b111 
+INFO: [Synth 8-6157] synthesizing module 'v_smpte_sdi_v3_0_8_video_decode' [d:/yzd/tmp/submission-repair-20261104/source-test/rtl/sdi/ip/smpte_sdi/hdl/v_smpte_sdi_v3_0_vl_rfs.v:11556]
+	Parameter HCNT_WIDTH bound to: 12 - type: integer 
+	Parameter VCNT_WIDTH bound to: 10 - type: integer 
+	Parameter HCNT_MSB bound to: 11 - type: integer 
+	Parameter VCNT_MSB bound to: 9 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'v_smpte_sdi_v3_0_8_trs_detect' [d:/yzd/tmp/submission-repair-20261104/source-test/rtl/sdi/ip/smpte_sdi/hdl/v_smpte_sdi_v3_0_vl_rfs.v:11082]
+INFO: [Synth 8-6155] done synthesizing module 'v_smpte_sdi_v3_0_8_trs_detect' (1#1) [d:/yzd/tmp/submission-repair-20261104/source-test/rtl/sdi/ip/smpte_sdi/hdl/v_smpte_sdi_v3_0_vl_rfs.v:11082]
+INFO: [Synth 8-6157] synthesizing module 'v_smpte_sdi_v3_0_8_autodetect' [d:/yzd/tmp/submission-repair-20261104/source-test/rtl/sdi/ip/smpte_sdi/hdl/v_smpte_sdi_v3_0_vl_rfs.v:479]
+	Parameter HCNT_WIDTH bound to: 12 - type: integer 
+	Parameter ERRCNT_WIDTH bound to: 4 - type: integer 
+	Parameter MAX_ERR_CNT bound to: 8 - type: integer 
+	Parameter HCNT_MSB bound to: 11 - type: integer 
+	Parameter ERRCNT_MSB bound to: 3 - type: integer 
+	Parameter CNT_NTSC_422 bound to: 1716 - type: integer 
+	Parameter CNT_NTSC_422_WIDE bound to: 2288 - type: integer 
+	Parameter CNT_NTSC_4444 bound to: 3432 - type: integer 
+	Parameter CNT_PAL_422 bound to: 1728 - type: integer 
+	Parameter CNT_PAL_422_WIDE bound to: 2304 - type: integer 
+	Parameter CNT_PAL_4444 bound to: 3456 - type: integer 
+	Parameter NTSC_422 bound to: 3'b000 
+	Parameter NTSC_INVALID bound to: 3'b001 
+	Parameter NTSC_422_WIDE bound to: 3'b010 
+	Parameter NTSC_4444 bound to: 3'b011 
+	Parameter PAL_422 bound to: 3'b100 
+	Parameter PAL_INVALID bound to: 3'b101 
+	Parameter PAL_422_WIDE bound to: 3'b110 
+	Parameter PAL_4444 bound to: 3'b111 
+	Parameter STATE_WIDTH bound to: 4 - type: integer 
+	Parameter STATE_MSB bound to: 3 - type: integer 
+	Parameter ACQ0 bound to: 4'b0000 
+	Parameter ACQ1 bound to: 4'b0001 
+	Parameter ACQ2 bound to: 4'b0010 
+	Parameter ACQ3 bound to: 4'b0011 
+	Parameter ACQ4 bound to: 4'b0100 
+	Parameter ACQ5 bound to: 4'b0101 
+	Parameter ACQ6 bound to: 4'b0110 
+	Parameter ACQ7 bound to: 4'b0111 
+	Parameter LCK0 bound to: 4'b1000 
+	Parameter LCK1 bound to: 4'b1001 
+	Parameter LCK2 bound to: 4'b1010 
+	Parameter LCK3 bound to: 4'b1011 
+	Parameter ERR0 bound to: 4'b1100 
+	Parameter ERR1 bound to: 4'b1101 
+	Parameter ERR2 bound to: 4'b1110 
+INFO: [Synth 8-155] case statement is not full and has no default [d:/yzd/tmp/submission-repair-20261104/source-test/rtl/sdi/ip/smpte_sdi/hdl/v_smpte_sdi_v3_0_vl_rfs.v:813]
+INFO: [Synth 8-6155] done synthesizing module 'v_smpte_sdi_v3_0_8_autodetect' (2#1) [d:/yzd/tmp/submission-repair-20261104/source-test/rtl/sdi/ip/smpte_sdi/hdl/v_smpte_sdi_v3_0_vl_rfs.v:479]
+INFO: [Synth 8-6157] synthesizing module 'v_smpte_sdi_v3_0_8_flywheel' [d:/yzd/tmp/submission-repair-20261104/source-test/rtl/sdi/ip/smpte_sdi/hdl/v_smpte_sdi_v3_0_vl_rfs.v:4990]
+	Parameter HCNT_WIDTH bound to: 12 - type: integer 
+	Parameter VCNT_WIDTH bound to: 10 - type: integer 
+	Parameter HCNT_MSB bound to: 11 - type: integer 
+	Parameter VCNT_MSB bound to: 9 - type: integer 
+	Parameter NTSC_422 bound to: 3'b000 
+	Parameter NTSC_INVALID bound to: 3'b001 
+	Parameter NTSC_422_WIDE bound to: 3'b010 
+	Parameter NTSC_4444 bound to: 3'b011 
+	Parameter PAL_422 bound to: 3'b100 
+	Parameter PAL_INVALID bound to: 3'b101 
+	Parameter PAL_422_WIDE bound to: 3'b110 
+	Parameter PAL_4444 bound to: 3'b111 
+	Parameter YCBCR_4444_BLANK_Y bound to: 10'b0001000000 
+	Parameter YCBCR_4444_BLANK_CB bound to: 10'b1000000000 
+	Parameter YCBCR_4444_BLANK_CR bound to: 10'b1000000000 
+	Parameter YCBCR_4444_BLANK_A bound to: 10'b0001000000 
+	Parameter RGB_4444_BLANK_R bound to: 10'b0001000000 
+	Parameter RGB_4444_BLANK_G bound to: 10'b0001000000 
+	Parameter RGB_4444_BLANK_B bound to: 10'b0001000000 
+	Parameter RGB_4444_BLANK_A bound to: 10'b0001000000 
+	Parameter YCBCR_422_BLANK_Y bound to: 10'b0001000000 
+	Parameter YCBCR_422_BLANK_C bound to: 10'b1000000000 
+INFO: [Synth 8-6157] synthesizing module 'v_smpte_sdi_v3_0_8_fly_horz' [d:/yzd/tmp/submission-repair-20261104/source-test/rtl/sdi/ip/smpte_sdi/hdl/v_smpte_sdi_v3_0_vl_rfs.v:4229]
+	Parameter HCNT_WIDTH bound to: 12 - type: integer 
+	Parameter HCNT_MSB bound to: 11 - type: integer 
+	Parameter EAV_LOC_NTSC_422 bound to: 1440 - type: integer 
+	Parameter EAV_LOC_NTSC_COMPOSITE bound to: 790 - type: integer 
+	Parameter EAV_LOC_NTSC_422_WIDE bound to: 1920 - type: integer 
+	Parameter EAV_LOC_NTSC_4444 bound to: 2880 - type: integer 
+	Parameter EAV_LOC_PAL_422 bound to: 1440 - type: integer 
+	Parameter EAV_LOC_PAL_COMPOSITE bound to: 972 - type: integer 
+	Parameter EAV_LOC_PAL_422_WIDE bound to: 1920 - type: integer 
+	Parameter EAV_LOC_PAL_4444 bound to: 2880 - type: integer 
+	Parameter SAV_LOC_NTSC_422 bound to: 1712 - type: integer 
+	Parameter SAV_LOC_NTSC_COMPOSITE bound to: 790 - type: integer 
+	Parameter SAV_LOC_NTSC_422_WIDE bound to: 2284 - type: integer 
+	Parameter SAV_LOC_NTSC_4444 bound to: 3428 - type: integer 
+	Parameter SAV_LOC_PAL_422 bound to: 1724 - type: integer 
+	Parameter SAV_LOC_PAL_COMPOSITE bound to: 972 - type: integer 
+	Parameter SAV_LOC_PAL_422_WIDE bound to: 2300 - type: integer 
+	Parameter SAV_LOC_PAL_4444 bound to: 3452 - type: integer 
+	Parameter NTSC_422 bound to: 3'b000 
+	Parameter NTSC_INVALID bound to: 3'b001 
+	Parameter NTSC_422_WIDE bound to: 3'b010 
+	Parameter NTSC_4444 bound to: 3'b011 
+	Parameter PAL_422 bound to: 3'b100 
+	Parameter PAL_INVALID bound to: 3'b101 
+	Parameter PAL_422_WIDE bound to: 3'b110 
+	Parameter PAL_4444 bound to: 3'b111 
+INFO: [Synth 8-6155] done synthesizing module 'v_smpte_sdi_v3_0_8_fly_horz' (3#1) [d:/yzd/tmp/submission-repair-20261104/source-test/rtl/sdi/ip/smpte_sdi/hdl/v_smpte_sdi_v3_0_vl_rfs.v:4229]
+INFO: [Synth 8-6157] synthesizing module 'v_smpte_sdi_v3_0_8_fly_vert' [d:/yzd/tmp/submission-repair-20261104/source-test/rtl/sdi/ip/smpte_sdi/hdl/v_smpte_sdi_v3_0_vl_rfs.v:4572]
+	Parameter VCNT_WIDTH bound to: 10 - type: integer 
+	Parameter VCNT_MSB bound to: 9 - type: integer 
+	Parameter NTSC_FLD1_SWITCH bound to: 10 - type: integer 
+	Parameter NTSC_FLD2_SWITCH bound to: 273 - type: integer 
+	Parameter PAL_FLD1_SWITCH bound to: 6 - type: integer 
+	Parameter PAL_FLD2_SWITCH bound to: 319 - type: integer 
+	Parameter NTSC_FLD1_END bound to: 265 - type: integer 
+	Parameter NTSC_FLD2_END bound to: 3 - type: integer 
+	Parameter PAL_FLD1_END bound to: 312 - type: integer 
+	Parameter PAL_FLD2_END bound to: 625 - type: integer 
+	Parameter NTSC_V_TOTAL bound to: 525 - type: integer 
+	Parameter PAL_V_TOTAL bound to: 625 - type: integer 
+	Parameter NTSC_FLD1_ACT_START bound to: 20 - type: integer 
+	Parameter NTSC_FLD1_ACT_END bound to: 263 - type: integer 
+	Parameter NTSC_FLD2_ACT_START bound to: 283 - type: integer 
+	Parameter NTSC_FLD2_ACT_END bound to: 525 - type: integer 
+	Parameter PAL_FLD1_ACT_START bound to: 23 - type: integer 
+	Parameter PAL_FLD1_ACT_END bound to: 310 - type: integer 
+	Parameter PAL_FLD2_ACT_START bound to: 336 - type: integer 
+	Parameter PAL_FLD2_ACT_END bound to: 623 - type: integer 
+	Parameter SLOPPY_V_START_FLD1 bound to: 10 - type: integer 
+	Parameter SLOPPY_V_START_FLD2 bound to: 273 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'v_smpte_sdi_v3_0_8_fly_vert' (4#1) [d:/yzd/tmp/submission-repair-20261104/source-test/rtl/sdi/ip/smpte_sdi/hdl/v_smpte_sdi_v3_0_vl_rfs.v:4572]
+INFO: [Synth 8-6157] synthesizing module 'v_smpte_sdi_v3_0_8_fly_fsm' [d:/yzd/tmp/submission-repair-20261104/source-test/rtl/sdi/ip/smpte_sdi/hdl/v_smpte_sdi_v3_0_vl_rfs.v:3764]
+	Parameter ERRCNT_WIDTH bound to: 3 - type: integer 
+	Parameter LSHIFT_WIDTH bound to: 32 - type: integer 
+	Parameter ERRCNT_MSB bound to: 2 - type: integer 
+	Parameter LSHIFT_MSB bound to: 31 - type: integer 
+	Parameter MAX_ERRS bound to: 2 - type: integer 
+	Parameter STATE_WIDTH bound to: 4 - type: integer 
+	Parameter STATE_MSB bound to: 3 - type: integer 
+	Parameter LOCK bound to: 4'b0000 
+	Parameter HSYNC1 bound to: 4'b0001 
+	Parameter HSYNC2 bound to: 4'b0010 
+	Parameter FSYNC1 bound to: 4'b0011 
+	Parameter FSYNC2 bound to: 4'b0100 
+	Parameter FSYNC3 bound to: 4'b0101 
+	Parameter UNLOCK bound to: 4'b0110 
+	Parameter SWITCH1 bound to: 4'b0111 
+	Parameter SWITCH2 bound to: 4'b1000 
+	Parameter SWITCH3 bound to: 4'b1001 
+	Parameter SWITCH4 bound to: 4'b1010 
+	Parameter SWITCH5 bound to: 4'b1011 
+	Parameter SWITCH6 bound to: 4'b1100 
+INFO: [Synth 8-155] case statement is not full and has no default [d:/yzd/tmp/submission-repair-20261104/source-test/rtl/sdi/ip/smpte_sdi/hdl/v_smpte_sdi_v3_0_vl_rfs.v:4092]
+INFO: [Synth 8-6155] done synthesizing module 'v_smpte_sdi_v3_0_8_fly_fsm' (5#1) [d:/yzd/tmp/submission-repair-20261104/source-test/rtl/sdi/ip/smpte_sdi/hdl/v_smpte_sdi_v3_0_vl_rfs.v:3764]
+INFO: [Synth 8-6157] synthesizing module 'v_smpte_sdi_v3_0_8_fly_field' [d:/yzd/tmp/submission-repair-20261104/source-test/rtl/sdi/ip/smpte_sdi/hdl/v_smpte_sdi_v3_0_vl_rfs.v:3528]
+INFO: [Synth 8-6155] done synthesizing module 'v_smpte_sdi_v3_0_8_fly_field' (6#1) [d:/yzd/tmp/submission-repair-20261104/source-test/rtl/sdi/ip/smpte_sdi/hdl/v_smpte_sdi_v3_0_vl_rfs.v:3528]
+INFO: [Synth 8-6155] done synthesizing module 'v_smpte_sdi_v3_0_8_flywheel' (7#1) [d:/yzd/tmp/submission-repair-20261104/source-test/rtl/sdi/ip/smpte_sdi/hdl/v_smpte_sdi_v3_0_vl_rfs.v:4990]
+INFO: [Synth 8-6155] done synthesizing module 'v_smpte_sdi_v3_0_8_video_decode' (8#1) [d:/yzd/tmp/submission-repair-20261104/source-test/rtl/sdi/ip/smpte_sdi/hdl/v_smpte_sdi_v3_0_vl_rfs.v:11556]
+INFO: [Synth 8-6157] synthesizing module 'v_smpte_sdi_v3_0_8_edh_crc' [d:/yzd/tmp/submission-repair-20261104/source-test/rtl/sdi/ip/smpte_sdi/hdl/v_smpte_sdi_v3_0_vl_rfs.v:1043]
+	Parameter VCNT_WIDTH bound to: 10 - type: integer 
+	Parameter VCNT_MSB bound to: 9 - type: integer 
+	Parameter NTSC_422 bound to: 3'b000 
+	Parameter NTSC_INVALID bound to: 3'b001 
+	Parameter NTSC_422_WIDE bound to: 3'b010 
+	Parameter NTSC_4444 bound to: 3'b011 
+	Parameter PAL_422 bound to: 3'b100 
+	Parameter PAL_INVALID bound to: 3'b101 
+	Parameter PAL_422_WIDE bound to: 3'b110 
+	Parameter PAL_4444 bound to: 3'b111 
+	Parameter NTSC_FLD1_AP_FIRST bound to: 21 - type: integer 
+	Parameter NTSC_FLD1_AP_LAST bound to: 262 - type: integer 
+	Parameter NTSC_FLD1_FF_FIRST bound to: 12 - type: integer 
+	Parameter NTSC_FLD1_FF_LAST bound to: 271 - type: integer 
+	Parameter NTSC_FLD2_AP_FIRST bound to: 284 - type: integer 
+	Parameter NTSC_FLD2_AP_LAST bound to: 525 - type: integer 
+	Parameter NTSC_FLD2_FF_FIRST bound to: 275 - type: integer 
+	Parameter NTSC_FLD2_FF_LAST bound to: 8 - type: integer 
+	Parameter PAL_FLD1_AP_FIRST bound to: 24 - type: integer 
+	Parameter PAL_FLD1_AP_LAST bound to: 310 - type: integer 
+	Parameter PAL_FLD1_FF_FIRST bound to: 8 - type: integer 
+	Parameter PAL_FLD1_FF_LAST bound to: 317 - type: integer 
+	Parameter PAL_FLD2_AP_FIRST bound to: 336 - type: integer 
+	Parameter PAL_FLD2_AP_LAST bound to: 622 - type: integer 
+	Parameter PAL_FLD2_FF_FIRST bound to: 321 - type: integer 
+	Parameter PAL_FLD2_FF_LAST bound to: 4 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'v_smpte_sdi_v3_0_8_edh_crc16' [d:/yzd/tmp/submission-repair-20261104/source-test/rtl/sdi/ip/smpte_sdi/hdl/v_smpte_sdi_v3_0_vl_rfs.v:1408]
+INFO: [Synth 8-6155] done synthesizing module 'v_smpte_sdi_v3_0_8_edh_crc16' (9#1) [d:/yzd/tmp/submission-repair-20261104/source-test/rtl/sdi/ip/smpte_sdi/hdl/v_smpte_sdi_v3_0_vl_rfs.v:1408]
+INFO: [Synth 8-6155] done synthesizing module 'v_smpte_sdi_v3_0_8_edh_crc' (10#1) [d:/yzd/tmp/submission-repair-20261104/source-test/rtl/sdi/ip/smpte_sdi/hdl/v_smpte_sdi_v3_0_vl_rfs.v:1043]
+INFO: [Synth 8-6157] synthesizing module 'v_smpte_sdi_v3_0_8_edh_rx' [d:/yzd/tmp/submission-repair-20261104/source-test/rtl/sdi/ip/smpte_sdi/hdl/v_smpte_sdi_v3_0_vl_rfs.v:2592]
+	Parameter EDH_DID bound to: 10'b0111110100 
+	Parameter EDH_DBN bound to: 10'b1000000000 
+	Parameter EDH_DC bound to: 10'b0100010000 
+	Parameter STATE_WIDTH bound to: 5 - type: integer 
+	Parameter STATE_MSB bound to: 4 - type: integer 
+	Parameter S_WAIT bound to: 5'b00000 
+	Parameter S_ADF1 bound to: 5'b00001 
+	Parameter S_ADF2 bound to: 5'b00010 
+	Parameter S_ADF3 bound to: 5'b00011 
+	Parameter S_DID bound to: 5'b00100 
+	Parameter S_DBN bound to: 5'b00101 
+	Parameter S_DC bound to: 5'b00110 
+	Parameter S_AP1 bound to: 5'b00111 
+	Parameter S_AP2 bound to: 5'b01000 
+	Parameter S_AP3 bound to: 5'b01001 
+	Parameter S_FF1 bound to: 5'b01010 
+	Parameter S_FF2 bound to: 5'b01011 
+	Parameter S_FF3 bound to: 5'b01100 
+	Parameter S_ANCFLG bound to: 5'b01101 
+	Parameter S_APFLG bound to: 5'b01110 
+	Parameter S_FFFLG bound to: 5'b01111 
+	Parameter S_RSV1 bound to: 5'b10000 
+	Parameter S_RSV2 bound to: 5'b10001 
+	Parameter S_RSV3 bound to: 5'b10010 
+	Parameter S_RSV4 bound to: 5'b10011 
+	Parameter S_RSV5 bound to: 5'b10100 
+	Parameter S_RSV6 bound to: 5'b10101 
+	Parameter S_RSV7 bound to: 5'b10110 
+	Parameter S_CHK bound to: 5'b10111 
+	Parameter S_ERRM bound to: 5'b11000 
+	Parameter S_ERRF bound to: 5'b11001 
+	Parameter S_ERRC bound to: 5'b11010 
+INFO: [Synth 8-155] case statement is not full and has no default [d:/yzd/tmp/submission-repair-20261104/source-test/rtl/sdi/ip/smpte_sdi/hdl/v_smpte_sdi_v3_0_vl_rfs.v:2832]
+INFO: [Synth 8-6155] done synthesizing module 'v_smpte_sdi_v3_0_8_edh_rx' (11#1) [d:/yzd/tmp/submission-repair-20261104/source-test/rtl/sdi/ip/smpte_sdi/hdl/v_smpte_sdi_v3_0_vl_rfs.v:2592]
+INFO: [Synth 8-6157] synthesizing module 'v_smpte_sdi_v3_0_8_edh_loc' [d:/yzd/tmp/submission-repair-20261104/source-test/rtl/sdi/ip/smpte_sdi/hdl/v_smpte_sdi_v3_0_vl_rfs.v:1887]
+	Parameter HCNT_WIDTH bound to: 12 - type: integer 
+	Parameter VCNT_WIDTH bound to: 10 - type: integer 
+	Parameter HCNT_MSB bound to: 11 - type: integer 
+	Parameter VCNT_MSB bound to: 9 - type: integer 
+	Parameter NTSC_422 bound to: 3'b000 
+	Parameter NTSC_INVALID bound to: 3'b001 
+	Parameter NTSC_422_WIDE bound to: 3'b010 
+	Parameter NTSC_4444 bound to: 3'b011 
+	Parameter PAL_422 bound to: 3'b100 
+	Parameter PAL_INVALID bound to: 3'b101 
+	Parameter PAL_422_WIDE bound to: 3'b110 
+	Parameter PAL_4444 bound to: 3'b111 
+	Parameter NTSC_FLD1_EDH_LINE bound to: 272 - type: integer 
+	Parameter NTSC_FLD2_EDH_LINE bound to: 9 - type: integer 
+	Parameter PAL_FLD1_EDH_LINE bound to: 318 - type: integer 
+	Parameter PAL_FLD2_EDH_LINE bound to: 5 - type: integer 
+	Parameter SAV_NTSC_422 bound to: 1712 - type: integer 
+	Parameter SAV_NTSC_422_WIDE bound to: 2284 - type: integer 
+	Parameter SAV_NTSC_4444 bound to: 3428 - type: integer 
+	Parameter SAV_PAL_422 bound to: 1724 - type: integer 
+	Parameter SAV_PAL_422_WIDE bound to: 2300 - type: integer 
+	Parameter SAV_PAL_4444 bound to: 3452 - type: integer 
+	Parameter EDH_PACKET_LENGTH bound to: 23 - type: integer 
+	Parameter EDH_NTSC_422 bound to: 1687 - type: integer 
+	Parameter EDH_NTSC_422_WIDE bound to: 2259 - type: integer 
+	Parameter EDH_NTSC_4444 bound to: 3403 - type: integer 
+	Parameter EDH_PAL_422 bound to: 1699 - type: integer 
+	Parameter EDH_PAL_422_WIDE bound to: 2275 - type: integer 
+	Parameter EDH_PAL_4444 bound to: 3427 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'v_smpte_sdi_v3_0_8_edh_loc' (12#1) [d:/yzd/tmp/submission-repair-20261104/source-test/rtl/sdi/ip/smpte_sdi/hdl/v_smpte_sdi_v3_0_vl_rfs.v:1887]
+INFO: [Synth 8-6157] synthesizing module 'v_smpte_sdi_v3_0_8_anc_rx' [d:/yzd/tmp/submission-repair-20261104/source-test/rtl/sdi/ip/smpte_sdi/hdl/v_smpte_sdi_v3_0_vl_rfs.v:64]
+	Parameter STATE_WIDTH bound to: 4 - type: integer 
+	Parameter STATE_MSB bound to: 3 - type: integer 
+	Parameter S_WAIT bound to: 4'b0000 
+	Parameter S_ADF1 bound to: 4'b0001 
+	Parameter S_ADF2 bound to: 4'b0010 
+	Parameter S_ADF3 bound to: 4'b0011 
+	Parameter S_DID bound to: 4'b0100 
+	Parameter S_DBN bound to: 4'b0101 
+	Parameter S_DC bound to: 4'b0110 
+	Parameter S_UDW bound to: 4'b0111 
+	Parameter S_CHK bound to: 4'b1000 
+	Parameter S_EDH1 bound to: 4'b1001 
+	Parameter S_EDH2 bound to: 4'b1010 
+	Parameter S_EDH3 bound to: 4'b1011 
+INFO: [Synth 8-155] case statement is not full and has no default [d:/yzd/tmp/submission-repair-20261104/source-test/rtl/sdi/ip/smpte_sdi/hdl/v_smpte_sdi_v3_0_vl_rfs.v:229]
+INFO: [Synth 8-6155] done synthesizing module 'v_smpte_sdi_v3_0_8_anc_rx' (13#1) [d:/yzd/tmp/submission-repair-20261104/source-test/rtl/sdi/ip/smpte_sdi/hdl/v_smpte_sdi_v3_0_vl_rfs.v:64]
+INFO: [Synth 8-6157] synthesizing module 'v_smpte_sdi_v3_0_8_edh_tx' [d:/yzd/tmp/submission-repair-20261104/source-test/rtl/sdi/ip/smpte_sdi/hdl/v_smpte_sdi_v3_0_vl_rfs.v:3139]
+	Parameter EDH_ADF1 bound to: 10'b0000000000 
+	Parameter EDH_ADF2 bound to: 10'b1111111111 
+	Parameter EDH_ADF3 bound to: 10'b1111111111 
+	Parameter EDH_DID bound to: 10'b0111110100 
+	Parameter EDH_DBN bound to: 10'b1000000000 
+	Parameter EDH_DC bound to: 10'b0100010000 
+	Parameter EDH_RSVD bound to: 10'b1000000000 
+	Parameter STATE_WIDTH bound to: 5 - type: integer 
+	Parameter STATE_MSB bound to: 4 - type: integer 
+	Parameter S_WAIT bound to: 5'b00000 
+	Parameter S_ADF1 bound to: 5'b00001 
+	Parameter S_ADF2 bound to: 5'b00010 
+	Parameter S_ADF3 bound to: 5'b00011 
+	Parameter S_DID bound to: 5'b00100 
+	Parameter S_DBN bound to: 5'b00101 
+	Parameter S_DC bound to: 5'b00110 
+	Parameter S_AP1 bound to: 5'b00111 
+	Parameter S_AP2 bound to: 5'b01000 
+	Parameter S_AP3 bound to: 5'b01001 
+	Parameter S_FF1 bound to: 5'b01010 
+	Parameter S_FF2 bound to: 5'b01011 
+	Parameter S_FF3 bound to: 5'b01100 
+	Parameter S_ANCFLG bound to: 5'b01101 
+	Parameter S_APFLG bound to: 5'b01110 
+	Parameter S_FFFLG bound to: 5'b01111 
+	Parameter S_RSV1 bound to: 5'b10000 
+	Parameter S_RSV2 bound to: 5'b10001 
+	Parameter S_RSV3 bound to: 5'b10010 
+	Parameter S_RSV4 bound to: 5'b10011 
+	Parameter S_RSV5 bound to: 5'b10100 
+	Parameter S_RSV6 bound to: 5'b10101 
+	Parameter S_RSV7 bound to: 5'b10110 
+	Parameter S_CHK bound to: 5'b10111 
+INFO: [Synth 8-155] case statement is not full and has no default [d:/yzd/tmp/submission-repair-20261104/source-test/rtl/sdi/ip/smpte_sdi/hdl/v_smpte_sdi_v3_0_vl_rfs.v:3316]
+INFO: [Synth 8-6155] done synthesizing module 'v_smpte_sdi_v3_0_8_edh_tx' (14#1) [d:/yzd/tmp/submission-repair-20261104/source-test/rtl/sdi/ip/smpte_sdi/hdl/v_smpte_sdi_v3_0_vl_rfs.v:3139]
+INFO: [Synth 8-6157] synthesizing module 'v_smpte_sdi_v3_0_8_edh_flags' [d:/yzd/tmp/submission-repair-20261104/source-test/rtl/sdi/ip/smpte_sdi/hdl/v_smpte_sdi_v3_0_vl_rfs.v:1687]
+	Parameter EDH_BIT bound to: 0 - type: integer 
+	Parameter EDA_BIT bound to: 1 - type: integer 
+	Parameter IDH_BIT bound to: 2 - type: integer 
+	Parameter IDA_BIT bound to: 3 - type: integer 
+	Parameter UES_BIT bound to: 4 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'v_smpte_sdi_v3_0_8_edh_flags' (15#1) [d:/yzd/tmp/submission-repair-20261104/source-test/rtl/sdi/ip/smpte_sdi/hdl/v_smpte_sdi_v3_0_vl_rfs.v:1687]
+INFO: [Synth 8-6157] synthesizing module 'v_smpte_sdi_v3_0_8_edh_errcnt' [d:/yzd/tmp/submission-repair-20261104/source-test/rtl/sdi/ip/smpte_sdi/hdl/v_smpte_sdi_v3_0_vl_rfs.v:1513]
+	Parameter ERROR_COUNT_WIDTH bound to: 16 - type: integer 
+	Parameter FLAGS_WIDTH bound to: 16 - type: integer 
+	Parameter ERRFLD_MSB bound to: 15 - type: integer 
+	Parameter FLAGS_MSB bound to: 15 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'v_smpte_sdi_v3_0_8_edh_errcnt' (16#1) [d:/yzd/tmp/submission-repair-20261104/source-test/rtl/sdi/ip/smpte_sdi/hdl/v_smpte_sdi_v3_0_vl_rfs.v:1513]
+INFO: [Synth 8-6155] done synthesizing module 'v_smpte_sdi_v3_0_8_edh_processor' (17#1) [d:/yzd/tmp/submission-repair-20261104/source-test/rtl/sdi/ip/smpte_sdi/hdl/v_smpte_sdi_v3_0_vl_rfs.v:2118]
+INFO: [Synth 8-6157] synthesizing module 'v_smpte_sdi_v3_0_8_triple_sdi_reset' [d:/yzd/tmp/submission-repair-20261104/source-test/rtl/sdi/ip/smpte_sdi/hdl/v_smpte_sdi_v3_0_vl_rfs.v:8931]
+	Parameter RST_DLY bound to: 8 - type: integer 
+	Parameter NUM_OUTS bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'v_smpte_sdi_v3_0_8_triple_sdi_reset' (18#1) [d:/yzd/tmp/submission-repair-20261104/source-test/rtl/sdi/ip/smpte_sdi/hdl/v_smpte_sdi_v3_0_vl_rfs.v:8931]
+INFO: [Synth 8-6157] synthesizing module 'v_smpte_sdi_v3_0_8_triple_sdi_rx' [d:/yzd/tmp/submission-repair-20261104/source-test/rtl/sdi/ip/smpte_sdi/hdl/v_smpte_sdi_v3_0_vl_rfs.v:9013]
+	Parameter NUM_SD_CE bound to: 2 - type: integer 
+	Parameter NUM_3G_DRDY bound to: 1 - type: integer 
+	Parameter ERRCNT_WIDTH bound to: 4 - type: integer 
+	Parameter MAX_ERRS_LOCKED bound to: 15 - type: integer 
+	Parameter MAX_ERRS_UNLOCKED bound to: 2 - type: integer 
+	Parameter NUM_INT_CE bound to: 1 - type: integer 
+	Parameter NUM_INT_LVLB_CE bound to: 1 - type: integer 
+INFO: [Synth 8-5534] Detected attribute (* KEEP = "TRUE" *) [d:/yzd/tmp/submission-repair-20261104/source-test/rtl/sdi/ip/smpte_sdi/hdl/v_smpte_sdi_v3_0_vl_rfs.v:9074]
+INFO: [Synth 8-5534] Detected attribute (* KEEP = "TRUE" *) [d:/yzd/tmp/submission-repair-20261104/source-test/rtl/sdi/ip/smpte_sdi/hdl/v_smpte_sdi_v3_0_vl_rfs.v:9078]
+INFO: [Synth 8-5534] Detected attribute (* KEEP = "TRUE" *) [d:/yzd/tmp/submission-repair-20261104/source-test/rtl/sdi/ip/smpte_sdi/hdl/v_smpte_sdi_v3_0_vl_rfs.v:9082]
+INFO: [Synth 8-5534] Detected attribute (* KEEP = "TRUE" *) [d:/yzd/tmp/submission-repair-20261104/source-test/rtl/sdi/ip/smpte_sdi/hdl/v_smpte_sdi_v3_0_vl_rfs.v:9086]
+INFO: [Synth 8-6157] synthesizing module 'v_smpte_sdi_v3_0_8_multi_sdi_decoder' [d:/yzd/tmp/submission-repair-20261104/source-test/rtl/sdi/ip/smpte_sdi/hdl/v_smpte_sdi_v3_0_vl_rfs.v:6172]
+INFO: [Synth 8-6155] done synthesizing module 'v_smpte_sdi_v3_0_8_multi_sdi_decoder' (19#1) [d:/yzd/tmp/submission-repair-20261104/source-test/rtl/sdi/ip/smpte_sdi/hdl/v_smpte_sdi_v3_0_vl_rfs.v:6172]
+INFO: [Synth 8-6157] synthesizing module 'v_smpte_sdi_v3_0_8_multi_sdi_framer' [d:/yzd/tmp/submission-repair-20261104/source-test/rtl/sdi/ip/smpte_sdi/hdl/v_smpte_sdi_v3_0_vl_rfs.v:6558]
+INFO: [Synth 8-6155] done synthesizing module 'v_smpte_sdi_v3_0_8_multi_sdi_framer' (20#1) [d:/yzd/tmp/submission-repair-20261104/source-test/rtl/sdi/ip/smpte_sdi/hdl/v_smpte_sdi_v3_0_vl_rfs.v:6558]
+INFO: [Synth 8-6157] synthesizing module 'v_smpte_sdi_v3_0_8_triple_sdi_rx_autorate' [d:/yzd/tmp/submission-repair-20261104/source-test/rtl/sdi/ip/smpte_sdi/hdl/v_smpte_sdi_v3_0_vl_rfs.v:9543]
+	Parameter ERRCNT_WIDTH bound to: 4 - type: integer 
+	Parameter TRSCNT_WIDTH bound to: 14 - type: integer 
+	Parameter MAX_ERRS_LOCKED bound to: 15 - type: integer 
+	Parameter MAX_ERRS_UNLOCKED bound to: 2 - type: integer 
+	Parameter ERRCNT_MSB bound to: 3 - type: integer 
+	Parameter TRSCNT_MSB bound to: 14 - type: integer 
+	Parameter STATE_MSB bound to: 2 - type: integer 
+	Parameter UNLOCK bound to: 3'b000 
+	Parameter LOCK1 bound to: 3'b001 
+	Parameter LOCK2 bound to: 3'b010 
+	Parameter ERR1 bound to: 3'b011 
+	Parameter ERR2 bound to: 3'b100 
+	Parameter CHANGE bound to: 3'b101 
+	Parameter MODE_HD bound to: 2'b00 
+	Parameter MODE_SD bound to: 2'b01 
+	Parameter MODE_3G bound to: 2'b10 
+	Parameter MODE_XX bound to: 2'b11 
+	Parameter VALID_BIT_HD bound to: 0 - type: integer 
+	Parameter VALID_BIT_SD bound to: 1 - type: integer 
+	Parameter VALID_BIT_3G bound to: 2 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [d:/yzd/tmp/submission-repair-20261104/source-test/rtl/sdi/ip/smpte_sdi/hdl/v_smpte_sdi_v3_0_vl_rfs.v:9849]
+INFO: [Synth 8-6155] done synthesizing module 'v_smpte_sdi_v3_0_8_triple_sdi_rx_autorate' (21#1) [d:/yzd/tmp/submission-repair-20261104/source-test/rtl/sdi/ip/smpte_sdi/hdl/v_smpte_sdi_v3_0_vl_rfs.v:9543]
+INFO: [Synth 8-6157] synthesizing module 'v_smpte_sdi_v3_0_8_SMPTE425_B_demux2' [d:/yzd/tmp/submission-repair-20261104/source-test/rtl/sdi/ip/smpte_sdi/hdl/v_smpte_sdi_v3_0_vl_rfs.v:8532]
+INFO: [Synth 8-6155] done synthesizing module 'v_smpte_sdi_v3_0_8_SMPTE425_B_demux2' (22#1) [d:/yzd/tmp/submission-repair-20261104/source-test/rtl/sdi/ip/smpte_sdi/hdl/v_smpte_sdi_v3_0_vl_rfs.v:8532]
+INFO: [Synth 8-6157] synthesizing module 'v_smpte_sdi_v3_0_8_triple_sdi_transport_detect' [d:/yzd/tmp/submission-repair-20261104/source-test/rtl/sdi/ip/smpte_sdi/hdl/v_smpte_sdi_v3_0_vl_rfs.v:9977]
+	Parameter HCNT_MSB bound to: 5 - type: integer 
+	Parameter HANC_MOD bound to: 63 - type: integer 
+	Parameter HANC_TC bound to: 62 - type: integer 
+	Parameter VCNT_MSB bound to: 10 - type: integer 
+	Parameter FA_DLY_MSB bound to: 9 - type: integer 
+	Parameter FAM_1920_1080 bound to: 4'b0000 
+	Parameter FAM_1280_720 bound to: 4'b0001 
+	Parameter FAM_2048_1080 bound to: 4'b0010 
+	Parameter FAM_ST295 bound to: 4'b0011 
+	Parameter FAM_NTSC bound to: 4'b1000 
+	Parameter FAM_PAL bound to: 4'b1001 
+	Parameter FAM_UNKNOWN bound to: 4'b1111 
+	Parameter RATE_24 bound to: 3'b000 
+	Parameter RATE_25 bound to: 3'b001 
+	Parameter RATE_30 bound to: 3'b010 
+	Parameter RATE_48 bound to: 3'b011 
+	Parameter RATE_50 bound to: 3'b100 
+	Parameter RATE_60 bound to: 3'b101 
+	Parameter RATE_UNKNOWN bound to: 3'b111 
+	Parameter SMPTE_RATE_NONE bound to: 4'b0000 
+	Parameter SMPTE_RATE_24M bound to: 4'b0010 
+	Parameter SMPTE_RATE_24 bound to: 4'b0011 
+	Parameter SMPTE_RATE_48M bound to: 4'b0100 
+	Parameter SMPTE_RATE_25 bound to: 4'b0101 
+	Parameter SMPTE_RATE_30M bound to: 4'b0110 
+	Parameter SMPTE_RATE_30 bound to: 4'b0111 
+	Parameter SMPTE_RATE_48 bound to: 4'b1000 
+	Parameter SMPTE_RATE_50 bound to: 4'b1001 
+	Parameter SMPTE_RATE_60M bound to: 4'b1010 
+	Parameter SMPTE_RATE_60 bound to: 4'b1011 
+INFO: [Synth 8-6155] done synthesizing module 'v_smpte_sdi_v3_0_8_triple_sdi_transport_detect' (23#1) [d:/yzd/tmp/submission-repair-20261104/source-test/rtl/sdi/ip/smpte_sdi/hdl/v_smpte_sdi_v3_0_vl_rfs.v:9977]
+INFO: [Synth 8-6157] synthesizing module 'v_smpte_sdi_v3_0_8_hdsdi_rx_crc' [d:/yzd/tmp/submission-repair-20261104/source-test/rtl/sdi/ip/smpte_sdi/hdl/v_smpte_sdi_v3_0_vl_rfs.v:5913]
+INFO: [Synth 8-6157] synthesizing module 'v_smpte_sdi_v3_0_8_hdsdi_crc2' [d:/yzd/tmp/submission-repair-20261104/source-test/rtl/sdi/ip/smpte_sdi/hdl/v_smpte_sdi_v3_0_vl_rfs.v:5558]
+INFO: [Synth 8-6155] done synthesizing module 'v_smpte_sdi_v3_0_8_hdsdi_crc2' (24#1) [d:/yzd/tmp/submission-repair-20261104/source-test/rtl/sdi/ip/smpte_sdi/hdl/v_smpte_sdi_v3_0_vl_rfs.v:5558]
+INFO: [Synth 8-6155] done synthesizing module 'v_smpte_sdi_v3_0_8_hdsdi_rx_crc' (25#1) [d:/yzd/tmp/submission-repair-20261104/source-test/rtl/sdi/ip/smpte_sdi/hdl/v_smpte_sdi_v3_0_vl_rfs.v:5913]
+INFO: [Synth 8-6157] synthesizing module 'v_smpte_sdi_v3_0_8_SMPTE352_vpid_capture' [d:/yzd/tmp/submission-repair-20261104/source-test/rtl/sdi/ip/smpte_sdi/hdl/v_smpte_sdi_v3_0_vl_rfs.v:7514]
+	Parameter VPID_TIMEOUT_VBLANKS bound to: 4 - type: integer 
+	Parameter STATE_WIDTH bound to: 4 - type: integer 
+	Parameter STATE_MSB bound to: 3 - type: integer 
+	Parameter STATE_START bound to: 4'b0000 
+	Parameter STATE_ADF2 bound to: 4'b0001 
+	Parameter STATE_ADF3 bound to: 4'b0010 
+	Parameter STATE_DID bound to: 4'b0011 
+	Parameter STATE_SDID bound to: 4'b0100 
+	Parameter STATE_DC bound to: 4'b0101 
+	Parameter STATE_UDW0 bound to: 4'b0110 
+	Parameter STATE_UDW1 bound to: 4'b0111 
+	Parameter STATE_UDW2 bound to: 4'b1000 
+	Parameter STATE_UDW3 bound to: 4'b1001 
+	Parameter STATE_CS bound to: 4'b1010 
+	Parameter MUXSEL_MSB bound to: 2 - type: integer 
+	Parameter MUX_SEL_000 bound to: 3'b000 
+	Parameter MUX_SEL_3FF bound to: 3'b001 
+	Parameter MUX_SEL_DID bound to: 3'b010 
+	Parameter MUX_SEL_SDID bound to: 3'b011 
+	Parameter MUX_SEL_DC bound to: 3'b100 
+	Parameter MUX_SEL_CS bound to: 3'b101 
+	Parameter SR_MSB bound to: 3 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [d:/yzd/tmp/submission-repair-20261104/source-test/rtl/sdi/ip/smpte_sdi/hdl/v_smpte_sdi_v3_0_vl_rfs.v:7683]
+INFO: [Synth 8-6155] done synthesizing module 'v_smpte_sdi_v3_0_8_SMPTE352_vpid_capture' (26#1) [d:/yzd/tmp/submission-repair-20261104/source-test/rtl/sdi/ip/smpte_sdi/hdl/v_smpte_sdi_v3_0_vl_rfs.v:7514]
+INFO: [Synth 8-6155] done synthesizing module 'v_smpte_sdi_v3_0_8_triple_sdi_rx' (27#1) [d:/yzd/tmp/submission-repair-20261104/source-test/rtl/sdi/ip/smpte_sdi/hdl/v_smpte_sdi_v3_0_vl_rfs.v:9013]
+INFO: [Synth 8-6157] synthesizing module 'v_smpte_sdi_v3_0_8_triple_sdi_reset__parameterized0' [d:/yzd/tmp/submission-repair-20261104/source-test/rtl/sdi/ip/smpte_sdi/hdl/v_smpte_sdi_v3_0_vl_rfs.v:8931]
+	Parameter RST_DLY bound to: 8 - type: integer 
+	Parameter NUM_OUTS bound to: 2 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'v_smpte_sdi_v3_0_8_triple_sdi_reset__parameterized0' (27#1) [d:/yzd/tmp/submission-repair-20261104/source-test/rtl/sdi/ip/smpte_sdi/hdl/v_smpte_sdi_v3_0_vl_rfs.v:8931]
+INFO: [Synth 8-6157] synthesizing module 'v_smpte_sdi_v3_0_8_triple_sdi_vpid_insert' [d:/yzd/tmp/submission-repair-20261104/source-test/rtl/sdi/ip/smpte_sdi/hdl/v_smpte_sdi_v3_0_vl_rfs.v:10840]
+INFO: [Synth 8-6157] synthesizing module 'v_smpte_sdi_v3_0_8_SMPTE352_vpid_insert' [d:/yzd/tmp/submission-repair-20261104/source-test/rtl/sdi/ip/smpte_sdi/hdl/v_smpte_sdi_v3_0_vl_rfs.v:7897]
+	Parameter STATE_WIDTH bound to: 6 - type: integer 
+	Parameter STATE_MSB bound to: 5 - type: integer 
+	Parameter STATE_WAIT bound to: 6'b000000 
+	Parameter STATE_ADF0 bound to: 6'b000001 
+	Parameter STATE_ADF1 bound to: 6'b000010 
+	Parameter STATE_ADF2 bound to: 6'b000011 
+	Parameter STATE_DID bound to: 6'b000100 
+	Parameter STATE_SDID bound to: 6'b000101 
+	Parameter STATE_DC bound to: 6'b000110 
+	Parameter STATE_B0 bound to: 6'b000111 
+	Parameter STATE_B1 bound to: 6'b001000 
+	Parameter STATE_B2 bound to: 6'b001001 
+	Parameter STATE_B3 bound to: 6'b001010 
+	Parameter STATE_CS bound to: 6'b001011 
+	Parameter STATE_DID2 bound to: 6'b001100 
+	Parameter STATE_SDID2 bound to: 6'b001101 
+	Parameter STATE_DC2 bound to: 6'b001110 
+	Parameter STATE_UDW bound to: 6'b001111 
+	Parameter STATE_CS2 bound to: 6'b010000 
+	Parameter STATE_INS_ADF0 bound to: 6'b010001 
+	Parameter STATE_INS_ADF1 bound to: 6'b010010 
+	Parameter STATE_INS_ADF2 bound to: 6'b010011 
+	Parameter STATE_INS_DID bound to: 6'b010100 
+	Parameter STATE_INS_SDID bound to: 6'b010101 
+	Parameter STATE_INS_DC bound to: 6'b010110 
+	Parameter STATE_INS_B0 bound to: 6'b010111 
+	Parameter STATE_INS_B1 bound to: 6'b011000 
+	Parameter STATE_INS_B2 bound to: 6'b011001 
+	Parameter STATE_INS_B3 bound to: 6'b011010 
+	Parameter STATE_ADF0_X bound to: 6'b011011 
+	Parameter STATE_ADF1_X bound to: 6'b011100 
+	Parameter STATE_ADF2_X bound to: 6'b011101 
+	Parameter STATE_DID_X bound to: 6'b011110 
+	Parameter STATE_SDID_X bound to: 6'b011111 
+	Parameter STATE_DC_X bound to: 6'b100000 
+	Parameter STATE_UDW_X bound to: 6'b100001 
+	Parameter STATE_CS_X bound to: 6'b100010 
+	Parameter MUX_SEL_000 bound to: 4'b0000 
+	Parameter MUX_SEL_3FF bound to: 4'b0001 
+	Parameter MUX_SEL_DID bound to: 4'b0010 
+	Parameter MUX_SEL_SDID bound to: 4'b0011 
+	Parameter MUX_SEL_DC bound to: 4'b0100 
+	Parameter MUX_SEL_UDW bound to: 4'b0101 
+	Parameter MUX_SEL_CS bound to: 4'b0110 
+	Parameter MUX_SEL_DEL bound to: 4'b0111 
+	Parameter MUX_SEL_VID bound to: 4'b1000 
+INFO: [Synth 8-155] case statement is not full and has no default [d:/yzd/tmp/submission-repair-20261104/source-test/rtl/sdi/ip/smpte_sdi/hdl/v_smpte_sdi_v3_0_vl_rfs.v:8386]
+INFO: [Synth 8-6155] done synthesizing module 'v_smpte_sdi_v3_0_8_SMPTE352_vpid_insert' (28#1) [d:/yzd/tmp/submission-repair-20261104/source-test/rtl/sdi/ip/smpte_sdi/hdl/v_smpte_sdi_v3_0_vl_rfs.v:7897]
+INFO: [Synth 8-6155] done synthesizing module 'v_smpte_sdi_v3_0_8_triple_sdi_vpid_insert' (29#1) [d:/yzd/tmp/submission-repair-20261104/source-test/rtl/sdi/ip/smpte_sdi/hdl/v_smpte_sdi_v3_0_vl_rfs.v:10840]
+INFO: [Synth 8-6157] synthesizing module 'v_smpte_sdi_v3_0_8_trsgen' [d:/yzd/tmp/submission-repair-20261104/source-test/rtl/sdi/ip/smpte_sdi/hdl/v_smpte_sdi_v3_0_vl_rfs.v:11401]
+INFO: [Synth 8-6155] done synthesizing module 'v_smpte_sdi_v3_0_8_trsgen' (30#1) [d:/yzd/tmp/submission-repair-20261104/source-test/rtl/sdi/ip/smpte_sdi/hdl/v_smpte_sdi_v3_0_vl_rfs.v:11401]
+INFO: [Synth 8-6157] synthesizing module 'v_smpte_sdi_v3_0_8_triple_sdi_tx_output' [d:/yzd/tmp/submission-repair-20261104/source-test/rtl/sdi/ip/smpte_sdi/hdl/v_smpte_sdi_v3_0_vl_rfs.v:10385]
+INFO: [Synth 8-6157] synthesizing module 'v_smpte_sdi_v3_0_8_hdsdi_insert_ln' [d:/yzd/tmp/submission-repair-20261104/source-test/rtl/sdi/ip/smpte_sdi/hdl/v_smpte_sdi_v3_0_vl_rfs.v:5818]
+INFO: [Synth 8-6155] done synthesizing module 'v_smpte_sdi_v3_0_8_hdsdi_insert_ln' (31#1) [d:/yzd/tmp/submission-repair-20261104/source-test/rtl/sdi/ip/smpte_sdi/hdl/v_smpte_sdi_v3_0_vl_rfs.v:5818]
+INFO: [Synth 8-6157] synthesizing module 'v_smpte_sdi_v3_0_8_hdsdi_insert_crc' [d:/yzd/tmp/submission-repair-20261104/source-test/rtl/sdi/ip/smpte_sdi/hdl/v_smpte_sdi_v3_0_vl_rfs.v:5717]
+INFO: [Synth 8-6155] done synthesizing module 'v_smpte_sdi_v3_0_8_hdsdi_insert_crc' (32#1) [d:/yzd/tmp/submission-repair-20261104/source-test/rtl/sdi/ip/smpte_sdi/hdl/v_smpte_sdi_v3_0_vl_rfs.v:5717]
+INFO: [Synth 8-6157] synthesizing module 'v_smpte_sdi_v3_0_8_edh_processor__parameterized0' [d:/yzd/tmp/submission-repair-20261104/source-test/rtl/sdi/ip/smpte_sdi/hdl/v_smpte_sdi_v3_0_vl_rfs.v:2118]
+	Parameter ERROR_COUNT_WIDTH bound to: 24 - type: integer 
+	Parameter HCNT_WIDTH bound to: 12 - type: integer 
+	Parameter VCNT_WIDTH bound to: 10 - type: integer 
+	Parameter FLAGS_WIDTH bound to: 16 - type: integer 
+	Parameter HCNT_MSB bound to: 11 - type: integer 
+	Parameter VCNT_MSB bound to: 9 - type: integer 
+	Parameter ERRFLD_MSB bound to: 23 - type: integer 
+	Parameter FLAGS_MSB bound to: 15 - type: integer 
+	Parameter NTSC_422 bound to: 3'b000 
+	Parameter NTSC_INVALID bound to: 3'b001 
+	Parameter NTSC_422_WIDE bound to: 3'b010 
+	Parameter NTSC_4444 bound to: 3'b011 
+	Parameter PAL_422 bound to: 3'b100 
+	Parameter PAL_INVALID bound to: 3'b101 
+	Parameter PAL_422_WIDE bound to: 3'b110 
+	Parameter PAL_4444 bound to: 3'b111 
+INFO: [Synth 8-6157] synthesizing module 'v_smpte_sdi_v3_0_8_edh_errcnt__parameterized0' [d:/yzd/tmp/submission-repair-20261104/source-test/rtl/sdi/ip/smpte_sdi/hdl/v_smpte_sdi_v3_0_vl_rfs.v:1513]
+	Parameter ERROR_COUNT_WIDTH bound to: 24 - type: integer 
+	Parameter FLAGS_WIDTH bound to: 16 - type: integer 
+	Parameter ERRFLD_MSB bound to: 23 - type: integer 
+	Parameter FLAGS_MSB bound to: 15 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'v_smpte_sdi_v3_0_8_edh_errcnt__parameterized0' (32#1) [d:/yzd/tmp/submission-repair-20261104/source-test/rtl/sdi/ip/smpte_sdi/hdl/v_smpte_sdi_v3_0_vl_rfs.v:1513]
+INFO: [Synth 8-6155] done synthesizing module 'v_smpte_sdi_v3_0_8_edh_processor__parameterized0' (32#1) [d:/yzd/tmp/submission-repair-20261104/source-test/rtl/sdi/ip/smpte_sdi/hdl/v_smpte_sdi_v3_0_vl_rfs.v:2118]
+INFO: [Synth 8-6157] synthesizing module 'v_smpte_sdi_v3_0_8_multi_sdi_encoder' [d:/yzd/tmp/submission-repair-20261104/source-test/rtl/sdi/ip/smpte_sdi/hdl/v_smpte_sdi_v3_0_vl_rfs.v:6346]
+INFO: [Synth 8-6157] synthesizing module 'v_smpte_sdi_v3_0_8_smpte_encoder' [d:/yzd/tmp/submission-repair-20261104/source-test/rtl/sdi/ip/smpte_sdi/hdl/v_smpte_sdi_v3_0_vl_rfs.v:8794]
+INFO: [Synth 8-6155] done synthesizing module 'v_smpte_sdi_v3_0_8_smpte_encoder' (33#1) [d:/yzd/tmp/submission-repair-20261104/source-test/rtl/sdi/ip/smpte_sdi/hdl/v_smpte_sdi_v3_0_vl_rfs.v:8794]
+INFO: [Synth 8-6155] done synthesizing module 'v_smpte_sdi_v3_0_8_multi_sdi_encoder' (34#1) [d:/yzd/tmp/submission-repair-20261104/source-test/rtl/sdi/ip/smpte_sdi/hdl/v_smpte_sdi_v3_0_vl_rfs.v:6346]
+INFO: [Synth 8-6157] synthesizing module 'v_smpte_sdi_v3_0_8_sdi_bitrep_20b' [d:/yzd/tmp/submission-repair-20261104/source-test/rtl/sdi/ip/smpte_sdi/hdl/v_smpte_sdi_v3_0_vl_rfs.v:7302]
+	Parameter STATE_WIDTH bound to: 4 - type: integer 
+	Parameter STATE_MSB bound to: 3 - type: integer 
+	Parameter START bound to: 4'b1111 
+	Parameter S0 bound to: 4'b0000 
+	Parameter S1 bound to: 4'b0001 
+	Parameter S2 bound to: 4'b0010 
+	Parameter S3 bound to: 4'b0011 
+	Parameter S4 bound to: 4'b0100 
+	Parameter S5 bound to: 4'b0101 
+	Parameter S6 bound to: 4'b0110 
+	Parameter S7 bound to: 4'b0111 
+	Parameter S8 bound to: 4'b1000 
+	Parameter S9 bound to: 4'b1001 
+	Parameter S10 bound to: 4'b1010 
+	Parameter S5X bound to: 4'b1011 
+INFO: [Synth 8-6157] synthesizing module 'v_smpte_sdi_v3_0_8_mux12_wide' [d:/yzd/tmp/submission-repair-20261104/source-test/rtl/sdi/ip/smpte_sdi/hdl/v_smpte_sdi_v3_0_vl_rfs.v:7201]
+	Parameter WIDTH bound to: 20 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'v_smpte_sdi_v3_0_8_mux12_wide' (35#1) [d:/yzd/tmp/submission-repair-20261104/source-test/rtl/sdi/ip/smpte_sdi/hdl/v_smpte_sdi_v3_0_vl_rfs.v:7201]
+INFO: [Synth 8-6155] done synthesizing module 'v_smpte_sdi_v3_0_8_sdi_bitrep_20b' (36#1) [d:/yzd/tmp/submission-repair-20261104/source-test/rtl/sdi/ip/smpte_sdi/hdl/v_smpte_sdi_v3_0_vl_rfs.v:7302]
+INFO: [Synth 8-6155] done synthesizing module 'v_smpte_sdi_v3_0_8_triple_sdi_tx_output' (37#1) [d:/yzd/tmp/submission-repair-20261104/source-test/rtl/sdi/ip/smpte_sdi/hdl/v_smpte_sdi_v3_0_vl_rfs.v:10385]
+INFO: [Synth 8-6155] done synthesizing module 'v_smpte_sdi_v3_0_8' (38#1) [d:/yzd/tmp/submission-repair-20261104/source-test/rtl/sdi/ip/smpte_sdi/hdl/v_smpte_sdi_v3_0_vl_rfs.v:11749]
+INFO: [Synth 8-6155] done synthesizing module 'smpte_sdi' (39#1) [d:/yzd/tmp/submission-repair-20261104/source-test/rtl/sdi/ip/smpte_sdi/synth/smpte_sdi.v:57]
+WARNING: [Synth 8-3331] design v_smpte_sdi_v3_0_8_edh_tx has unconnected port edh_missing
+WARNING: [Synth 8-3331] design v_smpte_sdi_v3_0_8_autodetect has unconnected port vid_in[8]
+WARNING: [Synth 8-3331] design v_smpte_sdi_v3_0_8_autodetect has unconnected port vid_in[7]
+WARNING: [Synth 8-3331] design v_smpte_sdi_v3_0_8_autodetect has unconnected port vid_in[4]
+WARNING: [Synth 8-3331] design v_smpte_sdi_v3_0_8_autodetect has unconnected port vid_in[3]
+WARNING: [Synth 8-3331] design v_smpte_sdi_v3_0_8_autodetect has unconnected port vid_in[2]
+WARNING: [Synth 8-3331] design v_smpte_sdi_v3_0_8_autodetect has unconnected port vid_in[1]
+WARNING: [Synth 8-3331] design v_smpte_sdi_v3_0_8_autodetect has unconnected port vid_in[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 480.016 ; gain = 195.098
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 480.016 ; gain = 195.098
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 480.016 ; gain = 195.098
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z030ffg676-2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [d:/yzd/tmp/submission-repair-20261104/source-test/rtl/sdi/ip/smpte_sdi/smpte_sdi_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [d:/yzd/tmp/submission-repair-20261104/source-test/rtl/sdi/ip/smpte_sdi/smpte_sdi_ooc.xdc] for cell 'inst'
+Parsing XDC File [d:/yzd/tmp/submission-repair-20261104/source-test/rtl/sdi/ip/smpte_sdi/smpte_sdi_core.xdc] for cell 'inst'
+WARNING: [Designutils 20-1567] Use of 'set_multicycle_path' with '-hold' is not supported by synthesis. The constraint will not be passed to synthesis. [d:/yzd/tmp/submission-repair-20261104/source-test/rtl/sdi/ip/smpte_sdi/smpte_sdi_core.xdc:3]
+Finished Parsing XDC File [d:/yzd/tmp/submission-repair-20261104/source-test/rtl/sdi/ip/smpte_sdi/smpte_sdi_core.xdc] for cell 'inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [d:/yzd/tmp/submission-repair-20261104/source-test/rtl/sdi/ip/smpte_sdi/smpte_sdi_core.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/smpte_sdi_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/smpte_sdi_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 885.453 ; gain = 0.000
+Parsing XDC File [D:/yzd/tmp/submission-repair-20261104/new-project-3/source_check.runs/smpte_sdi_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [D:/yzd/tmp/submission-repair-20261104/new-project-3/source_check.runs/smpte_sdi_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 885.523 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 885.523 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.029 . Memory (MB): peak = 886.965 ; gain = 1.441
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 886.965 ; gain = 602.047
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z030ffg676-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 886.965 ; gain = 602.047
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for inst. (constraint file  D:/yzd/tmp/submission-repair-20261104/new-project-3/source_check.runs/smpte_sdi_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 886.965 ; gain = 602.047
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'v_smpte_sdi_v3_0_8_autodetect'
+INFO: [Synth 8-5544] ROM "set_locked" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "match_code" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ld_std" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "clr_locked" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "inc_loops" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "clr_errcnt" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "inc_errcnt" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ld_saved_hcnt" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "clr_hcnt" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "eav_loc" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "sav_loc" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "resync_val" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "hcount" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'v_smpte_sdi_v3_0_8_fly_fsm'
+INFO: [Synth 8-5544] ROM "clr_lock" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "set_lock" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ld_std" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "resync_hcnt" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "clr_hcnt" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ld_vcnt" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'v_smpte_sdi_v3_0_8_edh_rx'
+INFO: [Synth 8-5546] ROM "ld_anc_flags" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ld_ff_flags" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ld_ap_flags" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "format_err" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "checksum_err" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5587] ROM size for "check_parity" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5546] ROM "missing_err" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "clr_errors" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ld_ff3" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ld_ff2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ld_ff1" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ld_ap3" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ld_ap2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ld_ap1" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "clr_checksum" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "next_state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "next_state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "ld_anc_flags" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ld_ff_flags" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ld_ap_flags" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "format_err" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "checksum_err" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5587] ROM size for "check_parity" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5546] ROM "missing_err" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "clr_errors" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ld_ff3" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ld_ff2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ld_ff1" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ld_ap3" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ld_ap2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ld_ap1" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "clr_checksum" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "next_state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "next_state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'v_smpte_sdi_v3_0_8_anc_rx'
+INFO: [Synth 8-5546] ROM "udwcntr_eq_0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "check_checksum" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "check_parity" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "clr_edh_flag" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "clr_checksum" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ld_udw_cntr" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'v_smpte_sdi_v3_0_8_edh_tx'
+INFO: [Synth 8-5546] ROM "end_packet" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "clr_checksum" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "anc_flag_word" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ff_flag_word" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ap_flag_word" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "sd_trs_err" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'v_smpte_sdi_v3_0_8_triple_sdi_rx_autorate'
+INFO: [Synth 8-5544] ROM "clr_errcnt" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "inc_errcnt" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "clr_locked" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "set_locked" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "change_mode" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "transport_rate" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "transport_rate" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+WARNING: [Synth 8-6040] Register rom_address_reg driving address of a ROM cannot be packed in BRAM/URAM because of presence of initial value.
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'v_smpte_sdi_v3_0_8_SMPTE352_vpid_capture'
+INFO: [Synth 8-5544] ROM "ld_cs_err" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "clr_cs" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ld_byte4" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ld_byte3" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ld_byte2" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ld_byte1" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "cmp_mux_sel" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-4471] merging register 'autodetect_sav_reg' into 'sav_int_reg' [d:/yzd/tmp/submission-repair-20261104/source-test/rtl/sdi/ip/smpte_sdi/hdl/v_smpte_sdi_v3_0_vl_rfs.v:9246]
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'v_smpte_sdi_v3_0_8_SMPTE352_vpid_insert'
+INFO: [Synth 8-5546] ROM "clr_cs_reg" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "vpid_mux_sel" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ld_udw_cntr" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    ACQ0 |                             0000 |                             0000
+                    ACQ1 |                             0001 |                             0001
+                    ACQ2 |                             0010 |                             0010
+                    ACQ3 |                             0011 |                             0011
+                    ACQ4 |                             0100 |                             0100
+                    ACQ5 |                             0101 |                             0101
+                    ACQ6 |                             0110 |                             0110
+                    LCK0 |                             0111 |                             1000
+                    LCK1 |                             1000 |                             1001
+                    ERR0 |                             1001 |                             1100
+                    LCK2 |                             1010 |                             1010
+                    LCK3 |                             1011 |                             1011
+                    ERR1 |                             1100 |                             1101
+                    ERR2 |                             1101 |                             1110
+                    ACQ7 |                             1110 |                             0111
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'current_state_reg' using encoding 'sequential' in module 'v_smpte_sdi_v3_0_8_autodetect'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  UNLOCK |                    0000000000001 |                             0110
+                  HSYNC1 |                    0000000000010 |                             0001
+                  FSYNC1 |                    0000000000100 |                             0011
+                  FSYNC2 |                    0000000001000 |                             0100
+                  FSYNC3 |                    0000000010000 |                             0101
+                    LOCK |                    0000000100000 |                             0000
+                 SWITCH1 |                    0000001000000 |                             0111
+                 SWITCH5 |                    0000010000000 |                             1011
+                 SWITCH6 |                    0000100000000 |                             1100
+                 SWITCH2 |                    0001000000000 |                             1000
+                 SWITCH3 |                    0010000000000 |                             1001
+                 SWITCH4 |                    0100000000000 |                             1010
+                  HSYNC2 |                    1000000000000 |                             0010
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'current_state_reg' using encoding 'one-hot' in module 'v_smpte_sdi_v3_0_8_fly_fsm'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  S_WAIT |      000000000000000000000000001 |                            00000
+                  S_ADF1 |      000000000000000000000000010 |                            00001
+                  S_ADF2 |      000000000000000000000000100 |                            00010
+                  S_ADF3 |      000000000000000000000001000 |                            00011
+                   S_DID |      000000000000000000000010000 |                            00100
+                   S_DBN |      000000000000000000000100000 |                            00101
+                    S_DC |      000000000000000000001000000 |                            00110
+                   S_AP1 |      000000000000000000010000000 |                            00111
+                   S_AP2 |      000000000000000000100000000 |                            01000
+                   S_AP3 |      000000000000000001000000000 |                            01001
+                   S_FF1 |      000000000000000010000000000 |                            01010
+                   S_FF2 |      000000000000000100000000000 |                            01011
+                   S_FF3 |      000000000000001000000000000 |                            01100
+                S_ANCFLG |      000000000000010000000000000 |                            01101
+                 S_APFLG |      000000000000100000000000000 |                            01110
+                 S_FFFLG |      000000000001000000000000000 |                            01111
+                  S_RSV1 |      000000000010000000000000000 |                            10000
+                  S_RSV2 |      000000000100000000000000000 |                            10001
+                  S_RSV3 |      000000001000000000000000000 |                            10010
+                  S_RSV4 |      000000010000000000000000000 |                            10011
+                  S_RSV5 |      000000100000000000000000000 |                            10100
+                  S_RSV6 |      000001000000000000000000000 |                            10101
+                  S_RSV7 |      000010000000000000000000000 |                            10110
+                   S_CHK |      000100000000000000000000000 |                            10111
+                  S_ERRC |      001000000000000000000000000 |                            11010
+                  S_ERRF |      010000000000000000000000000 |                            11001
+                  S_ERRM |      100000000000000000000000000 |                            11000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'current_state_reg' using encoding 'one-hot' in module 'v_smpte_sdi_v3_0_8_edh_rx'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  S_WAIT |                     000000000001 |                             0000
+                  S_ADF1 |                     000000000010 |                             0001
+                  S_ADF2 |                     000000000100 |                             0010
+                  S_ADF3 |                     000000001000 |                             0011
+                   S_DID |                     000000010000 |                             0100
+                   S_DBN |                     000000100000 |                             0101
+                    S_DC |                     000001000000 |                             0110
+                   S_UDW |                     000010000000 |                             0111
+                   S_CHK |                     000100000000 |                             1000
+                  S_EDH1 |                     001000000000 |                             1001
+                  S_EDH2 |                     010000000000 |                             1010
+                  S_EDH3 |                     100000000000 |                             1011
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'current_state_reg' using encoding 'one-hot' in module 'v_smpte_sdi_v3_0_8_anc_rx'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  S_WAIT |                            00000 |                            00000
+                  S_ADF1 |                            00001 |                            00001
+                  S_ADF2 |                            00010 |                            00010
+                  S_ADF3 |                            00011 |                            00011
+                   S_DID |                            00100 |                            00100
+                   S_DBN |                            00101 |                            00101
+                    S_DC |                            00110 |                            00110
+                   S_AP1 |                            00111 |                            00111
+                   S_AP2 |                            01000 |                            01000
+                   S_AP3 |                            01001 |                            01001
+                   S_FF1 |                            01010 |                            01010
+                   S_FF2 |                            01011 |                            01011
+                   S_FF3 |                            01100 |                            01100
+                S_ANCFLG |                            01101 |                            01101
+                 S_APFLG |                            01110 |                            01110
+                 S_FFFLG |                            01111 |                            01111
+                  S_RSV1 |                            10000 |                            10000
+                  S_RSV2 |                            10001 |                            10001
+                  S_RSV3 |                            10010 |                            10010
+                  S_RSV4 |                            10011 |                            10011
+                  S_RSV5 |                            10100 |                            10100
+                  S_RSV6 |                            10101 |                            10101
+                  S_RSV7 |                            10110 |                            10110
+                   S_CHK |                            10111 |                            10111
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'current_state_reg' using encoding 'sequential' in module 'v_smpte_sdi_v3_0_8_edh_tx'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  UNLOCK |                           000001 |                              000
+                    ERR1 |                           000010 |                              011
+                    ERR2 |                           000100 |                              100
+                  CHANGE |                           001000 |                              101
+                   LOCK1 |                           010000 |                              001
+                   LOCK2 |                           100000 |                              010
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'current_state_reg' using encoding 'one-hot' in module 'v_smpte_sdi_v3_0_8_triple_sdi_rx_autorate'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+             STATE_START |                      00000000001 |                             0000
+              STATE_ADF2 |                      00000000010 |                             0001
+              STATE_ADF3 |                      00000000100 |                             0010
+               STATE_DID |                      00000001000 |                             0011
+              STATE_SDID |                      00000010000 |                             0100
+                STATE_DC |                      00000100000 |                             0101
+              STATE_UDW0 |                      00001000000 |                             0110
+              STATE_UDW1 |                      00010000000 |                             0111
+              STATE_UDW2 |                      00100000000 |                             1000
+              STATE_UDW3 |                      01000000000 |                             1001
+                STATE_CS |                      10000000000 |                             1010
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'current_state_reg' using encoding 'one-hot' in module 'v_smpte_sdi_v3_0_8_SMPTE352_vpid_capture'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+              STATE_WAIT | 00000000000000000000000000000000001 |                           000000
+              STATE_ADF0 | 00000000000000000000000000000000010 |                           000001
+              STATE_ADF1 | 00000000000000000000000000000000100 |                           000010
+              STATE_ADF2 | 00000000000000000000000000000001000 |                           000011
+               STATE_DID | 00000000000000000000000000000010000 |                           000100
+              STATE_SDID | 00000000000000000000000000000100000 |                           000101
+                STATE_DC | 00000000000000000000000000001000000 |                           000110
+                STATE_B0 | 00000000000000000000000000010000000 |                           000111
+                STATE_B1 | 00000000000000000000000000100000000 |                           001000
+                STATE_B2 | 00000000000000000000000001000000000 |                           001001
+                STATE_B3 | 00000000000000000000000010000000000 |                           001010
+              STATE_DID2 | 00000000000000000000000100000000000 |                           001100
+             STATE_SDID2 | 00000000000000000000001000000000000 |                           001101
+               STATE_DC2 | 00000000000000000000010000000000000 |                           001110
+               STATE_UDW | 00000000000000000000100000000000000 |                           001111
+               STATE_CS2 | 00000000000000000001000000000000000 |                           010000
+          STATE_INS_ADF0 | 00000000000000000010000000000000000 |                           010001
+          STATE_INS_ADF1 | 00000000000000000100000000000000000 |                           010010
+          STATE_INS_ADF2 | 00000000000000001000000000000000000 |                           010011
+           STATE_INS_DID | 00000000000000010000000000000000000 |                           010100
+          STATE_INS_SDID | 00000000000000100000000000000000000 |                           010101
+            STATE_INS_DC | 00000000000001000000000000000000000 |                           010110
+            STATE_INS_B0 | 00000000000010000000000000000000000 |                           010111
+            STATE_INS_B1 | 00000000000100000000000000000000000 |                           011000
+            STATE_INS_B2 | 00000000001000000000000000000000000 |                           011001
+            STATE_INS_B3 | 00000000010000000000000000000000000 |                           011010
+                STATE_CS | 00000000100000000000000000000000000 |                           001011
+            STATE_ADF0_X | 00000001000000000000000000000000000 |                           011011
+            STATE_ADF1_X | 00000010000000000000000000000000000 |                           011100
+            STATE_ADF2_X | 00000100000000000000000000000000000 |                           011101
+             STATE_DID_X | 00001000000000000000000000000000000 |                           011110
+            STATE_SDID_X | 00010000000000000000000000000000000 |                           011111
+              STATE_DC_X | 00100000000000000000000000000000000 |                           100000
+             STATE_UDW_X | 01000000000000000000000000000000000 |                           100001
+              STATE_CS_X | 10000000000000000000000000000000000 |                           100010
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'current_state_reg' using encoding 'one-hot' in module 'v_smpte_sdi_v3_0_8_SMPTE352_vpid_insert'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 886.965 ; gain = 602.047
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     24 Bit       Adders := 1     
+	   2 Input     16 Bit       Adders := 1     
+	   2 Input     12 Bit       Adders := 2     
+	   2 Input     10 Bit       Adders := 2     
+	   2 Input      9 Bit       Adders := 10    
+	   2 Input      8 Bit       Adders := 4     
+	   2 Input      6 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 3     
+	   2 Input      3 Bit       Adders := 4     
+	   2 Input      2 Bit       Adders := 2     
++---XORs : 
+	   2 Input     20 Bit         XORs := 1     
+	   2 Input      1 Bit         XORs := 210   
+	   3 Input      1 Bit         XORs := 152   
+	   4 Input      1 Bit         XORs := 10    
+	   8 Input      1 Bit         XORs := 6     
++---XORs : 
+	                8 Bit    Wide XORs := 2     
++---Registers : 
+	               39 Bit    Registers := 1     
+	               32 Bit    Registers := 4     
+	               20 Bit    Registers := 9     
+	               18 Bit    Registers := 12    
+	               16 Bit    Registers := 8     
+	               12 Bit    Registers := 8     
+	               11 Bit    Registers := 8     
+	               10 Bit    Registers := 79    
+	                9 Bit    Registers := 11    
+	                8 Bit    Registers := 25    
+	                7 Bit    Registers := 5     
+	                6 Bit    Registers := 2     
+	                5 Bit    Registers := 15    
+	                4 Bit    Registers := 14    
+	                3 Bit    Registers := 19    
+	                2 Bit    Registers := 13    
+	                1 Bit    Registers := 226   
++---Muxes : 
+	   2 Input     39 Bit        Muxes := 3     
+	  35 Input     35 Bit        Muxes := 2     
+	   2 Input     35 Bit        Muxes := 26    
+	  27 Input     27 Bit        Muxes := 2     
+	   2 Input     27 Bit        Muxes := 10    
+	   2 Input     20 Bit        Muxes := 4     
+	   2 Input     18 Bit        Muxes := 2     
+	   5 Input     16 Bit        Muxes := 4     
+	  13 Input     13 Bit        Muxes := 2     
+	   2 Input     13 Bit        Muxes := 32    
+	   7 Input     12 Bit        Muxes := 8     
+	   2 Input     12 Bit        Muxes := 24    
+	   6 Input     12 Bit        Muxes := 2     
+	   8 Input     12 Bit        Muxes := 2     
+	  12 Input     12 Bit        Muxes := 2     
+	  11 Input     11 Bit        Muxes := 2     
+	   2 Input     11 Bit        Muxes := 13    
+	   2 Input     10 Bit        Muxes := 56    
+	   4 Input     10 Bit        Muxes := 6     
+	   3 Input     10 Bit        Muxes := 4     
+	   8 Input     10 Bit        Muxes := 4     
+	  24 Input     10 Bit        Muxes := 2     
+	   7 Input     10 Bit        Muxes := 2     
+	   3 Input      9 Bit        Muxes := 4     
+	   2 Input      9 Bit        Muxes := 10    
+	   4 Input      9 Bit        Muxes := 10    
+	   2 Input      8 Bit        Muxes := 10    
+	   4 Input      8 Bit        Muxes := 2     
+	   6 Input      6 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 8     
+	   2 Input      5 Bit        Muxes := 11    
+	  24 Input      5 Bit        Muxes := 2     
+	  32 Input      4 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 5     
+	   4 Input      4 Bit        Muxes := 1     
+	  11 Input      4 Bit        Muxes := 1     
+	  19 Input      4 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 4     
+	   3 Input      3 Bit        Muxes := 1     
+	  11 Input      3 Bit        Muxes := 2     
+	  14 Input      2 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 8     
+	   8 Input      2 Bit        Muxes := 1     
+	  19 Input      2 Bit        Muxes := 2     
+	   3 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 111   
+	  14 Input      1 Bit        Muxes := 18    
+	   9 Input      1 Bit        Muxes := 6     
+	  15 Input      1 Bit        Muxes := 2     
+	   7 Input      1 Bit        Muxes := 2     
+	  24 Input      1 Bit        Muxes := 10    
+	   4 Input      1 Bit        Muxes := 43    
+	  13 Input      1 Bit        Muxes := 1     
+	   5 Input      1 Bit        Muxes := 1     
+	  11 Input      1 Bit        Muxes := 2     
+	   3 Input      1 Bit        Muxes := 3     
+	  19 Input      1 Bit        Muxes := 4     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module v_smpte_sdi_v3_0_8_trs_detect 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 6     
+	   3 Input      1 Bit         XORs := 3     
+	   4 Input      1 Bit         XORs := 1     
++---Registers : 
+	               10 Bit    Registers := 4     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 15    
+Module v_smpte_sdi_v3_0_8_autodetect 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	               12 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 3     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   7 Input     12 Bit        Muxes := 1     
+	   2 Input     12 Bit        Muxes := 2     
+	  32 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	  14 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+	  14 Input      1 Bit        Muxes := 9     
+Module v_smpte_sdi_v3_0_8_fly_horz 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     12 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	               12 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   7 Input     12 Bit        Muxes := 2     
+	   6 Input     12 Bit        Muxes := 1     
+	   8 Input     12 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 4     
+Module v_smpte_sdi_v3_0_8_fly_vert 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 1     
++---Registers : 
+	               10 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input     10 Bit        Muxes := 5     
+	   4 Input     10 Bit        Muxes := 1     
+	   3 Input     10 Bit        Muxes := 2     
+	   3 Input      9 Bit        Muxes := 2     
+	   2 Input      9 Bit        Muxes := 4     
+	   4 Input      9 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 8     
+Module v_smpte_sdi_v3_0_8_fly_fsm 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 3     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	  13 Input     13 Bit        Muxes := 1     
+	   2 Input     13 Bit        Muxes := 16    
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+	   9 Input      1 Bit        Muxes := 3     
+Module v_smpte_sdi_v3_0_8_fly_field 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 2     
+Module v_smpte_sdi_v3_0_8_flywheel 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 7     
++---Registers : 
+	               12 Bit    Registers := 1     
+	               10 Bit    Registers := 3     
+	                3 Bit    Registers := 2     
+	                1 Bit    Registers := 19    
++---Muxes : 
+	   2 Input     10 Bit        Muxes := 4     
+	   4 Input     10 Bit        Muxes := 1     
+	   8 Input     10 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 3     
+Module v_smpte_sdi_v3_0_8_edh_crc16 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 12    
+	   3 Input      1 Bit         XORs := 7     
+	   4 Input      1 Bit         XORs := 2     
+Module v_smpte_sdi_v3_0_8_edh_crc 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 2     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   4 Input     10 Bit        Muxes := 1     
+	   4 Input      9 Bit        Muxes := 3     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+Module v_smpte_sdi_v3_0_8_edh_rx 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      9 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
+	   8 Input      1 Bit         XORs := 1     
++---Registers : 
+	               16 Bit    Registers := 2     
+	                9 Bit    Registers := 1     
+	                5 Bit    Registers := 3     
+	                1 Bit    Registers := 7     
++---Muxes : 
+	  27 Input     27 Bit        Muxes := 1     
+	   2 Input     27 Bit        Muxes := 5     
+	   5 Input     16 Bit        Muxes := 2     
+	   2 Input      5 Bit        Muxes := 3     
+	  15 Input      1 Bit        Muxes := 1     
+Module v_smpte_sdi_v3_0_8_edh_loc 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   7 Input     12 Bit        Muxes := 1     
+	   4 Input      9 Bit        Muxes := 1     
+Module v_smpte_sdi_v3_0_8_anc_rx 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      9 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 1     
++---XORs : 
+	   8 Input      1 Bit         XORs := 1     
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	                9 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	  12 Input     12 Bit        Muxes := 1     
+	   2 Input     12 Bit        Muxes := 10    
+	   2 Input      8 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 2     
+	   7 Input      1 Bit        Muxes := 1     
+Module v_smpte_sdi_v3_0_8_edh_tx 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      9 Bit       Adders := 1     
++---XORs : 
+	   8 Input      1 Bit         XORs := 1     
++---Registers : 
+	                9 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	  24 Input     10 Bit        Muxes := 1     
+	  24 Input      5 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 1     
+	  24 Input      1 Bit        Muxes := 5     
+	   2 Input      1 Bit        Muxes := 1     
+Module v_smpte_sdi_v3_0_8_edh_flags 
+Detailed RTL Component Info : 
++---Registers : 
+	                5 Bit    Registers := 3     
+Module v_smpte_sdi_v3_0_8_edh_errcnt 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     16 Bit       Adders := 1     
+Module v_smpte_sdi_v3_0_8_edh_processor 
+Detailed RTL Component Info : 
++---Registers : 
+	               12 Bit    Registers := 1     
+	               10 Bit    Registers := 2     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 14    
+Module v_smpte_sdi_v3_0_8_triple_sdi_reset 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
+Module v_smpte_sdi_v3_0_8_multi_sdi_decoder 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input     20 Bit         XORs := 1     
+	   3 Input      1 Bit         XORs := 20    
++---Registers : 
+	               20 Bit    Registers := 1     
+	                9 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      9 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module v_smpte_sdi_v3_0_8_multi_sdi_framer 
+Detailed RTL Component Info : 
++---XORs : 
+	   3 Input      1 Bit         XORs := 3     
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	               39 Bit    Registers := 1     
+	               20 Bit    Registers := 4     
+	               10 Bit    Registers := 2     
+	                5 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input     39 Bit        Muxes := 3     
+	   2 Input     20 Bit        Muxes := 1     
+	   2 Input     10 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 36    
+	   4 Input      1 Bit        Muxes := 43    
+	  13 Input      1 Bit        Muxes := 1     
+Module v_smpte_sdi_v3_0_8_triple_sdi_rx_autorate 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	                4 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   6 Input      6 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 7     
+	   8 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+	   5 Input      1 Bit        Muxes := 1     
+Module v_smpte_sdi_v3_0_8_SMPTE425_B_demux2 
+Detailed RTL Component Info : 
++---Registers : 
+	               11 Bit    Registers := 1     
+	               10 Bit    Registers := 6     
+	                7 Bit    Registers := 1     
+	                5 Bit    Registers := 2     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 4     
+Module v_smpte_sdi_v3_0_8_triple_sdi_transport_detect 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      6 Bit       Adders := 1     
++---Registers : 
+	               11 Bit    Registers := 1     
+	               10 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                6 Bit    Registers := 2     
+	                4 Bit    Registers := 2     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 9     
++---Muxes : 
+	   2 Input      6 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 1     
+	  11 Input      4 Bit        Muxes := 1     
+	   3 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+Module v_smpte_sdi_v3_0_8_hdsdi_crc2 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 12    
+	   3 Input      1 Bit         XORs := 9     
++---Registers : 
+	               18 Bit    Registers := 1     
+Module v_smpte_sdi_v3_0_8_hdsdi_rx_crc 
+Detailed RTL Component Info : 
++---Registers : 
+	               18 Bit    Registers := 2     
+	               11 Bit    Registers := 2     
+	                8 Bit    Registers := 1     
+	                7 Bit    Registers := 2     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   2 Input     18 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 3     
+Module v_smpte_sdi_v3_0_8_SMPTE352_vpid_capture 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      9 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                9 Bit    Registers := 1     
+	                8 Bit    Registers := 4     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	  11 Input     11 Bit        Muxes := 1     
+	   2 Input     11 Bit        Muxes := 6     
+	   7 Input     10 Bit        Muxes := 1     
+	  11 Input      3 Bit        Muxes := 1     
+	  11 Input      1 Bit        Muxes := 1     
+Module v_smpte_sdi_v3_0_8_triple_sdi_rx 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
+	   3 Input      1 Bit         XORs := 3     
++---Registers : 
+	               20 Bit    Registers := 1     
+	               10 Bit    Registers := 5     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 14    
++---Muxes : 
+	   2 Input     20 Bit        Muxes := 1     
+	   2 Input     10 Bit        Muxes := 3     
+	   2 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 8     
+	   3 Input      1 Bit        Muxes := 3     
+Module v_smpte_sdi_v3_0_8_triple_sdi_reset__parameterized0 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+Module v_smpte_sdi_v3_0_8_SMPTE352_vpid_insert 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      9 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 1     
++---XORs : 
+	                8 Bit    Wide XORs := 1     
++---Registers : 
+	               10 Bit    Registers := 12    
+	                9 Bit    Registers := 1     
+	                8 Bit    Registers := 5     
+	                4 Bit    Registers := 2     
+	                3 Bit    Registers := 2     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	  35 Input     35 Bit        Muxes := 1     
+	   2 Input     35 Bit        Muxes := 13    
+	   2 Input     10 Bit        Muxes := 1     
+	   8 Input     10 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 2     
+	   4 Input      8 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	  19 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	  19 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+	  19 Input      1 Bit        Muxes := 2     
+Module v_smpte_sdi_v3_0_8_triple_sdi_vpid_insert 
+Detailed RTL Component Info : 
++---Registers : 
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     11 Bit        Muxes := 1     
+	   2 Input     10 Bit        Muxes := 2     
+	   3 Input      2 Bit        Muxes := 1     
+Module v_smpte_sdi_v3_0_8_trsgen 
+Detailed RTL Component Info : 
++---Registers : 
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
+Module v_smpte_sdi_v3_0_8_hdsdi_insert_ln 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     10 Bit        Muxes := 4     
+Module v_smpte_sdi_v3_0_8_hdsdi_insert_crc 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     10 Bit        Muxes := 4     
+Module v_smpte_sdi_v3_0_8_edh_errcnt__parameterized0 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     24 Bit       Adders := 1     
+Module v_smpte_sdi_v3_0_8_edh_processor__parameterized0 
+Detailed RTL Component Info : 
++---Registers : 
+	               12 Bit    Registers := 1     
+	               10 Bit    Registers := 2     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 14    
+Module v_smpte_sdi_v3_0_8_smpte_encoder 
+Detailed RTL Component Info : 
++---XORs : 
+	   3 Input      1 Bit         XORs := 10    
+	   2 Input      1 Bit         XORs := 10    
++---Registers : 
+	               10 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     10 Bit        Muxes := 2     
+Module v_smpte_sdi_v3_0_8_multi_sdi_encoder 
+Detailed RTL Component Info : 
++---Registers : 
+	               10 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      9 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module v_smpte_sdi_v3_0_8_sdi_bitrep_20b 
+Detailed RTL Component Info : 
++---Registers : 
+	               20 Bit    Registers := 1     
+	               10 Bit    Registers := 2     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 1     
+Module v_smpte_sdi_v3_0_8_triple_sdi_tx_output 
+Detailed RTL Component Info : 
++---Registers : 
+	               20 Bit    Registers := 1     
+	               11 Bit    Registers := 2     
+	               10 Bit    Registers := 4     
+	                4 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 7     
++---Muxes : 
+	   2 Input     20 Bit        Muxes := 1     
+	   2 Input     10 Bit        Muxes := 6     
+	   2 Input      1 Bit        Muxes := 2     
+Module v_smpte_sdi_v3_0_8 
+Detailed RTL Component Info : 
++---Registers : 
+	               20 Bit    Registers := 1     
+	               10 Bit    Registers := 9     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     20 Bit        Muxes := 1     
+	   2 Input     10 Bit        Muxes := 4     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 400 (col length:80)
+BRAMs: 530 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5546] ROM "next_state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "next_state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "udwcntr_eq_0" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-6040] Register rom_address_reg driving address of a ROM cannot be packed in BRAM/URAM because of presence of initial value.
+INFO: [Synth 8-5546] ROM "next_state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "next_state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "udwcntr_eq_0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-4471] merging register 'VPIDINS/VPIDINS2/byte3_reg_reg[7:0]' into 'VPIDINS/VPIDINS1/byte3_reg_reg[7:0]' [d:/yzd/tmp/submission-repair-20261104/source-test/rtl/sdi/ip/smpte_sdi/hdl/v_smpte_sdi_v3_0_vl_rfs.v:8033]
+INFO: [Synth 8-4471] merging register 'VPIDINS/VPIDINS2/byte2_reg_reg[7:0]' into 'VPIDINS/VPIDINS1/byte2_reg_reg[7:0]' [d:/yzd/tmp/submission-repair-20261104/source-test/rtl/sdi/ip/smpte_sdi/hdl/v_smpte_sdi_v3_0_vl_rfs.v:8032]
+INFO: [Synth 8-4471] merging register 'VPIDINS/VPIDINS2/byte1_reg_reg[7:0]' into 'VPIDINS/VPIDINS1/byte1_reg_reg[7:0]' [d:/yzd/tmp/submission-repair-20261104/source-test/rtl/sdi/ip/smpte_sdi/hdl/v_smpte_sdi_v3_0_vl_rfs.v:8031]
+WARNING: [Synth 8-3331] design v_smpte_sdi_v3_0_8_edh_tx has unconnected port edh_missing
+INFO: [Synth 8-3886] merging instance 'inst/RSTMOD1/rst_out_reg[1]' (FDS) to 'inst/RSTMOD1/rst_out_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/SDIRXTOP/FRM/barrel_in_reg[35]' (FDRE) to 'inst/SDIRXTOP/FRM/dly_reg2_reg[15]'
+INFO: [Synth 8-3886] merging instance 'inst/SDIRXTOP/FRM/barrel_in_reg[23]' (FDRE) to 'inst/SDIRXTOP/FRM/dly_reg2_reg[3]'
+INFO: [Synth 8-3886] merging instance 'inst/SDIRXTOP/FRM/barrel_in_reg[27]' (FDRE) to 'inst/SDIRXTOP/FRM/dly_reg2_reg[7]'
+INFO: [Synth 8-3886] merging instance 'inst/SDIRXTOP/FRM/barrel_in_reg[31]' (FDRE) to 'inst/SDIRXTOP/FRM/dly_reg2_reg[11]'
+INFO: [Synth 8-3886] merging instance 'inst/SDIRXTOP/FRM/barrel_in_reg[36]' (FDRE) to 'inst/SDIRXTOP/FRM/dly_reg2_reg[16]'
+INFO: [Synth 8-3886] merging instance 'inst/SDIRXTOP/FRM/barrel_in_reg[20]' (FDRE) to 'inst/SDIRXTOP/FRM/dly_reg2_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/SDIRXTOP/FRM/barrel_in_reg[24]' (FDRE) to 'inst/SDIRXTOP/FRM/dly_reg2_reg[4]'
+INFO: [Synth 8-3886] merging instance 'inst/SDIRXTOP/FRM/barrel_in_reg[28]' (FDRE) to 'inst/SDIRXTOP/FRM/dly_reg2_reg[8]'
+INFO: [Synth 8-3886] merging instance 'inst/SDIRXTOP/FRM/barrel_in_reg[32]' (FDRE) to 'inst/SDIRXTOP/FRM/dly_reg2_reg[12]'
+INFO: [Synth 8-3886] merging instance 'inst/SDIRXTOP/FRM/barrel_in_reg[37]' (FDRE) to 'inst/SDIRXTOP/FRM/dly_reg2_reg[17]'
+INFO: [Synth 8-3886] merging instance 'inst/SDIRXTOP/FRM/barrel_in_reg[21]' (FDRE) to 'inst/SDIRXTOP/FRM/dly_reg2_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst/SDIRXTOP/FRM/barrel_in_reg[25]' (FDRE) to 'inst/SDIRXTOP/FRM/dly_reg2_reg[5]'
+INFO: [Synth 8-3886] merging instance 'inst/SDIRXTOP/FRM/barrel_in_reg[29]' (FDRE) to 'inst/SDIRXTOP/FRM/dly_reg2_reg[9]'
+INFO: [Synth 8-3886] merging instance 'inst/SDIRXTOP/FRM/barrel_in_reg[33]' (FDRE) to 'inst/SDIRXTOP/FRM/dly_reg2_reg[13]'
+INFO: [Synth 8-3886] merging instance 'inst/SDIRXTOP/FRM/barrel_in_reg[38]' (FDRE) to 'inst/SDIRXTOP/FRM/dly_reg2_reg[18]'
+INFO: [Synth 8-3886] merging instance 'inst/SDIRXTOP/FRM/barrel_in_reg[22]' (FDRE) to 'inst/SDIRXTOP/FRM/dly_reg2_reg[2]'
+INFO: [Synth 8-3886] merging instance 'inst/SDIRXTOP/FRM/barrel_in_reg[26]' (FDRE) to 'inst/SDIRXTOP/FRM/dly_reg2_reg[6]'
+INFO: [Synth 8-3886] merging instance 'inst/SDIRXTOP/FRM/barrel_in_reg[30]' (FDRE) to 'inst/SDIRXTOP/FRM/dly_reg2_reg[10]'
+INFO: [Synth 8-3886] merging instance 'inst/SDIRXTOP/FRM/barrel_in_reg[34]' (FDRE) to 'inst/SDIRXTOP/FRM/dly_reg2_reg[14]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\INCLUDE_EDH.EDH /\EDH_FLAGS/anc_flags_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\INCLUDE_EDH.EDH /\EDH_FLAGS/ff_flags_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\INCLUDE_EDH.EDH /\EDH_FLAGS/ap_flags_reg[2] )
+INFO: [Synth 8-3886] merging instance 'inst/TXOUT/EDH/DEC/FLY/fsm/FSM_onehot_current_state_reg[6]' (FDRE) to 'inst/TXOUT/EDH/DEC/FLY/fsm/FSM_onehot_current_state_reg[9]'
+INFO: [Synth 8-3886] merging instance 'inst/TXOUT/EDH/DEC/FLY/fsm/FSM_onehot_current_state_reg[7]' (FDRE) to 'inst/TXOUT/EDH/DEC/FLY/fsm/FSM_onehot_current_state_reg[9]'
+INFO: [Synth 8-3886] merging instance 'inst/TXOUT/EDH/DEC/FLY/fsm/FSM_onehot_current_state_reg[8]' (FDRE) to 'inst/TXOUT/EDH/DEC/FLY/fsm/FSM_onehot_current_state_reg[9]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\TXOUT/EDH /\DEC/FLY/fsm/FSM_onehot_current_state_reg[9] )
+INFO: [Synth 8-3332] Sequential element (DEC/FLY/fsm/FSM_onehot_current_state_reg[11]) is unused and will be removed from module v_smpte_sdi_v3_0_8_edh_processor__parameterized0.
+INFO: [Synth 8-3332] Sequential element (DEC/FLY/fsm/FSM_onehot_current_state_reg[10]) is unused and will be removed from module v_smpte_sdi_v3_0_8_edh_processor__parameterized0.
+INFO: [Synth 8-3332] Sequential element (DEC/FLY/fsm/FSM_onehot_current_state_reg[9]) is unused and will be removed from module v_smpte_sdi_v3_0_8_edh_processor__parameterized0.
+INFO: [Synth 8-3886] merging instance 'inst/TXOUT/EDH/DEC/TD/trs_delay_reg[0]' (FDRE) to 'inst/TXOUT/EDH/DEC/FLY/rx_trs_reg'
+INFO: [Synth 8-3886] merging instance 'inst/TXOUT/EDH/DEC/TD/trs_delay_reg[1]' (FDRE) to 'inst/TXOUT/EDH/DEC/FLY/rx_trs_delay_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/TXOUT/EDH/DEC/TD/out_reg_xyz_reg' (FDRE) to 'inst/TXOUT/EDH/DEC/FLY/rx_trs_delay_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst/TXOUT/EDH/DEC/FLY/rx_xyz_reg' (FDRE) to 'inst/TXOUT/EDH/DEC/FLY/rx_trs_delay_reg[2]'
+INFO: [Synth 8-3886] merging instance 'inst/INCLUDE_EDH.EDH/DEC/TD/trs_delay_reg[0]' (FDRE) to 'inst/INCLUDE_EDH.EDH/DEC/FLY/rx_trs_reg'
+INFO: [Synth 8-3886] merging instance 'inst/INCLUDE_EDH.EDH/DEC/TD/trs_delay_reg[1]' (FDRE) to 'inst/INCLUDE_EDH.EDH/DEC/FLY/rx_trs_delay_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/INCLUDE_EDH.EDH/DEC/TD/out_reg_xyz_reg' (FDRE) to 'inst/INCLUDE_EDH.EDH/DEC/FLY/rx_trs_delay_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst/INCLUDE_EDH.EDH/DEC/FLY/rx_trs_delay_reg[2]' (FDRE) to 'inst/INCLUDE_EDH.EDH/DEC/FLY/rx_xyz_reg'
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 886.965 ; gain = 602.047
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+ROM:
++-----------------------------------------------+------------+---------------+----------------+
+|Module Name                                    | RTL Object | Depth x Width | Implemented As | 
++-----------------------------------------------+------------+---------------+----------------+
+|v_smpte_sdi_v3_0_8_triple_sdi_transport_detect | rom_out    | 256x8         | LUT            | 
+|v_smpte_sdi_v3_0_8_triple_sdi_transport_detect | rom_out    | 256x8         | LUT            | 
++-----------------------------------------------+------------+---------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 886.965 ; gain = 602.047
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 969.113 ; gain = 684.195
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-139] cannot merge instances inst/\INCLUDE_EDH.EDH/locked_reg  and inst/\INCLUDE_EDH.EDH/EDH_CRC/prev_locked_reg  because of non-equivalent assertions
+INFO: [Synth 8-139] cannot merge instances inst/\INCLUDE_EDH.EDH/EDH_CRC/prev_locked_reg  and inst/\INCLUDE_EDH.EDH/locked_reg  because of non-equivalent assertions
+INFO: [Synth 8-139] cannot merge instances inst/\INCLUDE_EDH.EDH/locked_reg  and inst/\INCLUDE_EDH.EDH/EDH_CRC/prev_locked_reg  because of non-equivalent assertions
+INFO: [Synth 8-139] cannot merge instances inst/\INCLUDE_EDH.EDH/EDH_CRC/prev_locked_reg  and inst/\INCLUDE_EDH.EDH/locked_reg  because of non-equivalent assertions
+INFO: [Synth 8-139] cannot merge instances inst/\INCLUDE_EDH.EDH/EDH_CRC/prev_locked_reg  and inst/\INCLUDE_EDH.EDH/locked_reg  because of non-equivalent assertions
+INFO: [Synth 8-139] cannot merge instances inst/\INCLUDE_EDH.EDH/locked_reg  and inst/\INCLUDE_EDH.EDH/EDH_CRC/prev_locked_reg  because of non-equivalent assertions
+INFO: [Synth 8-139] cannot merge instances inst/\INCLUDE_EDH.EDH/EDH_CRC/prev_locked_reg  and inst/\INCLUDE_EDH.EDH/locked_reg  because of non-equivalent assertions
+INFO: [Synth 8-139] cannot merge instances inst/\INCLUDE_EDH.EDH/locked_reg  and inst/\INCLUDE_EDH.EDH/EDH_CRC/prev_locked_reg  because of non-equivalent assertions
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:24 ; elapsed = 00:00:27 . Memory (MB): peak = 970.168 ; gain = 685.250
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 970.168 ; gain = 685.250
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 970.168 ; gain = 685.250
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 970.168 ; gain = 685.250
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 970.168 ; gain = 685.250
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 970.168 ; gain = 685.250
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 970.168 ; gain = 685.250
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++-------------------+---------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name        | RTL Name                                                | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++-------------------+---------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|v_smpte_sdi_v3_0_8 | SDIRXTOP/BDMUX/ones_reg[3]                              | 4      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|v_smpte_sdi_v3_0_8 | SDIRXTOP/TD/fa_dly_reg[7]                               | 8      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|v_smpte_sdi_v3_0_8 | VPIDINS/VPIDINS1/vid_dly_reg[9]                         | 4      | 2     | NO           | NO                 | YES               | 2      | 0       | 
+|v_smpte_sdi_v3_0_8 | VPIDINS/VPIDINS1/eav_out_reg                            | 5      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|v_smpte_sdi_v3_0_8 | VPIDINS/VPIDINS1/sav_out_reg                            | 5      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|v_smpte_sdi_v3_0_8 | VPIDINS/VPIDINS2/vid_dly_reg[9]                         | 4      | 2     | NO           | NO                 | YES               | 2      | 0       | 
+|v_smpte_sdi_v3_0_8 | VPIDINS/VPIDINS1/c_out_reg[9]                           | 6      | 10    | NO           | NO                 | YES               | 10     | 0       | 
+|v_smpte_sdi_v3_0_8 | VPIDINS/VPIDINS2/c_out_reg[9]                           | 6      | 10    | NO           | YES                | YES               | 10     | 0       | 
+|v_smpte_sdi_v3_0_8 | INCLUDE_EDH.EDH/DEC/FLY/rx_vid_reg[0]                   | 5      | 1     | YES          | NO                 | YES               | 1      | 0       | 
+|v_smpte_sdi_v3_0_8 | INCLUDE_EDH.EDH/EDH_RX/FSM_onehot_current_state_reg[23] | 8      | 1     | YES          | NO                 | YES               | 1      | 0       | 
+|v_smpte_sdi_v3_0_8 | TXOUT/EDH/DEC/FLY/rx_vid_reg[0]                         | 5      | 1     | YES          | NO                 | YES               | 1      | 0       | 
+|v_smpte_sdi_v3_0_8 | TXOUT/EDH/EDH_RX/FSM_onehot_current_state_reg[23]       | 11     | 1     | YES          | NO                 | YES               | 1      | 0       | 
++-------------------+---------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+
+Dynamic Shift Register Report:
++------------+------------------+--------+------------+--------+---------+--------+--------+--------+
+|Module Name | RTL Name         | Length | Data Width | SRL16E | SRLC32E | Mux F7 | Mux F8 | Mux F9 | 
++------------+------------------+--------+------------+--------+---------+--------+--------+--------+
+|dsrl        | hanc_dly_srl_reg | 16     | 1          | 1      | 0       | 0      | 0      | 0      | 
++------------+------------------+--------+------------+--------+---------+--------+--------+--------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |CARRY4 |   107|
+|2     |LUT1   |    23|
+|3     |LUT2   |   226|
+|4     |LUT3   |   376|
+|5     |LUT4   |   300|
+|6     |LUT5   |   455|
+|7     |LUT6   |   978|
+|8     |MUXF7  |    10|
+|9     |MUXF8  |     3|
+|10    |SRL16E |    34|
+|11    |FDRE   |  2277|
+|12    |FDSE   |    55|
++------+-------+------+
+
+Report Instance Areas: 
++------+----------------------+----------------------------------------------------+------+
+|      |Instance              |Module                                              |Cells |
++------+----------------------+----------------------------------------------------+------+
+|1     |top                   |                                                    |  4844|
+|2     |  inst                |v_smpte_sdi_v3_0_8                                  |  4844|
+|3     |    \INCLUDE_EDH.EDH  |v_smpte_sdi_v3_0_8_edh_processor                    |   902|
+|4     |      ANC_RC          |v_smpte_sdi_v3_0_8_anc_rx_11                        |    73|
+|5     |      DEC             |v_smpte_sdi_v3_0_8_video_decode_12                  |   537|
+|6     |        AD            |v_smpte_sdi_v3_0_8_autodetect_18                    |   119|
+|7     |        FLY           |v_smpte_sdi_v3_0_8_flywheel_19                      |   346|
+|8     |          fld         |v_smpte_sdi_v3_0_8_fly_field_21                     |    11|
+|9     |          fsm         |v_smpte_sdi_v3_0_8_fly_fsm_22                       |    80|
+|10    |          horz        |v_smpte_sdi_v3_0_8_fly_horz_23                      |    66|
+|11    |          vert        |v_smpte_sdi_v3_0_8_fly_vert_24                      |    67|
+|12    |        TD            |v_smpte_sdi_v3_0_8_trs_detect_20                    |    72|
+|13    |      EDH_CRC         |v_smpte_sdi_v3_0_8_edh_crc_13                       |    84|
+|14    |      EDH_ERRCNT      |v_smpte_sdi_v3_0_8_edh_errcnt                       |    30|
+|15    |      EDH_FLAGS       |v_smpte_sdi_v3_0_8_edh_flags_14                     |    22|
+|16    |      EDH_LOC         |v_smpte_sdi_v3_0_8_edh_loc_15                       |     4|
+|17    |      EDH_RX          |v_smpte_sdi_v3_0_8_edh_rx_16                        |   127|
+|18    |      EDH_TX          |v_smpte_sdi_v3_0_8_edh_tx_17                        |    23|
+|19    |    RSTMOD0           |v_smpte_sdi_v3_0_8_triple_sdi_reset                 |    12|
+|20    |    RSTMOD1           |v_smpte_sdi_v3_0_8_triple_sdi_reset__parameterized0 |    21|
+|21    |    SDIRXTOP          |v_smpte_sdi_v3_0_8_triple_sdi_rx                    |  1643|
+|22    |      AUTORATE        |v_smpte_sdi_v3_0_8_triple_sdi_rx_autorate           |   119|
+|23    |      BDMUX           |v_smpte_sdi_v3_0_8_SMPTE425_B_demux2                |   111|
+|24    |      DEC             |v_smpte_sdi_v3_0_8_multi_sdi_decoder                |    84|
+|25    |      FRM             |v_smpte_sdi_v3_0_8_multi_sdi_framer                 |   485|
+|26    |      PLOD1           |v_smpte_sdi_v3_0_8_SMPTE352_vpid_capture            |   138|
+|27    |      PLOD2           |v_smpte_sdi_v3_0_8_SMPTE352_vpid_capture_5          |   141|
+|28    |      RXCRC1          |v_smpte_sdi_v3_0_8_hdsdi_rx_crc                     |   171|
+|29    |        crc_C         |v_smpte_sdi_v3_0_8_hdsdi_crc2_9                     |    46|
+|30    |        crc_Y         |v_smpte_sdi_v3_0_8_hdsdi_crc2_10                    |    46|
+|31    |      RXCRC2          |v_smpte_sdi_v3_0_8_hdsdi_rx_crc_6                   |   171|
+|32    |        crc_C         |v_smpte_sdi_v3_0_8_hdsdi_crc2_7                     |    46|
+|33    |        crc_Y         |v_smpte_sdi_v3_0_8_hdsdi_crc2_8                     |    46|
+|34    |      TD              |v_smpte_sdi_v3_0_8_triple_sdi_transport_detect      |   127|
+|35    |    TRSG              |v_smpte_sdi_v3_0_8_trsgen                           |    13|
+|36    |    TXOUT             |v_smpte_sdi_v3_0_8_triple_sdi_tx_output             |  1490|
+|37    |      BITREP          |v_smpte_sdi_v3_0_8_sdi_bitrep_20b                   |   121|
+|38    |      CRC1A           |v_smpte_sdi_v3_0_8_hdsdi_crc2                       |    55|
+|39    |      CRC1B           |v_smpte_sdi_v3_0_8_hdsdi_crc2_1                     |    62|
+|40    |      CRC2A           |v_smpte_sdi_v3_0_8_hdsdi_crc2_2                     |    52|
+|41    |      CRC2B           |v_smpte_sdi_v3_0_8_hdsdi_crc2_3                     |    52|
+|42    |      EDH             |v_smpte_sdi_v3_0_8_edh_processor__parameterized0    |   897|
+|43    |        ANC_RC        |v_smpte_sdi_v3_0_8_anc_rx                           |    68|
+|44    |        DEC           |v_smpte_sdi_v3_0_8_video_decode                     |   506|
+|45    |          AD          |v_smpte_sdi_v3_0_8_autodetect                       |   122|
+|46    |          FLY         |v_smpte_sdi_v3_0_8_flywheel                         |   311|
+|47    |            fld       |v_smpte_sdi_v3_0_8_fly_field                        |     9|
+|48    |            fsm       |v_smpte_sdi_v3_0_8_fly_fsm                          |    60|
+|49    |            horz      |v_smpte_sdi_v3_0_8_fly_horz                         |    61|
+|50    |            vert      |v_smpte_sdi_v3_0_8_fly_vert                         |    56|
+|51    |          TD          |v_smpte_sdi_v3_0_8_trs_detect                       |    73|
+|52    |        EDH_CRC       |v_smpte_sdi_v3_0_8_edh_crc                          |    86|
+|53    |        EDH_FLAGS     |v_smpte_sdi_v3_0_8_edh_flags                        |     4|
+|54    |        EDH_LOC       |v_smpte_sdi_v3_0_8_edh_loc                          |     4|
+|55    |        EDH_RX        |v_smpte_sdi_v3_0_8_edh_rx                           |   102|
+|56    |        EDH_TX        |v_smpte_sdi_v3_0_8_edh_tx                           |    97|
+|57    |      SCRAM           |v_smpte_sdi_v3_0_8_multi_sdi_encoder                |   133|
+|58    |        C_scram       |v_smpte_sdi_v3_0_8_smpte_encoder                    |    34|
+|59    |        Y_scram       |v_smpte_sdi_v3_0_8_smpte_encoder_4                  |    55|
+|60    |    VPIDINS           |v_smpte_sdi_v3_0_8_triple_sdi_vpid_insert           |   649|
+|61    |      VPIDINS1        |v_smpte_sdi_v3_0_8_SMPTE352_vpid_insert             |   314|
+|62    |      VPIDINS2        |v_smpte_sdi_v3_0_8_SMPTE352_vpid_insert_0           |   326|
++------+----------------------+----------------------------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 970.168 ; gain = 685.250
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 3 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:18 ; elapsed = 00:00:22 . Memory (MB): peak = 970.168 ; gain = 278.301
+Synthesis Optimization Complete : Time (s): cpu = 00:00:25 ; elapsed = 00:00:28 . Memory (MB): peak = 970.168 ; gain = 685.250
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 120 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 970.168 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+307 Infos, 31 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:26 ; elapsed = 00:00:30 . Memory (MB): peak = 970.168 ; gain = 693.270
+INFO: [Coretcl 2-1174] Renamed 61 cell refs.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 970.168 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'D:/yzd/tmp/submission-repair-20261104/new-project-3/source_check.runs/smpte_sdi_synth_1/smpte_sdi.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file smpte_sdi_utilization_synth.rpt -pb smpte_sdi_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Nov  4 12:44:30 2026...

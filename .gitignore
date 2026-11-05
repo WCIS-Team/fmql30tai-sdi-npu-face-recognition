@@ -1,0 +1,34 @@
+# ============================================================================
+# 厂商机密 / 授权内容 —— 仅保留在本地磁盘，不纳入本公开仓库
+# 判据：FMSH(上海复旦微)标注 Confidential 的 RTL、Xilinx 专有 IP、iCraft SDK 二进制、
+#       Vivado 实现检查点、厂商预编译运行时。原件仍在本地目录中。
+# ============================================================================
+
+# --- FMSH Confidential RTL ---
+源码/fpga_source/rtl/sdi/
+源码/fpga_source/rtl/display/
+源码/fpga_source/rtl/gp/
+源码/fpga_source/rtl/adder_op/
+源码/fpga_source/rtl/utils/
+源码/fpga_source/rtl/edif/
+源码/fpga_source/rtl/AI_Mate_stub.v
+源码/fpga_source/rtl/ai7030_edif_top.v
+源码/fpga_source/rtl/ps_ai_peripheral.sv
+源码/fpga_source/rtl/ps_ai_wrapper.sv
+
+# --- AMD/Xilinx 专有 IP ---
+源码/fpga_source/rtl/ip/
+源码/fpga_source/PS_AI IP/
+
+# --- Vivado 实现检查点 ---
+*.dcp
+
+# --- iCraft 3.39.0 板端 SDK 二进制 ---
+*.deb
+**/sdk/
+
+# --- 厂商预编译运行时 / 引导载荷 ---
+**/reference_release/
+
+# --- iCraft SDK C++ 头文件 ---
+**/ps_app/vendor/

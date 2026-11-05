@@ -1,0 +1,15 @@
+test_ambiguous_boot_media_rejected (__main__.InstallerTests) ... ok
+test_boot_partial_commit_rolls_back (__main__.InstallerTests) ... ok
+test_boot_staging_hash_failure_preserves_existing (__main__.InstallerTests) ... ok
+test_missing_container_fails_without_remote_connection (__main__.InstallerTests) ... ok
+test_native_arm_elf_accepted (__main__.InstallerTests) ... ok
+test_never_select_sd_rootfs_as_personnel_storage (__main__.InstallerTests) ... ok
+test_payload_path_escape_rejected (__main__.InstallerTests) ... ok
+test_preserve_gallery_and_recordings (__main__.InstallerTests) ... ok
+test_tampered_payload_rejected (__main__.InstallerTests) ... ok
+test_x86_elf_is_not_accepted_as_arm (__main__.InstallerTests) ... ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 0.017s
+
+OK

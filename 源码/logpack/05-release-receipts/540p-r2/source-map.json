@@ -1,0 +1,251 @@
+{
+  "reference_date": "2026-10-31",
+  "files": [
+    {
+      "file": "camera-owner-build.json",
+      "sha256": "dae846be4c2523da68ca6b19f3e2e9e687eeffc33fe161052575142c9c525187",
+      "source": "release/540p-r2/owner-build.json",
+      "kind": "build_receipt"
+    },
+    {
+      "file": "camera_interlock.py",
+      "sha256": "fa00528979b49b7aba0ba082f84e7cf2b23121bbbdab622fe0bd948087929b6a",
+      "source": "npu_photo/camera_interlock.py",
+      "kind": "direct_source"
+    },
+    {
+      "file": "camera_owner_runtime.py",
+      "sha256": "c6ad4f990c467fa5475d918626c1e0271ad1a1ef591739e903bbb704f3e6d91a",
+      "source": "npu_photo/camera_owner_runtime.py",
+      "kind": "direct_source"
+    },
+    {
+      "file": "camera_panel.html",
+      "sha256": "ce3122967daf42666abd88c96627683dfa197038b8c24e723f686f694bd6d72a",
+      "source": null,
+      "kind": "preserved_artifact",
+      "note": "历史应用副本，不是 --site 指向的正式首页/模板；只保留，不自动覆盖当前页面"
+    },
+    {
+      "file": "camera_panel.js",
+      "sha256": "dcd68d2c9bc37f93b9e17fc567a2d2dd275d4ffb2481b2c81bbeebbbea7551f7",
+      "source": "npu_photo/camera_panel.js",
+      "kind": "direct_source"
+    },
+    {
+      "file": "camera_requests.py",
+      "sha256": "82ecb6a22ef1ec2a5e3048b02d5581c63828fa892b128a66ece196bd30bec406",
+      "source": "npu_photo/camera_requests.py",
+      "kind": "direct_source"
+    },
+    {
+      "file": "external_h264.py",
+      "sha256": "55d6e1b77cecba920085ffa0d35f6844921a835f0990a66a470c8bdcdb4ddaa1",
+      "source": "lan_stream/external_h264.py",
+      "kind": "direct_source"
+    },
+    {
+      "file": "frame_stream_protocol.py",
+      "sha256": "cf9c2a026db39dd60059fd2204388c2f8ae3a6b58322b69ed5d8e14dc36bf142",
+      "source": "npu_photo/frame_stream_protocol.py",
+      "kind": "direct_source"
+    },
+    {
+      "file": "gallery.py",
+      "sha256": "7f1213ee54300a58c90841541b1f2c0c6a7b7f77760ff3ca46a5a7eeb159f66a",
+      "source": "npu_photo/gallery.py",
+      "kind": "direct_source"
+    },
+    {
+      "file": "h264_fragments.py",
+      "sha256": "428d0fe4c5951ed6b95da4d210f702a423b5b5b2a68d5c3ea58a596421378e45",
+      "source": "lan_stream/h264_fragments.py",
+      "kind": "direct_source"
+    },
+    {
+      "file": "h264_media.py",
+      "sha256": "db536ea76692a70797edea732cbf5652a04af864cc99989566f27ea1cff72693",
+      "source": "lan_stream/h264_media.py",
+      "kind": "direct_source"
+    },
+    {
+      "file": "h264_packager.py",
+      "sha256": "46450c376fb262431708daca0689834615d16599e67427d29c860aab5d5f8687",
+      "source": "lan_stream/h264_packager.py",
+      "kind": "direct_source"
+    },
+    {
+      "file": "h264_player.js",
+      "sha256": "65924f9fbd6b716953dc12462632e8c77e79c2a6052cdf029539db55c63150c7",
+      "source": "lan_stream/h264_player.js",
+      "kind": "direct_source"
+    },
+    {
+      "file": "index.html",
+      "sha256": "8c90d8778c316c9efed3c81c712592129548a43132891fa460b862cf3a257169",
+      "source": null,
+      "kind": "preserved_artifact",
+      "note": "历史应用副本，不是 --site 指向的正式首页/模板；只保留，不自动覆盖当前页面"
+    },
+    {
+      "file": "migrate_gallery.py",
+      "sha256": "a4ee9a2590937dc03bbb1a9441effeb350a3080bd0cedd91111c920086cc4a77",
+      "source": "npu_photo/migrate_gallery.py",
+      "kind": "direct_source"
+    },
+    {
+      "file": "model_backend/face_pad.py",
+      "sha256": "b35f601f19bbeb40210a0d133b5dc36a9629b9564715eb53d931eafc4a123628",
+      "source": "model_backend/face_pad.py",
+      "kind": "direct_source"
+    },
+    {
+      "file": "model_backend_runtime.py",
+      "sha256": "95454dfe890462a947cf36e00b8b09f3e66311c99199fdfe94d05fe91f610d91",
+      "source": "npu_photo/model_backend_runtime.py",
+      "kind": "direct_source"
+    },
+    {
+      "file": "native_forward.py",
+      "sha256": "1576c070595a2b8aaeff3779e2b2c7490064e026db95bf8994cd89c290216c5a",
+      "source": "npu_photo/native_forward.py",
+      "kind": "direct_source"
+    },
+    {
+      "file": "owner_pad.py",
+      "sha256": "748fc2b6d38f8b9011705032778e7a1bc2c792bc8822a90367fbd882822405d7",
+      "source": "npu_photo/owner_pad.py",
+      "kind": "direct_source"
+    },
+    {
+      "file": "persistent_gallery.py",
+      "sha256": "f0532065c87292027b2568f708eb97760f30753392c3a2fa0286ea649a59eee6",
+      "source": "npu_photo/persistent_gallery.py",
+      "kind": "direct_source"
+    },
+    {
+      "file": "pl_preprocess.py",
+      "sha256": "c59102c22f716be4b74da48caa410f01e28a46ac6d7012d158d86fc09f31fb9b",
+      "source": "npu_photo/pl_preprocess.py",
+      "kind": "direct_source"
+    },
+    {
+      "file": "receive_video_stream.py",
+      "sha256": "c69da62197d1a6603654eb40790789a9e64f5c6ff8aba853fefe58a6ae56f877",
+      "source": "npu_photo/receive_video_stream.py",
+      "kind": "direct_source"
+    },
+    {
+      "file": "recognize_frame.py",
+      "sha256": "8a7327dffe5c4680cec4711867bf42318c7c907e8ad3b4230690ab94faf8e0f7",
+      "source": "npu_photo/recognize_frame.py",
+      "kind": "direct_source"
+    },
+    {
+      "file": "recognize_photo.py",
+      "sha256": "a0fe870971b8dfb18adcd5b25e680e7c6c2e7f657dc222bddc8dd0d67aa93515",
+      "source": "npu_photo/recognize_photo.py",
+      "kind": "direct_source"
+    },
+    {
+      "file": "recording_embed.js",
+      "sha256": "9a9afafb4b4a74787657cbf3fe4c79230b6793553ffddfbadd7c02284a5bd22e",
+      "source": "npu_photo/recording_embed.js",
+      "kind": "direct_source"
+    },
+    {
+      "file": "recording_library.py",
+      "sha256": "4d2003b4225d3452cdba053fa4716bca4b17c96b5d342feb1f2272091afd7d9d",
+      "source": "npu_photo/recording_library.py",
+      "kind": "direct_source"
+    },
+    {
+      "file": "recording_panel.html",
+      "sha256": "8996a3a45266c2fa8c5e9c850ded80a36cce5755cce609c532bc218a8111c08e",
+      "source": "npu_photo/recording_panel.html",
+      "kind": "direct_source"
+    },
+    {
+      "file": "recording_panel.js",
+      "sha256": "adb3c71c5a62bc0f9441bc4f7d54a9fd17b1e37c22335c7b1044ad0e97df8d78",
+      "source": "npu_photo/recording_panel.js",
+      "kind": "direct_source"
+    },
+    {
+      "file": "recording_service.py",
+      "sha256": "20968642ee67957790cfe011ea95f00141178837736db1a762a0ea2e72f25195",
+      "source": "npu_photo/recording_service.py",
+      "kind": "direct_source"
+    },
+    {
+      "file": "run_frame_replay.py",
+      "sha256": "5146c12c051bdcf9d857928caeb9e42f8237a3f0ad2bc30f26d61183fe69d070",
+      "source": "npu_photo/run_frame_replay.py",
+      "kind": "direct_source"
+    },
+    {
+      "file": "run_photos.py",
+      "sha256": "5ca0170583af1f250a1cd84bde23c48b9f53e221b72ee170e1e6158ee0e47739",
+      "source": "npu_photo/run_photos.py",
+      "kind": "direct_source"
+    },
+    {
+      "file": "serve_photos.py",
+      "sha256": "7e0b4d7e5fca909275c452901cbff056f7bbe52e23c38f36d12e39da5b60efed",
+      "source": "npu_photo/serve_photos.py",
+      "kind": "direct_source"
+    },
+    {
+      "file": "site/camera_panel.js",
+      "sha256": "dcd68d2c9bc37f93b9e17fc567a2d2dd275d4ffb2481b2c81bbeebbbea7551f7",
+      "source": "npu_photo/camera_panel.js",
+      "kind": "direct_source"
+    },
+    {
+      "file": "site/index.html",
+      "sha256": "6c04bfed7cf62923d11f26f9869097d0eb01b1f4a6ea0858a89bf85341cce178",
+      "source": "release/540p-r2/site-template.html + npu_photo/camera_panel.html",
+      "kind": "assembled_site",
+      "version": "20261027-overlay-1"
+    },
+    {
+      "file": "site/recording_embed.js",
+      "sha256": "9a9afafb4b4a74787657cbf3fe4c79230b6793553ffddfbadd7c02284a5bd22e",
+      "source": "npu_photo/recording_embed.js",
+      "kind": "direct_source"
+    },
+    {
+      "file": "vpu_live_server.py",
+      "sha256": "32b30ef636d561bb1514ceb04b85d7cfc7b676267d1ff373f90e2e73aae22196",
+      "source": "lan_stream/vpu_live_server.py",
+      "kind": "direct_source"
+    },
+    {
+      "file": "wcis_camera_owner",
+      "sha256": "933c128d5bfccd22782aa775fa0c23c41a6f33d8df29c0713f9e6d27e4ae9eb1",
+      "source": "ps_app/src/wcis_camera_owner.cpp",
+      "kind": "native_binary",
+      "current_source_sha256": "2a14e59f07d39efe513424a8e958e6820ad783f707430e39f7d488f45b5cae14",
+      "source_identity_proven": true
+    },
+    {
+      "file": "wcis_face_cached",
+      "sha256": "9ca65fdcb4a92092f9a30d1cbcc5a55d5cc6839027e4a4e0b744f6aa8907c004",
+      "source": "npu_photo/src/cached_npu_runner.cpp",
+      "kind": "native_binary",
+      "current_source_sha256": "55d3f8a92d9d4b6fc549202a1697244c7c9070d953a4c4a9be2fe920e758a9ce",
+      "source_identity_proven": false
+    },
+    {
+      "file": "wcis_face_pl_retained",
+      "sha256": "3e763183025390308f6f95236aa1c50c8c4ab6116ee8c6f08abfaab99710ebbe",
+      "source": "npu_photo/src/retained_pl_runner.cpp",
+      "kind": "native_binary",
+      "current_source_sha256": "6b1e7b6ed795c6f71fc0095e01ede28d06abe2ade2ac5bfb67ce2220e23a3a0d",
+      "source_identity_proven": false
+    }
+  ],
+  "owner_archive": "D:\\yzd\\tmp\\preview-maintenance-20261030\\integration-source.tar.gz",
+  "owner_source_sha256": "2a14e59f07d39efe513424a8e958e6820ad783f707430e39f7d488f45b5cae14",
+  "owner_archive_sha256": "b525ff319c3c6f79a4b272d989aced80dec009144fd73343f1888a935ddef325"
+}

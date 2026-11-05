@@ -1,0 +1,7 @@
+{
+  "source": "D:\\yzd\\tmp\\pl-preview-resume-20261027\\audit_source_status_routed.tcl",
+  "source_sha256": "fafc59c803fc72c032302ea17b5124f2ceda2d2ff4c50c58072a6934d97232e8",
+  "derived": "D:\\yzd\\tmp\\pl-preview-resume-20261027\\audit_source_status_routed_v2.tcl",
+  "derived_sha256": "22f6c738e21a1e3ef55d3b1dd4862d43cb1da508f97bbb73402c9d2b525a0408",
+  "reason": "Exact pinned MAC reset source stage is not a destination synchronizer. One named shared stage may retain its original source-stage annotation; all FDPE INIT/CE/D/clock/PRE topology, downstream ASYNC_REG, three distinct reset stages and 20 min/max path checks remain mandatory. No checkpoint, timing exception, constraint or physical logic change."
+}

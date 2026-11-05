@@ -1,0 +1,18 @@
+{
+  "reference_date": "2026-10-31",
+  "scope": "startup",
+  "files": [
+    {
+      "file": "boot_prepare.py",
+      "sha256": "70b997f34d893d89b2710642e099f2a3b8ef2fc3a64ce4c95a16a9227ef02ea2"
+    },
+    {
+      "file": "deployment.json",
+      "sha256": "61b4083c0efd5e6207ba5f3ed4aac68dfb60b5d291a32721d5d5ad277b97f94b"
+    },
+    {
+      "file": "mount_face_store.py",
+      "sha256": "5df5f1c1e614d14fd7af803b61d7ac3af68e853f3eb2ffaf2575c9d6ab06fec3"
+    }
+  ]
+}

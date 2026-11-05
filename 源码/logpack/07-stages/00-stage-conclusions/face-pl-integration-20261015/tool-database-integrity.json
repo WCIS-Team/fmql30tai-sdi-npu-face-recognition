@@ -1,0 +1,13 @@
+{
+  "unchanged": true,
+  "baseline_sha256": {
+    "zynq.lib": "e02b87e01e6af750992355281112cd98f68f4bf255f9a00ba0b718dda638c008",
+    "zynq.padr": "8538c1728c2bf6c25e974df76802263b1d50da26234a46ec8ae9678b9b91c976",
+    "zynq/xc7z030/xc7z030.paspd": "71e30a2e40fab8ef620249acbc94711444698cc384f2a05b5385d4a235c81cca"
+  },
+  "checks": {
+    "zynq.lib": true,
+    "zynq.padr": true,
+    "zynq/xc7z030/xc7z030.paspd": true
+  }
+}

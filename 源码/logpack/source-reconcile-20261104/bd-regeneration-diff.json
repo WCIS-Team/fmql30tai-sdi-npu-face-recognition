@@ -1,0 +1,32 @@
+[
+  {
+    "path": "/design/interface_ports/BYolo_GP1/parameters/ID_WIDTH/value_src",
+    "before": "default_prop",
+    "after": "default"
+  },
+  {
+    "path": "/design/interface_ports/User_GP1/parameters/ID_WIDTH/value_src",
+    "before": "default_prop",
+    "after": "default"
+  },
+  {
+    "path": "/design/components/proc_sys_reset_1/xci_name",
+    "before": "ps_ai_proc_sys_reset_0_0",
+    "after": "ps_ai_proc_sys_reset_1_0"
+  },
+  {
+    "path": "/design/components/proc_sys_reset_0/xci_name",
+    "before": "ps_ai_proc_sys_reset_0_1",
+    "after": "ps_ai_proc_sys_reset_0_0"
+  },
+  {
+    "path": "/design/components/axi_interconnect_4/components/xbar/xci_name",
+    "before": "ps_ai_xbar_4",
+    "after": "ps_ai_xbar_2"
+  },
+  {
+    "path": "/design/components/axi_interconnect_4/xci_name",
+    "before": "ps_ai_axi_interconnect_3_0",
+    "after": "ps_ai_axi_interconnect_4_0"
+  }
+]

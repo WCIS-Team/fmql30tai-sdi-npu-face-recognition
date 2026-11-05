@@ -1,0 +1,27 @@
+>>set_device JFMQL30TAI676H
+  set_device elapsed_time 2.72 seconds, cpu_time 2.42 seconds
+  set_device used memory 660MB, procise used peak memory 696MB, current used memory 589MB
+>>increment_bit_cfg_v3 D:/yzd/tmp/sdi-refclk-fix-20261020/refclk.bit D:/yzd/tmp/sdi-refclk-fix-20261020/refclk-disable-icap.bit -disable_icap
+  /*****************************************/
+  Stage 1: Checking the source bitstream!
+  /*****************************************/
+  FPGA Part : 7z030aiffg676-2
+  IP Patch version: 53201021
+  Missing Bit Patch Info
+  Missing Patch Version Info
+  VCCM Absent, Bitstream Patch Inactive
+  /*****************************************/
+  Stage 2: Targeted Bitstream Patch Integration!
+  /*****************************************/
+  increment_bit_cfg_v3 elapsed_time 0.57 seconds, cpu_time 0.41 seconds
+  increment_bit_cfg_v3 used memory 273MB, procise used peak memory 862MB, current used memory 630MB
+>>create_boot_image wcis.bif BOOT.bin -fmql
+  create_boot_image elapsed_time 0.48 seconds, cpu_time 0.31 seconds
+  create_boot_image used memory 51MB, procise used peak memory 862MB, current used memory 566MB
+>>dump_boot_image BOOT.bin boot-image-dump.txt -fmql
+  img_hdr_tab_.part_hdr_off 0x280, bin_index 0x940
+  img_hdr_tab_.part_hdr_off 0x280, bin_index 0x980
+  img_hdr_tab_.part_hdr_off 0x280, bin_index 0x9c0
+  img_hdr_tab_.part_hdr_off 0x280, bin_index 0xa00
+  dump_boot_image elapsed_time 0.27 seconds, cpu_time 0.22 seconds
+  dump_boot_image used memory 6MB, procise used peak memory 862MB, current used memory 546MB

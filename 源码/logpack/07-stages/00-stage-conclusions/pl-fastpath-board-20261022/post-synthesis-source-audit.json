@@ -1,0 +1,14 @@
+{
+  "stage_to_after_synthesis_changes": [
+    "rtl\\ip\\mig_7series_0\\mig_7series_0.dcp",
+    "rtl\\ip\\mig_7series_0\\mig_7series_0.xml",
+    "rtl\\ip\\mig_7series_0\\mig_7series_0_sim_netlist.v",
+    "rtl\\ip\\mig_7series_0\\mig_7series_0_sim_netlist.vhdl",
+    "rtl\\ip\\mig_7series_0\\mig_7series_0_stub.v",
+    "rtl\\ip\\mig_7series_0\\mig_7series_0_stub.vhdl"
+  ],
+  "project_rtl_and_constraints_unchanged": false,
+  "only_vendor_mig_derived_files_changed": true,
+  "other_staged_sources_and_constraints_unchanged": true,
+  "mig_candidate_will_not_replace_accepted_ddr": true
+}

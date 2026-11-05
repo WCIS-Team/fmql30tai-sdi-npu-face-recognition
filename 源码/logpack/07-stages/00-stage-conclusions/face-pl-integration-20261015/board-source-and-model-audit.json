@@ -1,0 +1,21 @@
+{
+  "model_files": [
+    {
+      "name": "yunet",
+      "valid": true
+    },
+    {
+      "name": "mobilefacenet",
+      "valid": true
+    }
+  ],
+  "candidate_files": {
+    "wcis_face_pl": "16d7bc3a97e82a1d39b85b713a8a2fbabf55f0d774201682b74fdbd44604b675",
+    "run_photos.py": "5ca0170583af1f250a1cd84bde23c48b9f53e221b72ee170e1e6158ee0e47739",
+    "pl_preprocess.py": "da6af90f2639308893a3b18e4fb86a38b0599ac8a125beb38d6ddd7ea70b3f0f",
+    "check_pl_pipeline.py": "03f07b5e74b279c65ad8d0539dce73a8c4e551ebde06cb56ad456181f5f51809"
+  },
+  "disk_free": 7213817856,
+  "boot_id": "ef3d1758-7d54-4811-bb83-480bc71642ae",
+  "service": "active"
+}

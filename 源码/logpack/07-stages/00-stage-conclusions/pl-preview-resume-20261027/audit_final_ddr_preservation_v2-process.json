@@ -1,0 +1,16 @@
+{
+  "pid": 30536,
+  "command": [
+    "C:/Xilinx/Vivado/2018.3/bin/vivado.bat",
+    "-mode",
+    "batch",
+    "-notrace",
+    "-source",
+    "D:\\yzd\\tmp\\pl-preview-resume-20261027\\audit_final_ddr_preservation_v2.tcl",
+    "-log",
+    "D:\\yzd\\tmp\\pl-preview-resume-20261027\\audit_final_ddr_preservation_v2.log",
+    "-journal",
+    "D:\\yzd\\tmp\\pl-preview-resume-20261027\\audit_final_ddr_preservation_v2.jou"
+  ],
+  "timeout_seconds": 600
+}

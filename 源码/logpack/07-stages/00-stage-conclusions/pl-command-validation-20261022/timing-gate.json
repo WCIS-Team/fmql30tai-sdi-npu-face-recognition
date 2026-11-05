@@ -1,0 +1,26 @@
+{
+  "passed": true,
+  "setup_wns": 0.005,
+  "hold_whs": 0.004,
+  "pulse_wns": -0.409,
+  "inherited_npu_pulse_warning": true,
+  "production_timing_signoff": false,
+  "board_verified": false,
+  "deployed": false,
+  "files": {
+    "preserved-routed.dcp": "a97084dd6df95d10b3d0e67a914de717fa71963d3d58363aae2885f233f1652e",
+    "preservation-proof.txt": "245cd9401ed9fbf6eca24eca38081ce9bcdb9d290520a9e691c87cbd4bc59dbe",
+    "timing.rpt": "5fc42d75b18d2c489b63bc4cc76df9a3f5d437faf1b600496075328088227d1b",
+    "route-status.rpt": "ad23aeba0fbe6e43ed4733eb96a81e7f2f021eceede63cb4162138b7c2ad1e88",
+    "bus-skew.rpt": "5990d965182e2cfb3ab30693ff97e40c68fd45c4ae6fecd662de5eca3110dce5",
+    "drc.rpt": "6cedd2002617e2cce4ae1cdd30e4ad7535e355c5974d0facba2c6ec1b4962cc1",
+    "hardware-audit.txt": "f57e1e612e03bb466f1c3aefed0e0b0b78375afb55cd06b9eeaad01f61245c9e",
+    "chain-reroute-exceptions.tcl": "b7e94a507acd647affa4501f819c43209c3fba3745a7dd09ce617f8694341a8e",
+    "chain-static-route-changes.tcl": "a07238512bc3fd8cfeff28a41fcaf5c9e100b4c09756099086556c3c88391b5b",
+    "input-manifest.json": "150f225c04a1865535eada0bb4468532afbb0ffc9f2215a9aac654131bc50313",
+    "post-synthesis-source-audit.json": "1a298779289a6cca7679ba9212b0b78a88ebad357ef77615f6f59bdf9a228f98",
+    "conflict-register-moves.tsv": "54ff09976c0db6812742efe93771d7df73c938430e0467a4085056e8cd7a2180",
+    "conflict-relocation-plan.tcl": "898f569485f3c6fbbe4eb70dee0dc501903c5441ef579bde8f3bcdc1dd1eff9d",
+    "relocation-reroute-exceptions.tcl": "b7e94a507acd647affa4501f819c43209c3fba3745a7dd09ce617f8694341a8e"
+  }
+}

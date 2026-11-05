@@ -1,0 +1,7 @@
+{
+  "native_binary_sha256": "933c128d5bfccd22782aa775fa0c23c41a6f33d8df29c0713f9e6d27e4ae9eb1",
+  "native_binary_unchanged": true,
+  "canonical_cpp_sha256": "2a14e59f07d39efe513424a8e958e6820ad783f707430e39f7d488f45b5cae14",
+  "recompiled": false,
+  "rejected_cpu_jpeg_source": "outputs/preview-low-latency-20261102/experiments/ps_app/src/wcis_camera_owner_webjpeg.cpp"
+}

@@ -1,0 +1,34 @@
+{
+  "board_verified": false,
+  "bitstream_generated": false,
+  "suites": [
+    {
+      "passed": true,
+      "suite": "sdi_monitor"
+    },
+    {
+      "passed": true,
+      "suite": "vtc_pipeline"
+    },
+    {
+      "passed": true,
+      "suite": "vtc_resize_chain"
+    },
+    {
+      "passed": true,
+      "suite": "frame_rate_gate"
+    },
+    {
+      "passed": true,
+      "suite": "stream_letterbox"
+    },
+    {
+      "passed": true,
+      "suite": "case_registers"
+    },
+    {
+      "passed": true,
+      "suite": "case_resize"
+    }
+  ]
+}

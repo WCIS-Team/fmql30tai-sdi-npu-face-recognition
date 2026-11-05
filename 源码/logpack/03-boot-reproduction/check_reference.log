@@ -1,0 +1,34 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Tue Nov  3 23:47:35 2026
+# Process ID: 10432
+# Current directory: D:/yzd/tmp/contest-reproduce-20261103/reference-check
+# Command line: vivado.exe -mode batch -source check_reference.tcl -log check_reference.log -nojournal
+# Log file: D:/yzd/tmp/contest-reproduce-20261103/reference-check/check_reference.log
+# Journal file: 
+#-----------------------------------------------------------
+source check_reference.tcl
+# set work [file normalize [file join [pwd] fpga_project]]
+# open_project [file join $work case fpai_demo_vivado.xpr]
+INFO: [Project 1-313] Project file moved from 'D:/renlianshibie/fpga_project/case' since last save.
+Scanning sources...
+Finished scanning sources
+WARNING: [filemgmt 56-2] IP Output Repository Path: Could not find the directory 'D:/yzd/tmp/contest-reproduce-20261103/reference-check/fpga_project/case/ip_cache', nor could it be found using path 'D:/renlianshibie/fpga_project/case/ip_cache'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/yzd/tmp/contest-reproduce-20261103/reference-check/fpga_project/case/PS_AI IP'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:ip:processing_system7:5.5'. The one found in IP location 'd:/yzd/tmp/contest-reproduce-20261103/reference-check/fpga_project/case/PS_AI IP/processing_system7_v5_5' will take precedence over the same IP in the Xilinx installed IP.
+WARNING: [IP_Flow 19-4830] Duplicate Interface found for 'xilinx.com:display_processing_system7:fixedio:1.0'. The one found in location 'd:/yzd/tmp/contest-reproduce-20261103/reference-check/fpga_project/case/PS_AI IP/processing_system7_v5_5/fixedio.xml' will take precedence over the same Interface in location 'c:/Xilinx/Vivado/2018.3/data/ip/xilinx/processing_system7_v5_5/fixedio.xml'
+WARNING: [IP_Flow 19-4830] Duplicate Interface found for 'xilinx.com:display_processing_system7:hpstatusctrl:1.0'. The one found in location 'd:/yzd/tmp/contest-reproduce-20261103/reference-check/fpga_project/case/PS_AI IP/processing_system7_v5_5/hpstatusctrl.xml' will take precedence over the same Interface in location 'c:/Xilinx/Vivado/2018.3/data/ip/xilinx/processing_system7_v5_5/hpstatusctrl.xml'
+WARNING: [IP_Flow 19-4830] Duplicate Interface found for 'xilinx.com:display_processing_system7:usbctrl:1.0'. The one found in location 'd:/yzd/tmp/contest-reproduce-20261103/reference-check/fpga_project/case/PS_AI IP/processing_system7_v5_5/usbctrl.xml' will take precedence over the same Interface in location 'c:/Xilinx/Vivado/2018.3/data/ip/xilinx/processing_system7_v5_5/usbctrl.xml'
+open_project: Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 347.496 ; gain = 91.469
+# set reference [file join $work outputs rtl-rewrite-20261013 before_routed.dcp]
+# set_property INCREMENTAL_CHECKPOINT $reference [get_runs impl_1]
+WARNING: [Runs 36-537] File D:/yzd/tmp/contest-reproduce-20261103/reference-check/fpga_project/outputs/rtl-rewrite-20261013/before_routed.dcp is not part of fileset utils_1, but has specified as a incremental checkpoint for run(s) impl_1. This file will not be handled as part of the project for archive and other project based functionality.
+# if {![file isfile $reference] || [file normalize [get_property INCREMENTAL_CHECKPOINT [get_runs impl_1]]] ne $reference} {error "Reference resolution failed"}
+# puts "PACKAGED_INCREMENTAL_REFERENCE_OK"
+PACKAGED_INCREMENTAL_REFERENCE_OK
+# close_project
+INFO: [Common 17-206] Exiting Vivado at Tue Nov  3 23:47:43 2026...

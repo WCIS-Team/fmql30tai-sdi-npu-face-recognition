@@ -1,0 +1,14 @@
+{
+  "boot_id": "809c6b12-c379-4216-88eb-dba4e113da57",
+  "trial_timer": "disabled",
+  "photo_service": "active",
+  "remote_accepted": true,
+  "passed": true,
+  "gallery_unchanged": true,
+  "service_unit_unchanged": true,
+  "live_fdt_unchanged": true,
+  "app_files_unchanged": true,
+  "camera_input": false,
+  "hardware_lock_available": true,
+  "accepted_sha256": "e86c333781e82e87d21228c43fcc1a78241c2d44b1edb8f59865b965e416c5fd"
+}

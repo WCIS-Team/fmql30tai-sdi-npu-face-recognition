@@ -1,0 +1,8 @@
+{
+  "checkpoint": "D:\\yzd\\tmp\\pl-preview-resume-20261027\\source-build\\postroute-explore\\optimized.dcp",
+  "checkpoint_sha256": "24bde0a1309b186d44e35e6927e34b09fca5793f2745c4c8fa83b1fd96380302",
+  "script_sha256": "888a6eb3f8ec48af4d1202ee416fa2c1dd921008fb087a16d6092f8c42cfdcc4",
+  "config_sha256": "952a324c0224b7d833c35f65ae44b15630ec77e4e86d517b15c55017c81cbeb1",
+  "source_manifest_sha256": "e13cb67166f2c5678c118b503419249f80cc4c346f2d05b13777ac9a114f66e4",
+  "scope": "At most three passes on fewer than 100 actual failing input endpoints; no fixed DDR routes, netlist or timing constraints changed"
+}

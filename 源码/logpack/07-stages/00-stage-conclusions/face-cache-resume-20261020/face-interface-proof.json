@@ -1,0 +1,10 @@
+{
+  "passed": true,
+  "common_pins": 1617,
+  "added_input": "wr_owner_reg_0_repN_alias",
+  "existing_driver": "U_adder_top/jpeg/write_request/ZGolo_i_647/O",
+  "scope": "identical LUT3 truth table and ordered common sequential cutpoints; not full-design formal proof",
+  "native_sha256": "8edae71cbf3fe74f3dd24b4c3087edccff4381a13a0d7b2ad49d6044dd603db6",
+  "baseline_module_sha256": "a86a35489d0a4c5c53da93815a6ae637d0d3e31c2a75062b59a21b50b921fca2",
+  "candidate_module_sha256": "b756435ad5c360d7f99f0b052709c4f76f10b26ca57633b15fd0cd16815b9dc6"
+}

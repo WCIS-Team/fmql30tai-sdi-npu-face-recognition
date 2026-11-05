@@ -1,0 +1,17 @@
+[
+  {
+    "file": "FSBL251210_ddr400_demo.out",
+    "sha256": "5501c470e07537a8fb369ae40641c20c16ab403fad558e65e0a4bbf380f2396f",
+    "matches_deployed_boot_components": true
+  },
+  {
+    "file": "bl31.elf",
+    "sha256": "fdcf0af48a7f9716f73a477c3cc1b4cd90c914fe0e5ad7acc5ab282660802303",
+    "matches_deployed_boot_components": true
+  },
+  {
+    "file": "u-boot",
+    "sha256": "c4570e3e51128211905bdf20c7b7e0ea9cb7ca1492652a070ebdd985bc213e97",
+    "matches_deployed_boot_components": true
+  }
+]

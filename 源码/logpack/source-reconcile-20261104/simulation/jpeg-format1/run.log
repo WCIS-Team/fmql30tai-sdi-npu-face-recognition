@@ -1,0 +1,4 @@
+FRAME index=0 bytes=804 cycles=3467 reads=64 writes=13
+FRAME index=1 bytes=1513 cycles=3487 reads=64 writes=24
+PASS jpeg_customop format=1
+D:\renlianshibie\fpga_project\sim\tb_jpeg_customop.sv:142: $finish called at 77491000 (1ps)

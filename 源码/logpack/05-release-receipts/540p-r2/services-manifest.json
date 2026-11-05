@@ -1,0 +1,22 @@
+{
+  "reference_date": "2026-10-31",
+  "scope": "services",
+  "files": [
+    {
+      "file": "wcis-face-photo.service",
+      "sha256": "1d7ec0461e322fc86c88f9efd8721697a9aee96da96b92d50db41fbe66315fa4"
+    },
+    {
+      "file": "wcis-face-recording.service",
+      "sha256": "cf0bdada72689b8507085aaa6a8e5321f439cf729a7adf9c36d76e272df007d4"
+    },
+    {
+      "file": "wcis-face-storage.service",
+      "sha256": "c46c52369ad13fa22f58b612b31d7022df0517e106761a0e5984cf2fe88627b8"
+    },
+    {
+      "file": "wcis-sdi-vpu-view.service",
+      "sha256": "dcf782d89fcbf336a43aeb4c2132125e126d2af8ff103fa95a4716b74754b6c7"
+    }
+  ]
+}

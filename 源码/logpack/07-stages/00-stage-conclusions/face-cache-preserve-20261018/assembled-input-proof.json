@@ -1,0 +1,8 @@
+{
+  "checkpoint_sha256": "b4794ca6091baf62d8ca954e188d67764660c2610ea2b88ccf370582a77e5552",
+  "assembly_log_sha256": "d197515b7129b1b39f5f593e0b278a6598b0f66aa72632aaffd978747d51406d",
+  "module_sha256": "b956f437d063b49ee1382f102a8bde7dd28049aaed5c609807c18655247f6464",
+  "static_cells": 103923,
+  "exact_ddr_routes": 26547,
+  "shared_clock_node_superset": true
+}

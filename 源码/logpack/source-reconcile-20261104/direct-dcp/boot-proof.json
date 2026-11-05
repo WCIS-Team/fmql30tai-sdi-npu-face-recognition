@@ -1,0 +1,7 @@
+{
+  "boot_sha256": "f6da96abbc0144ce5a48f4fa85aed6dab65067211b8932e8f4e4db87d5110297",
+  "byte_identical_to_deployed": true,
+  "bytes": 7023552,
+  "board_written": false,
+  "comparison": "whole-file byte comparison and SHA-256"
+}

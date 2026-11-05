@@ -1,0 +1,10 @@
+{
+  "setup_wns": 0.025,
+  "hold_whs": 0.004,
+  "pulse_wns": -0.409,
+  "inherited_npu_pulse_warning": true,
+  "production_timing_signoff": false,
+  "case_directory": "D:\\yzd\\tmp\\pl-jpeg-board-20261016\\case",
+  "implementation_log_sha256": "fd47c6cca3550f202546a488514df0d0a8d33beefce1e80580a408ab7bc3b77a",
+  "placement_log_sha256": "1f2a9dc1ed0524530f4c1ad0f2f43c190173ac7dc2bc1fdb9ed1561240812b8d"
+}

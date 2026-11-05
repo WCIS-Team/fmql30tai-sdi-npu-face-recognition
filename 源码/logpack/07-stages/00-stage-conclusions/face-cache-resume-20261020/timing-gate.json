@@ -1,0 +1,48 @@
+{
+  "setup_wns": 0.005,
+  "hold_whs": 0.004,
+  "pulse_wns": -0.409,
+  "inherited_npu_pulse_warning": true,
+  "production_timing_signoff": false,
+  "routed_checkpoint_sha256": "f7dbdbfcb548c426d7c09df65e7c8eb870db7ed6d67364d3a26e7dcd714c947d",
+  "preservation_proof_sha256": "bece5edfbb9a8d4893ea249ec54559a8aae9e0c949d9c8215a2f71cdf77d7431",
+  "hardware_audit_sha256": "376b0ab4c60877195f4fc4fe61da031f05638da1d533b82ccc5c4d279c23c308",
+  "baseline_reproduced_byte_exact": true,
+  "static_cells_identical": 116930,
+  "face_interface_proof_sha256": "fdfbf90df41e67c3715dcc5b12956f67d542eecf616cd6f93c7bd6d168739439",
+  "static_clock_load_paths_preserved": true,
+  "native_fixed_route_validation_passed": true,
+  "abandoned_target_clock_branches_pruned": true,
+  "clock_graph_pruning_sha256": "6e16cf447951f2616b54b828fc552a7a55d72465e5c75f9ea487f4ed19ee61a2",
+  "original_exceptions_proof_sha256": "0f371b5bfead926fb5945afa0a5a0951ac8aae1e8b953d3745f55052e458240c",
+  "report_sha256": {
+    "timing.rpt": "83303921e3f6e263c3213d117188c97c8f78b0eb94e6903f4107d2efb78f910d",
+    "route-status.rpt": "a4ed3f49281813d8d1b0a0432892ccac6f0f97868574b74d5be5a66a78e64a5d",
+    "bus-skew.rpt": "e777efb7bd8914ba8d0497c50c017def79bac1d6407c47dead21c85fb0dac33e",
+    "drc.rpt": "8f5607158eb352a6a309acc61bbf699b6ec2378593c29fba9c6bc396c3292e17"
+  },
+  "build_input_proof_sha256": "e4746db66062e72b2198e8a6e736ec6acc8f6e6143fbf6a66c612b75516ff21b",
+  "sdi_timing_route_exception_sha256": "9a2e8b9d4ddc6fa1e15b75b91317f9cd773364cb655205f474656489eb0164c7",
+  "ddr_pin_and_route_restoration": {
+    "restored_nets": 59,
+    "signal_route_records_compared": 26547,
+    "explicitly_fixed_intersite_routes": 19676,
+    "intrasite_or_empty_route_records": 6871,
+    "pin_maps": 12,
+    "non_ddr_blocker_nets": 23,
+    "other_static_blocker_nets": 5
+  },
+  "face_cache_register_moves": {
+    "count": 6,
+    "static_cells_moved": 0,
+    "evidence_sha256": "2727d241d0012d10f0931b2c8bfaf66211e87ea29ca52231ad7ddc58fc49720f",
+    "clock_pruning_sha256": "6eef27ad983ef6fb6782573c5a5aec80db0a0120a0148dc39f907c5f3d24e377"
+  },
+  "face_site_group_moves": {
+    "cells": 113,
+    "original_sites": 17,
+    "static_cells_moved": 0,
+    "evidence_sha256": "79393ee67487579b82d077b5a90204a2ab2091908ebef2057555aa82f7862a0d",
+    "clock_pruning_sha256": "0d65d6298c9018616f3215dd63bf4cd8ba7e18aee9670bfbf2ded9ac11cd1403"
+  }
+}

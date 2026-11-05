@@ -1,0 +1,6 @@
+{
+  "source": "https://cdimage.ubuntu.com/ubuntu-base/releases/20.04/release/ubuntu-base-20.04.5-base-amd64.tar.gz",
+  "download_mirror": "https://repo.huaweicloud.com/ubuntu-cdimage/ubuntu-base/releases/20.04/release/ubuntu-base-20.04.5-base-amd64.tar.gz",
+  "official_checksum_url": "https://cdimage.ubuntu.com/ubuntu-base/releases/20.04/release/SHA256SUMS",
+  "sha256": "60e216b60947653dc8989be3821380268315b99b2959c29882781541bfe5a426"
+}

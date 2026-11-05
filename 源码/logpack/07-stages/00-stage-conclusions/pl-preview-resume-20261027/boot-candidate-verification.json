@@ -1,0 +1,66 @@
+{
+  "passed": true,
+  "boot_sha256": "fd5606055c4c6b6a6911da1efeea8b56ae7fe3f873537d105a081ab96b6fb9c7",
+  "boot_bytes": 7023552,
+  "raw_bit_sha256": "277a02613991a595c763e1efd9fbb44eae5441a6ec19744132417fb156068f9f",
+  "patched_bit_sha256": "8843a3cc941d8ce8d8ff57c42d2438e9866edf89b2a0bcbc42a42a183a96bde9",
+  "checkpoint_sha256": "3ca92cedc1170def96fefd25baeb1ab69eaf4d3620726d0c3dfa88ca00dbb34b",
+  "implementation_manifest_sha256": "c2d520152096b0bb335f0e894e2c28c710cb4b0a720ad5897cdbb164cc860ec7",
+  "timing_gate_sha256": "343c9e539b6368da1dd3a48efd841da33170ed819c547ae9f9b55f8543d9efdd",
+  "bit_metadata": {
+    "a": "ai7030_edif_top;UserID=53180205;Version=2018.3;Patched=DISABLE_ICAP,VCCM;PatchID=32494",
+    "b": "7z030ffg676",
+    "c": "2026/10/28",
+    "d": "16:59:00"
+  },
+  "partitions": [
+    {
+      "name": "FSBL",
+      "bytes": 183892,
+      "sha256": "6521416e1b9c33f34ae0e9cb875b43b0419f8d5a5a8073870c9f6ffe5177372f",
+      "offset": 2880,
+      "load_address": 0,
+      "execution_address": 4294848312,
+      "attributes": 4294705152
+    },
+    {
+      "name": "PL",
+      "bytes": 5980464,
+      "sha256": "7ead008089bd65c645c088565c803f76e0774d2ca0d6199953b353083577500f",
+      "offset": 186816,
+      "load_address": 0,
+      "execution_address": 0,
+      "attributes": 4294967295
+    },
+    {
+      "name": "BL31",
+      "bytes": 53824,
+      "sha256": "1dfc27face6691d1c2354b34dba36d514361b19a1d44d6ffb3f28c6bc0e5b03f",
+      "offset": 6167296,
+      "load_address": 0,
+      "execution_address": 3791519744,
+      "attributes": 3791519744
+    },
+    {
+      "name": "U-Boot",
+      "bytes": 802400,
+      "sha256": "b1e81cf372c7865877bc0f25b00dce17428765f3304b8d0ceae0b7446b3d9fc3",
+      "offset": 6221120,
+      "load_address": 0,
+      "execution_address": 67108864,
+      "attributes": 67108864
+    }
+  ],
+  "non_pl_partitions_unchanged": true,
+  "payload_matches_reviewed_bit_after_32bit_byte_swap": true,
+  "vendor_posthook_payload_identical": true,
+  "pl_suffix_hex": "00000020",
+  "setup_wns": 0.03,
+  "hold_whs": 0.029,
+  "inherited_npu_pulse_failures": 2,
+  "production_timing_signoff": false,
+  "deployed": false,
+  "board_verified": false,
+  "website_changed": false,
+  "receiver_overlay_sha256": "dc6e0e4bccfa53e8bbb02fd5958d5354b2579139f172e8e6f40bb84a6fe65938"
+}

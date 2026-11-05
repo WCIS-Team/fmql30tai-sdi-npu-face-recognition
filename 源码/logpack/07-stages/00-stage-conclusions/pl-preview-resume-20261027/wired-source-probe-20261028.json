@@ -1,0 +1,9 @@
+{
+  "checked_at": "2026-10-28T01:35:08.719621+08:00",
+  "source": "10.101.16.100",
+  "host": "10.101.54.192",
+  "port": 18222,
+  "tcp_connected": false,
+  "error": "TimeoutError",
+  "elapsed_seconds": 5.0
+}

@@ -1,0 +1,22 @@
+{
+  "vivado": "2018.3 build 2405991",
+  "source_project_opened": true,
+  "checkpoint_opened": true,
+  "editable_project_xpr_inputs": 101,
+  "compile_order_inputs_in_package": 97,
+  "source_top": "ai7030_edif_top",
+  "part": "xc7z030ffg676-2",
+  "reopened_routable_nets": 104649,
+  "reopened_fully_routed_nets": 104649,
+  "reopened_routing_errors": 0,
+  "original_timing_gate": {
+    "setup_wns_ns": 0.005,
+    "hold_whs_ns": 0.004,
+    "pulse_wns_ns": -0.409,
+    "production_timing_signoff": false
+  },
+  "synthesis_run": false,
+  "implementation_run": false,
+  "bitstream_rebuilt": false,
+  "board_accessed": false
+}

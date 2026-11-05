@@ -1,0 +1,19 @@
+{
+  "passed": true,
+  "setup_wns": 0.005,
+  "hold_whs": 0.004,
+  "pulse_wns": -0.409,
+  "inherited_npu_pulse_warning": true,
+  "production_timing_signoff": false,
+  "files": {
+    "refclk-final.dcp": "8e54e4cb42be0164d7925e9d2ef877745d663f79a87f4d8272414543441be2e8",
+    "preservation-proof.txt": "9bfbbdbe347ac3e396cfd66af19d7e5adb219063eaf3e1e074412544fef474f1",
+    "ground-proof.txt": "64b2afd8f72370e65092a52f0d371a1fdd44bf1077cd35b4b837fa56e86e9ae0",
+    "timing.rpt": "c2d7608d126b553851170398ce2f00dd65f2f775db065ebae8c504dafb1b3eb0",
+    "route-status.rpt": "a4ed3f49281813d8d1b0a0432892ccac6f0f97868574b74d5be5a66a78e64a5d",
+    "bus-skew.rpt": "c497320187ce0686f0be1aafc7762924d6650dd1ba87d89a982f595e77c496cf",
+    "drc.rpt": "efded5d8c0dac697d26e79fe61c044cf20006ccb2b1536c7b49be8023ea9e6a2",
+    "repair.tcl": "54f8f2109b88087aaa85e86ad7420ebe2ae04f1a432571af5396f6691336f0eb",
+    "finish_ground.tcl": "8d5183f24f4a71d79a60442cb3da20fce70ff7c182e3d6124786772a949d5e55"
+  }
+}

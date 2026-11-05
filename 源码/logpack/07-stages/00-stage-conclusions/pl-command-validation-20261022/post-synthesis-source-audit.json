@@ -1,0 +1,44 @@
+{
+  "passed": true,
+  "checked_staged_files": 416,
+  "regenerated_ip_outputs": [
+    {
+      "path": "rtl\\ip\\mig_7series_0\\mig_7series_0.dcp",
+      "before_sha256": "490d47e9544a56126f69c97b2d60463d1b5301018dca50b446ac2ab5229bf710",
+      "after_sha256": "92da947e962f73b1eb3dfaea8562e7f31f658cb42d48dc8be67772a491e8ee23",
+      "scope": "Regenerated IP output; not imported into final accepted static shell. No binary or DDR functional equivalence claim."
+    },
+    {
+      "path": "rtl\\ip\\mig_7series_0\\mig_7series_0.xml",
+      "before_sha256": "0ab8acf2244a464a1783188fc949e5270e4a8743504d6a8ca5b87b1eababac77",
+      "after_sha256": "4c0179ac2834e1ec08e6ebc3d1fee51882f40cbacc8211b2cd225edb35483752",
+      "functional_text_identical_after_timestamp_and_task_path_normalization": true
+    },
+    {
+      "path": "rtl\\ip\\mig_7series_0\\mig_7series_0_sim_netlist.v",
+      "before_sha256": "cfcadc1376a8961afa973ce178d712a641e9b11b8eda8c823a69fd10737746a3",
+      "after_sha256": "169faf88f307876768ba3cab1a20063ff8368db8d0394c2cfc710c2557935c8a",
+      "functional_text_identical_after_timestamp_and_task_path_normalization": true
+    },
+    {
+      "path": "rtl\\ip\\mig_7series_0\\mig_7series_0_sim_netlist.vhdl",
+      "before_sha256": "3f15ac34555457e47dca4084b95e51be1247dde54f98511e134be747ec2b96f8",
+      "after_sha256": "ad0f07a6e923557c54aa8ff5890c9dd1a6655062d885e57e3876833ecb3d5975",
+      "functional_text_identical_after_timestamp_and_task_path_normalization": true
+    },
+    {
+      "path": "rtl\\ip\\mig_7series_0\\mig_7series_0_stub.v",
+      "before_sha256": "6fe325ae136290829e2d0950df02558d05dd6d75632d84609eccf0a702a78de8",
+      "after_sha256": "eafc1d86390269e4b2a49772ca4b9f10ffa5e2693145d166f004a008969533f8",
+      "functional_text_identical_after_timestamp_and_task_path_normalization": true
+    },
+    {
+      "path": "rtl\\ip\\mig_7series_0\\mig_7series_0_stub.vhdl",
+      "before_sha256": "c2617e6319da2a09a350a814920341ce6c3b497f555f83f383bf552b859849aa",
+      "after_sha256": "6b4aaf3ec6b177f01808179410278c8897c6a3ec02725da66ea49d34eff26017",
+      "functional_text_identical_after_timestamp_and_task_path_normalization": true
+    }
+  ],
+  "constraints_and_ip_configuration_unchanged": true,
+  "final_static_shell": "Original accepted routed checkpoint; regenerated MIG DCP is not substituted"
+}

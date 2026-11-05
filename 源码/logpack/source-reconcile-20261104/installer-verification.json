@@ -1,0 +1,14 @@
+[
+  {
+    "case": "original",
+    "passed": true,
+    "boot_sha256": "f6da96abbc0144ce5a48f4fa85aed6dab65067211b8932e8f4e4db87d5110297",
+    "hardware_accepted": false
+  },
+  {
+    "case": "rebuilt",
+    "passed": true,
+    "boot_sha256": "f48397d08b1ccb1c950adafcebe5e36678154e73fa1d19792150aa5ddccd8ad1",
+    "hardware_accepted": false
+  }
+]

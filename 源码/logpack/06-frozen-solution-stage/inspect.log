@@ -1,0 +1,99 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Tue Oct 20 15:16:19 2026
+# Process ID: 12564
+# Current directory: D:/yzd/tmp/sdi-refclk-fix-20261020
+# Command line: vivado.exe -mode batch -source D:/yzd/tmp/sdi-refclk-fix-20261020/inspect.tcl -log D:/yzd/tmp/sdi-refclk-fix-20261020/inspect.log -journal D:/yzd/tmp/sdi-refclk-fix-20261020/inspect.jou
+# Log file: D:/yzd/tmp/sdi-refclk-fix-20261020/inspect.log
+# Journal file: D:/yzd/tmp/sdi-refclk-fix-20261020/inspect.jou
+#-----------------------------------------------------------
+source D:/yzd/tmp/sdi-refclk-fix-20261020/inspect.tcl
+# source D:/renlianshibie/fpga_project/scripts/readonly_tool_guard.tcl
+## if {![llength [info commands ::wcis_original_file]]} {
+##     rename ::file ::wcis_original_file
+##     proc ::file {operation args} {
+##         if {$operation eq "copy" || $operation eq "rename"} {
+##             set destination [::wcis_original_file normalize [lindex $args end]]
+##             set destination [string tolower [string map {\\ /} $destination]]
+##             if {[string match {c:/xilinx/vivado/2018.3/*} $destination]} {
+##                 # A byte-identical copy is safely replaced by a no-op. Never
+##                 # write even an identical file into the installed toolchain.
+##                 set source [lindex $args end-1]
+##                 if {$operation eq "copy" && [::wcis_original_file isfile $source] &&
+##                     [::wcis_original_file isfile $destination]} {
+##                     set a [open $source rb];set av [read $a];close $a
+##                     set b [open $destination rb];set bv [read $b];close $b
+##                     if {$av eq $bv} {
+##                         puts "WCIS_TOOL_GUARD: identical installed file retained: $destination"
+##                         return
+##                     }
+##                 }
+##                 error "WCIS_TOOL_GUARD: installed Vivado database write blocked: $destination"
+##             }
+##         }
+##         return [uplevel 1 [list ::wcis_original_file $operation {*}$args]]
+##     }
+## }
+# set out D:/yzd/tmp/sdi-refclk-fix-20261020
+# set_param general.maxThreads 2
+# open_checkpoint D:/yzd/tmp/face-cache-resume-20261020/preserved-routed.dcp
+Command: open_checkpoint D:/yzd/tmp/face-cache-resume-20261020/preserved-routed.dcp
+
+Starting open_checkpoint Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.020 . Memory (MB): peak = 269.477 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 5357 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+INFO: [Device 21-403] Loading part xc7z030ffg676-2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+WARNING: [Constraints 18-550] Could not create 'IBUF_LOW_PWR' constraint because net 'U0_ps_ai_peripheral/frame_to_ps_inst0/cmos_clkgen_742_5_u0/clk_in1' is not directly connected to top level port. Synthesis is ignored for IBUF_LOW_PWR but preserved for implementation.
+WARNING: [Constraints 18-550] Could not create 'IBUF_LOW_PWR' constraint because net 'rx_sdi_inst/mgtclk_inst0/clk_in1' is not directly connected to top level port. Synthesis is ignored for IBUF_LOW_PWR but preserved for implementation.
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Constraints 18-5170] The checkpoint was created with non-default parameter values which do not match the current Vivado settings.  Mismatching parameters are:
+  general.maxThreads
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading placer database...
+Read XDEF File: Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 2253.102 ; gain = 173.676
+Finished XDEF File Restore: Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 2253.102 ; gain = 173.676
+INFO: [Project 1-837] Checkpoint contains data reused from an Incremental Compile. Run report_incremental_reuse for further information about reused data.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.044 . Memory (MB): peak = 2301.141 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 1799 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 5 instances
+  IOBUFDS_DIFF_OUT_DCIEN => IOBUFDS_DIFF_OUT_DCIEN (IBUFDS_IBUFDISABLE_INT, IBUFDS_IBUFDISABLE_INT, INV, OBUFTDS_DCIEN, OBUFTDS_DCIEN): 8 instances
+  IOBUF_DCIEN => IOBUF_DCIEN (IBUF_IBUFDISABLE, OBUFT_DCIEN): 64 instances
+  OBUFDS => OBUFDS_DUAL_BUF (INV, OBUFDS, OBUFDS): 1 instances
+  RAM16X1D => RAM32X1D (RAMD32, RAMD32): 10 instances
+  RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 697 instances
+  RAM64M => RAM64M (RAMD64E, RAMD64E, RAMD64E, RAMD64E): 950 instances
+  RAM64X1D => RAM64X1D (RAMD64E, RAMD64E): 64 instances
+
+INFO: [Project 1-604] Checkpoint was created with Vivado v2018.3 (64-bit) build 2405991
+open_checkpoint: Time (s): cpu = 00:00:53 ; elapsed = 00:00:59 . Memory (MB): peak = 2301.141 ; gain = 2031.664
+# set f [open $out/refclk-plan.txt w]
+# foreach name {R5 R6 U5 U6} {
+#  set p [get_package_pins $name]
+#  puts $f "BALL=$name SITE=[get_sites -of_objects $p] FUNCTION=[get_property PIN_FUNC $p]"
+# }
+# set c [get_cells rx_sdi_inst/MGTCLKIN0]
+# puts $f "REFCLK_CELL=$c LOC=[get_property LOC $c] BEL=[get_property BEL $c]"
+# foreach p [get_pins -of_objects $c] {
+#  set nets [get_nets -segments -of_objects $p]
+#  puts $f "PIN=$p"
+#  foreach n $nets {puts $f "NET=$n FIXED=[get_property IS_ROUTE_FIXED $n] ROUTE=[get_property ROUTE $n]"}
+#  foreach x [get_cells -of_objects [get_pins -leaf -of_objects $nets]] {
+#   puts $f "CELL=$x REF=[get_property REF_NAME $x] LOC=[get_property LOC $x] BEL=[get_property BEL $x] FIXED=[get_property IS_LOC_FIXED $x]"
+#  }
+# }
+WARNING: [Vivado 12-1023] No nets matched for command 'get_nets -segments -of_objects rx_sdi_inst/MGTCLKIN0/ODIV2'.
+WARNING: [Vivado 12-508] No pins matched 'get_pins -leaf -of_objects [get_nets -segments -of_objects rx_sdi_inst/MGTCLKIN0/ODIV2]'.
+WARNING: [Vivado 12-180] No cells matched 'get_cells -of_objects [get_pins -leaf -of_objects [get_nets -segments -of_objects rx_sdi_inst/MGTCLKIN0/ODIV2]]'.
+# close $f
+# close_design
+# exit
+INFO: [Common 17-206] Exiting Vivado at Tue Oct 20 15:17:23 2026...

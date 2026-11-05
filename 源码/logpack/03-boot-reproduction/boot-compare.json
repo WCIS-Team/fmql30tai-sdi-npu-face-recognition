@@ -1,0 +1,24 @@
+{
+  "original_sha256": "f6da96abbc0144ce5a48f4fa85aed6dab65067211b8932e8f4e4db87d5110297",
+  "rebuilt_sha256": "f6da96abbc0144ce5a48f4fa85aed6dab65067211b8932e8f4e4db87d5110297",
+  "whole_file_matches": true,
+  "partitions": [
+    {
+      "name": "FSBL",
+      "match": true
+    },
+    {
+      "name": "PL",
+      "match": true
+    },
+    {
+      "name": "BL31",
+      "match": true
+    },
+    {
+      "name": "U-Boot",
+      "match": true
+    }
+  ],
+  "passed": true
+}

@@ -1,0 +1,12 @@
+{
+  "inputs": {
+    "D:\\yzd\\tmp\\pl-preview-resume-20261027\\source-build\\boot-candidate\\package.tcl": "61234013688342767b26036d8d28a1a80187f7f477a45d8ee2cb3da52e114302",
+    "D:\\yzd\\tmp\\pl-preview-resume-20261027\\source-build\\preview.bit": "277a02613991a595c763e1efd9fbb44eae5441a6ec19744132417fb156068f9f",
+    "D:\\yzd\\tmp\\sdi-refclk-fix-20261020\\boot-candidate\\BOOT.bin": "f6da96abbc0144ce5a48f4fa85aed6dab65067211b8932e8f4e4db87d5110297",
+    "D:\\yzd\\tmp\\pl-jpeg-board-20261016\\boot-candidate\\FSBL251210_ddr400_demo.out": "5501c470e07537a8fb369ae40641c20c16ab403fad558e65e0a4bbf380f2396f",
+    "D:\\yzd\\tmp\\pl-jpeg-board-20261016\\boot-candidate\\bl31.elf": "fdcf0af48a7f9716f73a477c3cc1b4cd90c914fe0e5ad7acc5ab282660802303",
+    "D:\\yzd\\tmp\\pl-jpeg-board-20261016\\boot-candidate\\u-boot": "c4570e3e51128211905bdf20c7b7e0ea9cb7ca1492652a070ebdd985bc213e97"
+  },
+  "expected_old_boot_sha256": "f6da96abbc0144ce5a48f4fa85aed6dab65067211b8932e8f4e4db87d5110297",
+  "boot_partition_writes": false
+}

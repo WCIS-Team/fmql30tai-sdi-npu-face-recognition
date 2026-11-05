@@ -1,0 +1,9 @@
+{
+  "checkpoint": "D:\\yzd\\tmp\\pl-preview-resume-20261027\\source-build\\initial-completed-route\\preview-exported.dcp",
+  "checkpoint_sha256": "1039520090583c1ec55a16a56198c227bdddc8313bb6e087289e1a46c4cb349a",
+  "script": "D:\\yzd\\tmp\\pl-preview-resume-20261027\\optimize_current_route.tcl",
+  "script_sha256": "56416fab538d2b4a78e57098faa808b411751204214fef52c4cef1b00554d5e6",
+  "source_manifest_sha256": "9b168e8c67acc57a38c415611fd096fec064d5d4301e2d3ed72d877ee26e6921",
+  "timing_passed": false,
+  "board_changed": false
+}

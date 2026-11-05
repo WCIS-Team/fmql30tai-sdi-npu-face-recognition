@@ -1,0 +1,16 @@
+{
+  "pid": 14212,
+  "command": [
+    "C:/Xilinx/Vivado/2018.3/bin/vivado.bat",
+    "-mode",
+    "batch",
+    "-notrace",
+    "-source",
+    "D:\\yzd\\tmp\\pl-preview-resume-20261027\\inspect_source_status.tcl",
+    "-log",
+    "D:\\yzd\\tmp\\pl-preview-resume-20261027\\inspect_source_status.log",
+    "-journal",
+    "D:\\yzd\\tmp\\pl-preview-resume-20261027\\inspect_source_status.jou"
+  ],
+  "timeout_seconds": 240
+}

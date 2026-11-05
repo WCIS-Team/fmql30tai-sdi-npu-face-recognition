@@ -1,0 +1,120 @@
+{
+  "date": "2026-11-04",
+  "paths_relative_to": "delivery_root",
+  "mapping_order": "longest_old_prefix_first",
+  "moves": [
+    {
+      "from": "wcis-official/submission/source/fpga_project",
+      "to": "ps_source"
+    },
+    {
+      "from": "board-run/submission",
+      "to": "board_runtime"
+    },
+    {
+      "from": "wcis-official/submission/implemented_baseline/refclk-final.dcp",
+      "to": "fpga_restore/refclk-final.dcp"
+    },
+    {
+      "from": "wcis-official/submission/implemented_baseline/accepted.json",
+      "to": "logpack/accepted-implementation/accepted.json"
+    },
+    {
+      "from": "wcis-official/submission/implemented_baseline/boot-candidate",
+      "to": "logpack/accepted-implementation/boot-candidate"
+    },
+    {
+      "from": "wcis-official/submission/implemented_baseline/build-and-board-manifest.json",
+      "to": "logpack/accepted-implementation/build-and-board-manifest.json"
+    },
+    {
+      "from": "wcis-official/submission/implemented_baseline/bus-skew.rpt",
+      "to": "logpack/accepted-implementation/bus-skew.rpt"
+    },
+    {
+      "from": "wcis-official/submission/implemented_baseline/candidate-proof.json",
+      "to": "logpack/accepted-implementation/candidate-proof.json"
+    },
+    {
+      "from": "wcis-official/submission/implemented_baseline/candidate.json",
+      "to": "logpack/accepted-implementation/candidate.json"
+    },
+    {
+      "from": "wcis-official/submission/implemented_baseline/drc.rpt",
+      "to": "logpack/accepted-implementation/drc.rpt"
+    },
+    {
+      "from": "wcis-official/submission/implemented_baseline/finish_ground.log",
+      "to": "logpack/accepted-implementation/finish_ground.log"
+    },
+    {
+      "from": "wcis-official/submission/implemented_baseline/generate.log",
+      "to": "logpack/accepted-implementation/generate.log"
+    },
+    {
+      "from": "wcis-official/submission/implemented_baseline/input-proof.json",
+      "to": "logpack/accepted-implementation/input-proof.json"
+    },
+    {
+      "from": "wcis-official/submission/implemented_baseline/package-gate.json",
+      "to": "logpack/accepted-implementation/package-gate.json"
+    },
+    {
+      "from": "wcis-official/submission/implemented_baseline/repair.log",
+      "to": "logpack/accepted-implementation/repair.log"
+    },
+    {
+      "from": "wcis-official/submission/implemented_baseline/route-status.rpt",
+      "to": "logpack/accepted-implementation/route-status.rpt"
+    },
+    {
+      "from": "wcis-official/submission/implemented_baseline/timing-gate.json",
+      "to": "logpack/accepted-implementation/timing-gate.json"
+    },
+    {
+      "from": "wcis-official/submission/implemented_baseline/timing.rpt",
+      "to": "logpack/accepted-implementation/timing.rpt"
+    },
+    {
+      "from": "logpack/logpack/01-board-runtime",
+      "to": "logpack/01-board-runtime"
+    },
+    {
+      "from": "logpack/logpack/03-boot-reproduction",
+      "to": "logpack/03-boot-reproduction"
+    },
+    {
+      "from": "logpack/logpack/04-project-reopen",
+      "to": "logpack/04-project-reopen"
+    },
+    {
+      "from": "logpack/logpack/05-release-receipts",
+      "to": "logpack/05-release-receipts"
+    },
+    {
+      "from": "logpack/logpack/06-frozen-solution-stage",
+      "to": "logpack/06-frozen-solution-stage"
+    },
+    {
+      "from": "logpack/logpack/07-stages",
+      "to": "logpack/07-stages"
+    },
+    {
+      "from": "logpack/logpack/README.md",
+      "to": "logpack/historical-index.md"
+    },
+    {
+      "from": "repro-notes",
+      "to": "logpack/repro-notes"
+    },
+    {
+      "from": "build-official-pack.py",
+      "to": "package.py"
+    },
+    {
+      "from": "wcis-official/submission/source/fpga_project/README.md",
+      "to": "ps_source/PROJECT_HISTORY.md"
+    }
+  ],
+  "removed_wrapper_metadata": "Old wcis-official README, EXTERNAL and file lists archived outside delivery; use root README/EXTERNAL/filelist instead."
+}

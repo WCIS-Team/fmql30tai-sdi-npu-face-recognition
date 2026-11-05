@@ -1,0 +1,27 @@
+{
+  "passed": true,
+  "boot_sha256": "f6da96abbc0144ce5a48f4fa85aed6dab65067211b8932e8f4e4db87d5110297",
+  "partitions": [
+    {
+      "name": "FSBL",
+      "bytes": 183892,
+      "sha256": "6521416e1b9c33f34ae0e9cb875b43b0419f8d5a5a8073870c9f6ffe5177372f"
+    },
+    {
+      "name": "PL",
+      "bytes": 5980464,
+      "sha256": "f4d5f79ac6d075b004e61c093071f90199fda79d491f25097d7572c25dc6b26a"
+    },
+    {
+      "name": "BL31",
+      "bytes": 53824,
+      "sha256": "1dfc27face6691d1c2354b34dba36d514361b19a1d44d6ffb3f28c6bc0e5b03f"
+    },
+    {
+      "name": "U-Boot",
+      "bytes": 802400,
+      "sha256": "b1e81cf372c7865877bc0f25b00dce17428765f3304b8d0ceae0b7446b3d9fc3"
+    }
+  ],
+  "non_pl_partitions_unchanged": true
+}

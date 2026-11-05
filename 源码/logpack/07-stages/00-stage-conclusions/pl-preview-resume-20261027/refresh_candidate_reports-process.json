@@ -1,0 +1,16 @@
+{
+  "pid": 16816,
+  "command": [
+    "C:/Xilinx/Vivado/2018.3/bin/vivado.bat",
+    "-mode",
+    "batch",
+    "-notrace",
+    "-source",
+    "D:\\yzd\\tmp\\pl-preview-resume-20261027\\refresh_candidate_reports.tcl",
+    "-log",
+    "D:\\yzd\\tmp\\pl-preview-resume-20261027\\refresh_candidate_reports.log",
+    "-journal",
+    "D:\\yzd\\tmp\\pl-preview-resume-20261027\\refresh_candidate_reports.jou"
+  ],
+  "timeout_seconds": 600
+}

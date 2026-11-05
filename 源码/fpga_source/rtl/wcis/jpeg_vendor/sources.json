@@ -1,0 +1,78 @@
+{
+  "repository": "https://github.com/lcapossio/mjpegZero",
+  "commit": "90bc0c46d2c2c4bda1020113f306a5f17dcc5f2f",
+  "license": "Apache-2.0 WITH Commons Clause v1.0; see LICENSE",
+  "modifications": [],
+  "files": [
+    {
+      "path": "LICENSE",
+      "url": "https://raw.githubusercontent.com/lcapossio/mjpegZero/90bc0c46d2c2c4bda1020113f306a5f17dcc5f2f/LICENSE",
+      "sha256": "7005a0343d28b216e0edd3e9da3841dd2be2f3ecd483c750a27b44a72b980d07"
+    },
+    {
+      "path": "README.md",
+      "url": "https://raw.githubusercontent.com/lcapossio/mjpegZero/90bc0c46d2c2c4bda1020113f306a5f17dcc5f2f/README.md",
+      "sha256": "2e176e2557791e77eb4e555d44e15fb8691cdba1d574d7b19820d8cff37207bf"
+    },
+    {
+      "path": "rtl/axi4_lite_regs.v",
+      "url": "https://raw.githubusercontent.com/lcapossio/mjpegZero/90bc0c46d2c2c4bda1020113f306a5f17dcc5f2f/rtl/axi4_lite_regs.v",
+      "sha256": "27f4353eda238689ae9b476190fc931623aa12d00ee4545d7cf94279746ab557"
+    },
+    {
+      "path": "rtl/bitstream_packer.v",
+      "url": "https://raw.githubusercontent.com/lcapossio/mjpegZero/90bc0c46d2c2c4bda1020113f306a5f17dcc5f2f/rtl/bitstream_packer.v",
+      "sha256": "2d286b628b392d13c3d876cf93bbf301a4b5629c62f676b5d254ffadee64644c"
+    },
+    {
+      "path": "rtl/bram_sdp.v",
+      "url": "https://raw.githubusercontent.com/lcapossio/mjpegZero/90bc0c46d2c2c4bda1020113f306a5f17dcc5f2f/rtl/bram_sdp.v",
+      "sha256": "7b608427a48f42f33ea13e1277a5efe28a61fb26b87d197f96765b285000a4e5"
+    },
+    {
+      "path": "rtl/dct_1d.v",
+      "url": "https://raw.githubusercontent.com/lcapossio/mjpegZero/90bc0c46d2c2c4bda1020113f306a5f17dcc5f2f/rtl/dct_1d.v",
+      "sha256": "9edc43739c355b223f98ccd2725cc3ac9058292adb8eb1969da036d9d8ff5061"
+    },
+    {
+      "path": "rtl/dct_2d.v",
+      "url": "https://raw.githubusercontent.com/lcapossio/mjpegZero/90bc0c46d2c2c4bda1020113f306a5f17dcc5f2f/rtl/dct_2d.v",
+      "sha256": "36f79842f7451d05e3b12bd70bdc543d982ddea01adf3a3743559798054aa0f1"
+    },
+    {
+      "path": "rtl/huffman_encoder.v",
+      "url": "https://raw.githubusercontent.com/lcapossio/mjpegZero/90bc0c46d2c2c4bda1020113f306a5f17dcc5f2f/rtl/huffman_encoder.v",
+      "sha256": "c1244467f0656a3df703bfacbfb4271c47b6a8c37be375d2debba6061f07fee4"
+    },
+    {
+      "path": "rtl/input_buffer.v",
+      "url": "https://raw.githubusercontent.com/lcapossio/mjpegZero/90bc0c46d2c2c4bda1020113f306a5f17dcc5f2f/rtl/input_buffer.v",
+      "sha256": "21af206b918c31062ec1b4128aab571b3fcbdcd87ce9dd227a88da40c74a8058"
+    },
+    {
+      "path": "rtl/jfif_writer.v",
+      "url": "https://raw.githubusercontent.com/lcapossio/mjpegZero/90bc0c46d2c2c4bda1020113f306a5f17dcc5f2f/rtl/jfif_writer.v",
+      "sha256": "dfed40030480dc4efe46b262f2928e49875d02d06be90061cc7b5d6d0c1faab9"
+    },
+    {
+      "path": "rtl/mjpegzero_enc_top.v",
+      "url": "https://raw.githubusercontent.com/lcapossio/mjpegZero/90bc0c46d2c2c4bda1020113f306a5f17dcc5f2f/rtl/mjpegzero_enc_top.v",
+      "sha256": "7152b270c1bf452f1b980a8da1a544de2dd837544ca90b3d0027bb99a8dd7eca"
+    },
+    {
+      "path": "rtl/quantizer.v",
+      "url": "https://raw.githubusercontent.com/lcapossio/mjpegZero/90bc0c46d2c2c4bda1020113f306a5f17dcc5f2f/rtl/quantizer.v",
+      "sha256": "5d5a9879bd8500fdc11b57ba37d890df9cb96ca3e7786ed6eac62a55b0450807"
+    },
+    {
+      "path": "rtl/rgb_to_ycbcr.v",
+      "url": "https://raw.githubusercontent.com/lcapossio/mjpegZero/90bc0c46d2c2c4bda1020113f306a5f17dcc5f2f/rtl/rgb_to_ycbcr.v",
+      "sha256": "cffbacbfb2749e3187f32a7f426f6e169e917ba7767ec276c137a6b9ff87744a"
+    },
+    {
+      "path": "rtl/zigzag_reorder.v",
+      "url": "https://raw.githubusercontent.com/lcapossio/mjpegZero/90bc0c46d2c2c4bda1020113f306a5f17dcc5f2f/rtl/zigzag_reorder.v",
+      "sha256": "09a248986aafdf79292d2f4dc7cdd70786953a818a1ef843d737049dc6f9a701"
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "repository": "https://github.com/minivision-ai/Silent-Face-Anti-Spoofing",
+  "commit": "b6d5f04ad78778917853b25c778acef6d5626d15",
+  "files": {
+    "LICENSE": "daf94bf1dc9cc5700fe5af2c7c0cbd1836e70d509ed78fd0bebef7432edee6fb",
+    "README.md": "b53d4c13fde0bb0e96abf1fe8b1fbf3d6493015f1a6ace4f343e1dea11b65554",
+    "images/sample/image_F1.jpg": "4b11b5d7a8a8e4a88f5f16a5426a0a7692e39e5bb45bb03b4ebe5e1606336860",
+    "images/sample/image_F1_result.jpg": "c1c551677250f8cab84f4d50d3f339cbfe74f9757bdefae94505624d54ce7746",
+    "images/sample/image_F2.jpg": "fbbea73450ae9d9bb555c8ccac77bf39d234261fe3be4190e3ed2999690c485f",
+    "images/sample/image_F2_result.jpg": "8d8ed150195cbcacf44cdc1140f5b828858797751c1f26be31f6a05c68ae47ce",
+    "images/sample/image_T1.jpg": "f4455149f488f76205fdee5499ec5261d08ef6279a1cff7b778ea85405331e94",
+    "images/sample/image_T1_result.jpg": "8d796d0b5e64979e979eea34129c0a02bf54d6d70aacf401aadf8826875b4739",
+    "requirements.txt": "c03091675dea8a2bc1da8ddbd8cc21fc75d1d204912d6431661ff44938ace9eb",
+    "resources/anti_spoof_models/2.7_80x80_MiniFASNetV2.pth": "a5eb02e1843f19b5386b953cc4c9f011c3f985d0ee2bb9819eea9a142099bec0",
+    "resources/anti_spoof_models/4_0_0_80x80_MiniFASNetV1SE.pth": "84ee1d37d96894d5e82de5a57df044ef80a58be2b218b5ed7cdfd875ec2f5990",
+    "resources/detection_model/Widerface-RetinaFace.caffemodel": "d08338a2c207df16a9c566f767fea67fb43ba6fff76ce11e938fe3fabefb9402",
+    "resources/detection_model/deploy.prototxt": "9fe2f141b4baee039ed9442da2833e216af40a6ff3e639e7b39258812bcda808",
+    "src/anti_spoof_predict.py": "ce95918e5a19895781877a1ac5c8d3b2d753579c1709664a0ea8f9259ce43f93",
+    "src/data_io/dataset_folder.py": "65ce0db2d63896e0398683ec9ecd68b2b612c452b92d043a39aa5f282427a1e2",
+    "src/data_io/dataset_loader.py": "e734ef37d67a222f8d0966fb02b10afc23e16401c059512c1147721682f47052",
+    "src/data_io/functional.py": "8f779a775e01485800368e8a11104c49c8ba602629927e19ea223b74ff946898",
+    "src/data_io/transform.py": "f63c85790708e7017bbb24ed2d1a834076719fdd19c3fdd8633ed858c55e586f",
+    "src/default_config.py": "d909416d01c1ab8a60704dab6e2fa58ef5d0c98b25e549f05ccd1cade3eb41a7",
+    "src/generate_patches.py": "cd33552d5ca920088143daafceba3c19b7a64bf9aac125241803e1b4af698d65",
+    "src/model_lib/MiniFASNet.py": "e498c4ec5e1ddfaba62b941a126c19d65aa564999f3309661fe43ee8bf38acd7",
+    "src/model_lib/MultiFTNet.py": "0700983ec3798aef720a9b8438ccfa5b0fac8cdbafa6f23cf1d97baf23393f2e",
+    "src/train_main.py": "9c4f9e12b54a6a3009c8649109b7d4d5bf5819dfd7abe42273f9c36ad83c5d2b",
+    "src/utility.py": "cff329a47f4f284465126b19adb080343942a2f2014e862dc85e1e7c2f9d1421",
+    "test.py": "a6a6f053ac899b22607e7e9220742ce882aa4474e0395eebd5a502f3956b233b"
+  }
+}

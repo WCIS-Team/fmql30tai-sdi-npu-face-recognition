@@ -1,0 +1,52 @@
+/usr/bin/cmake
+aarch64-linux-gnu-g++ (Ubuntu 9.4.0-1ubuntu1~20.04.2) 9.4.0
+Copyright (C) 2019 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+-- The CXX compiler identification is GNU 9.4.0
+-- Check for working CXX compiler: /usr/bin/aarch64-linux-gnu-g++
+-- Check for working CXX compiler: /usr/bin/aarch64-linux-gnu-g++ -- works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found OpenCV: /ModelzooDeps/aarch64/Static (found version "4.5.5") found components: core imgproc imgcodecs 
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /work/build-owner
+Scanning dependencies of target wcis_camera_owner
+[ 50%] Building CXX object CMakeFiles/wcis_camera_owner.dir/src/wcis_camera_owner.cpp.o
+[100%] Linking CXX executable wcis_camera_owner
+[100%] Built target wcis_camera_owner
+-- The CXX compiler identification is GNU 9.4.0
+-- Check for working CXX compiler: /usr/bin/aarch64-linux-gnu-g++
+-- Check for working CXX compiler: /usr/bin/aarch64-linux-gnu-g++ -- works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /work/build-npu
+Scanning dependencies of target wcis_face_cached
+[ 50%] Building CXX object CMakeFiles/wcis_face_cached.dir/src/cached_npu_runner.cpp.o
+[100%] Linking CXX executable wcis_face_cached
+[100%] Built target wcis_face_cached
+Scanning dependencies of target wcis_face_pl_retained
+[ 50%] Building CXX object CMakeFiles/wcis_face_pl_retained.dir/src/retained_pl_runner.cpp.o
+[100%] Linking CXX executable wcis_face_pl_retained
+[100%] Built target wcis_face_pl_retained
+Scanning dependencies of target wcis_face_pad
+[ 50%] Building CXX object CMakeFiles/wcis_face_pad.dir/src/pad_npu_runner.cpp.o
+[100%] Linking CXX executable wcis_face_pad
+[100%] Built target wcis_face_pad
+Scanning dependencies of target wcis_face_npu
+[ 50%] Building CXX object CMakeFiles/wcis_face_npu.dir/src/npu_runner.cpp.o
+[100%] Linking CXX executable wcis_face_npu
+[100%] Built target wcis_face_npu
+ccb33b75b3896f26a9582111a1536ec353ee0eedb146f4c40203fd602cd4c3c6  /work/bin/wcis_camera_owner
+a9cf8341ce37ac541c58517f21be51979af25d091d216f7f8febf18b3f8cc1bb  /work/bin/wcis_face_cached
+63e79ac6cd8a59e90daec1060a85d7ad592513d7d262e18738cd58a066622c72  /work/bin/wcis_face_npu
+62ae6acdb134a880c88e59f7804e4ef18b2d7930dd1e9fa7db9c0e0104445e6a  /work/bin/wcis_face_pad
+6945b7e80428f98f0b8ce87e944d8007f26aabff9ff19b2b1522e484cb50b4ba  /work/bin/wcis_face_pl_retained

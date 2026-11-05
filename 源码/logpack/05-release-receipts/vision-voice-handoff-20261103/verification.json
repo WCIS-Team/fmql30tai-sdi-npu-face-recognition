@@ -1,0 +1,220 @@
+{
+  "date": "2026-11-03",
+  "tests": {
+    "windows": {
+      "passed": 23
+    },
+    "board_linux": {
+      "passed": 23
+    }
+  },
+  "source_sha256": {
+    "scripts/vision_handoff.py": "9b62049b15025a25547f6714b0c91b262d5bfefbe5cb5c0c4928400496e678cc",
+    "scripts/install_vision_handoff.py": "db7c605b066042c298ad934378508d29c611fe47e16f7582c70c1e512d33de49",
+    "tests/test_vision_handoff.py": "28ea4de417ec2ede9814445194230ed8b1e4e8c8763d8d2583bb95bd0752f35b"
+  },
+  "normal": {
+    "token": "676aed4d0d6d497ba38c27be9067ddd4",
+    "boot_id": "ca08d773-cea8-44fa-84c1-9841d7cf4ed3",
+    "phase": "restored",
+    "close_verified": true,
+    "original_recording_mode": "off",
+    "timing": {
+      "pause_started_at": 72044.28960202,
+      "recording_drained_at": 72044.600872054,
+      "pause_complete_at": 72046.544952825,
+      "pause_seconds": 2.2553508050041273,
+      "voice_started_at": 72046.596986843,
+      "voice_exit_observed_at": 72049.77242854,
+      "restore_started_at": 72050.57091967,
+      "models_ready_at": 72059.968916951,
+      "picture_ready_at": 72061.845234594,
+      "restore_complete_at": 72062.723445634,
+      "restore_seconds": 12.15252596398932,
+      "picture_seconds": 11.274314923997736,
+      "models_seconds": 9.39799728099024
+    },
+    "resumed_owner": {
+      "pid": 66800,
+      "session": "wr3u3y0h",
+      "boot_id": "ca08d773-cea8-44fa-84c1-9841d7cf4ed3"
+    },
+    "stop_receipt": {
+      "camera_drained": 1,
+      "camera_pending": false,
+      "camera_requests": 2732,
+      "captured": 2731,
+      "commands": 0,
+      "encoded": 0,
+      "h264_mapping_frames": 2,
+      "h264_submitted": 2730,
+      "sdk_closed": true,
+      "sessions_released": true,
+      "status": "stopped",
+      "boot_id": "ca08d773-cea8-44fa-84c1-9841d7cf4ed3",
+      "worker_pid": 66580,
+      "exit_code": 0
+    }
+  },
+  "supervisor_kill": {
+    "token": "1e0f2be1795a41dea797b26a711ae12d",
+    "boot_id": "ca08d773-cea8-44fa-84c1-9841d7cf4ed3",
+    "phase": "restored",
+    "close_verified": true,
+    "original_recording_mode": "off",
+    "timing": {
+      "pause_started_at": 72064.263097165,
+      "recording_drained_at": 72064.56204696,
+      "pause_complete_at": 72066.100784025,
+      "pause_seconds": 1.8376868599880254,
+      "voice_started_at": 72066.144839318,
+      "restore_started_at": 72068.108829566,
+      "models_ready_at": 72077.239348598,
+      "picture_ready_at": 72079.388345685,
+      "restore_complete_at": 72080.252158308,
+      "restore_seconds": 12.143328741993173,
+      "picture_seconds": 11.279516119000618,
+      "models_seconds": 9.13051903199812
+    },
+    "resumed_owner": {
+      "pid": 66938,
+      "session": "tjgmzwne",
+      "boot_id": "ca08d773-cea8-44fa-84c1-9841d7cf4ed3"
+    },
+    "stop_receipt": {
+      "camera_drained": 1,
+      "camera_pending": false,
+      "camera_requests": 215,
+      "captured": 214,
+      "commands": 0,
+      "encoded": 0,
+      "h264_mapping_frames": 2,
+      "h264_submitted": 213,
+      "sdk_closed": true,
+      "sessions_released": true,
+      "status": "stopped",
+      "boot_id": "ca08d773-cea8-44fa-84c1-9841d7cf4ed3",
+      "worker_pid": 66800,
+      "exit_code": 0
+    }
+  },
+  "normal_voice_exit_to_restored_seconds": 12.951017093990231,
+  "final_health": {
+    "passed": true,
+    "boot_id": "ca08d773-cea8-44fa-84c1-9841d7cf4ed3",
+    "owner": {
+      "pid": 66938,
+      "session": "tjgmzwne",
+      "frame_id": 47311,
+      "encoded": 47310,
+      "codec": "h264",
+      "preview_mode": "continuous_vpu"
+    },
+    "health": {
+      "status": "ready",
+      "model_cache_ready": true,
+      "hardware_admission_ready": true
+    },
+    "recording": {
+      "mode": "off",
+      "state": "idle",
+      "source_ready": true,
+      "error": null
+    },
+    "units": {
+      "wcis-face-photo.service": {
+        "active": "active",
+        "enabled": "enabled"
+      },
+      "wcis-sdi-vpu-view.service": {
+        "active": "active",
+        "enabled": "enabled"
+      },
+      "wcis-face-recording.service": {
+        "active": "active",
+        "enabled": "enabled"
+      }
+    },
+    "script_sha256": "9b62049b15025a25547f6714b0c91b262d5bfefbe5cb5c0c4928400496e678cc",
+    "config": {
+      "app": "/root/wcis-face/apps/camera-low-latency-20261103-v2-live",
+      "release": "/root/wcis-face/releases/20261014-b5a454c11d22",
+      "config_sha256": "7a8028c0008f2023a4325fe764f63fd5a65c01585186d735d828b8118eeb4407",
+      "live_required": true
+    },
+    "voice_gateway_active": "active",
+    "voice_gateway_pid": "52860"
+  },
+  "installation_check": {
+    "installed": true,
+    "guards": {
+      "wcis-face-photo.service": true,
+      "wcis-sdi-vpu-view.service": true,
+      "wcis-face-recording.service": true
+    },
+    "units": {
+      "wcis-face-photo.service": "active",
+      "wcis-sdi-vpu-view.service": "active",
+      "wcis-face-recording.service": "active"
+    }
+  },
+  "smoke_normal": {
+    "passed": true,
+    "token": "676aed4d0d6d497ba38c27be9067ddd4",
+    "guard_observations": [
+      {
+        "unit": "wcis-face-photo.service",
+        "before": "inactive",
+        "after_guarded_start": "inactive",
+        "returncode": 0
+      },
+      {
+        "unit": "wcis-sdi-vpu-view.service",
+        "before": "inactive",
+        "after_guarded_start": "inactive",
+        "returncode": 0
+      },
+      {
+        "unit": "wcis-face-recording.service",
+        "before": "inactive",
+        "after_guarded_start": "inactive",
+        "returncode": 0
+      }
+    ],
+    "duplicate_rejected": true,
+    "literal_argument_preserved": true
+  },
+  "smoke_supervisor_kill": {
+    "passed": true,
+    "token": "1e0f2be1795a41dea797b26a711ae12d",
+    "guard_observations": [
+      {
+        "unit": "wcis-face-photo.service",
+        "before": "inactive",
+        "after_guarded_start": "inactive",
+        "returncode": 0
+      },
+      {
+        "unit": "wcis-sdi-vpu-view.service",
+        "before": "inactive",
+        "after_guarded_start": "inactive",
+        "returncode": 0
+      },
+      {
+        "unit": "wcis-face-recording.service",
+        "before": "inactive",
+        "after_guarded_start": "inactive",
+        "returncode": 0
+      }
+    ],
+    "duplicate_rejected": true,
+    "literal_argument_preserved": true
+  },
+  "real_voice_inference_tested": false,
+  "cold_board_boot_tested": false,
+  "notes": [
+    "Finite individual samples; recovery timing is not board boot or browser latency.",
+    "Initial ExecCondition retry issue corrected to native ConditionPathExists before final trials.",
+    "Real voice gateway identity stable only within the final two trial windows."
+  ]
+}

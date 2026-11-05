@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "scope": "Exact four source commands; two representative original effective paths unchanged on reapplication; not full CDC equivalence",
+  "original_source_sha256": "c1e2f73d3c273bd9152f244149b56296595607a8785a24111a876b060143c192",
+  "restoration_script_sha256": "5a4e0f136455c217b396bc7423fe8e357c951d4d15f51e79dc05d606a07b613f",
+  "reports": {
+    "original-legacy-hold.rpt": "c2c36f4c7a8d94e371fa67a10eca2df2cce855a1ab662548e0d14eddc0e164d0",
+    "reapplied-legacy-hold.rpt": "69c6dde43bc9dc1737cd158599a43575696630904d279d4411f59af4da57ec0c",
+    "original-response-reset.rpt": "94d9f5a072c0699206c8591b492536ab07cb8136921795a87c0a46ab7a607564",
+    "reapplied-response-reset.rpt": "7a66add13bb16be9d4792106227796e964bdfae16258aca1b85f5e5543bee97b"
+  },
+  "original_reset_recovery_ns": 4.217
+}
