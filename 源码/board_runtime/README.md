@@ -1,5 +1,7 @@
 # FMQL30TAI 视觉工程复现
 
+> **仅适用于资源齐全的完整运行包。** 本 GitHub 公开版不包含下文的 `reference_release/` 模型/启动载荷或 `board/sdk/*.deb`，不能直接按此安装。缺失资源、模型下载与版权边界见 [模型说明](../../docs/MODELS.md)；不要删去哈希校验来绕过缺文件错误。
+
 **环境** FMQL30TAI 完整版、厂商 AArch64 Linux、iCraft/CustomOp 3.39.0；重新打包 BOOT 用 Vivado 2018.3、Procise 2025.1.1 temp 和 Python 3。
 
 ## 一、准备 BOOT
