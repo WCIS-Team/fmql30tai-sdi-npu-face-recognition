@@ -30,5 +30,10 @@
 # --- 厂商预编译运行时 / 引导载荷 ---
 **/reference_release/
 
+# --- InsightFace restricted weights: obtain separately under upstream terms ---
+**/w600k_mbf.onnx
+**/buffalo_sc.zip
+**/mobilefacenet_ZG.*
+
 # --- iCraft SDK C++ 头文件 ---
 **/ps_app/vendor/

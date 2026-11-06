@@ -14,10 +14,10 @@ anxianji11-pixel 有权授权的原创代码和配套文档已采用根目录 [M
 
 | 组件 | 版权/来源 | 许可与本项目边界 |
 |---|---|---|
-| YuNet 的 OpenCV Zoo 模型目录 | Shiqi Yu / OpenCV Zoo | 该目录声明 MIT；分发相关文件或实质部分须保留版权及许可。权重未纳入本公开仓库。见 [固定版本 README](https://github.com/opencv/opencv_zoo/blob/48b10fa505aeb51fbd127fc60a5c660040e823b7/models/face_detection_yunet/README.md) 与 [LICENSE](https://github.com/opencv/opencv_zoo/blob/48b10fa505aeb51fbd127fc60a5c660040e823b7/models/face_detection_yunet/LICENSE)。 |
-| MobileFaceNet 预训练权重 `w600k_mbf.onnx` | InsightFace v0.7 `buffalo_sc` | **预训练模型仅限非商业研究**，不是 MIT 权重。上游明确将手动下载和自动下载都纳入其模型政策。商业使用须另行确认授权；转换为 ONNX/FP16/NPU RAW 不会自行消除上游限制。见 [官方模型政策](https://github.com/deepinsight/insightface#license)。 |
+| YuNet 的 OpenCV Zoo 模型目录 | Shiqi Yu / OpenCV Zoo | 该目录声明 MIT；分发相关文件或实质部分须保留版权及许可。未经修改的原始权重已随 [models/](models/README.md) 提供，并保留原许可。见 [固定版本 README](https://github.com/opencv/opencv_zoo/blob/48b10fa505aeb51fbd127fc60a5c660040e823b7/models/face_detection_yunet/README.md) 与 [LICENSE](https://github.com/opencv/opencv_zoo/blob/48b10fa505aeb51fbd127fc60a5c660040e823b7/models/face_detection_yunet/LICENSE)。 |
+| MobileFaceNet 预训练权重 `w600k_mbf.onnx` | InsightFace v0.7 `buffalo_sc` | **预训练模型仅限非商业研究**，不是 MIT 权重。本仓库不镜像其原权重或编译产物，提供上游获取与校验步骤；目前未核实到足以支持本仓库公开镜像的明确再分发授权，这不等于断言所有再分发都被禁止。上游明确将手动下载和自动下载都纳入其模型政策。商业使用须另行确认授权；转换为 ONNX/FP16/NPU RAW 不会自行消除上游限制。见 [官方模型政策](https://github.com/deepinsight/insightface#license)。 |
 | InsightFace 五点对齐参考 | InsightFace `utils/face_align.py` | 上游代码声明 MIT，与模型政策分开。本项目参考提交为 `81929474ec02e54e3655f6841bced800009c592d`；实现及参考范围见 [face_geometry.py](源码/ps_source/model_backend/face_geometry.py) 和 [历史说明](源码/ps_source/model_backend/README.md)。不得把 MIT 代码许可推导成所有权重可商用。 |
-| MiniFASNetV2 / MiniFASNetV1SE 及裁图参考 | MiniVision；裁图参考作者 Zhu Ying | 固定提交 `b6d5f04ad78778917853b25c778acef6d5626d15` 的上游仓库提供 Apache-2.0。本地 `face_pad.py` 已标注改编来源；保留 [许可全文](源码/ps_source/model_backend/licenses/Silent-Face-Anti-Spoofing-APACHE-2.0.txt) 与 [修改说明](源码/ps_source/model_backend/licenses/NOTICE.md)。权重不随公开版分发；采用上游发布的权重时还须核对有无文件级附加条款，不以本表保证训练数据或人像权利。 |
+| MiniFASNetV2 / MiniFASNetV1SE 及裁图参考 | MiniVision；裁图参考作者 Zhu Ying | 固定提交 `b6d5f04ad78778917853b25c778acef6d5626d15` 的上游仓库提供 Apache-2.0。本地 `face_pad.py` 已标注改编来源；保留 [许可全文](源码/ps_source/model_backend/licenses/Silent-Face-Anti-Spoofing-APACHE-2.0.txt) 与 [修改说明](源码/ps_source/model_backend/licenses/NOTICE.md)。两份未经修改的 PTH 已随 [models/](models/README.md) 提供，附原始 Apache-2.0 许可。已核对固定提交文件树及 README，未发现权重目录另设许可或上游 NOTICE 文件；分发依据是该仓库许可，不以本表保证训练数据或人像权利。 |
 
 完整模型名、下载入口与 SHA-256 见 [模型说明](docs/MODELS.md)。这些模型不是本项目自主训练成果；适配、等价改写和编译也不应表述为拥有原始模型的全部版权。
 

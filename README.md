@@ -2,7 +2,7 @@
 
 FMQL30TAI（FMQL30TAI676 悟净）平台上的 **SDI 采集 + NPU 人脸识别** 工程：板端安装器、PS/NPU 应用源码、FPGA 源（我方 RTL）、以及构建与复现记录。
 
-> **这是公开源码版，不是可直接上板的完整安装包。** Git 中没有原始模型权重，也没有编译后的模型、配套 BOOT、SDK deb 或 DCP。克隆成功不代表安装资源齐全；历史文档中的“随包模型”“一键安装”针对另行准备的完整包。
+> **这是公开源码版，不是可直接上板的完整安装包。** Git 中已附带 YuNet 和两个 MiniFASNet 的原始权重及各自许可；MobileFaceNet 需按上游条款另行下载。仓库仍没有编译后的板端模型、配套 BOOT、SDK deb 或 DCP。克隆成功不代表安装资源齐全；历史文档中的“随包模型”“一键安装”针对另行准备的完整包。
 
 ## 模型、下载与运行入口
 
@@ -12,6 +12,7 @@ FMQL30TAI（FMQL30TAI676 悟净）平台上的 **SDI 采集 + NPU 人脸识别**
 | 身份特征与余弦比较 | MobileFaceNet，`buffalo_sc.zip` 内的 `w600k_mbf.onnx` | InsightFace |
 | RGB 防伪辅助分数 | MiniFASNetV2 + MiniFASNetV1SE，80×80 双模型 | MiniVision Silent-Face-Anti-Spoofing |
 
+- [直接下载随仓库提供的三份原始权重](models/README.md)：含原许可、来源清单及离线校验工具。
 - [模型来源、固定文件、下载和 SHA-256 校验](docs/MODELS.md)：说明原始 ONNX/PTH 与板端 JSON/RAW 的区别，以及现有构建脚本的适用范围。
 - [安装前需补齐的资源与运行步骤](docs/MODELS.md#安装与运行)：公开版缺什么、完整包从哪里安装、怎样确认模型就绪。
 - [第三方版权与许可边界](THIRD_PARTY_NOTICES.md)：特别注意 InsightFace 权重的非商业研究限制、mjpegZero 的 Commons Clause 和 Paramiko 的 LGPL。

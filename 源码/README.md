@@ -1,6 +1,6 @@
 # FMQL30TAI 视觉工程交付包
 
-> **GitHub 公开版提示（2026-11-06）：** 下文描述完整交付包。公开仓库已排除模型所在的 `reference_release/`、SDK deb、DCP 及部分厂商 IP；表中这些资产并未随公开源码上传。先看 [模型来源与复现边界](../docs/MODELS.md) 和 [第三方许可](../THIRD_PARTY_NOTICES.md)。完整包清单不等于公开版实际文件清单。
+> **GitHub 公开版提示（2026-11-06）：** 下文描述完整交付包。原始 YuNet 和两个 MiniFASNet 已在根目录 [models/](../models/README.md) 单独提供；公开仓库仍排除板端模型所在的 `reference_release/`、SDK deb、DCP 及部分厂商 IP；表中这些资产并未随公开源码上传。先看 [模型来源与复现边界](../docs/MODELS.md) 和 [第三方许可](../THIRD_PARTY_NOTICES.md)。完整包清单不等于公开版实际文件清单。
 
 ## 先看目录
 

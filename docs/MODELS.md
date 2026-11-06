@@ -4,7 +4,7 @@
 
 ## 公开仓库包含什么
 
-仓库含推理调用、前后处理、模型改写及编译脚本、历史验证文档；不含四个原始模型权重，也不含板端模型 JSON/RAW。`.gitignore` 排除了整个 `reference_release/`，连同配套 BOOT、运行程序及模型一起排除。
+仓库含推理调用、前后处理、模型改写及编译脚本、历史验证文档，以及 [models/](../models/README.md) 中三份原始权重（YuNet、MiniFASNetV2、MiniFASNetV1SE）及各自原许可。MobileFaceNet 原权重与所有板端模型 JSON/RAW 不随仓库提供。`.gitignore` 排除了整个 `reference_release/`，连同配套 BOOT、运行程序及模型一起排除。
 
 原始 `.onnx` / `.pth` 是重建模型的输入；FMQL30TAI 服务加载的是与配套位流和 iCraft 运行时匹配的 `*_ZG.json` + `*_ZG.raw`。下载原始模型、安装 Python 包、编译 C++ 程序均不能代替模型适配和 NPU 编译。
 
@@ -25,10 +25,12 @@ MiniFASNet 两个输出各做 softmax 再取平均；类别 1 是上游定义的
 
 先阅读 [版权与许可](../THIRD_PARTY_NOTICES.md)。特别是 InsightFace 权重：上游声明仅限非商业研究；本文不额外授予模型使用或再分发权，也不认定任何竞赛、赞助或商业演示自动符合该范围。
 
-将模型放在仓库外的独立目录。内部学校服务器重建使用 `D:/yzd/tmp/<task>/`，不要写入共享 SDK 或把权重提交到 Git。
+**最快获取方式：** 下载本仓库 ZIP 或克隆仓库，三份可分发的原始权重已在 [models/](../models/README.md) 中。运行 `python models/verify.py` 校验它们。以下列出全部四个模型的上游下载地址，供补齐 MobileFaceNet 或核对来源。
+
+需要把四个文件集中用于重建时，将本仓库三份权重复制到仓库外的独立模型目录，再把合法取得的 `w600k_mbf.onnx` 放到同一目录。内部学校服务器重建使用 `D:/yzd/tmp/<task>/`，不要写入共享 SDK；不要将 MobileFaceNet 或未审查的编译载荷提交到公开仓库。
 
 1. **YuNet**：[下载实际 ONNX 文件](https://media.githubusercontent.com/media/opencv/opencv_zoo/48b10fa505aeb51fbd127fc60a5c660040e823b7/models/face_detection_yunet/face_detection_yunet_2023mar.onnx)，保存为 `face_detection_yunet_2023mar.onnx`。同时保留上游 [MIT LICENSE](https://github.com/opencv/opencv_zoo/blob/48b10fa505aeb51fbd127fc60a5c660040e823b7/models/face_detection_yunet/LICENSE)。该模型为 232589 字节；以 `version https://git-lfs...` 开头的短文本只是 LFS 指针，不是权重。
-2. **MobileFaceNet**：从 [v0.7 的 buffalo_sc.zip](https://github.com/deepinsight/insightface/releases/download/v0.7/buffalo_sc.zip) 下载并解压，找到 `w600k_mbf.onnx`，复制到独立模型目录。下面校验的是解压后的 ONNX，不是整个 ZIP。
+2. **MobileFaceNet（未随仓库提供）**：先确认用途符合 [上游模型政策](https://github.com/deepinsight/insightface#license)。从 [v0.7 的 buffalo_sc.zip](https://github.com/deepinsight/insightface/releases/download/v0.7/buffalo_sc.zip) 下载并解压，找到 `w600k_mbf.onnx`，复制到独立模型目录。下面校验的是解压后的 ONNX，不是整个 ZIP。
 3. **MiniFASNetV2**：[下载固定版本权重](https://raw.githubusercontent.com/minivision-ai/Silent-Face-Anti-Spoofing/b6d5f04ad78778917853b25c778acef6d5626d15/resources/anti_spoof_models/2.7_80x80_MiniFASNetV2.pth)。
 4. **MiniFASNetV1SE**：[下载固定版本权重](https://raw.githubusercontent.com/minivision-ai/Silent-Face-Anti-Spoofing/b6d5f04ad78778917853b25c778acef6d5626d15/resources/anti_spoof_models/4_0_0_80x80_MiniFASNetV1SE.pth)。两份 PTH 的参考代码必须配套同一提交，许可见 [Apache-2.0 副本](../源码/ps_source/model_backend/licenses/Silent-Face-Anti-Spoofing-APACHE-2.0.txt)。
 
@@ -51,7 +53,7 @@ foreach ($modelEntry in $expectedModels.GetEnumerator()) {
 }
 ```
 
-原始 YuNet/MobileFaceNet 哈希由项目本地 `photo_reference/models/manifest.json` 补录；PAD 哈希与仓库已有 `face_pad_reference.json` 一致。网络失败、权限失败或哈希不符不代表可以换任意同名镜像。本次文档核对没有重新下载并运行全部模型。
+原始 YuNet/MobileFaceNet 哈希由项目本地 `photo_reference/models/manifest.json` 补录；PAD 哈希与仓库已有 `face_pad_reference.json` 一致。网络失败、权限失败或哈希不符不代表可以换任意同名镜像。本次重新从固定上游下载了随仓库提供的三份权重，并与上述历史哈希逐一核对；没有重新下载 MobileFaceNet，也没有运行模型推理。
 
 ## 从原始模型到板端模型
 
@@ -71,7 +73,7 @@ foreach ($modelEntry in $expectedModels.GetEnumerator()) {
 
 ### 只有公开仓库
 
-可阅读和修改源码、按上述来源取得原始模型。上板还缺少配套运行载荷、已编译模型、厂商 SDK/工具及位流；因此不能直接运行安装器并期待成功，也不能仅安装 `insightface` 或 `onnxruntime` 就得到本项目的 NPU 服务。
+可阅读和修改源码，直接取得随仓库提供的三份原始模型，按上游政策另行获取 MobileFaceNet。上板还缺少配套运行载荷、已编译模型、厂商 SDK/工具及位流；因此不能直接运行安装器并期待成功，也不能仅安装 `insightface` 或 `onnxruntime` 就得到本项目的 NPU 服务。
 
 需要向有权提供资源的项目维护者或厂商取得匹配资源。私有源仓库的存在不代表任何读者都有访问或再分发权限。包中 `filelist.json`、`MANIFEST.json` 是完整包的历史清单，公开版刻意缺失受限文件；不要删减校验项目来伪造完整性通过。
 

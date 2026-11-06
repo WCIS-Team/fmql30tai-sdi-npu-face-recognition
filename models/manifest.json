@@ -1,0 +1,33 @@
+{
+  "checked_on": "2026-11-06",
+  "format": "unmodified upstream weights; not FMQL30TAI compiled models",
+  "models": [
+    {
+      "path": "yunet/face_detection_yunet_2023mar.onnx",
+      "size": 232589,
+      "sha256": "8f2383e4dd3cfbb4553ea8718107fc0423210dc964f9f4280604804ed2552fa4",
+      "source_url": "https://media.githubusercontent.com/media/opencv/opencv_zoo/48b10fa505aeb51fbd127fc60a5c660040e823b7/models/face_detection_yunet/face_detection_yunet_2023mar.onnx",
+      "license": "MIT",
+      "license_file": "yunet/LICENSE",
+      "modified": false
+    },
+    {
+      "path": "minifasnet/2.7_80x80_MiniFASNetV2.pth",
+      "size": 1849453,
+      "sha256": "a5eb02e1843f19b5386b953cc4c9f011c3f985d0ee2bb9819eea9a142099bec0",
+      "source_url": "https://raw.githubusercontent.com/minivision-ai/Silent-Face-Anti-Spoofing/b6d5f04ad78778917853b25c778acef6d5626d15/resources/anti_spoof_models/2.7_80x80_MiniFASNetV2.pth",
+      "license": "Apache-2.0",
+      "license_file": "minifasnet/LICENSE",
+      "modified": false
+    },
+    {
+      "path": "minifasnet/4_0_0_80x80_MiniFASNetV1SE.pth",
+      "size": 1856130,
+      "sha256": "84ee1d37d96894d5e82de5a57df044ef80a58be2b218b5ed7cdfd875ec2f5990",
+      "source_url": "https://raw.githubusercontent.com/minivision-ai/Silent-Face-Anti-Spoofing/b6d5f04ad78778917853b25c778acef6d5626d15/resources/anti_spoof_models/4_0_0_80x80_MiniFASNetV1SE.pth",
+      "license": "Apache-2.0",
+      "license_file": "minifasnet/LICENSE",
+      "modified": false
+    }
+  ]
+}
