@@ -1,0 +1,18 @@
+目录级许可声明 / Directory-level license notice
+================================================
+
+本目录（源码/fpga_source/rtl/wcis/）下由 anxianji11-pixel 原创的硬件 RTL 文件，
+采用双许可，被许可方可任选其一：
+
+  SPDX-License-Identifier: MIT OR Apache-2.0 WITH SHL-2.1
+
+  Copyright (c) 2026 anxianji11-pixel
+
+- MIT：见仓库根目录 LICENSE
+- Solderpad Hardware License v2.1（SHL-2.1）：全文见仓库根目录 LICENSES/SHL-2.1.txt，
+  亦可从 https://solderpad.org/licenses/SHL-2.1/ 获取。
+
+本声明仅覆盖本目录下由 anxianji11-pixel 原创的文件；本仓库其余硬件内容（带
+"Shanghai Fudan Microelectronics Co., Ltd. Confidential" / "Copyright fmsh" 标注的
+厂商文件、jpeg_vendor 下 mjpegZero 等第三方、Vivado/Xilinx IP）不受本声明影响，
+仍按其各自条款使用。详见仓库根目录 LICENSE_SCOPE.md。

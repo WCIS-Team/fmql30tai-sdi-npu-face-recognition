@@ -20,3 +20,18 @@
 对第三方文件的原创修改也不能免除该文件原许可要求；根目录 MIT 不撤销先前有效的文件级许可。全部例外的来源索引见 [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md)，作者说明见 [NOTICE.md](NOTICE.md)。
 
 GitHub 显示的根级 MIT 标签仅概括本项目原创部分，不能作为整个仓库、全部模型或完整硬件产品可按 MIT 商用的证明。
+
+## 硬件 RTL 的 SHL-2.1（与 MIT 双许可）
+
+自 2026-11-10 起，`源码/fpga_source/rtl/wcis/` 下由 **anxianji11-pixel** 原创的硬件 RTL，在原有根 MIT 之外**同时**按 [Solderpad Hardware License v2.1](LICENSES/SHL-2.1.txt) 提供，SPDX 标识为 `MIT OR Apache-2.0 WITH SHL-2.1`，被许可方可任选其一。Copyright (c) 2026 anxianji11-pixel。边界见该目录内 `LICENSE` 声明。
+
+SHL-2.1 **仅**覆盖上述 `rtl/wcis/` 原创文件；本仓库其余硬件内容仍是厂商/第三方材料，**不得**按 SHL-2.1 使用：
+
+| 范围 | 适用规则 |
+|---|---|
+| `源码/fpga_source/rtl/` 下带 "Shanghai Fudan Microelectronics Co., Ltd. Confidential" 或 "Copyright fmsh" 标注的文件（`adder_op/`、`gp/`、`utils/`、`display/`、`sdi/`、`ai7030_edif_top.v`、`ps_ai_peripheral.sv`、`ps_ai_wrapper.sv` 等） | 厂商（复旦微/fmsh）机密材料，未获授权不得使用/再分发 |
+| `源码/fpga_source/rtl/wcis/jpeg_vendor/` | mjpegZero，Apache-2.0 + Commons Clause v1.0 |
+| `源码/fpga_source/rtl/ip/`、`sdi/ip/`、`.xci`、`.edf`、`AI_Mate_stub.v` | Vivado/Xilinx 生成或厂商 IP，受各自许可约束（如 MIG、clk_wiz） |
+| 其余模型、板端运行时、SDK、boot 等 | 见本页上方各条与 THIRD_PARTY_NOTICES.md |
+
+本次不重许可上述厂商/第三方文件；根 MIT 与本次 SHL-2.1 均不改变它们原有的权利归属与条款。
